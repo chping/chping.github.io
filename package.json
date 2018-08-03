@@ -1,14 +1,14 @@
 {
-    "name": "ping-blog",
-    "title": "Ping's Blog",
-    "author": "Cheng Ping <chengp.cn@gmail.com>",
-    "version": "1.0.0",
-    "homepage": "http://chping.github.io",
+    "name": "by-blog",
+    "title": "BY Blog",
+    "author": "BY <qiubaiyingios@163.com>",
+    "version": "1.7.0",
+    "homepage": "http://qiubaiying.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chping/chping.github.io"
+        "url": "https://github.com/qiubaiying/qiubaiying.github.io"
     },
-    "bugs": "https://github.com/chping/chping.github.io/issues",
+    "bugs": "https://github.com/qiubaiying/qiubaiying.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
