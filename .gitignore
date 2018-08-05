@@ -33,3 +33,6 @@ Temporary Items
 
 # debug file
 _site
+
+#Jeklly runtime cache
+.sass-cache
