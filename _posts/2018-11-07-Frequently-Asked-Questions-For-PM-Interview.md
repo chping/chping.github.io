@@ -7,7 +7,7 @@ author:     Ping
 header-img: img/post-bg-cook.jpg
 catalog: true
 tags:
-    - empty
+    - Product Manager
 ---
 
 #面试产品经理时常问的问题
