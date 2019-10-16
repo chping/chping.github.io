@@ -24,7 +24,7 @@ tags:
 
 ## 脚本生命周期
 
-一张图说明Unity3d各种update的区别_包括Awake() Start() - 大话程序员 - CSDN博客
+[一张图说明Unity3d各种update的区别_包括Awake() Start() - 大话程序员 - CSDN博客](https://blog.csdn.net/avi9111/article/details/70429578)
 
 ## TextMeshPro  
 * [组件介绍](http://digitalnativestudios.com/textmeshpro/docs/textmeshpro-component/)
