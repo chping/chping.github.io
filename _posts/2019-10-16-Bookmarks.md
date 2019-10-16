@@ -11,36 +11,31 @@ tags:
     - Development
 ---
 
-目录
-[TOC]
-
-* * *
-
-#Unity3D 官方教程
+# Unity3D 官方教程
 [https://unity3d.com/cn/learn/tutorials](https://unity3d.com/cn/learn/tutorials)
 
 [https://unity3d.com/cn/learn/tutorials/s/2d-roguelike-tutorial](https://unity3d.com/cn/learn/tutorials/s/2d-roguelike-tutorial)
 
 
-##脚本生命周期
+## 脚本生命周期
 
 [一张图说明Unity3d各种update的区别_包括Awake() Start() - 大话程序员 - CSDN博客](https://blog.csdn.net/avi9111/article/details/70429578)
 
-##TextMeshPro  
+## TextMeshPro  
 * [组件介绍](http://digitalnativestudios.com/textmeshpro/docs/textmeshpro-component/)
 * [RichText](http://digitalnativestudios.com/textmeshpro/docs/rich-text/#color)
 * [中文组件介绍](https://blog.csdn.net/qq_33337811/article/details/79029733)
 
 
-#Unity3D 动画和特效
+# Unity3D 动画和特效
 
-##缓动函数Easing Function 
+## 缓动函数Easing Function 
 
 [缓动函数速查表](http://www.xuanfengge.com/easeing/easeing/)
 
 [本地笔记：缓动函数 Easing Function](https://app.yinxiang.com/shard/s27/nl/6947617/138651a7-a0a8-47ae-9e6f-8c66de08afaa/)
 
-##使用DOTween实现按钮缩放
+## 使用DOTween实现按钮缩放
 
 
 ```C#
