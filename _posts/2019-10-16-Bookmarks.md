@@ -58,42 +58,6 @@ m_Button.transform.DOScale( new Vector3(1, 1, 1), 0.8f ).SetEase(Ease.OutBou
         });
 ````
 
-# 性能优化
-
-## 协程Yield return new WaitForXXX 带来的额外GC开销
-
-```C#
-void Start()
-{
-    StartCoroutine(OnEndOfFrame());
-}
-
-IEnumerator OnEndOfFrame()
-{
-    yield return null;
-
-    while (true)
-    {
-        //Debug.LogFormat("Called on EndOfFrame.");
-        yield return new WaitForEndOfFrame();
-    }
-}
-```
-
-上面的代码会导致 WaitForEndOfFrame 对象的每帧分配，给 GC 增加负担。假设游戏内有 10 个活跃协程，运行在 60 fps，那么每秒钟的 GC 增量负担是 10 * 60 * 16 = 9.6 KB/s。
-
-我们可以简单地通过复用一个全局的 WaitForEndOfFrame 对象来优化掉这个开销：
-```C#
-static WaitForEndOfFrame _endOfFrame = new WaitForEndOfFrame();
-```
-然后调用yield return 时不创建新对象，而是复用该全局变量
-```C#
-yield return _endOfFrame;
-```
-这样就可以避免额外的GC开销，该方法适用于所有继承自 YieldInstruction 的用于挂起协程的指令类型，包括
-* WaitForSeconds
-* WaitForFixedUpdate
-* WaitForEndOfFrame
 
 
 [Android UI 切图命名规范、标注规范及单位描述](https://blog.csdn.net/klxh2009/article/details/74938009)
