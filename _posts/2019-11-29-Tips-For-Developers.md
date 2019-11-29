@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      开放常用命令和技巧
+title:      开发常用命令和技巧
 subtitle:   开发
 date:       2019-11-29
 author:     Ping
