@@ -11,7 +11,6 @@ tags:
     - Development
 ---
 
-[toc]
 
 # sqlite
 
