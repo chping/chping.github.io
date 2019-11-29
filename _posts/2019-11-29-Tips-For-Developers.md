@@ -14,7 +14,9 @@ tags:
 [toc]
 
 # sqlite
+
 ## sqlite 导出数据库到csv
+
 ```sqlite
 $ sqlite3 xxx.db
 sqlite> .headers on
@@ -22,7 +24,7 @@ sqlite> .mode csv
 sqlite> .output data.csv
 sqlite> select * from `TableName`;
 sqlite> .quit
-```
+
 .mode 设置输出模式
 * csv 逗号分隔的值
 * column 左对齐的列
@@ -32,8 +34,11 @@ sqlite> .quit
 * list 由 .separator 字符串分隔的值
 * tabs 由 Tab 分隔的值
 * tcl TCL 列表元素
+```
 导出完毕后输入 .output stdout 就可以恢复正常输出到控制台
+
 ## sqlite – 如何将查询的结果保存为CSV文件？
+
 您必须将输出切换到csv模式并切换到文件输出。
 sqlite> .mode csv
 sqlite> .output test.csv
@@ -42,6 +47,7 @@ sqlite> .output stdout
 
 
 # git
+
 ## 提交发现冲突时批处理冲突文件
 
 1、进入项目目录，输入下面的命令查找所有冲突文件（注意命令最后面的 . 代表当前目录
@@ -65,7 +71,6 @@ grep -lr '<<<<<<<' . | xargs git checkout --ours
 
 # 接受所有远程更高的文件版本
 grep -lr '<<<<<<<' . | xargs git checkout --theirs
-
 ```
 
 ## git 删除之前版本库中的忽略的文件
@@ -73,10 +78,12 @@ git rm -r --cached <文件名>
 
 ## git 回滚到某个历史commit并强制覆盖远端
 
-首先用下面的命令回滚到某个历史Commit
+```bash
+## 首先用下面的命令回滚到某个历史Commit
 git reset --hard <commit_ID>
-然后强制Push到远端
+##然后强制Push到远端
 git push -f -u origin <branch>  
+```
 
 ## 清除本地修改
 ```bash
