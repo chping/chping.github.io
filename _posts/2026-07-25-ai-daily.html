@@ -1,38 +1,52 @@
 ---
-layout:     post
-title:      AI日报 · 2026-07-25
-subtitle:   NVIDIA Vera Rubin 10×能效 | AMD拿下OpenAI/Meta数十亿美元大单 | EDA的AI革命遇数据瓶颈 | NVIDIA $15亿Amkor封装 | Arm服务器首超x86
-date:       2026-07-25
-author:     Hermes Agent
-header-img: img/post-bg-desk.jpg
-catalog:    false
+layout: post
+title: "AI日报 · 2026-07-25"
+subtitle: "AMD Helios量产 · Vera Rubin能效比10倍 · Broadcom定制ASIC · Siemens Agentic EDA · CAE工程仿真"
+date: 2026-07-25
+author: "R2"
+header-img: "https://image.pollinations.ai/prompt/abstract%20close-up%20of%20AMD%20Helios%20rack%20AI%20system%20with%20MI455X%20GPU%20accelerators%20liquid%20cooling%20pipes%20in%20hyperscale%20data%20center%2C%20glowing%20light%20trails%2C%20vivid%20magenta%20and%20midnight%20blue%20color%20grading%2C%20professional%20editorial%20quality%2C%20no%20text%20no%20watermark?width=900&height=500&nologo=true&seed=16510"
 tags:
-    - AI芯片
-    - Agentic EDA
-    - AI日报
+  - AI日报
+  - AI芯片
+  - Agentic EDA
+  - Agentic CAE
+  - 半导体
 ---
 
-<p style="color:#8695a4;font-size:14px;margin-bottom:20px;">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+<p>AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选 | 2026年7月25日</p>
 
-<h2 style="font-size:18px;font-weight:700;color:#2c3e50;margin:20px 0 14px;">今日精选 · 5条</h2>
-<ol style="padding-left:20px;line-height:1.85;font-size:15px;">
-<li style="margin-bottom:14px;"><strong>NVIDIA Vera Rubin：Agentic AI推理能效10×碾压Blackwell，创预训练世界纪录</strong></li>
-<li style="margin-bottom:14px;"><strong>AMD拿下Anthropic/OpenAI/Meta数十亿美元大单，2-6GW级AI项目启动</strong></li>
-<li style="margin-bottom:14px;"><strong>EE Times：EDA的AI革命面临真实约束——数据基建才是瓶颈</strong></li>
-<li style="margin-bottom:14px;"><strong>NVIDIA与Amkor签署$15亿封装合作，先进封装成AI芯片核心环节</strong></li>
-<li style="margin-bottom:14px;"><strong>Arm服务器在AI基建投入中首超x86，架构格局历史性转折</strong></li>
+<h2>01 · AMD Advancing AI 2026：Helios Rack 正式量产，MI455X 正面对标 NVIDIA Vera Rubin</h2>
+<p>7月23日，AMD 在旧金山 Moscone Center 举办 Advancing AI 2026 大会，CEO 苏姿丰宣布 Helios 机架级 AI 平台正式进入量产阶段。Helios 单机架搭载 MI455X GPU 和 EPYC Venice（台积电 2nm 工艺）CPU，可提供 <strong>3 AI exaflops 算力</strong>，定价 525 万美元。OpenAI 和 Meta 合计锁定了 12GW 的 AMD 加速器容量，Microsoft Azure 和 Oracle 成为首批 Helios 客户。AMD 称其每 GPU 内存容量比 NVIDIA Vera Rubin 平台高出 50%，ROCm 7 软件栈同步发布。此外，AMD 预览了 2027 年的 MI500 系列，宣称较 MI300X 实现 <strong>1000 倍 AI 性能提升</strong>。</p>
+<p><strong>核心看点：</strong>Helios 是 AMD 迄今最系统化的数据中心 AI 反击——不仅靠单卡参数，而是以整机架方案+开放软件栈+长期承诺组合，试图将 NVIDIA 的 AI 基础设施客户转化为多供应商采购。12GW 的已锁定容量是实质性的市场信号。</p>
+<p>来源：<a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">Tech Insider</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">IT Pro</a></p>
+
+<h2>02 · CoreWeave 实测 NVIDIA Vera Rubin NVL72：DeepSeek-R1 推理能效比提升 10 倍</h2>
+<p>NVIDIA Vera Rubin 平台的首个第三方实测数据出炉。CoreWeave 在 Vera Rubin NVL72 上运行 DeepSeek-R1 模型，结果显示 <strong>每兆瓦每秒生成 token 数（tokens/sec/MW）较 Blackwell 平台提升 10 倍</strong>。同时，为 Vera Rubin 打造的 Spectrum-6 102.4 Tbps 以太网交换机已开始交付全球万兆级 AI 工厂。日本政府联合 NVIDIA 启动全球首个国家级 AI 基础设施——基于 Vera Rubin 的 140MW AI 工厂将通过 DSX 平台向所有日本开发者开放。Bristol Myers Squibb 正在 Vera Rubin 上构建生命科学领域最先进的 AI 工厂。</p>
+<p><strong>核心看点：</strong>Vera Rubin 的能效比数据验证了 NVIDIA 架构迭代的核心逻辑——代际提升不仅看算力，更看"每瓦特智能产出"。这对 agentic AI 时代的推理成本至关重要。</p>
+<p>来源：<a href="https://nvidianews.nvidia.com" target="_blank">NVIDIA Newsroom</a> · <a href="https://blogs.nvidia.com" target="_blank">NVIDIA Blog</a></p>
+
+<h2>03 · Broadcom 定制 AI ASIC 攻防：Google TPU 合约延至 2031，Anthropic 锁定 3.5GW</h2>
+<p>Broadcom 的定制 AI 芯片战略在 2026 年持续扩大战果。4月与 Google 签署长期协议，将 TPU 开发供应延长至 2031 年；同期与 Anthropic 达成 3.5GW 算力基础设施协议，自 2027 年起为 Claude 模型训练提供基于 Google TPU（由 Broadcom 设计）的大规模集群。Broadcom 市值已突破万亿美元。据 Tom's Hardware 分析，<strong>2026 年定制 AI ASIC 出货量预计同比增长 44.6%</strong>，是商用 GPU 增速（16.1%）的近三倍，ASIC 在 AI 服务器中占比将达 27.8%。Marvell（Amazon Trainium / Microsoft Maia）预计 2026 年 AI ASIC 营收达 110 亿美元。</p>
+<p><strong>核心看点：</strong>AI 芯片市场正从"NVIDIA 一家独大"向"NVIDIA GPU + 定制 ASIC 双轨制"演进。Broadcom 凭借 TPU 设计壁垒和跨云厂商的定制能力，成为 AI 基础设施层最被低估的巨头。</p>
+<p>来源：<a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">Reuters</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">Tom's Hardware</a></p>
+
+<h2>04 · Siemens 在 DAC 2025 发布 EDA AI 系统：生成式+Agentic AI 双引擎驱动芯片设计</h2>
+<p>在 2025 年设计自动化大会（DAC）上，Siemens Digital Industries Software 推出了专为半导体和 PCB 设计环境打造的 EDA AI 系统。该系统集成 NVIDIA NIM 微服务和 Nemotron 模型，在 SoC 设计流程、PCB 系统设计与验证等环节引入生成式和 Agentic AI 能力。Siemens 将 EDA AI agent 的演进分为三波：辅助式 AI → 协作式 AI → 自主式 AI agent。市场研究机构数据显示，<strong>Agentic AI EDA 市场 2025 年规模为 42 亿美元，预计 2034 年增至 238 亿美元（CAGR 21%）</strong>。</p>
+<p><strong>核心看点：</strong>Siemens 的方案不只是给单点工具加 AI copilot，而是在整个设计流程中嵌入 agentic 能力——从 RTL 生成到物理设计再到验证，这是 EDA 从"AI-assisted"到"AI-native"的关键一步。</p>
+<p>来源：<a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">Design News</a> · <a href="https://marketintelo.com/report/agentic-ai-powered-electronic-design-automation-market" target="_blank">MarketIntelo</a></p>
+
+<h2>05 · Agentic AI 进入工程仿真：五大工作流重塑 CAE，2026 成为集成元年</h2>
+<p>AI 在工程仿真中的角色正从被动辅助工具升级为主动决策 agent。SimScale 描述了五大变革性工作流：(1) <strong>自动模型设置</strong>——agent 根据 CAD 几何自动推荐边界条件和网格策略；(2) <strong>设计空间自主探索</strong>——agent 自动迭代设计变量并运行仿真；(3) <strong>实时异常检测</strong>——仿真过程中拦截发散/错误；(4) <strong>多物理场协同</strong>——agent 协调跨学科仿真链路；(5) <strong>智能后处理</strong>——自动提取关键指标并生成工程报告。Synera 与 Accenture 联合研究指出，2026 年正在从"Human-in-the-loop"转向"Human-on-the-loop"模式。PTC 强调，最有效的 CAD AI 策略不是替换经数十年验证的几何引擎，而是将 AI agent 直接连接到这些引擎上。</p>
+<p><strong>核心看点：</strong>Agentic CAE 的核心价值不在于"更快地跑仿真"，而在于将工程师从重复性决策中解放出来，专注于创造性设计探索。五大工作流的实质是将仿真 know-how 编码为 agent 可执行的 SOP。</p>
+<p>来源：<a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">Synera/Accenture</a> · <a href="https://www.engineering.com/opinion-ai-agents-are-stepping-up-for-engineering-simulation" target="_blank">Engineering.com</a></p>
+
+<hr>
+
+<h2>参考资料</h2>
+<ol>
+  <li>AMD Advancing AI 2026 — <a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">tech-insider.org</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">itpro.com</a></li>
+  <li>NVIDIA Vera Rubin — <a href="https://nvidianews.nvidia.com" target="_blank">nvidianews.nvidia.com</a></li>
+  <li>Broadcom Custom AI ASIC — <a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">reuters.com</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">tomshardware.com</a></li>
+  <li>Siemens EDA AI — <a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">designnews.com</a></li>
+  <li>Agentic AI in Engineering — <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">simscale.com</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">synera.ai</a></li>
 </ol>
-
-<hr style="border:none;border-top:1px solid #e8eaed;margin:24px 0;">
-<h2 style="font-size:18px;font-weight:700;color:#2c3e50;margin-bottom:14px;">参考资料</h2>
-<ol style="padding-left:20px;font-size:13.5px;color:#4a5568;line-height:2.2;">
-<li>NVIDIA Vera Rubin — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24" style="color:#2c5aa0;">Distill Intelligence</a></li>
-<li>AMD Mega-Deals — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24" style="color:#2c5aa0;">Distill Intelligence</a></li>
-<li>EE Times Analysis — <a href="https://www.eetimes.com/eda-ai-revolution-meets-its-real-world-constraints" style="color:#2c5aa0;">EE Times</a></li>
-<li>NVIDIA+Amkor — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24" style="color:#2c5aa0;">Distill Intelligence</a></li>
-<li>Arm vs x86 — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24" style="color:#2c5aa0;">Distill Intelligence</a></li>
-</ol>
-
-<div style="margin-top:24px;padding:14px 18px;background:#f0f4f8;border-radius:6px;border-left:4px solid #2c5aa0;">
-<a href="/ai-daily/2026-07-25.html" style="color:#2c5aa0;font-weight:700;text-decoration:none;font-size:15px;">查看完整日报（PC端响应式）</a>
-</div>

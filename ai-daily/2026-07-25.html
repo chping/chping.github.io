@@ -1,53 +1,122 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>AI日报 | 2026-07-25</title>
-<style>:root{--title:#2c5aa0;--bg:#f5f6f8;--card:#fff;--border:#e8eaef;--text:#2a3038;--muted:#687586;--src:#94a0b0}
-body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:17px;margin:0}
-.container{max-width:780px;margin:0 auto;padding:48px 32px 64px}
-.header{text-align:center;padding-bottom:28px;margin-bottom:36px;border-bottom:1px solid var(--border)}
-.header h1{font-size:28px;font-weight:800;color:var(--title);margin:0 0 8px}.header .meta{font-size:14px;color:var(--muted)}
-.tracks{margin-top:12px;display:flex;justify-content:center;gap:8px}.track-tag{font-size:12px;padding:4px 14px;border-radius:14px;background:#e0e7f2;color:#4a6fa5;font-weight:600}
-.card{background:var(--card);border-radius:10px;padding:28px 32px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.05);border-left:5px solid}
-.card:nth-child(1){border-left-color:#4a90c4}.card:nth-child(2){border-left-color:#6ba87a}.card:nth-child(3){border-left-color:#d4855e}.card:nth-child(4){border-left-color:#8b6baa}.card:nth-child(5){border-left-color:#5a8a8a}
-.card-num{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.08em;margin-bottom:6px}.card h2{font-size:19px;font-weight:700;line-height:1.5;margin:0 0 12px}
-.card .overview{font-size:15.5px;color:#4a5568;line-height:1.8;margin-bottom:14px}.card .insight{font-size:15px;color:var(--muted);line-height:1.8;border-top:1px solid var(--border);padding-top:14px}
-.card .source{font-size:12.5px;color:var(--src);margin-top:12px;padding-top:10px;border-top:1px dashed var(--border)}.card .source a{color:var(--title)}
-.refs{margin-top:40px;padding-top:24px;border-top:2px solid var(--border)}.refs h3{font-size:17px;font-weight:700;margin-bottom:16px}.refs ol{padding-left:22px;font-size:14px;color:var(--muted);line-height:2.2}.refs a{color:var(--title)}
-.footer{text-align:center;font-size:12px;color:#a0aec0;padding-top:28px;margin-top:32px;border-top:1px solid var(--border)}
-@media(max-width:680px){.container{padding:20px 14px 36px}.header h1{font-size:22px}.card{padding:18px 16px;border-radius:8px}.card h2{font-size:17px}.card .overview,.card .insight{font-size:14.5px}}</style></head>
-<body><div class="container">
-<div class="header"><h1>AI日报</h1><div class="meta">2026年7月25日 · 周六 · 5条 | Vera Rubin 10x + AMD mega-deals</div>
-<div class="tracks"><span class="track-tag">AI芯片</span><span class="track-tag">Agentic EDA</span><span class="track-tag">基建</span></div></div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI日报 · 2026-07-25 | AI芯片 · Agentic EDA · Agentic CAE</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#f0f2f5; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; color:#1e2028; line-height:1.75; }
+  .container { max-width:780px; margin:0 auto; padding:40px 20px; }
+  .header { text-align:center; margin-bottom:36px; }
+  .header h1 { font-size:28px; font-weight:800; color:#111; margin-bottom:6px; }
+  .header .date { font-size:14px; color:#8a929d; }
+  .cover { width:100%; max-width:780px; border-radius:10px; margin-bottom:32px; display:block; }
+  .card { background:#fff; border-radius:10px; padding:28px 28px 24px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,0.06); position:relative; }
+  .card:nth-child(3n+1) { border-left:5px solid #d4855e; }
+  .card:nth-child(3n+2) { border-left:5px solid #4a90d9; }
+  .card:nth-child(3n+3) { border-left:5px solid #5c9e5f; }
+  .card .num { font-size:12px; color:#a0a5ad; font-weight:600; letter-spacing:1px; margin-bottom:10px; }
+  .card h2 { font-size:20px; font-weight:700; color:#111; margin-bottom:10px; line-height:1.4; }
+  .card .overview { font-size:17px; color:#3a3d44; margin-bottom:14px; line-height:1.75; }
+  .card .highlight { background:#f6f7f9; border-radius:6px; padding:14px 16px; margin-bottom:12px; }
+  .card .highlight p { font-size:16px; color:#2a2d34; margin:0; }
+  .card .highlight strong { color:#d45e2e; }
+  .card .source { font-size:13px; color:#8a929d; margin-top:6px; }
+  .card .source a { color:#4a6fa5; text-decoration:none; }
+  .card .source a:hover { text-decoration:underline; }
+  .footer { margin-top:40px; padding-top:20px; border-top:1px solid #e0e3e8; }
+  .footer h3 { font-size:16px; font-weight:700; color:#111; margin-bottom:12px; }
+  .footer ul { list-style:none; padding:0; }
+  .footer li { font-size:14px; margin-bottom:6px; color:#6a6f78; }
+  .footer a { color:#4a6fa5; text-decoration:none; }
+  .footer a:hover { text-decoration:underline; }
+  @media (max-width:640px) {
+    .container { padding:20px 14px; }
+    .card { padding:20px 18px 18px; }
+    .card h2 { font-size:18px; }
+    .card .overview { font-size:16px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
 
-<div class="card"><div class="card-num">AI芯片 · 01</div><h2>NVIDIA Vera Rubin实测：Agentic AI推理能效10×碾压Blackwell</h2>
-<div class="overview">NVIDIA披露Vera Rubin架构最新实测数据：在Agentic AI推理任务上实现10× throughput-per-watt能效提升（对比Blackwell），并在模型预训练中创下新的世界纪录。VR架构专为agentic工作负载优化，整合下一代NVLink和ConnectX互联。</div>
-<div class="insight"><strong>核心看点：</strong>Rubin是NVIDIA首个"推理优先"架构。10×能效比意味着Agentic AI推理成本降至Blackwell的1/10——这对大规模部署AI Agent的企业是结构性利好。新预训练世界纪录表明Rubin不仅推理强，训练侧同样具有代际优势。NVIDIA正从"训练芯片公司"转型为"Agentic推理平台公司"。</div>
-<div class="source">来源：<a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></div></div>
+  <div class="header">
+    <h1>AI日报</h1>
+    <p class="date">2026年7月25日 · AI芯片 · Agentic EDA · Agentic CAE/CAD</p>
+  </div>
 
-<div class="card"><div class="card-num">AI基建 · 02</div><h2>AMD拿下Anthropic/OpenAI/Meta数十亿美元大单，2-6GW级AI项目启动</h2>
-<div class="overview">AMD与Anthropic、OpenAI、Meta签署数十亿美元合作协议，部署Helios机架级系统和Instinct GPU用于大规模AI项目，项目规模达2GW至6GW级别。这标志着AMD从NVIDIA的追赶者升级为超大规模AI基建的核心供应商。</div>
-<div class="insight"><strong>核心看点：</strong>2-6GW是什么概念？单个数据中心通常50-100MW。AMD拿下的项目规模相当于20-60个传统数据中心的电力消耗——这是AI基建进入"GW时代"的标志。三家头部AI公司同时选择AMD，表明GPU供应多元化已成为行业共识。NVIDIA垄断短期无解，但AMD正在高端AI训练/推理市场撕开缺口。</div>
-<div class="source">来源：<a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></div></div>
+  <img class="cover" src="https://image.pollinations.ai/prompt/abstract%20close-up%20of%20AMD%20Helios%20rack%20AI%20system%20with%20MI455X%20GPU%20accelerators%20liquid%20cooling%20pipes%20in%20hyperscale%20data%20center%2C%20glowing%20light%20trails%2C%20vivid%20magenta%20and%20midnight%20blue%20color%20grading%2C%20professional%20editorial%20quality%2C%20no%20text%20no%20watermark?width=900&height=500&nologo=true&seed=16510" alt="封面图">
 
-<div class="card"><div class="card-num">Agentic EDA · 03</div><h2>EE Times深度分析：EDA的AI革命面临现实约束——数据基建才是真正瓶颈</h2>
-<div class="overview">EE Times发表行业分析指出，Agentic EDA的真正瓶颈不是模型创新，而是底层数据基础设施。"组织渴望将AI融入芯片设计流程，却发现底层数据平台无法支撑。"当前行业处于Agentic EDA的早期阶段：DRC检查Agent、时序收敛Agent等专用Agent各自在局部工作流中运行。</div>
-<div class="insight"><strong>核心看点：</strong>这是一篇珍贵的"泼冷水"文章——在DAC 2026前夜的狂热中提醒行业：Agentic EDA不是模型问题而是数据基建问题。半导体设计数据极度碎片化（不同工具、不同格式、不同团队），Agent需要统一可访问的数据层才能跨越设计阶段协作。"赢家将是那些先修好管道再追求模型突破的人"——这一判断对区分Agentic EDA的炒作与落地有重要参考价值。</div>
-<div class="source">来源：<a href="https://www.eetimes.com/eda-ai-revolution-meets-its-real-world-constraints">EE Times</a></div></div>
+  <!-- Card 1 -->
+  <div class="card">
+    <p class="num">01 · AI芯片</p>
+    <h2>AMD Advancing AI 2026：Helios Rack 正式量产，MI455X 正面对标 NVIDIA Vera Rubin</h2>
+    <p class="overview">7月23日，AMD 在旧金山 Moscone Center 举办 Advancing AI 2026 大会，CEO 苏姿丰宣布 Helios 机架级 AI 平台正式进入量产阶段。Helios 单机架搭载 MI455X GPU 和 EPYC Venice（台积电 2nm 工艺）CPU，可提供 3 AI exaflops 算力，定价 525 万美元。OpenAI 和 Meta 合计锁定了 12GW 的 AMD 加速器容量，Microsoft Azure 和 Oracle 成为首批 Helios 客户。AMD 称其每 GPU 内存容量比 NVIDIA Vera Rubin 平台高出 50%，ROCm 7 软件栈同步发布。此外，AMD 预览了 2027 年的 MI500 系列，宣称较 MI300X 实现 1000 倍 AI 性能提升。</p>
+    <div class="highlight">
+      <p><strong>核心看点：</strong>Helios 是 AMD 迄今最系统化的数据中心 AI 反击——不仅靠单卡参数，而是以整机架方案+开放软件栈+长期承诺组合，试图将 NVIDIA 的 AI 基础设施客户转化为多供应商采购。12GW 的已锁定容量是实质性的市场信号。</p>
+    </div>
+    <p class="source">来源：<a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">Tech Insider</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">IT Pro</a></p>
+  </div>
 
-<div class="card"><div class="card-num">先进封装 · 04</div><h2>NVIDIA与Amkor签署$15亿封装合作协议，GPU先进封装产能再扩张</h2>
-<div class="overview">NVIDIA与全球第二大OSAT厂商Amkor签署$15亿先进封装合作协议，进一步扩大CoWoS等效封装产能。此举旨在缓解AI GPU供应的封装瓶颈，支持Vera Rubin等下一代产品的大规模量产。</div>
-<div class="insight"><strong>核心看点：</strong>AI芯片的瓶颈正从"晶圆制造"转向"先进封装"。NVIDIA同时绑定TSMC CoWoS和Amkor，表明先进封装产能已成为比先进制程更稀缺的资源。$15亿的规模相当于Amkor年营收的20%+，对OSAT行业格局产生结构性影响——先进封装正在从"配套服务"升级为"AI芯片价值链核心环节"。</div>
-<div class="source">来源：<a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></div></div>
+  <!-- Card 2 -->
+  <div class="card">
+    <p class="num">02 · AI芯片</p>
+    <h2>CoreWeave 实测 NVIDIA Vera Rubin NVL72：DeepSeek-R1 推理能效比提升 10 倍</h2>
+    <p class="overview">NVIDIA Vera Rubin 平台的首个第三方实测数据出炉。CoreWeave 在 Vera Rubin NVL72 上运行 DeepSeek-R1 模型，结果显示每兆瓦每秒生成 token 数（tokens/sec/MW）较 Blackwell 平台提升 10 倍。同时，为 Vera Rubin 打造的 Spectrum-6 102.4 Tbps 以太网交换机已开始交付全球万兆级 AI 工厂。日本政府联合 NVIDIA 启动全球首个国家级 AI 基础设施——基于 Vera Rubin 的 140MW AI 工厂将通过 DSX 平台向所有日本开发者开放。Bristol Myers Squibb 正在 Vera Rubin 上构建生命科学领域最先进的 AI 工厂。</p>
+    <div class="highlight">
+      <p><strong>核心看点：</strong>Vera Rubin 的能效比数据验证了 NVIDIA 架构迭代的核心逻辑——代际提升不仅看算力，更看"每瓦特智能产出"。这对 agentic AI 时代的推理成本至关重要。</p>
+    </div>
+    <p class="source">来源：<a href="https://nvidianews.nvidia.com" target="_blank">NVIDIA Newsroom</a> · <a href="https://blogs.nvidia.com" target="_blank">NVIDIA Blog</a></p>
+  </div>
 
-<div class="card"><div class="card-num">行业趋势 · 05</div><h2>Arm服务器在AI基建投入中首次超越x86，架构格局历史性转折</h2>
-<div class="overview">最新数据显示，基于Arm架构的服务器在全球AI基础设施支出中首次超越x86。亚马逊Graviton、NVIDIA Grace、Ampere等Arm服务器芯片在AI推理和云端工作负载中的份额持续攀升，推动数据中心架构格局发生历史性转变。</div>
-<div class="insight"><strong>核心看点：</strong>Arm超越x86是AI时代数据中心架构的<strong>分水岭</strong>。驱动力来自三个方向：(1)云厂商自研Arm芯片（AWS Graviton）；(2) NVIDIA Grace CPU与GPU的紧耦合优势；(3) AI推理对能效的极端需求使Arm的perf/watt优势放大。x86不会消失，但在AI基础设施这个增长最快的市场中，Arm已经是主角。这反过来会影响整个EDA工具链——芯片设计公司需要同时支持两种ISA的优化。</div>
-<div class="source">来源：<a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></div></div>
+  <!-- Card 3 -->
+  <div class="card">
+    <p class="num">03 · AI芯片</p>
+    <h2>Broadcom 定制 AI ASIC 攻防：Google TPU 合约延至 2031，Anthropic 锁定 3.5GW</h2>
+    <p class="overview">Broadcom 的定制 AI 芯片战略在 2026 年持续扩大战果。4月与 Google 签署长期协议，将 TPU 开发供应延长至 2031 年；同期与 Anthropic 达成 3.5GW 算力基础设施协议，自 2027 年起为 Claude 模型训练提供基于 Google TPU（由 Broadcom 设计）的大规模集群。Broadcom 市值已突破万亿美元。据 Tom's Hardware 分析，2026 年定制 AI ASIC 出货量预计同比增长 44.6%，是商用 GPU 增速（16.1%）的近三倍，ASIC 在 AI 服务器中占比将达 27.8%。Marvell（Amazon Trainium / Microsoft Maia）预计 2026 年 AI ASIC 营收达 110 亿美元。</p>
+    <div class="highlight">
+      <p><strong>核心看点：</strong>AI 芯片市场正从"NVIDIA 一家独大"向"NVIDIA GPU + 定制 ASIC 双轨制"演进。Broadcom 凭借 TPU 设计壁垒和跨云厂商的定制能力，成为 AI 基础设施层最被低估的巨头。</p>
+    </div>
+    <p class="source">来源：<a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">Reuters</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">Tom's Hardware</a></p>
+  </div>
 
-<div class="refs"><h3>参考资料</h3><ol>
-<li>NVIDIA Vera Rubin — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence · Jul 24</a></li>
-<li>AMD Mega-Deals — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></li>
-<li>EDA AI Real-World Limits — <a href="https://www.eetimes.com/eda-ai-revolution-meets-its-real-world-constraints">EE Times</a></li>
-<li>NVIDIA Amkor Packaging — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></li>
-<li>Arm Surpasses x86 — <a href="https://www.distillintelligence.com/briefings/semiconductors-ai-chips-2026-07-24">Distill Intelligence</a></li>
-</ol></div>
-<div class="footer">Hermes Agent · 仅收录具备技术/产业落地价值的资讯</div>
-</div></body></html>
+  <!-- Card 4 -->
+  <div class="card">
+    <p class="num">04 · Agentic EDA</p>
+    <h2>Siemens 在 DAC 2025 发布 EDA AI 系统：生成式+Agentic AI 双引擎驱动芯片设计</h2>
+    <p class="overview">在 2025 年设计自动化大会（DAC）上，Siemens Digital Industries Software 推出了专为半导体和 PCB 设计环境打造的 EDA AI 系统。该系统集成 NVIDIA NIM 微服务和 Nemotron 模型，在 SoC 设计流程、PCB 系统设计与验证等环节引入生成式和 Agentic AI 能力。Siemens 的 Sathish Balasubramanian 将 EDA AI agent 的演进分为三波：辅助式 AI → 协作式 AI → 自主式 AI agent。市场研究机构 MarketIntelo 数据显示，Agentic AI EDA 市场 2025 年规模为 42 亿美元，预计 2034 年增至 238 亿美元（CAGR 21%），北美占据 42.3% 的市场份额。</p>
+    <div class="highlight">
+      <p><strong>核心看点：</strong>Siemens 的方案不只是给单点工具加 AI copilot，而是在整个设计流程中嵌入 agentic 能力——从 RTL 生成到物理设计再到验证，这是 EDA 从"AI-assisted"到"AI-native"的关键一步。</p>
+    </div>
+    <p class="source">来源：<a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">Design News</a> · <a href="https://marketintelo.com/report/agentic-ai-powered-electronic-design-automation-market" target="_blank">MarketIntelo</a></p>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <p class="num">05 · Agentic CAE</p>
+    <h2>Agentic AI 进入工程仿真：五大工作流重塑 CAE，2026 成为集成元年</h2>
+    <p class="overview">AI 在工程仿真中的角色正从被动辅助工具升级为主动决策 agent。SimScale 发布"Agentic AI in Engineering"报告，详细描述了五大变革性工作流：(1) 自动模型设置——agent 根据 CAD 几何自动推荐边界条件和网格策略；(2) 设计空间自主探索——agent 自动迭代设计变量并运行仿真；(3) 实时异常检测——仿真过程中拦截发散/错误；(4) 多物理场协同——agent 协调跨学科仿真链路；(5) 智能后处理——自动提取关键指标并生成工程报告。Synera 与 Accenture 联合研究指出，2026 年正在从"Human-in-the-loop"转向"Human-on-the-loop"模式，工程师从执行者变为监督者。PTC 强调，最有效的 CAD AI 策略不是替换经数十年验证的几何引擎，而是将 AI agent 直接连接到这些引擎上。</p>
+    <div class="highlight">
+      <p><strong>核心看点：</strong>Agentic CAE 的核心价值不在于"更快地跑仿真"，而在于将工程师从重复性决策中解放出来，专注于创造性设计探索。五大工作流的实质是将仿真 know-how 编码为 agent 可执行的 SOP。</p>
+    </div>
+    <p class="source">来源：<a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">Synera/Accenture</a> · <a href="https://www.engineering.com/opinion-ai-agents-are-stepping-up-for-engineering-simulation" target="_blank">Engineering.com</a></p>
+  </div>
+
+  <!-- Footer References -->
+  <div class="footer">
+    <h3>参考资料</h3>
+    <ul>
+      <li>AMD Advancing AI 2026 — <a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">tech-insider.org</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">itpro.com</a></li>
+      <li>NVIDIA Vera Rubin — <a href="https://nvidianews.nvidia.com" target="_blank">nvidianews.nvidia.com</a> · <a href="https://blogs.nvidia.com" target="_blank">blogs.nvidia.com</a></li>
+      <li>Broadcom Custom AI ASIC — <a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">reuters.com</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">tomshardware.com</a></li>
+      <li>Siemens EDA AI — <a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">designnews.com</a> · <a href="https://marketintelo.com/report/agentic-ai-powered-electronic-design-automation-market" target="_blank">marketintelo.com</a></li>
+      <li>Agentic AI in Engineering — <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">simscale.com</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">synera.ai</a> · <a href="https://www.engineering.com/opinion-ai-agents-are-stepping-up-for-engineering-simulation" target="_blank">engineering.com</a></li>
+      <li>Agentic EDA Survey — <a href="https://arxiv.org/html/2512.23189v1" target="_blank">arxiv:2512.23189</a></li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
