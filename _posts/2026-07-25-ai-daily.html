@@ -1,52 +1,94 @@
 ---
 layout: post
 title: "AI日报 · 2026-07-25"
-subtitle: "AMD Helios量产 · Vera Rubin能效比10倍 · Broadcom定制ASIC · Siemens Agentic EDA · CAE工程仿真"
-date: 2026-07-25
-author: "R2"
-header-img: "https://image.pollinations.ai/prompt/abstract%20close-up%20of%20AMD%20Helios%20rack%20AI%20system%20with%20MI455X%20GPU%20accelerators%20liquid%20cooling%20pipes%20in%20hyperscale%20data%20center%2C%20glowing%20light%20trails%2C%20vivid%20magenta%20and%20midnight%20blue%20color%20grading%2C%20professional%20editorial%20quality%2C%20no%20text%20no%20watermark?width=900&height=500&nologo=true&seed=16510"
-tags:
-  - AI日报
-  - AI芯片
-  - Agentic EDA
-  - Agentic CAE
-  - 半导体
+subtitle: "Cadence L5自主芯片设计Agent · AI芯片股万亿暴跌 · Siemens+TSMC Agentic EDA落地 · Synera汽车CAE Agent · NVIDIA CAE蓝图"
+date: 2026-07-25 09:00:00 +0800
+categories: ai-daily
+tags: [AI芯片, Agentic EDA, Agentic CAE, Cadence, NVIDIA, Siemens, Synera]
+description: "AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选"
+header-img: "/ai-daily/2026-07-25.jpg"
 ---
 
-<p>AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选 | 2026年7月25日</p>
+<h2>1. Cadence 发布行业首个 L5 全自主虚拟芯片设计工程师</h2>
 
-<h2>01 · AMD Advancing AI 2026：Helios Rack 正式量产，MI455X 正面对标 NVIDIA Vera Rubin</h2>
-<p>7月23日，AMD 在旧金山 Moscone Center 举办 Advancing AI 2026 大会，CEO 苏姿丰宣布 Helios 机架级 AI 平台正式进入量产阶段。Helios 单机架搭载 MI455X GPU 和 EPYC Venice（台积电 2nm 工艺）CPU，可提供 <strong>3 AI exaflops 算力</strong>，定价 525 万美元。OpenAI 和 Meta 合计锁定了 12GW 的 AMD 加速器容量，Microsoft Azure 和 Oracle 成为首批 Helios 客户。AMD 称其每 GPU 内存容量比 NVIDIA Vera Rubin 平台高出 50%，ROCm 7 软件栈同步发布。此外，AMD 预览了 2027 年的 MI500 系列，宣称较 MI300X 实现 <strong>1000 倍 AI 性能提升</strong>。</p>
-<p><strong>核心看点：</strong>Helios 是 AMD 迄今最系统化的数据中心 AI 反击——不仅靠单卡参数，而是以整机架方案+开放软件栈+长期承诺组合，试图将 NVIDIA 的 AI 基础设施客户转化为多供应商采购。12GW 的已锁定容量是实质性的市场信号。</p>
-<p>来源：<a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">Tech Insider</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">IT Pro</a></p>
+<ol>
+  <li>
+    <strong>概述：</strong>Computex 2026 上，Cadence 联合 NVIDIA 发布 ChipStack AI Super Agent 的 L5 级全自主版本——行业首个完全自主的虚拟芯片设计工程师。该 Agent 基于 NVIDIA Nemotron 模型与 OpenShell 安全运行时，可实现复杂 IC 设计与验证的完全自主执行。实测 RTL 验证速度提升 40 倍以上，等效数千工程师的验证闭环可在一天内完成。
+  </li>
+  <li>
+    <strong>核心看点：</strong>ChipStack 通过 AgentStack 编排框架协调多领域 Super Agent 协同，实现从「AI 辅助」到「自主虚拟工程师」的质变。Forbes 评论称其为「芯片设计领域的 ChatGPT 时刻」。
+  </li>
+  <li>
+    <strong>来源：</strong><a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html" target="_blank" rel="noopener">Cadence 官方</a> · <a href="https://www.forbes.com/sites/karlfreund/2026/06/01/cadence-and-nvidia-team-to-develop-first--fully-autonomous-eda-agent" target="_blank" rel="noopener">Forbes</a>
+  </li>
+</ol>
 
-<h2>02 · CoreWeave 实测 NVIDIA Vera Rubin NVL72：DeepSeek-R1 推理能效比提升 10 倍</h2>
-<p>NVIDIA Vera Rubin 平台的首个第三方实测数据出炉。CoreWeave 在 Vera Rubin NVL72 上运行 DeepSeek-R1 模型，结果显示 <strong>每兆瓦每秒生成 token 数（tokens/sec/MW）较 Blackwell 平台提升 10 倍</strong>。同时，为 Vera Rubin 打造的 Spectrum-6 102.4 Tbps 以太网交换机已开始交付全球万兆级 AI 工厂。日本政府联合 NVIDIA 启动全球首个国家级 AI 基础设施——基于 Vera Rubin 的 140MW AI 工厂将通过 DSX 平台向所有日本开发者开放。Bristol Myers Squibb 正在 Vera Rubin 上构建生命科学领域最先进的 AI 工厂。</p>
-<p><strong>核心看点：</strong>Vera Rubin 的能效比数据验证了 NVIDIA 架构迭代的核心逻辑——代际提升不仅看算力，更看"每瓦特智能产出"。这对 agentic AI 时代的推理成本至关重要。</p>
-<p>来源：<a href="https://nvidianews.nvidia.com" target="_blank">NVIDIA Newsroom</a> · <a href="https://blogs.nvidia.com" target="_blank">NVIDIA Blog</a></p>
+<h2>2. AI 芯片股七月暴跌：万亿市值蒸发</h2>
 
-<h2>03 · Broadcom 定制 AI ASIC 攻防：Google TPU 合约延至 2031，Anthropic 锁定 3.5GW</h2>
-<p>Broadcom 的定制 AI 芯片战略在 2026 年持续扩大战果。4月与 Google 签署长期协议，将 TPU 开发供应延长至 2031 年；同期与 Anthropic 达成 3.5GW 算力基础设施协议，自 2027 年起为 Claude 模型训练提供基于 Google TPU（由 Broadcom 设计）的大规模集群。Broadcom 市值已突破万亿美元。据 Tom's Hardware 分析，<strong>2026 年定制 AI ASIC 出货量预计同比增长 44.6%</strong>，是商用 GPU 增速（16.1%）的近三倍，ASIC 在 AI 服务器中占比将达 27.8%。Marvell（Amazon Trainium / Microsoft Maia）预计 2026 年 AI ASIC 营收达 110 亿美元。</p>
-<p><strong>核心看点：</strong>AI 芯片市场正从"NVIDIA 一家独大"向"NVIDIA GPU + 定制 ASIC 双轨制"演进。Broadcom 凭借 TPU 设计壁垒和跨云厂商的定制能力，成为 AI 基础设施层最被低估的巨头。</p>
-<p>来源：<a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">Reuters</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">Tom's Hardware</a></p>
+<ol>
+  <li>
+    <strong>概述：</strong>2026 年 7 月初，全球 AI 芯片股遭遇急剧抛售，费城半导体指数自高点跌超 11%，超万亿美元市值蒸发。导火索：SK 海力士放缓 HBM 扩产、AI 基建投资回报存疑、美联储鹰派立场。英特尔单月跌幅超 20%。
+  </li>
+  <li>
+    <strong>核心看点：</strong>此次暴跌本质是「信念驱动」向「回报验证」切换的标志性事件。HBM 扩产放缓直接冲击 AI 硬件供应链预期，但 TSMC 仍在加码，显示先进制程需求的结构性刚性。
+  </li>
+  <li>
+    <strong>来源：</strong><a href="https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff" target="_blank" rel="noopener">Forbes</a> · <a href="https://www.reuters.com/business/chip-stocks-hit-rocky-patch-whats-next-2026-07-13" target="_blank" rel="noopener">Reuters</a>
+  </li>
+</ol>
 
-<h2>04 · Siemens 在 DAC 2025 发布 EDA AI 系统：生成式+Agentic AI 双引擎驱动芯片设计</h2>
-<p>在 2025 年设计自动化大会（DAC）上，Siemens Digital Industries Software 推出了专为半导体和 PCB 设计环境打造的 EDA AI 系统。该系统集成 NVIDIA NIM 微服务和 Nemotron 模型，在 SoC 设计流程、PCB 系统设计与验证等环节引入生成式和 Agentic AI 能力。Siemens 将 EDA AI agent 的演进分为三波：辅助式 AI → 协作式 AI → 自主式 AI agent。市场研究机构数据显示，<strong>Agentic AI EDA 市场 2025 年规模为 42 亿美元，预计 2034 年增至 238 亿美元（CAGR 21%）</strong>。</p>
-<p><strong>核心看点：</strong>Siemens 的方案不只是给单点工具加 AI copilot，而是在整个设计流程中嵌入 agentic 能力——从 RTL 生成到物理设计再到验证，这是 EDA 从"AI-assisted"到"AI-native"的关键一步。</p>
-<p>来源：<a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">Design News</a> · <a href="https://marketintelo.com/report/agentic-ai-powered-electronic-design-automation-market" target="_blank">MarketIntelo</a></p>
+<h2>3. Siemens Fuse EDA AI 系统落地 TSMC 先进制程</h2>
 
-<h2>05 · Agentic AI 进入工程仿真：五大工作流重塑 CAE，2026 成为集成元年</h2>
-<p>AI 在工程仿真中的角色正从被动辅助工具升级为主动决策 agent。SimScale 描述了五大变革性工作流：(1) <strong>自动模型设置</strong>——agent 根据 CAD 几何自动推荐边界条件和网格策略；(2) <strong>设计空间自主探索</strong>——agent 自动迭代设计变量并运行仿真；(3) <strong>实时异常检测</strong>——仿真过程中拦截发散/错误；(4) <strong>多物理场协同</strong>——agent 协调跨学科仿真链路；(5) <strong>智能后处理</strong>——自动提取关键指标并生成工程报告。Synera 与 Accenture 联合研究指出，2026 年正在从"Human-in-the-loop"转向"Human-on-the-loop"模式。PTC 强调，最有效的 CAD AI 策略不是替换经数十年验证的几何引擎，而是将 AI agent 直接连接到这些引擎上。</p>
-<p><strong>核心看点：</strong>Agentic CAE 的核心价值不在于"更快地跑仿真"，而在于将工程师从重复性决策中解放出来，专注于创造性设计探索。五大工作流的实质是将仿真 know-how 编码为 agent 可执行的 SOP。</p>
-<p>来源：<a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">Synera/Accenture</a> · <a href="https://www.engineering.com/opinion-ai-agents-are-stepping-up-for-engineering-simulation" target="_blank">Engineering.com</a></p>
+<ol>
+  <li>
+    <strong>概述：</strong>Siemens 在 DAC 2025 发布 Fuse EDA AI System 后，2026 年与 TSMC 深化合作，将 Agentic AI 自动化注入先进制程设计流程，包括 AI 自动 DRC 修复和全流程 Agentic 编排。方案支持 NVIDIA NIM 微服务和 Llama Nemotron 模型。
+  </li>
+  <li>
+    <strong>核心看点：</strong>Siemens 定位为「工业级」Agentic AI——强调增强而非替代工程师，与现有工具链无缝嵌入。TSMC 背书意味着 Agentic EDA 从实验室走向量产节点。
+  </li>
+  <li>
+    <strong>来源：</strong><a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026" target="_blank" rel="noopener">Siemens 新闻稿</a> · <a href="https://www.siemens.com/en-us/company/electronic-design-automation/trending-technologies/eda-ai" target="_blank" rel="noopener">Siemens EDA AI</a>
+  </li>
+</ol>
+
+<h2>4. Synera 展示 Agentic CAE 落地汽车制造分析</h2>
+
+<ol>
+  <li>
+    <strong>概述：</strong>Automotive CAE Grand Challenge 2026 上，Synera 联合 OEM 展示制造分析 Agent：上传 CAD → 一句 Prompt → 自动完成几何检查、仿真、成本核算、CO₂ 分析，输出完整工程报告。底层为规则引擎+LLM融合架构，确保工程级可复现性。
+  </li>
+  <li>
+    <strong>核心看点：</strong>汽车工业是 CAE 需求密度最高的行业，此案例证明 Agentic CAE 已从概念验证进入 OEM 实际部署。「规则驱动+LLM 编排」的混合架构是工程精度的关键保障。
+  </li>
+  <li>
+    <strong>来源：</strong><a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank" rel="noopener">Synera 官方</a>
+  </li>
+</ol>
+
+<h2>5. NVIDIA 发布 CAE Agentic AI 蓝图：AI-Q + NeMo</h2>
+
+<ol>
+  <li>
+    <strong>概述：</strong>CDFAM Barcelona 2026 上，NVIDIA 展示 AI-Q Blueprint——基于 LangChain Deep Agents 的企业级 CAE 研究 Agent，结合 NeMo Agent Toolkit 实现延迟感知智能调度，覆盖从需求采集到后处理的端到端 CAE 自动化。
+  </li>
+  <li>
+    <strong>核心看点：</strong>不仅是仿真加速，更是工作流范式重构。延迟感知调度是工程创新亮点——CAE 场景中交互延迟直接影响决策效率。
+  </li>
+  <li>
+    <strong>来源：</strong><a href="https://www.youtube.com/watch?v=tHBkgDcHuS8" target="_blank" rel="noopener">NVIDIA @ CDFAM Barcelona 2026</a>
+  </li>
+</ol>
+
+<h3>参考资料</h3>
+<ol>
+  <li><a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html" target="_blank" rel="noopener">Cadence - Industry's First Fully Autonomous Virtual Engineer</a></li>
+  <li><a href="https://www.forbes.com/sites/karlfreund/2026/06/01/cadence-and-nvidia-team-to-develop-first--fully-autonomous-eda-agent" target="_blank" rel="noopener">Forbes - Cadence &amp; NVIDIA Breakthrough</a></li>
+  <li><a href="https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff" target="_blank" rel="noopener">Forbes - July 2026 Semiconductor Selloff</a></li>
+  <li><a href="https://www.reuters.com/business/chip-stocks-hit-rocky-patch-whats-next-2026-07-13" target="_blank" rel="noopener">Reuters - Chip Stocks Rocky Patch</a></li>
+  <li><a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026" target="_blank" rel="noopener">Siemens - TSMC Collaboration</a></li>
+  <li><a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank" rel="noopener">Synera - Agentic AI for CAE</a></li>
+  <li><a href="https://www.youtube.com/watch?v=tHBkgDcHuS8" target="_blank" rel="noopener">NVIDIA @ CDFAM Barcelona 2026</a></li>
+</ol>
 
 <hr>
-
-<h2>参考资料</h2>
-<ol>
-  <li>AMD Advancing AI 2026 — <a href="https://tech-insider.org/amd-advancing-ai-2026" target="_blank">tech-insider.org</a> · <a href="https://www.itpro.com/infrastructure/amd-advancing-ai-2026-helios-on-the-rise-with-launch-of-new-instinct-gpus" target="_blank">itpro.com</a></li>
-  <li>NVIDIA Vera Rubin — <a href="https://nvidianews.nvidia.com" target="_blank">nvidianews.nvidia.com</a></li>
-  <li>Broadcom Custom AI ASIC — <a href="https://www.reuters.com/business/broadcom-signs-long-term-deal-develop-googles-custom-ai-chips-2026-04-06" target="_blank">reuters.com</a> · <a href="https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia" target="_blank">tomshardware.com</a></li>
-  <li>Siemens EDA AI — <a href="https://www.designnews.com/design-software/siemens-unveils-eda-ai-system-for-semiconductor-pcb-design-at-dac-2025" target="_blank">designnews.com</a></li>
-  <li>Agentic AI in Engineering — <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">simscale.com</a> · <a href="https://www.synera.ai/news/agentic-ai-automation-trends-in-engineering" target="_blank">synera.ai</a></li>
-</ol>
+<p style="color:#8a929d;font-size:13px;">AI日报 · 2026-07-25 · <a href="/ai-daily/">往期回顾</a></p>
