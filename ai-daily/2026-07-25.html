@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>AI半导体 & 工业软件日报 | 2026-07-25</title>
 <style>:root{--title:#2c5aa0;--accent:#c4784a;--bg:#f7f8fa;--card:#fff;--border:#e4e7ec;--text:#2c3e50;--muted:#718096;--tag-bg:#e8edf5;--tag-text:#4a6fa5}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -21,46 +19,44 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","H
 .refs{margin-top:36px;padding-top:22px;border-top:2px solid var(--border)}.refs h3{font-size:16px;font-weight:700;margin-bottom:14px}
 .refs ol{padding-left:20px;font-size:13px;color:#4a5568;line-height:2}.refs a{color:var(--title);text-decoration:none}
 .footer{text-align:center;font-size:12px;color:#a0aec0;padding-top:24px;margin-top:24px;border-top:1px solid var(--border)}
-@media(max-width:640px){.container{padding:16px 12px}.header h1{font-size:20px}.card{padding:16px 14px}.card h2{font-size:15.5px}}
-</style></head>
+@media(max-width:640px){.container{padding:16px 12px}.header h1{font-size:20px}.card{padding:16px 14px}.card h2{font-size:15.5px}}</style></head>
 <body><div class="container">
 <div class="header"><h1>AI半导体 & 工业软件日报</h1>
-<div class="meta">2026年7月25日 · 周六 · 5条精选 | ChipAgents $74M融资 + Rule2DRC里程碑</div>
-<div class="tracks"><span class="track-tag">AI芯片</span><span class="track-tag">Agentic EDA</span><span class="track-tag">融资</span></div></div>
+<div class="meta">2026年7月25日 · 周六 · 5条精选 | 重磅：Cadence×NVIDIA AgentStack发布</div>
+<div class="tracks"><span class="track-tag">AI芯片</span><span class="track-tag">Agentic EDA</span><span class="track-tag">数字孪生</span></div></div>
 
-<div class="card"><div class="card-num">Agentic EDA · 01</div>
-<h2>首尔大学×三星联合发布Rule2DRC：LLM Agent自动生成DRC验证脚本</h2>
-<div class="overview">首尔大学计算机系Hyun Oh Song教授团队与三星AI Center联合开发Rule2DRC——首个将自然语言半导体设计规则自动转换为DRC验证脚本的AI Agent基准。该系统将人类编写的设计规则输入LLM Agent，自动生成可执行验证代码，并在芯片layout上执行后与ground truth对比评估准确性。论文发表于techxplore.com 2026年7月。</div>
-<div class="insight"><strong>核心看点：</strong>这是Agentic EDA领域的一个<strong>里程碑式突破</strong>。DRC（Design Rule Check）规则编写是芯片物理验证中最耗时的人工环节之一，Rule2DRC首次证明LLM Agent可以在<strong>工业级场景</strong>中完成这项任务。关键创新在于"生成→执行→对比ground truth"的闭环验证机制——不是让AI猜测，而是用物理仿真结果做评判。三星的参与意味着该技术已有明确的产业化路径，有望显著降低先进节点验证的人力成本。</div></div>
+<div class="card"><div class="card-num">重磅 · 01</div>
+<h2>Cadence×NVIDIA联合发布AgentStack：Agentic AI+数字孪生重塑芯片EDA全流程</h2>
+<div class="overview">Cadence与NVIDIA宣布深度合作，联合推出AgentStack——一个用AI Agent编排半导体设计全流程的系统。它将Cadence EDA工具与NVIDIA计算库及AI基础设施整合，用Agent替代传统脚本驱动RTL-to-GDSII工作流。联合研究显示，在10MW数据中心中通过数字孪生仿真优化GPU功耗和冷却架构，能效可提升17%。Cadence CEO Anirudh Devgan称"Agentic AI和数字孪生正在重塑整个工程领域"。</div>
+<div class="insight"><strong>核心看点：</strong>这是2026年Agentic EDA领域<strong>最重要的产业合作</strong>。Cadence（EDA工具链）+ NVIDIA（AI计算底座）的组合覆盖了芯片设计的"工具+算力"两端。三大亮点：(1) AgentStack用Agent替代Tcl/Python脚本，设计流程从"工程师写脚本"变为"Agent自主编排"；(2) 数字孪生从芯片设计延伸至AI工厂运营，17%能效提升直接转化为数据中心运营成本削减；(3) 物理AI机器人——将Cadence多物理场仿真与NVIDIA Isaac机器人库连接，缩短虚拟到现实的差距。这标志着EDA从"芯片设计工具"升级为"系统级AI工程平台"。</div></div>
 
-<div class="card"><div class="card-num">Agentic EDA · 02</div>
-<h2>ChipAgents完成$7400万融资，目标RTL设计验证生产力10倍提升</h2>
-<div class="overview">Agentic EDA赛道头部创业公司ChipAgents宣布完成$7400万融资（约5.4亿人民币）。公司旗舰产品ChipAgents AI芯片设计环境支持从自然语言prompt生成设计规范、自动完成Verilog代码、自主创建testbench、实时仿真学习debug。GSA Tech Summit上CEO William Wang称Agentic AI是"自EDA以来芯片设计最大变革"。</div>
-<div class="insight"><strong>核心看点：</strong>$7400万是2026年Agentic EDA赛道<strong>最大单笔融资之一</strong>，标志着资本市场对"AI原生芯片设计工具"的赌注升级。ChipAgents的定位清晰——不做大而全的EDA平台，而是聚焦<strong>RTL设计与验证</strong>这一最大成本环节。其"自主工作而非辅助"的产品哲学与传统EDA（Cadence/Synopsys）形成差异化。这笔资金将用于规模化部署，DAC 2026 Booth #1341是其与巨头正面交锋的战场。</div></div>
+<div class="card"><div class="card-num">行业格局 · 02</div>
+<h2>SEMI任命Julie Rogers为ESD Alliance执行董事，Agentic EDA走向制度化</h2>
+<div class="overview">SEMI宣布任命Julie Rogers为Electronic System Design Alliance（ESDA）执行董事。ESDA年度Executive Outlook活动以"Agentic AI将如何改变芯片设计与验证"为主题，由Semiconductor Engineering主编Ed Sperling主持，汇集传统EDA巨头和新兴Agentic AI创业公司高管同台讨论。</div>
+<div class="insight"><strong>核心看点：</strong>ESDA任命专职执行董事标志着Agentic EDA从<strong>技术趋势走向行业制度化</strong>。SEMI（全球4000+企业/150万从业者）将ESDA作为正式Technology Community运营，意味着：(1) 行业标准制定将提速——Agentic EDA的互操作性、信任和验证标准将被提上议程；(2) 传统EDA与AI创业公司的对话制度化，减少碎片化竞争；(3) Julie Rogers的任命可能推动更多政府/产业联合资助项目。</div></div>
 
 <div class="card"><div class="card-num">Agentic EDA · 03</div>
-<h2>Verdantix定调：半导体设计是AI加速工程的头号试验场</h2>
-<div class="overview">独立研究机构Verdantix发布分析报告，将半导体设计定位为"AI加速工程的Ground Zero"。报告指出三个驱动力：设计复杂度持续攀升、专业工程师供给不足、交付周期压力。NVIDIA通过GPU加速Agentic工作流统一了行业AI计算底座，Siemens Fuse EDA AI Agent成为AI编排工程实践的标杆案例。</div>
-<div class="insight"><strong>核心看点：</strong>这份来自<strong>中立第三方</strong>的报告为Agentic EDA提供了独立验证。关键判断：半导体是"第一个AI从生产力工具升级为运营必需品的工程领域"。NVIDIA的角色从"芯片供应商"转变为"AI EDA基础设施提供商"——通过CUDA/Omniverse生态绑定Agentic EDA的计算底座。Siemens Fuse被作为典型案例，表明"全栈自研AI引擎"路线的商业可行性。</div></div>
+<h2>Siemens Fuse EDA AI Agent正式发布：覆盖半导体+3D IC+PCB全系统工作流</h2>
+<div class="overview">Siemens正式发布Fuse EDA AI Agent，这是一个面向半导体设计、3D IC和PCB系统工作流的domain-scoped agentic AI系统。该系统在TSMC先进节点上已验证可将特定环节设计周期缩短50%。Siemens同期发布Questa One Agentic Toolkit，专门用于芯片验证工作流的自动化编排。</div>
+<div class="insight"><strong>核心看点：</strong>Siemens的Fuse策略与Cadence AgentStack形成<strong>差异化竞争</strong>：(1) Fuse强调"domain-scoped"——每个EDA域（DRC/时序/功耗/验证）拥有专用Agent，而非统一编排；(2) Questa One专注验证——直接瞄准芯片设计最大成本环节；(3) 覆盖3D IC和PCB表明Siemens瞄准的不只是芯片设计，而是整个电子系统设计链。Agentic EDA三巨头（Cadence/Synopsys/Siemens）路线图已全面清晰。</div></div>
 
 <div class="card"><div class="card-num">AI芯片 · 04</div>
-<h2>SEMI举办Agentic AI制造专题研讨会：从设计到生产全链条覆盖</h2>
-<div class="overview">SEMI Smart Manufacturing宣布举办"Agentic AI for Next-Generation Semiconductor Manufacturing"专题研讨会，聚焦Agentic AI在半导体制造中的应用。议题覆盖：Smart FDC（故障检测分类）、虚拟量测、预测性维护、良率管理系统（YMS）、MLOps、配方优化。特别强调Agentic AI在减少能源和材料消耗方面的潜力。</div>
-<div class="insight"><strong>核心看点：</strong>Agentic AI正从<strong>芯片设计</strong>延伸至<strong>芯片制造</strong>。SEMI此次研讨会的信号意义重大：制造业AI过去聚焦"预测"（predictive maintenance），Agentic AI则将范式升级为"自主决策+行动"。关键场景FDC（故障检测分类）是fab中最核心的自动化环节，Agentic AI如能在此落地，将从每年数千亿美元的半导体制造支出中切割出可观的自动化价值。这是Agentic EDA的自然延伸——设计→制造全链条Agent化。</div></div>
+<h2>Normal Computing获$5000万三星领投：AI芯片设计+能效危机双线突破</h2>
+<div class="overview">Normal Computing宣布完成$5000万融资，由Samsung Catalyst领投。公司聚焦两大方向：利用概率AI加速硅芯片设计流程，以及解决AI硬件能效危机。其核心技术基于概率编程和热力学计算，在芯片设计优化和AI推理能效两个维度同时发力。</div>
+<div class="insight"><strong>核心看点：</strong>Normal Computing代表Agentic EDA赛道的<strong>第三种路线</strong>——不替代EDA工具（如ChipAgents），也不与EDA巨头合作（如AgentStack），而是从芯片设计的基础数学方法入手。概率AI做设计优化+热力学计算做能效提升，这种"物理+AI"双引擎模式在能效焦虑日益严重的AI芯片市场中具有独特定位。三星领投意味着韩国半导体生态对AI EDA的战略押注。</div></div>
 
-<div class="card"><div class="card-num">行业趋势 · 05</div>
-<h2>SIA报告：AI服务器半导体价值占比达95%，芯片设计人才缺口逼近100万</h2>
-<div class="overview">美国半导体行业协会（SIA）6月发布报告：一台AI数据服务器中，半导体价值占总成本的95%，覆盖从计算GPU、HBM内存、网络交换芯片到电源管理的全栈芯片技术。全球半导体5月销售额环比增长9.2%。然而行业面临严重人才危机——Verification Futures 2026预测全球芯片工程师缺口2030年达100万。</div>
-<div class="insight"><strong>核心看点：</strong>95%这个数字揭示了AI硬件的<strong>极端芯片密集度</strong>——AI服务器本质上是一台"芯片堆叠机"。这解释了两件事：(1) 为何NVIDIA市值飙升——它占据了95%价值中最核心的GPU和网络芯片；(2) 为何Agentic EDA是必然方向——100万工程师缺口无法靠"招更多人"解决，只能靠AI Agent提升人均产出。SIA数据与Verdantix分析形成呼应：半导体是AI加速的ground zero，而Agentic EDA是唯一的规模化答案。</div></div>
+<div class="card"><div class="card-num">产业落地 · 05</div>
+<h2>IBM×Dallara：AI+量子计算进入高性能车辆设计，跨界Agentic工程加速</h2>
+<div class="overview">IBM与Dallara集团（世界顶级赛车和高性能车辆制造商）宣布合作，利用AI和量子计算推进车辆设计与优化。此次合作将IBM的AI/量子计算能力与Dallara的赛车工程数据结合，探索空气动力学仿真、材料优化和车辆动力学中的Agentic工程方法。</div>
+<div class="insight"><strong>核心看点：</strong>这是Agentic CAE从芯片设计向<strong>跨界工程</strong>延伸的标志性案例。IBM+赛车的组合展示了Agentic工程方法论的可迁移性——当Agentic方法在半导体领域验证后，向汽车、航空航天等高价值工程领域溢出是自然路径。量子计算作为AI的补充加速器，将特定优化问题（如流体仿真、组合优化）的效率提升数个数量级。DAC 2026的"Chips to Systems"主题正呼应了这一趋势。</div></div>
 
 <div class="refs"><h3>参考资料</h3><ol>
-<li><strong>Rule2DRC</strong> — 首尔大学×三星 AI Center <a href="https://techxplore.com/news/2026-07-ai-agent-technology-automate-semiconductor.html">techxplore.com</a></li>
-<li><strong>ChipAgents $74M</strong> — <a href="https://chipagents.ai">chipagents.ai</a> · <a href="https://semiengineering.com/entities/alpha-design-ai-chipagents">Semiconductor Engineering</a></li>
-<li><strong>Verdantix: Ground Zero</strong> — <a href="https://www.verdantix.com/client-portal/blog/why-semiconductor-design-is-ground-zero-for-ai-accelerated-engineering">verdantix.com</a></li>
-<li><strong>SEMI Agentic Manufacturing</strong> — <a href="https://www.semi.org/en/event/agentic-ai-next-generation-semiconductor-manufacturing">semi.org</a></li>
-<li><strong>SIA: 95% semiconductor value</strong> — <a href="https://www.semiconductors.org/news-events/latest-news">semiconductors.org</a></li>
-<li><strong>AI Agents in Chip Design</strong> — <a href="https://alpinumconsulting.com/blogs/ai-ml-overview/ai-agents-production-chip-teams">Alpinum Consulting</a></li>
-<li><strong>NVIDIA GTC: Agentic Manufacturing</strong> — <a href="https://www.nvidia.com/en-us/on-demand/session/gtc26-s81834">nvidia.com/gtc</a></li>
+<li><strong>Cadence×NVIDIA AgentStack</strong> — <a href="https://iotm2mcouncil.org/iot-library/news/connected-industries-news/cadence-and-nvidia-add-agentic-ai-to-chip-eda">IoT M2M Council</a></li>
+<li><strong>SEMI ESD Alliance</strong> — <a href="https://iconnect007.com/article/149848/semi-esd-alliance-2026-outlook-agentic-ai-to-transform-chip-design-and-verification">I-Connect007</a></li>
+<li><strong>Siemens Fuse EDA + Questa One</strong> — <a href="https://www.asicpro.com/2026/04/02/semiconductor-news-march-2026">ASICPro</a></li>
+<li><strong>Normal Computing $50M</strong> — <a href="https://www.asicpro.com/2026/04/02/semiconductor-news-march-2026">ASICPro · March 2026 Roundup</a></li>
+<li><strong>IBM×Dallara AI+Quantum</strong> — <a href="https://iconnect007.com/article/149848">I-Connect007</a></li>
+<li><strong>ChipAgents $74M Series A1</strong> — <a href="https://www.asicpro.com/2026/03/05/semiconductor-news-february-2026-roundup">ASICPro</a></li>
 </ol></div>
 <div class="footer">Hermes Agent · AI半导体与工业软件日报 · 仅收录具备技术/产业落地价值的资讯</div>
 </div></body></html>
