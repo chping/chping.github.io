@@ -2,305 +2,101 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI日报 · 2026-07-25</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI半导体 & 工业软件日报 | 2026-07-25</title>
 <style>
-  :root {
-    --title-color: #2c5f7c;
-    --accent-color: #c47f5a;
-    --bg: #fafafa;
-    --card-bg: #ffffff;
-    --border: #e8e8e8;
-    --body: #333333;
-    --muted: #6b7280;
-    --tag-bg: #eef2f7;
-    --tag-text: #4a6474;
-    --divider: #e0e0e0;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-    background: var(--bg);
-    color: var(--body);
-    line-height: 1.75;
-    -webkit-font-smoothing: antialiased;
-  }
-  .container {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 40px 24px 60px;
-  }
-  .header {
-    text-align: center;
-    padding: 48px 0 40px;
-    border-bottom: 1px solid var(--divider);
-    margin-bottom: 40px;
-  }
-  .header h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--title-color);
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-  }
-  .header .date {
-    font-size: 15px;
-    color: var(--muted);
-    font-weight: 400;
-  }
-  .header .tracks {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .header .tracks span {
-    background: var(--tag-bg);
-    color: var(--tag-text);
-    font-size: 12px;
-    padding: 4px 14px;
-    border-radius: 20px;
-    letter-spacing: 0.04em;
-  }
-  .intro {
-    font-size: 14px;
-    color: var(--muted);
-    margin-bottom: 36px;
-    padding: 0 4px;
-  }
-  .card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 28px 30px;
-    margin-bottom: 24px;
-    transition: box-shadow 0.2s;
-  }
-  .card:hover {
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  }
-  .card-num {
-    font-size: 11px;
-    color: var(--accent-color);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-  .card-title {
-    font-size: 19px;
-    font-weight: 700;
-    color: var(--title-color);
-    margin-bottom: 10px;
-    line-height: 1.4;
-  }
-  .card-summary {
-    font-size: 15px;
-    color: var(--body);
-    margin-bottom: 16px;
-    line-height: 1.8;
-  }
-  .card-insight-label {
-    font-size: 12px;
-    color: var(--accent-color);
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-  }
-  .card-insight {
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.8;
-  }
-  .references {
-    margin-top: 48px;
-    padding-top: 28px;
-    border-top: 2px solid var(--divider);
-  }
-  .references h2 {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--title-color);
-    margin-bottom: 18px;
-    letter-spacing: 0.02em;
-  }
-  .ref-list {
-    list-style: none;
-    padding: 0;
-  }
-  .ref-list li {
-    font-size: 13px;
-    color: var(--muted);
-    padding: 8px 0;
-    border-bottom: 1px solid var(--border);
-    line-height: 1.6;
-  }
-  .ref-list li:last-child {
-    border-bottom: none;
-  }
-  .ref-list a {
-    color: var(--accent-color);
-    text-decoration: none;
-    word-break: break-all;
-  }
-  .ref-list a:hover {
-    text-decoration: underline;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 12px;
-    color: #aaa;
-  }
-  @media (max-width: 640px) {
-    .container { padding: 24px 16px 40px; }
-    .header { padding: 32px 0 28px; margin-bottom: 28px; }
-    .header h1 { font-size: 24px; }
-    .card { padding: 20px 18px; }
-    .card-title { font-size: 17px; }
-    .card-summary { font-size: 14px; }
-  }
+:root{--title:#2c5aa0;--accent:#c4784a;--bg:#f7f8fa;--card:#fff;--border:#e4e7ec;--text:#2c3e50;--muted:#718096;--tag-bg:#e8edf5;--tag-text:#4a6fa5}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+.container{max-width:860px;margin:0 auto;padding:36px 20px 48px}
+.header{border-bottom:2px solid var(--border);padding-bottom:20px;margin-bottom:28px}
+.header h1{font-size:24px;font-weight:700;color:var(--title);letter-spacing:-0.3px}
+.header .meta{font-size:13px;color:var(--muted);margin-top:6px}
+.header .tracks{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.track-tag{font-size:11px;padding:3px 10px;border-radius:12px;background:var(--tag-bg);color:var(--tag-text);font-weight:600}
+.card{background:var(--card);border-radius:8px;padding:22px 24px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.05);border-left:4px solid var(--accent);transition:box-shadow .2s}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card:nth-child(1){border-left-color:#4a90c4}
+.card:nth-child(2){border-left-color:#7b9e6d}
+.card:nth-child(3){border-left-color:#c4784a}
+.card:nth-child(4){border-left-color:#8b6baa}
+.card:nth-child(5){border-left-color:#5a8a8a}
+.card-num{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.card h2{font-size:17px;font-weight:700;color:var(--text);line-height:1.4;margin-bottom:8px}
+.card .overview{font-size:14.5px;color:#4a5568;line-height:1.65;margin-bottom:10px}
+.card .insight{font-size:13.5px;color:var(--muted);line-height:1.65;border-top:1px solid #edf0f3;padding-top:10px}
+.card .insight strong,.card .insight b{color:var(--title);font-weight:700}
+.references{margin-top:36px;padding-top:22px;border-top:2px solid var(--border)}
+.references h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:14px}
+.references ol{padding-left:20px;font-size:13px;color:#4a5568;line-height:2}
+.references a{color:var(--title);text-decoration:none;word-break:break-all}
+.references a:hover{text-decoration:underline}
+.footer{text-align:center;font-size:12px;color:#a0aec0;padding-top:24px;margin-top:24px;border-top:1px solid var(--border)}
+@media(max-width:640px){.container{padding:16px 12px}.header h1{font-size:20px}.card{padding:16px 14px}.card h2{font-size:15.5px}.card .overview{font-size:13.5px}.card .insight{font-size:12.5px}}
 </style>
 </head>
 <body>
 <div class="container">
+<div class="header">
+<h1>AI半导体 & 工业软件日报</h1>
+<div class="meta">2026年7月25日 · 周六 · 5条精选 | DAC 2026明日开幕特辑</div>
+<div class="tracks">
+<span class="track-tag">AI芯片</span>
+<span class="track-tag">Agentic EDA</span>
+<span class="track-tag">DAC 2026</span>
+</div>
+</div>
 
-  <div class="header">
-    <h1>AI日报</h1>
-    <div class="date">2026年7月25日 · 星期六</div>
-    <div class="tracks">
-      <span>AI芯片</span>
-      <span>Agentic EDA</span>
-      <span>Agentic CAE/CAD</span>
-    </div>
-  </div>
+<div class="card">
+<div class="card-num">DAC 2026 · 01</div>
+<h2>DAC 2026明日开幕：63年来首次登陆长滩，Agentic AI全面接管芯片设计议题</h2>
+<div class="overview">第63届Design Automation Conference（DAC）将于7月26–29日在长滩会议中心举行，首次离开旧金山。今年Engineering Track论文投稿量创纪录，AI相关论文占比超40%。Synopsys、Cadence、Siemens三大巨头及ChipAgents、Agnisys等AI创业公司均设重磅发布。</div>
+<div class="insight"><strong>核心看点：</strong>DAC 2026标志着Agentic EDA从学术概念进入<strong>产业验证期</strong>。Pavilion辩论"Agentic AI in EDA: Who's in Control?"、展商论坛"Myth vs Reality — AI EDA ROI"直击行业核心矛盾。三大巨头路线分化：Synopsys推agentic AI teams + multiphysics fusion，Siemens主打Solido agentic AI for custom IC，Cadence以ChipStack Level 5全自动设计应战。11家Agentic EDA创业公司首次集体亮相，赛道热度创历史新高。</div>
+</div>
 
-  <div class="intro">
-    三大赛道每日精选，聚焦技术突破与产业落地。今日摘要：NVIDIA Rubin已向客户发货；Intel Crescent Island推理GPU细节公布；Cadence AuraStack打通PCB/封装全流程Agentic AI；Rapidus×Cadence联手加速2nm SoC设计；SimScale多Agent协同实现设计-仿真闭环突破。
-  </div>
+<div class="card">
+<div class="card-num">Agentic EDA · 02</div>
+<h2>Siemens × TSMC联手推进AI自动化：Fuse EDA AI系统+AI DRC修复流程</h2>
+<div class="overview">Siemens在TSMC 2026技术研讨会上宣布深化与TSMC合作，将Fuse EDA AI系统集成入先进节点设计流程，实现AI自动DRC修复和设计优化。Fuse是Siemens首个"domain-scoped agentic AI系统"，专为半导体设计工作流训练。</div>
+<div class="insight"><strong>核心看点：</strong>这是传统EDA巨头与<strong>代工厂共建AI EDA生态</strong>的标志性案例。Siemens的路线是"工业级AI引擎 + 代工协同"——不依赖通用LLM，而是将AI深度嵌入TSMC的PDK和工艺约束中。"domain-scoped agentic"定位意味着不同EDA域（DRC、时序、功耗）各自拥有专用Agent，而非单一通用Agent。这种架构可能成为3nm以下节点的<strong>新设计范式</strong>。</div>
+</div>
 
-  <!-- 文章1 -->
-  <div class="card">
-    <div class="card-num">AI芯片 · 01</div>
-    <div class="card-title">NVIDIA下一代Rubin AI芯片开始向客户发货，半导体板块单日飙升5.2%</div>
-    <div class="card-summary">
-      7月21日华尔街市场数据显示，NVIDIA已正式确认下一代Rubin架构AI芯片正在向客户发货。受此消息推动，当日半导体板块整体上涨5.2%，SanDisk涨14%、美光涨12%、AMD延续与微软AI合作涨8%。Rubin平台采用全新Vera CPU与下一代GPU架构，配套NVLink 6 Switch、ConnectX-9 SuperNIC等互联组件，标志着NVIDIA一年一迭代的芯片发布节奏加速落地。
-    </div>
-    <div class="card-insight-label">核心看点</div>
-    <div class="card-insight">
-      Rubin的客户发货意味着NVIDIA从"纸面发布"进入实际交付阶段，AI算力供给将在2026下半年迎来实质性跃升。值得关注的是：① Rubin聚焦推理场景，直接应对Agentic AI对低延迟推理的爆发需求；② 配套NVLink 6与ConnectX-9构建的互联生态，进一步拉高竞争对手的替代成本；③ 一年一代的发布节奏将对云厂商自研芯片的时间窗口形成持续挤压。对中国市场，Rubin的对华出口版本规格与审批进程将是下半年关键变量。
-    </div>
-  </div>
+<div class="card">
+<div class="card-num">Agentic EDA · 03</div>
+<h2>ChipAgents发布IDS-AI：从Golden Spec到RTL Sign-off的全流程Agentic框架</h2>
+<div class="overview">Agnisys在DAC 2026前发布IDS-AI，一个理解芯片设计意图的agentic AI框架，驱动从golden specification创建到RTL sign-off的全流程。结合其IDesignSpec Suite的二十年积累，通过correct-by-construction自动化与agentic AI结合，将可执行spec转化为自动化设计、验证、DFT和文档交付。</div>
+<div class="insight"><strong>核心看点：</strong>Agnisys路线独特：<strong>"spec-driven" Agentic EDA</strong>，从设计意图源头切入而非工具优化。这解决了Agentic EDA的一个核心难题——Agent如何理解设计意图而不产生幻觉。通过golden spec做ground truth锚定，再让Agent在约束内自主编排流程。若DAC现场demo兑现，将直接挑战传统RTL设计方法的核心假设。</div>
+</div>
 
-  <!-- 文章2 -->
-  <div class="card">
-    <div class="card-num">AI芯片 · 02</div>
-    <div class="card-title">Intel Crescent Island推理GPU揭秘：480GB LPDDR5X显存，主攻Agentic推理负载</div>
-    <div class="card-summary">
-      Intel在Computex 2026上公布了数据中心GPU "Crescent Island"的更多技术细节。该卡基于Xe3P架构，采用PCIe插卡形态、350W TDP风冷设计，最高支持480GB LPDDR5X内存。Crescent Island定位Agentic推理工作负载，支持FP4/MXFP4至FP64全精度范围，客户送样预计2026年下半年启动。与NVIDIA/AMD依赖HBM的方案不同，Intel选择了成本更低的LPDDR5X路线。
-    </div>
-    <div class="card-insight-label">核心看点</div>
-    <div class="card-insight">
-      Crescent Island的策略选择具有鲜明的差异化逻辑：① 480GB LPDDR5X超大容量直击Agentic推理场景中长上下文、多步推理对显存容量的痛点——Agent工作流中的多轮tool calling和RAG检索需要驻留大量中间状态；② 回避HBM供应链瓶颈（SK海力士HBM产能持续紧张），以LPDDR5X实现更低物料成本，定价上具备与NVIDIA L40S等卡竞争的空间；③ 350W风冷设计降低了数据中心部署门槛，契合企业对推理节点的TCO考量。但能否获得AWS/Azure/GCP等头部云厂商采用仍是最大悬念。
-    </div>
-  </div>
+<div class="card">
+<div class="card-num">Agentic EDA · 04</div>
+<h2>arXiv重磅调研：Agentic EDA首次被系统化定义为"约束神经符号优化"</h2>
+<div class="overview">学术论文"The Dawn of Agentic EDA"在arXiv发布，首次提出Agentic EDA的系统性框架。将Agentic EDA定义为Constrained Neuro-Symbolic Optimization，引入Cognitive Stack三层架构：Perception（多模态语义对齐）、Cognition（严格约束下的规划）、Action（确定性工具执行）。</div>
+<div class="insight"><strong>核心看点：</strong>这篇论文为Agentic EDA建立了<strong>学术理论基础</strong>。关键洞察：芯片设计的容错率为零——"幻觉即废片"，因此传统LLM的probabilistic生成无法直接用于GDSII。论文提出的"神经符号优化"路径（LLM做高层规划 + 符号引擎做物理验证）正与工业界（Cadence Mental Model、Siemens domain AI）的实践趋同。标志着Agentic EDA从工程实践走向<strong>学科化</strong>。</div>
+</div>
 
-  <!-- 文章3 -->
-  <div class="card">
-    <div class="card-num">Agentic EDA · 03</div>
-    <div class="card-title">Cadence发布AuraStack AI Super Agent：全球首个覆盖PCB与先进封装的Agentic AI平台</div>
-    <div class="card-summary">
-      7月15日，Cadence推出AuraStack AI Super Agent，这是业界首个面向PCB和先进封装设计的Agentic AI平台，运行于Allegro AI Studio之上。AuraStack可协调多个专用AI Agent跨系统规划、物理实现、约束管理、可制造性设计及多物理场分析，宣称实现2倍上市时间加速与最高15倍工程效率提升。至此Cadence完成了ChipStack（数字芯片）→InnoStack（模拟/混合信号）→ViraStack（验证）→AuraStack（PCB/封装）的全流程Agentic AI布局。
-    </div>
-    <div class="card-insight-label">核心看点</div>
-    <div class="card-insight">
-      AuraStack的战略意义在于将Agentic AI从硅前设计延伸到系统级设计：① 先进封装（如CoWoS、EMIB）和高速PCB设计的复杂度已不亚于芯片设计本身——热、电、力多物理场耦合的人工迭代已成为系统级产品的最大瓶颈；② "全流程"意味着设计约束可以跨芯片-封装-PCB边界自动传递与协同优化，这对AI服务器、自动驾驶等对系统完整性要求极高的场景至关重要；③ Cadence借此成为目前唯一在数字、模拟、验证、封装、PCB五个领域均部署Agentic AI的EDA厂商，形成了显著的平台锁定效应。
-    </div>
-  </div>
+<div class="card">
+<div class="card-num">行业趋势 · 05</div>
+<h2>AI EDA市场2032年达$158.5亿，Prompt Engineer成为2026年新兴角色</h2>
+<div class="overview">MarketsandMarkets报告预测AI EDA市场从2026年$42.7亿增长至2032年$158.5亿（CAGR 24.4%）。同时Semiconductor Engineering预测2026年将出现"prompt engineer"角色——工程师通过自然语言而非传统GUI与EDA工具交互。1:6的设计师-验证工程师比例失衡持续驱动自动化需求。</div>
+<div class="insight"><strong>核心看点：</strong>两组数据揭示行业拐点：(1) <strong>$42.7亿→$158.5亿</strong>，6年4倍增长，AI EDA正在从小众工具升级为主流设计方法；(2) <strong>"Prompt Engineer"</strong>角色的出现意味着EDA交互范式正从"鼠标点击Tcl脚本"转向"自然语言意图表达"，工程师的技能栈面临结构性重塑。北美占42%市场份额，但中国Rapidus-台积电-三星三极格局可能重塑地域分布。</div>
+</div>
 
-  <!-- 文章4 -->
-  <div class="card">
-    <div class="card-num">Agentic EDA · 04</div>
-    <div class="card-title">Rapidus × Cadence联手：Agentic AI加速2nm先进SoC设计，设计周期目标减半</div>
-    <div class="card-summary">
-      7月17日，日本Rapidus与Cadence宣布合作，将Cadence InnoStack AI Super Agent集成到Rapidus的AI-Agentic设计解决方案（Raads）中。双方目标是将先进节点SoC的设计周转时间（TAT）缩短至传统流程的一半。合作覆盖从RTL到GDSII的全流程，结合Rapidus的AI原生设计与制造生态与Cadence的Agentic AI编排能力。双方将在CadenceLIVE Japan 2026上展示合作成果。
-    </div>
-    <div class="card-insight-label">核心看点</div>
-    <div class="card-insight">
-      这条合作的地缘技术与产业含义深远：① Rapidus是日本振兴先进半导体制造的国家级项目（2nm量产目标2027年），其成功很大程度上取决于能否吸引足够的设计客户——降低设计门槛是核心策略；② "AI原生设计生态"意味着Rapidus从一开始就将Agentic AI嵌入PDK、设计规则和工艺协同中，这与台积电"先有工艺再补AI"的路径形成对比；③ 对国产化启示：日本模式（制造+EDA+AI三位一体协同）为国内先进节点生态建设提供了参考范式——制造能力的建立必须与设计工具链的智能化同步推进。
-    </div>
-  </div>
+<div class="references">
+<h3>参考资料</h3>
+<ol>
+<li><strong>DAC 2026</strong> — 官方新闻稿，EE Times三篇系列预览 <br><a href="https://dac.com/2026/press-release/the-2026-dac-chips-to-systems-conference-comes-to-long-beach">dac.com/2026</a> · <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026">eetimes.com</a></li>
+<li><strong>Siemens × TSMC</strong> — Siemens官方新闻 <br><a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026">news.siemens.com</a></li>
+<li><strong>Agnisys IDS-AI</strong> — Agnisys官方发布 <br><a href="https://www.agnisys.com/news/agnisys-to-showcase-agentic-ai-network-on-chip-and-dft-automation-breakthroughs-at-dac-2026">agnisys.com</a></li>
+<li><strong>Agentic EDA Survey</strong> — arXiv学术论文 <br><a href="https://arxiv.org/html/2512.23189v2">arxiv.org/html/2512.23189v2</a></li>
+<li><strong>GSA Tech Summit / ChipAgents</strong> — ChipAgents官方博客 <br><a href="https://chipagents.ai/blogs/agentic-ai-biggest-shift-since-eda">chipagents.ai</a></li>
+<li><strong>AI EDA Market 2026–2032</strong> — MarketsandMarkets <br><a href="https://www.marketsandmarkets.com/Market-Reports/ai-eda-market-212473295.html">marketsandmarkets.com</a></li>
+<li><strong>EDA Industry 2026</strong> — Semiconductor Engineering <br><a href="https://semiengineering.com/how-the-eda-industry-will-evolve-in-2026">semiengineering.com</a></li>
+<li><strong>SEMI ESD Alliance 2026</strong> — SEMI官方 <br><a href="https://www.semi.org/en/semi-press-release/semi-esd-alliance-2026-executive-outlook">semi.org</a></li>
+</ol>
+</div>
 
-  <!-- 文章5 -->
-  <div class="card">
-    <div class="card-num">Agentic CAE/CAD · 05</div>
-    <div class="card-title">SimScale + CoLab实现多Agent协同：设计审查Agent与仿真Agent跨平台闭环验证</div>
-    <div class="card-summary">
-      在engineering.com举办的Design & Simulation Week 2026上，SimScale与CoLab联合展示了Agentic Engineering的多Agent协同概念验证：CoLab的设计审查Agent可自动识别需要仿真验证的设计特征，将任务提交给SimScale的Engineering AI Agent，后者自主完成从CAD准备、网格划分到求解器配置和结果分析的全流程，并将结果回传至CoLab审查界面。整个过程中两个Agent直接对话协调，工程师仅需做最终决策。
-    </div>
-    <div class="card-insight-label">核心看点</div>
-    <div class="card-insight">
-      这是Agentic CAE/CAD领域从单点Agent走向多Agent协同的标志性Demo：① 传统仿真流程中，设计评审→仿真请求→仿真执行→结果反馈的循环通常需要数天甚至数周，多Agent直连可将此压缩至小时级；② "Agent-to-Agent"协同模式比单个全能Agent更具工程可行性——每个Agent专注于自己领域（CAD vs. CAE），通过标准化接口通信，类似于微服务架构在AI时代的映射；③ SimScale基于100万+真实仿真项目训练的Agent能够内化组织级工程标准，解决企业仿真中对资深专家高度依赖的痛点。该方向的下一步关键挑战是Agent决策的可审计性与工程签核合规。
-    </div>
-  </div>
-
-  <!-- 参考资料 -->
-  <div class="references">
-    <h2>参考资料</h2>
-    <ul class="ref-list">
-      <li>
-        <strong>[1]</strong> Fair Value Study — "Nvidia Ships New AI Chips! Semiconductor Stocks Surge 5% | US Market Recap" (July 21, 2026)<br>
-        <a href="https://www.youtube.com/watch?v=z2ENqtAeBMI" target="_blank" rel="noopener">https://www.youtube.com/watch?v=z2ENqtAeBMI</a>
-      </li>
-      <li>
-        <strong>[2]</strong> Reuters — "Nvidia says its next-generation AI chip platform to be rolled out in 2026" (Rubin platform announcement)<br>
-        <a href="https://www.reuters.com/technology/nvidia-says-its-next-generation-ai-chip-platform-be-rolled-out-2026-2024-06-02" target="_blank" rel="noopener">https://www.reuters.com/technology/nvidia-says-its-next-generation-ai-chip-platform-be-rolled-out-2026-2024-06-02</a>
-      </li>
-      <li>
-        <strong>[3]</strong> Intel Newsroom — "Intel to Expand AI Accelerator Portfolio with New GPU" (Crescent Island announcement)<br>
-        <a href="https://newsroom.intel.com/artificial-intelligence/intel-to-expand-ai-accelerator-portfolio-with-new-gpu" target="_blank" rel="noopener">https://newsroom.intel.com/artificial-intelligence/intel-to-expand-ai-accelerator-portfolio-with-new-gpu</a>
-      </li>
-      <li>
-        <strong>[4]</strong> DataCenterDynamics — "Intel teases Crescent Island AI data center GPU, supports up to 480GB of LPDDR5X"<br>
-        <a href="https://www.datacenterdynamics.com/en/news/intel-teases-crescent-island-ai-data-center-gpu-supports-up-to-480gb-of-lpddr5x" target="_blank" rel="noopener">https://www.datacenterdynamics.com/en/news/intel-teases-crescent-island-ai-data-center-gpu-supports-up-to-480gb-of-lpddr5x</a>
-      </li>
-      <li>
-        <strong>[5]</strong> Tom's Hardware — "Intel details long-awaited Crescent Island AI GPU at Computex, boasts up to 480 GB of LPDDR5X"<br>
-        <a href="https://www.tomshardware.com/pc-components/gpus/intel-details-long-awaited-crescent-island-ai-gpu-at-computex" target="_blank" rel="noopener">https://www.tomshardware.com/pc-components/gpus/intel-details-long-awaited-crescent-island-ai-gpu-at-computex</a>
-      </li>
-      <li>
-        <strong>[6]</strong> Forbes — "Cadence Expands AI Agents With AuraStack For PCB And Advanced Chip Packaging" (July 15, 2026)<br>
-        <a href="https://www.forbes.com/sites/marcochiappetta/2026/07/15/cadence-expands-ai-agents-with-aurastack-for-pcb-and-advanced-chip-packaging" target="_blank" rel="noopener">https://www.forbes.com/sites/marcochiappetta/2026/07/15/cadence-expands-ai-agents-with-aurastack-for-pcb-and-advanced-chip-packaging</a>
-      </li>
-      <li>
-        <strong>[7]</strong> All About Circuits — "Cadence Claims 'Industry First' Agentic AI Platform for PCB and Advanced Packaging" (July 15, 2026)<br>
-        <a href="https://www.allaboutcircuits.com/news/cadence-claims-industry-first-agentic-ai-platform-for-pcb-and-advanced-packaging" target="_blank" rel="noopener">https://www.allaboutcircuits.com/news/cadence-claims-industry-first-agentic-ai-platform-for-pcb-and-advanced-packaging</a>
-      </li>
-      <li>
-        <strong>[8]</strong> HPCwire — "Cadence and Rapidus Partner on Agentic AI for Advanced SoC Design" (July 23, 2026)<br>
-        <a href="https://www.hpcwire.com/off-the-wire/cadence-and-rapidus-partner-on-agentic-ai-for-advanced-soc-design" target="_blank" rel="noopener">https://www.hpcwire.com/off-the-wire/cadence-and-rapidus-partner-on-agentic-ai-for-advanced-soc-design</a>
-      </li>
-      <li>
-        <strong>[9]</strong> Yahoo Finance — "Rapidus and Cadence Partner on Agentic AI for Advanced SoC Design" (July 17, 2026)<br>
-        <a href="https://finance.yahoo.com/technology/ai/articles/rapidus-cadence-partner-agentic-ai-000000533.html" target="_blank" rel="noopener">https://finance.yahoo.com/technology/ai/articles/rapidus-cadence-partner-agentic-ai-000000533.html</a>
-      </li>
-      <li>
-        <strong>[10]</strong> SimScale Blog — "Multi-agent workflows: key takeaways from Design & Simulation Week 2026"<br>
-        <a href="https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows" target="_blank" rel="noopener">https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows</a>
-      </li>
-      <li>
-        <strong>[11]</strong> SimScale — "Agentic AI in Engineering: 5 Workflows Transforming Simulation"<br>
-        <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank" rel="noopener">https://www.simscale.com/blog/agentic-ai-in-engineering</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="footer">
-    Generated by Hermes Agent · AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选
-  </div>
-
+<div class="footer">Hermes Agent · AI半导体与工业软件日报 · DAC 2026特辑 · 仅收录具备技术/产业落地价值的资讯</div>
 </div>
 </body>
 </html>
