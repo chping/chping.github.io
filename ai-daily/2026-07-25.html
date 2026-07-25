@@ -2,80 +2,134 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>AI日报 2026-07-25 · AI芯片 · Agentic EDA · Agentic CAE/CAD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>AI日报 2026-07-25 | AI芯片 · Agentic EDA · Agentic CAE/CAD</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:#0f1419;color:#c5cdd8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.55;padding:10px 8px 20px;-webkit-font-smoothing:antialiased}
-.wrap{max-width:750px;margin:0 auto}
-h1{font-size:16px;color:#5eead4;text-align:center;padding:6px 0 2px;font-weight:700;letter-spacing:.03em}
-.date-bar{text-align:center;color:#6b7f8e;font-size:12px;padding:2px 0 12px}
-.card{border-radius:6px;padding:12px 14px;margin-bottom:8px;background:#1a232c;border-left:3px solid}
-.card:nth-child(1){border-left-color:#5eead4}
-.card:nth-child(2){border-left-color:#e2b714}
-.card:nth-child(3){border-left-color:#f472b6}
-.card:nth-child(4){border-left-color:#a78bfa}
-.card:nth-child(5){border-left-color:#38bdf8}
-.tag{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;margin-bottom:6px;color:#fff;letter-spacing:.05em}
-.tag-chip{background:#115e59}
-.tag-eda{background:#7c3aed}
-.tag-cae{background:#1d4ed8}
-.card-title{font-size:14px;font-weight:700;color:#f0f4f8;margin-bottom:5px;line-height:1.35}
-.card-overview{font-size:13px;color:#a1afbd;margin-bottom:7px;line-height:1.6}
-.card-insight-label{font-size:11px;font-weight:700;color:#5eead4;margin-bottom:3px}
-.card-insight{font-size:12.5px;color:#8495a7;line-height:1.55}
-b,strong{color:#e6edf3;font-weight:700}
-a{color:#5eead4;text-decoration:none}
-hr{border:none;border-top:1px solid #1e2d3d;margin:6px 0}
-.footer{text-align:center;color:#4a5b6b;font-size:10px;padding:14px 0 6px}
+html{font-size:15px;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#0b0f17;color:#c3c9d4;line-height:1.6;max-width:750px;margin:0 auto;padding:12px 12px 24px}
+/* 报头 */
+.header{border-bottom:2px solid #1a2640;padding:14px 0 12px;margin-bottom:14px}
+.header h1{font-size:1.25rem;font-weight:700;color:#d4855e;letter-spacing:.5px}
+.header .date{font-size:.78rem;color:#60708a;margin-top:2px}
+.header .tracks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.header .track-tag{font-size:.68rem;padding:2px 8px;border-radius:10px;background:#152030;color:#7a9cc6;white-space:nowrap}
+/* 卡片 */
+.card{background:#131924;border-radius:6px;padding:14px 15px;margin-bottom:12px;border:1px solid #1c2435;position:relative}
+.card:last-child{margin-bottom:0}
+.card-num{position:absolute;top:-1px;right:12px;font-size:.7rem;font-weight:700;color:#1e3050;letter-spacing:1px}
+.card-track{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.8px;display:inline-block;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.track-chip{background:#1a2a1a;color:#5cb85c}
+.track-eda{background:#1a1a2a;color:#5e8cd4}
+.track-cae{background:#2a1a1a;color:#d4855e}
+.card h2{font-size:.95rem;font-weight:700;color:#e8eaf0;line-height:1.4;margin-bottom:8px}
+.card h2 .keyword{color:#d4855e}
+.card .summary{font-size:.8rem;color:#98a3b5;line-height:1.6;margin-bottom:10px;padding-bottom:10px;border-bottom:1px dashed #1e2640}
+.card .insight-label{font-size:.68rem;font-weight:700;color:#d4855e;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;display:block}
+.card .insight{font-size:.78rem;color:#b0b9c6;line-height:1.65}
+.card .insight .highlight{color:#d4a574;font-weight:600}
+.card .source{font-size:.65rem;color:#506080;margin-top:10px}
+.card .source a{color:#6080a0;text-decoration:none}
+/* 分隔线 */
+.divider{height:1px;background:linear-gradient(90deg,transparent,#1e3050,transparent);margin:16px 0}
+/* 页脚 */
+.footer{text-align:center;font-size:.65rem;color:#405060;margin-top:20px;padding-top:12px;border-top:1px solid #141c2a}
+.footer a{color:#607080;text-decoration:none}
 </style>
 </head>
 <body>
-<div class="wrap">
-<h1>🤖 AI日报</h1>
-<div class="date-bar">2026年7月25日 · 周六 · AI芯片 / Agentic EDA / Agentic CAE&amp;CAD</div>
 
+<div class="header">
+  <h1>📡 AI半导体日报</h1>
+  <div class="date">2026年7月25日 · 星期六</div>
+  <div class="tracks">
+    <span class="track-tag">AI芯片</span>
+    <span class="track-tag">Agentic EDA</span>
+    <span class="track-tag">Agentic CAE/CAD</span>
+  </div>
+</div>
+
+<!-- Item 1 -->
 <div class="card">
-<div><span class="tag tag-chip">AI芯片</span></div>
-<div class="card-title">Meta Iris定制AI芯片9月量产，剑指NVIDIA依赖</div>
-<div class="card-overview">据Reuters独家报道，Meta内部备忘录显示其代号"<b>Iris</b>"的自研AI芯片将于<b>9月</b>启动量产，芯片由<b>Broadcom</b>协助设计、<b>TSMC</b>代工，属MTIA系列第四代。Meta目标2027年算力扩容至14GW，今年AI基础设施资本支出预计达<b>$1450亿</b>。</div>
-<div class="card-insight-label">核心看点</div>
-<div class="card-insight">这是继Amazon Trainium、Google TPU之后，第三家超大规模云厂商将自研AI芯片推进到量产阶段。Iris芯片经6周bug测试<b>零重大缺陷</b>通过，模块化架构支持快速迭代。Meta同时签署与Broadcom至2029年的长期合作及AMD 6GW GPU采购协议，标志着AI算力供应链从<b>NVIDIA单极</b>转向多源供应格局。对国产AI芯片企业而言，这一趋势验证了"大客户自研+定制化"路径的可行性。</div>
+  <div class="card-num">01</div>
+  <span class="card-track track-chip">AI芯片</span>
+  <h2>Meta自研<span class="keyword">Iris AI芯片</span>通过Bug测试，9月量产</h2>
+  <div class="summary">
+    Meta计划9月启动自研AI芯片Iris量产，由Broadcom协同设计、TSMC制造。Iris隶属MTIA计划中四代芯片之一，6周通过bug测试且无重大问题，较行业均值大幅领先。Meta目标2027年算力达14GW，同时与AMD签署6GW Instinct GPU多年协议以分散供应链风险。消息公布后Meta股价上涨超12%。
+  </div>
+  <span class="insight-label">▸ 核心看点</span>
+  <div class="insight">
+    超大规模云厂商<span class="highlight">自研ASIC趋势加速</span>——Meta是继Google TPU、Amazon Trainium/Inferentia之后，又一彻底转向定制硅的巨头。Iris的快速bug收敛（6周）表明Meta芯片团队已具备<span class="highlight">工程成熟度</span>，而非停留在PPT阶段。AI芯片格局正从<span class="highlight">NVIDIA一家独大加速向"GPU+自研ASIC"双轨演进</span>，对EDA工具链的需求也将从通用GPU设计转向多样化定制芯片设计。
+  </div>
+  <div class="source">来源: <a href="https://www.reuters.com/technology/artificial-intelligence/meta-put-ai-chip-into-production-september-2026-07-09/" target="_blank">Reuters</a> · July 9, 2026</div>
 </div>
 
+<!-- Item 2 -->
 <div class="card">
-<div><span class="tag tag-chip">AI芯片</span></div>
-<div class="card-title">NVIDIA Vera CPU全面量产，Agentic AI催生新CPU品类</div>
-<div class="card-overview">NVIDIA宣布其首款独立CPU <b>Vera</b>进入全面量产，首批系统已交付<b>Anthropic、OpenAI、SpaceXAI</b>及Oracle Cloud。Jensen Huang称其为"为Agentic AI时代定制的CPU"，单核性能与带宽均为业界最高，执行Agent工作负载比传统x86 CPU快<b>1.8倍</b>。</div>
-<div class="card-insight-label">核心看点</div>
-<div class="card-insight">这不仅是NVIDIA从GPU向CPU的横向扩张，更是<b>硬件定义跟随软件范式转移</b>的典型案例——当AI从"回答问题"进入"自主执行"的Agent时代，需要一种全新的CPU架构来支撑高吞吐推理、工具调用和长链规划。Oracle计划部署数十万颗Vera，Alibaba、ByteDance等也将接入，<b>ARM架构在数据中心AI推理侧</b>的地位被进一步巩固。</div>
+  <div class="card-num">02</div>
+  <span class="card-track track-chip">AI芯片</span>
+  <h2>ASML上调2026年业绩指引并<span class="keyword">承诺扩产</span>，AI芯片产能瓶颈缓解</h2>
+  <div class="summary">
+    7月15日，ASML上调2026年销售预测并承诺大幅扩产。全球半导体市场2026年预计达$1.3万亿，设备需求同步飙升。此前7月初AI半导体板块经历超万亿市值蒸发，核心诱因之一是对AI资本开支可持续性的疑虑。ASML此番表态被视为对"AI投资泡沫论"的供给侧有力回应。
+  </div>
+  <span class="insight-label">▸ 核心看点</span>
+  <div class="insight">
+    ASML作为<span class="highlight">EUV光刻机唯一供应商</span>，其扩产能力直接影响台积电/三星/Intel先进制程扩产节奏。台积电同期宣布在亚利桑那追加$1000亿投资（总承诺$2650亿），规划<span class="highlight">10座fab + 2座先进封装厂</span>——这意味着制造端在实质扩大，而非仅停留在需求叙事。对于国内产业链而言，<span class="highlight">EUV供应仍是核心瓶颈</span>，ASML扩产对二线设备供应商的溢出效应值得关注。
+  </div>
+  <div class="source">来源: <a href="https://www.fidelity.com/news/article/technology/202607150108RTRSNEWSCOMBINED_KBN3TB0E9-OUSBS_1" target="_blank">Reuters via Fidelity</a> · July 15, 2026</div>
 </div>
 
+<!-- Item 3 -->
 <div class="card">
-<div><span class="tag tag-eda">Agentic EDA</span></div>
-<div class="card-title">Siemens Fuse EDA AI Agent发布：从工具内AI到端到端Agent编排</div>
-<div class="card-overview">Siemens在GTC 2026发布<b>Fuse EDA AI Agent</b>，业界首款面向半导体、3D IC和PCB全流程的领域专用自主AI Agent。基于NVIDIA Nemotron模型及Agent Toolkit构建，覆盖从架构规划、RTL编码(Catapult)到物理验证签核(Calibre)的<b>完整设计生命周期</b>。</div>
-<div class="card-insight-label">核心看点</div>
-<div class="card-insight">这标志着EDA行业从"工具内嵌AI辅助"（L2）向<b>"自主Agent编排多工具链路"（L3）</b>的范式跃迁。核心差异化在于：(1) EDA专用多模态数据湖和RAG管道保证输出可靠性，(2) 内置验证护栏和workflow guardrails防幻觉，(3) 开放架构兼容第三方集成。前端DRC违例分析已实现自动化解析与修复，<b>物理验证签核效率</b>有望大幅提升。</div>
+  <div class="card-num">03</div>
+  <span class="card-track track-eda">Agentic EDA</span>
+  <h2>DAC 2026：<span class="keyword">Agentic EDA</span>从PPT走向量产级落地</h2>
+  <div class="summary">
+    DAC 2026上，EE Times确认"AI in EDA已从概念验证走入展会现场"。Siemens EDA展示Fuse EDA AI系统覆盖AI驱动设计到3D IC全流程验证，Cadence ChipStack AI Super Agent实现Level-5自主验证（40x RTL验证加速），Synopsys AgentEngineer已嵌入多物理场仿真。三大EDA巨头首次集体完成Agentic全流程编排的产品化交付。
+  </div>
+  <span class="insight-label">▸ 核心看点</span>
+  <div class="insight">
+    EDA成为<span class="highlight">首个Agentic AI实现量产级落地的工业软件赛道</span>——这一里程碑将影响CAE/CAD的Agentic路线图。三家巨头的差异化竞争已清晰：Siemens侧重<span class="highlight">工业级可定制Fuse平台</span>，Cadence押注<span class="highlight">Level-5完全自主验证</span>，Synopsys聚焦<span class="highlight">多物理场融合的AgentEngineer</span>。值得注意的是，三家均选择NVIDIA NIM/Nemotron作为AI基础设施——<span class="highlight">NVIDIA正通过GPU+AI模型栈锁定EDA生态</span>。
+  </div>
+  <div class="source">来源: <a href="https://blogs.sw.siemens.com/verificationhorizons/2026/07/14/siemens-at-2026-dac" target="_blank">Siemens Blog</a> · <a href="https://www.eetimes.com/" target="_blank">EE Times</a> · July 2026</div>
 </div>
 
+<!-- Item 4 -->
 <div class="card">
-<div><span class="tag tag-eda">Agentic EDA</span></div>
-<div class="card-title">Cadence × Google：ChipStack AI Super Agent集成Gemini，云端Agentic芯片设计落地</div>
-<div class="card-overview">Cadence与Google Cloud达成战略合作，将<b>Gemini大模型</b>集成至<b>ChipStack AI Super Agent</b>平台。在CadenceLIVE 2026上同时发布了<b>ViraStack</b>和<b>InnoStack</b>两大AI Super Agent，早期客户报告<b>3–10倍</b>生产力提升，覆盖从Spec到Signoff的完整Agentic设计流程。</div>
-<div class="card-insight-label">核心看点</div>
-<div class="card-insight">Cadence的策略是"<b>Mental Model基础 + 客户共创迭代</b>"——先与头部客户联合测试Agent，再逐步扩展至全流程生产环境，与"先发布后适配"模式形成对比。CEO Anirudh Devgan特别指出<b>3D IC Signoff</b>仍是行业最大痛点，GPU加速的Millennium平台和Allegro X AI为此布局。Cadence+Google+NVIDIA三线合作显示了EDA巨头在Agentic时代的生态合围战略。</div>
+  <div class="card-num">04</div>
+  <span class="card-track track-cae">Agentic CAE</span>
+  <h2>Synera × OEM实战：一条<span class="keyword">prompt</span>完成全链路制造分析</h2>
+  <div class="summary">
+    在Automotive CAE Grand Challenge 2026上，Synera演示了与某汽车OEM联合部署的agentic制造分析系统。工程师上传CAD模型后，单一对话prompt即可驱动几何分析、可制造性检查、成本核算和CO2足迹报告的全自动化执行。该部署使用规则驱动工作流确保输出精确可复现，避免LLM推测偏差。
+  </div>
+  <span class="insight-label">▸ 核心看点</span>
+  <div class="insight">
+    这是<span class="highlight">Agentic CAE在汽车行业量产部署的标杆案例</span>。区别于实验室demo，该系统连接了<span class="highlight">CAD/PLM/仿真工具链</span>的完整环节，利用规则引导+LLM推理的混合架构确保工程级精度。关键信号：汽车OEM对<span class="highlight">开发周期压缩</span>的需求正驱动Agentic CAE从"探索评估"转入"采购部署"阶段。这一趋势与NVIDIA在CDFAM Barcelona展示的NeMo Agent Toolkit形成互补——后者提供Agent推理性能优化的基础设施。
+  </div>
+  <div class="source">来源: <a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Synera · Automotive CAE Grand Challenge 2026</a></div>
 </div>
 
+<!-- Item 5 -->
 <div class="card">
-<div><span class="tag tag-cae">Agentic CAE/CAD</span></div>
-<div class="card-title">Synera获$4000万B轮融资 + NVIDIA AI Physics驱动CAE智能体落地</div>
-<div class="card-overview">德国Agentic CAE平台<b>Synera</b>完成$4000万Series B融资（Revaia领投，BMW iVentures跟投），2025年ARR翻倍，60%新业务来自AI产品线。同期NVIDIA在CDFAM Barcelona展示<b>AI Physics + 代理模型 + Agentic CAE</b>工作流，将仿真求解时间大幅缩短，已与McLaren在GTC 2026联合发布Agentic工程设计案例。</div>
-<div class="card-insight-label">核心看点</div>
-<div class="card-insight">两款产品的差异化路径清晰：Synera主打<b>规则驱动+确定性输出</b>，通过连接76+款CAx/PLM工具，让Agent执行几何检查、制造仿真、成本核算和CO₂报告——全程可追溯可复现，解决LLM幻觉问题。NVIDIA则走<b>AI替代物理求解器</b>路线，用代理模型实现实时仿真反馈，NeMo Agent Toolkit优化Agent延迟。二者共同指向2026年CAE行业的拐点：Agentic AI从"实验"进入<b>产线集成</b>阶段。</div>
+  <div class="card-num">05</div>
+  <span class="card-track track-cae">Agentic CAE/CAD</span>
+  <h2>Siemens发布Agentic AI-Aided Engineering愿景：<span class="keyword">30-50M</span>工程师的仿真饥渴</h2>
+  <div class="summary">
+    Siemens官方博客发布长文《Your next colleague is an agent》，系统性阐述Agentic AI-Aided Engineering战略。文章给出量化洞察：每1位能独立运行仿真的专家背后，还有约10位急需仿真能力的设计师/架构师/产品工程师——这意味着全球3000-5000万工程人员处于"仿真饥渴"状态。Agentic AI将专家知识嵌入自动化工作流，重写这个10:1比率。
+  </div>
+  <span class="insight-label">▸ 核心看点</span>
+  <div class="insight">
+    Siemens的洞察揭示了一个<span class="highlight">被低估的庞大增量市场</span>：当前CAE市场渗透率不足10%，Agentic AI有望将仿真门槛降低一个数量级。这与SimScale Engineering AI（面向80万+用户开放）、Rescale Agentic Digital Engineering（Daikin已部署）形成<span class="highlight">完整生态图谱</span>——Siemens从工业软件巨头视角提供全栈方案，云原生平台从SaaS侧渗透。2026年Agentic CAE/CAD赛道的关键变化是<span class="highlight">从"能否work"转向"如何规模化部署"</span>。
+  </div>
+  <div class="source">来源: <a href="https://blogs.sw.siemens.com/art-of-the-possible/agentic-ai-aided-engineering" target="_blank">Siemens Blog · Art of the Possible</a> · 2026</div>
 </div>
 
-<div class="footer">AI日报 · Hermes Agent自动生成 · 数据来源公开报道 · 聚焦技术突破与产业落地</div>
+<div class="divider"></div>
+
+<div class="footer">
+  <p>AI半导体日报 · 聚焦AI芯片 / Agentic EDA / Agentic CAE/CAD三大赛道</p>
+  <p>Hermes Agent 自动生成 · <a href="https://chping.github.io/ai-daily/">全部日报</a></p>
 </div>
+
 </body>
 </html>
