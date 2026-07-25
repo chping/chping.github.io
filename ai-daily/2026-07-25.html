@@ -7,15 +7,14 @@
 <style>
 :root{--title:#2c5aa0;--accent:#c4784a;--bg:#f7f8fa;--card:#fff;--border:#e4e7ec;--text:#2c3e50;--muted:#718096;--tag-bg:#e8edf5;--tag-text:#4a6fa5}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Helvetica Neue",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
 .container{max-width:860px;margin:0 auto;padding:36px 20px 48px}
 .header{border-bottom:2px solid var(--border);padding-bottom:20px;margin-bottom:28px}
-.header h1{font-size:24px;font-weight:700;color:var(--title);letter-spacing:-0.3px}
+.header h1{font-size:24px;font-weight:700;color:var(--title)}
 .header .meta{font-size:13px;color:var(--muted);margin-top:6px}
-.header .tracks{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.tracks{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
 .track-tag{font-size:11px;padding:3px 10px;border-radius:12px;background:var(--tag-bg);color:var(--tag-text);font-weight:600}
-.card{background:var(--card);border-radius:8px;padding:22px 24px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.05);border-left:4px solid var(--accent);transition:box-shadow .2s}
-.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card{background:var(--card);border-radius:8px;padding:22px 24px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.05);border-left:4px solid var(--accent)}
 .card:nth-child(1){border-left-color:#4a90c4}
 .card:nth-child(2){border-left-color:#7b9e6d}
 .card:nth-child(3){border-left-color:#c4784a}
@@ -26,77 +25,73 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","H
 .card .overview{font-size:14.5px;color:#4a5568;line-height:1.65;margin-bottom:10px}
 .card .insight{font-size:13.5px;color:var(--muted);line-height:1.65;border-top:1px solid #edf0f3;padding-top:10px}
 .card .insight strong,.card .insight b{color:var(--title);font-weight:700}
-.references{margin-top:36px;padding-top:22px;border-top:2px solid var(--border)}
-.references h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:14px}
-.references ol{padding-left:20px;font-size:13px;color:#4a5568;line-height:2}
-.references a{color:var(--title);text-decoration:none;word-break:break-all}
-.references a:hover{text-decoration:underline}
+.refs{margin-top:36px;padding-top:22px;border-top:2px solid var(--border)}
+.refs h3{font-size:16px;font-weight:700;margin-bottom:14px}
+.refs ol{padding-left:20px;font-size:13px;color:#4a5568;line-height:2}
+.refs a{color:var(--title);text-decoration:none}
 .footer{text-align:center;font-size:12px;color:#a0aec0;padding-top:24px;margin-top:24px;border-top:1px solid var(--border)}
-@media(max-width:640px){.container{padding:16px 12px}.header h1{font-size:20px}.card{padding:16px 14px}.card h2{font-size:15.5px}.card .overview{font-size:13.5px}.card .insight{font-size:12.5px}}
+@media(max-width:640px){.container{padding:16px 12px}.header h1{font-size:20px}.card{padding:16px 14px}.card h2{font-size:15.5px}}
 </style>
 </head>
 <body>
 <div class="container">
 <div class="header">
 <h1>AI半导体 & 工业软件日报</h1>
-<div class="meta">2026年7月25日 · 周六 · 5条精选 | DAC 2026明日开幕特辑</div>
+<div class="meta">2026年7月25日 · 周六 · 5条精选 | DAC 2026倒计时</div>
 <div class="tracks">
-<span class="track-tag">AI芯片</span>
-<span class="track-tag">Agentic EDA</span>
-<span class="track-tag">DAC 2026</span>
+<span class="track-tag">AI芯片</span><span class="track-tag">Agentic EDA</span><span class="track-tag">DAC 2026</span>
 </div>
 </div>
 
 <div class="card">
 <div class="card-num">DAC 2026 · 01</div>
-<h2>DAC 2026明日开幕：63年来首次登陆长滩，Agentic AI全面接管芯片设计议题</h2>
-<div class="overview">第63届Design Automation Conference（DAC）将于7月26–29日在长滩会议中心举行，首次离开旧金山。今年Engineering Track论文投稿量创纪录，AI相关论文占比超40%。Synopsys、Cadence、Siemens三大巨头及ChipAgents、Agnisys等AI创业公司均设重磅发布。</div>
-<div class="insight"><strong>核心看点：</strong>DAC 2026标志着Agentic EDA从学术概念进入<strong>产业验证期</strong>。Pavilion辩论"Agentic AI in EDA: Who's in Control?"、展商论坛"Myth vs Reality — AI EDA ROI"直击行业核心矛盾。三大巨头路线分化：Synopsys推agentic AI teams + multiphysics fusion，Siemens主打Solido agentic AI for custom IC，Cadence以ChipStack Level 5全自动设计应战。11家Agentic EDA创业公司首次集体亮相，赛道热度创历史新高。</div>
+<h2>DAC 2026明日开幕：63届首次登陆长滩，Agentic AI全面重塑芯片设计议程</h2>
+<div class="overview">第63届DAC将于7月26-29日在长滩会议中心举行。Engineering Track论文投稿量创纪录，AI相关占比超40%。Synopsys、Cadence、Siemens三大EDA巨头，以及ChipAgents、Agnisys、Moores Lab AI等11家Agentic AI创业公司将集中亮相。Pavilion辩论"AIAgentic AI in EDA: Who's in Control?"成为全场焦点。</div>
+<div class="insight"><strong>核心看点：</strong>本届DAC是Agentic EDA从实验室走向<strong>工程验证</strong>的分水岭。三个关键信号：(1) 创业公司与巨头同台竞技，赛道从"三巨头垄断"走向"多元生态"；(2) 展商论坛"Myth vs Reality — AI EDA ROI"直面行业质疑；(3) EE Times以三篇系列预览系统性报道，媒体从"观望"转向"布道"。DAC Pavilion将成为全年最重要的Agentic EDA舆论场。</div>
 </div>
 
 <div class="card">
 <div class="card-num">Agentic EDA · 02</div>
-<h2>Siemens × TSMC联手推进AI自动化：Fuse EDA AI系统+AI DRC修复流程</h2>
-<div class="overview">Siemens在TSMC 2026技术研讨会上宣布深化与TSMC合作，将Fuse EDA AI系统集成入先进节点设计流程，实现AI自动DRC修复和设计优化。Fuse是Siemens首个"domain-scoped agentic AI系统"，专为半导体设计工作流训练。</div>
-<div class="insight"><strong>核心看点：</strong>这是传统EDA巨头与<strong>代工厂共建AI EDA生态</strong>的标志性案例。Siemens的路线是"工业级AI引擎 + 代工协同"——不依赖通用LLM，而是将AI深度嵌入TSMC的PDK和工艺约束中。"domain-scoped agentic"定位意味着不同EDA域（DRC、时序、功耗）各自拥有专用Agent，而非单一通用Agent。这种架构可能成为3nm以下节点的<strong>新设计范式</strong>。</div>
+<h2>Siemens EDA：Agentic AI将芯片设计周期减半，SEMICON China 2026主题演讲定调</h2>
+<div class="overview">在SEMICON China 2026开幕主题演讲中，Siemens EDA IC产品EVP Ankur Gupta明确宣告："传统EDA软件已不够用，未来的芯片设计工具必须AI驱动。"Siemens展示了其Fuse EDA AI系统如何在先进节点上将设计周期缩短50%，涵盖AI自动DRC修复和设计优化全流程。</div>
+<div class="insight"><strong>核心看点：</strong>Gupta的演讲代表传统EDA巨头对AI路线的<strong>最高级别背书</strong>。Siemens的策略是"domain-scoped agentic"——每个EDA域（DRC、时序、功耗、验证）拥有专用AI引擎，在TSMC PDK约束内自主优化。这种"工业AI+代工协同"模式正在成为3nm以下节点的<strong>标准方法</strong>。值得关注的是SEMICON China作为发布平台的选择，表明Siemens对中国半导体市场的高度重视。</div>
 </div>
 
 <div class="card">
 <div class="card-num">Agentic EDA · 03</div>
-<h2>ChipAgents发布IDS-AI：从Golden Spec到RTL Sign-off的全流程Agentic框架</h2>
-<div class="overview">Agnisys在DAC 2026前发布IDS-AI，一个理解芯片设计意图的agentic AI框架，驱动从golden specification创建到RTL sign-off的全流程。结合其IDesignSpec Suite的二十年积累，通过correct-by-construction自动化与agentic AI结合，将可执行spec转化为自动化设计、验证、DFT和文档交付。</div>
-<div class="insight"><strong>核心看点：</strong>Agnisys路线独特：<strong>"spec-driven" Agentic EDA</strong>，从设计意图源头切入而非工具优化。这解决了Agentic EDA的一个核心难题——Agent如何理解设计意图而不产生幻觉。通过golden spec做ground truth锚定，再让Agent在约束内自主编排流程。若DAC现场demo兑现，将直接挑战传统RTL设计方法的核心假设。</div>
+<h2>Semiconductor Engineering重磅圆桌：工程师能否信任AI？六大CEO激辩Agentic EDA信任边界</h2>
+<div class="overview">Semiconductor Engineering召集ChipAgents、Silvaco、Moores Lab AI、Breker Verification、Verific、Silimate六家公司CEO/高管，围绕"Can engineers trust AI to get everything right?"展开深度讨论。核心矛盾：半导体设计容错率为零 vs AI的概率性本质。</div>
+<div class="insight"><strong>核心看点：</strong>这场圆桌触及Agentic EDA的<strong>根本悖论</strong>：芯片设计"没有犯错余地"，而AI天然是概率系统。各CEO立场鲜明分化——ChipAgents强调"AI代理应在验证环节发挥作用（有ground truth可校验）"，Silvaco CEO Wally Rhines则更关注全流程可解释性。关键共识：<strong>Human-in-the-loop不可省略</strong>，Agent角色应是"超级助手"而非"自主决策者"。这种务实态度有助于行业避免过度承诺后的信任危机。</div>
 </div>
 
 <div class="card">
-<div class="card-num">Agentic EDA · 04</div>
-<h2>arXiv重磅调研：Agentic EDA首次被系统化定义为"约束神经符号优化"</h2>
-<div class="overview">学术论文"The Dawn of Agentic EDA"在arXiv发布，首次提出Agentic EDA的系统性框架。将Agentic EDA定义为Constrained Neuro-Symbolic Optimization，引入Cognitive Stack三层架构：Perception（多模态语义对齐）、Cognition（严格约束下的规划）、Action（确定性工具执行）。</div>
-<div class="insight"><strong>核心看点：</strong>这篇论文为Agentic EDA建立了<strong>学术理论基础</strong>。关键洞察：芯片设计的容错率为零——"幻觉即废片"，因此传统LLM的probabilistic生成无法直接用于GDSII。论文提出的"神经符号优化"路径（LLM做高层规划 + 符号引擎做物理验证）正与工业界（Cadence Mental Model、Siemens domain AI）的实践趋同。标志着Agentic EDA从工程实践走向<strong>学科化</strong>。</div>
+<div class="card-num">AI芯片 · 04</div>
+<h2>NVIDIA 2027财年营收预期$3855亿（+78.5% YoY），Broadcom AI半导体Q3达$160亿</h2>
+<div class="overview">Zacks最新预测：NVIDIA 2027财年（截至2027年1月）营收$3855亿，同比增长78.5%，EPS $9（+88.7%）。ROE高达96.94%（行业均值仅5.58%）。Broadcom AI半导体Q3预期$160亿（+200% YoY），主要由定制AI加速器和AI网络驱动。两家公司上半年股价回调后被视为价值洼地。</div>
+<div class="insight"><strong>核心看点：</strong>两组数据揭示AI芯片市场<strong>结构性分化</strong>：(1) NVIDIA的ROE 96.94%意味着几乎每一美元净资产在一年内翻倍，AI GPU垄断地位短期无解；(2) Broadcom +200% AI增速表明<strong>定制ASIC赛道</strong>正在爆发（Google TPU、Meta MTIA等），挑战NVIDIA GPU的通用性优势。上半年股价回调反映市场对"AI泡沫"的担忧，但业绩增速表明基本面依然强劲。</div>
 </div>
 
 <div class="card">
-<div class="card-num">行业趋势 · 05</div>
-<h2>AI EDA市场2032年达$158.5亿，Prompt Engineer成为2026年新兴角色</h2>
-<div class="overview">MarketsandMarkets报告预测AI EDA市场从2026年$42.7亿增长至2032年$158.5亿（CAGR 24.4%）。同时Semiconductor Engineering预测2026年将出现"prompt engineer"角色——工程师通过自然语言而非传统GUI与EDA工具交互。1:6的设计师-验证工程师比例失衡持续驱动自动化需求。</div>
-<div class="insight"><strong>核心看点：</strong>两组数据揭示行业拐点：(1) <strong>$42.7亿→$158.5亿</strong>，6年4倍增长，AI EDA正在从小众工具升级为主流设计方法；(2) <strong>"Prompt Engineer"</strong>角色的出现意味着EDA交互范式正从"鼠标点击Tcl脚本"转向"自然语言意图表达"，工程师的技能栈面临结构性重塑。北美占42%市场份额，但中国Rapidus-台积电-三星三极格局可能重塑地域分布。</div>
+<div class="card-num">Agentic EDA · 05</div>
+<h2>Cadence详解Agentic AI如何变革IC设计生产力：从RTL到GDSII的Agent编排</h2>
+<div class="overview">Cadence在EDN Asia发表技术文章，系统性阐述Agentic AI如何应对芯片设计复杂度的指数级增长。核心方案：将RTL-to-GDSII全流程分解为可编排的子任务，由专门训练的AI Agent在物理仿真引擎约束下自主执行，人工干预仅发生在关键决策节点。</div>
+<div class="insight"><strong>核心看点：</strong>Cadence的Agentic路线核心是<strong>"物理仿真做ground truth，Agent做编排"</strong>——这与学术界arXiv论文提出的"神经符号优化"框架高度一致。Cadence强调其优势在于同时拥有AI引擎和物理仿真工具，不需要依赖第三方LLM。这种"全栈自研"策略在DAC 2026前发布有明显的竞争意图——在Siemens和Synopsys也推Agentic方案时，Cadence需要向市场证明其差异化。</div>
 </div>
 
-<div class="references">
+<div class="refs">
 <h3>参考资料</h3>
 <ol>
-<li><strong>DAC 2026</strong> — 官方新闻稿，EE Times三篇系列预览 <br><a href="https://dac.com/2026/press-release/the-2026-dac-chips-to-systems-conference-comes-to-long-beach">dac.com/2026</a> · <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026">eetimes.com</a></li>
-<li><strong>Siemens × TSMC</strong> — Siemens官方新闻 <br><a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026">news.siemens.com</a></li>
-<li><strong>Agnisys IDS-AI</strong> — Agnisys官方发布 <br><a href="https://www.agnisys.com/news/agnisys-to-showcase-agentic-ai-network-on-chip-and-dft-automation-breakthroughs-at-dac-2026">agnisys.com</a></li>
-<li><strong>Agentic EDA Survey</strong> — arXiv学术论文 <br><a href="https://arxiv.org/html/2512.23189v2">arxiv.org/html/2512.23189v2</a></li>
-<li><strong>GSA Tech Summit / ChipAgents</strong> — ChipAgents官方博客 <br><a href="https://chipagents.ai/blogs/agentic-ai-biggest-shift-since-eda">chipagents.ai</a></li>
-<li><strong>AI EDA Market 2026–2032</strong> — MarketsandMarkets <br><a href="https://www.marketsandmarkets.com/Market-Reports/ai-eda-market-212473295.html">marketsandmarkets.com</a></li>
-<li><strong>EDA Industry 2026</strong> — Semiconductor Engineering <br><a href="https://semiengineering.com/how-the-eda-industry-will-evolve-in-2026">semiengineering.com</a></li>
-<li><strong>SEMI ESD Alliance 2026</strong> — SEMI官方 <br><a href="https://www.semi.org/en/semi-press-release/semi-esd-alliance-2026-executive-outlook">semi.org</a></li>
+<li><strong>DAC 2026</strong> — 官方新闻稿，EE Times三篇系列 <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026">eetimes.com</a> · <a href="https://dac.com/2026/">dac.com</a></li>
+<li><strong>Siemens × SEMICON China</strong> — <a href="https://www.digitimes.com/news/a20260326VL206/siemens-eda-design-semicon-china-2026-ic.html">DIGITIMES</a></li>
+<li><strong>SE圆桌：Can Engineers Trust AI?</strong> — <a href="https://semiengineering.com/executive-outlook-agentic-ais-impact-on-chip-design">Semiconductor Engineering</a></li>
+<li><strong>NVIDIA/Broadcom财务预测</strong> — <a href="https://finance.yahoo.com/technology/ai/articles/3-beaten-down-ai-semiconductor-124200713.html">Yahoo Finance / Zacks</a></li>
+<li><strong>Cadence Agentic IC Design</strong> — <a href="https://www.ednasia.com/how-agentic-ai-will-transform-ic-design-productivity">EDN Asia</a></li>
+<li><strong>SEMI ESD Alliance 2026</strong> — <a href="https://www.semi.org/en/semi-press-release/semi-esd-alliance-2026-executive-outlook">SEMI.org</a> · <a href="https://www.eenewseurope.com/en/esd-alliance-outlook-spotlights-agentic-ai-in-chip-design">eeNews Europe</a></li>
+<li><strong>AI EDA Market 2026</strong> — <a href="https://promwad.com/news/ai-driven-eda-tools-chip-design-automation-2026">Promwad</a></li>
 </ol>
 </div>
 
-<div class="footer">Hermes Agent · AI半导体与工业软件日报 · DAC 2026特辑 · 仅收录具备技术/产业落地价值的资讯</div>
+<div class="footer">Hermes Agent · AI半导体与工业软件日报 · 仅收录具备技术/产业落地价值的资讯</div>
 </div>
 </body>
 </html>
