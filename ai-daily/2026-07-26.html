@@ -3,91 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI日报 · 2026-07-26</title>
+<title>半导体AI日报 · 2026-07-26</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f7f7f8; color: #27272A; line-height: 1.8; }
-  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
-  h1 { font-size: 28px; font-weight: 800; color: #18181B; margin-bottom: 4px; }
-  .subtitle { color: #71717A; font-size: 15px; margin-bottom: 24px; }
-  .date-badge { display: inline-block; font-size: 12px; color: #A1A1AA; background: #F4F4F5; padding: 3px 12px; border-radius: 999px; margin-bottom: 20px; }
-  .card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 5px solid #52525B; }
-  .card:nth-child(2) { border-left-color: #52525B; }
-  .card:nth-child(3) { border-left-color: #3F3F46; }
-  .card:nth-child(4) { border-left-color: #71717A; }
-  .card:nth-child(5) { border-left-color: #A1A1AA; }
-  .card:nth-child(6) { border-left-color: #D4D4D8; }
-  .card h2 { font-size: 20px; font-weight: 700; color: #18181B; margin-bottom: 8px; line-height: 1.4; }
-  .card .summary { font-size: 17px; color: #52525B; margin-bottom: 16px; line-height: 1.8; }
-  .card .highlight { font-size: 15px; color: #3F3F46; margin-bottom: 14px; }
-  .card .highlight strong { color: #18181B; background: #F4F4F5; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
-  .card .source { font-size: 13px; color: #A1A1AA; border-top: 1px solid #F4F4F5; padding-top: 12px; }
-  .card .source a { color: #52525B; text-decoration: underline; text-underline-offset: 2px; }
-  .ref-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #E4E4E7; }
-  .ref-section h3 { font-size: 16px; color: #71717A; margin-bottom: 12px; }
-  .ref-section ol { font-size: 14px; color: #A1A1AA; padding-left: 20px; }
-  .ref-section ol li { margin-bottom: 6px; }
-  .ref-section a { color: #52525B; }
+  body { background: #f5f5f5; font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; color: #333; line-height: 1.8; }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; background: #fff; }
+  .header { text-align: center; margin-bottom: 40px; }
+  .header h1 { font-size: 28px; font-weight: 900; color: #1a1a2e; margin-bottom: 8px; }
+  .header .subtitle { font-size: 14px; color: #8a929d; }
+  .cover-img { width: 100%; max-width: 780px; border-radius: 6px; margin-bottom: 24px; }
+  .card { background: #fff; border-radius: 8px; padding: 28px 28px 28px 33px; margin-bottom: 28px; border-left: 5px solid #52525B; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card-num { display: inline-block; background: #52525B; color: #fff; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 3px; margin-bottom: 12px; letter-spacing: 1px; }
+  .card h2 { font-size: 20px; font-weight: 800; color: #1a1a2e; margin: 0 0 12px; line-height: 1.4; }
+  .card .summary { font-size: 17px; color: #444; margin-bottom: 16px; line-height: 1.9; }
+  .card .insight { background: #f9f9fb; padding: 14px 18px; border-radius: 6px; margin-bottom: 16px; border-left: 3px solid #F97316; }
+  .card .insight-title { font-size: 12px; font-weight: 700; color: #F97316; letter-spacing: 1px; margin-bottom: 6px; }
+  .card .insight p { font-size: 15px; color: #555; margin: 0; }
+  .card .source { font-size: 13px; color: #8a929d; }
+  .card .source a { color: #52525B; text-decoration: underline; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; }
+  .footer h3 { font-size: 16px; color: #8a929d; margin-bottom: 12px; }
+  .footer ul { list-style: none; }
+  .footer li { font-size: 13px; color: #8a929d; margin-bottom: 4px; }
+  .footer a { color: #52525B; }
+  .back-link { display: inline-block; margin-top: 20px; padding: 10px 24px; background: #52525B; color: #fff; text-decoration: none; border-radius: 4px; font-size: 15px; }
 </style>
 </head>
 <body>
 <div class="container">
-  <img src="/ai-daily/covers/2026-07-26.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="AI日报封面">
-  <h1>AI日报</h1>
-  <p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
-  <span class="date-badge">2026年7月26日</span>
 
-  <!-- 新闻1 -->
-  <div class="card">
-    <h2>NVIDIA Vera Rubin全面投产，7月首批交付</h2>
-    <p class="summary">NVIDIA下一代AI超级计算平台Vera Rubin已进入全面量产阶段，覆盖全球30个国家、350余家工厂，超过150家台湾生态伙伴参与。7月起陆续向AWS、Microsoft、Google、OpenAI、Meta及xAI等主要客户发货，下半年进入大规模出货。Vera Rubin NVL72单机架提供10倍于Grace Blackwell的智能体吞吐量，配备HBM4显存和800Gb/s共封装光学互联。</p>
-    <p class="highlight"><strong>核心看点：</strong>六芯片协同设计（Vera CPU 88核 + Rubin GPU 336B晶体管 + NVLink 6 + ConnectX-9 + BlueField-4 DPU + Spectrum-6），首次实现机架级机密计算。每NVL72需约1152TB NAND，可能对全球NAND供应形成短期压力。标志着Agentic AI基础设施从实验阶段进入工业级规模化部署。</p>
-    <p class="source">来源：<a href="https://aiweekly.co/alerts/nvidia-vera-rubin-enters-full-production-at-350-factories" target="_blank">AI Weekly</a> · <a href="https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/" target="_blank">Wccftech</a></p>
-  </div>
+<img src="/ai-daily/covers/2026-07-26.jpg" class="cover-img" alt="半导体AI日报封面">
 
-  <!-- 新闻2 -->
-  <div class="card">
-    <h2>Cadence ChipStack AI Super Agent：首款L5级全自主虚拟芯片设计工程师</h2>
-    <p class="summary">Cadence在CadenceLIVE 2026上发布ChipStack AI Super Agent，定位为业界首个Level-5全自主虚拟设计工程师。该超级智能体基于Cadence EDA全栈工具构建，运行于NVIDIA Nemotron模型之上，并由NVIDIA OpenShell运行时提供安全保障。早期客户报告在设计流程中实现了3-10倍的生产力提升。</p>
-    <p class="highlight"><strong>核心看点：</strong>Cadence通过收购ChipStack仅4个月即推出成品，Chiptack的"思维模型"（Mental Model）使Agent能理解设计意图而非仅执行命令。CEO Anirudh Devgan特别指出3D IC签核是客户最大痛点，GPU加速的Millennium平台和Allegro X AI定位为先进封装自动化答案。竞争壁垒不在基础模型，而在于接地气的EDA工具链与编排能力。</p>
-    <p class="source">来源：<a href="https://www.eetimes.com/cadence-unveils-chipstack-ai-agent-for-agentic-chip-design-and-verification" target="_blank">EE Times</a> · <a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group</a></p>
-  </div>
+<div class="header">
+<h1>半导体AI日报 · 2026-07-26</h1>
+<p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+</div>
 
-  <!-- 新闻3 -->
-  <div class="card">
-    <h2>Synopsys AgentEngineer：多Agent协同的芯片设计新范式</h2>
-    <p class="summary">Synopsys在Converge 2026大会上发布AgentEngineer技术，可协调多个AI Agent在芯片设计与验证的关键阶段协同工作。同时推出Multiphysics Fusion技术，将Ansys黄金多物理场引擎深度集成进Synopsys EDA流程，解决电磁、热、机械效应带来的芯片设计难题。</p>
-    <p class="highlight"><strong>核心看点：</strong>Synopsys CEO Sassine Ghazi提出"硅基系统"新范式——硅驱动、AI使能、软件定义。AgentEngineer不只是单点工具智能化，而是跨域编排spec到signoff全流程。Multiphysics Fusion是Synopsys收购Ansys后首个重大集成成果，直接瞄准3nm/2nm节点下日益严重的物理效应耦合问题。</p>
-    <p class="source">来源：<a href="https://www.forbes.com/sites/marcochiappetta/2026/03/11/synopsys-reveals-agentic-ai-to-speed-next-gen-chip-and-system-designs" target="_blank">Forbes</a> · <a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Outlines-Vision-for-Engineering-the-Future/default.aspx" target="_blank">Synopsys</a></p>
-  </div>
+<div class="card">
+<span class="card-num">01 · EDA 焦点</span>
+<h2>DAC 2026 今日开幕：Agentic AI 首次成为芯片设计大会核心议题</h2>
+<p class="summary">第63届设计自动化大会（DAC 2026）今日在加州Long Beach开幕（7.26–29），63年来首次迁址Long Beach。本次大会Research和Engineering Track投稿量均创历史新高，AI-enabled design成为绝对焦点。NVIDIA VP Tim Costa发表欢迎致辞，核心主题为「加速计算与AI正与EDA融合——缩短设计周期、放大人类创造力」。Cadence与NVIDIA联合展示agentic AI芯片验证工作流，该系统可自主生成验证环境、诊断故障并迭代优化，在真实工业设计上实现DV signoff。</p>
+<div class="insight"><span class="insight-title">核心看点</span><p>DAC 2026标志着Agentic AI从概念验证进入EDA主流程。NVIDIA将EDA定位为「AI超级计算的下一战场」，联合展示的自主验证工作流表明头部厂商已将agentic EDA视为战略优先级。投稿量历史新高反映出学术界和工业界对AI驱动芯片设计的空前投入。</p></div>
+<p class="source">来源：<a href="https://www.nvidia.com/en-us/events/dac">NVIDIA at DAC 2026</a> · <a href="https://www.businesswire.com/news/home/20260504802555/en/The-2026-DAC-Chips-to-Systems-Conference-Comes-to-Long-Beach-for-the-First-Time-with-Record-Growth-as-AI-Reshapes-Chip-and-System-Design">BusinessWire</a></p>
+</div>
 
-  <!-- 新闻4 -->
-  <div class="card">
-    <h2>SimScale + CoLab：多Agent跨平台仿真协作实战落地</h2>
-    <p class="summary">在engineering.com主办的Design & Simulation Week 2026上，SimScale与CoLab联合演示了多Agent协同工作流：CoLab设计审查Agent发现设计问题后，自动请求SimScale仿真Agent设置并运行CFD分析，结果自动回传评审界面。SimScale同步宣布Engineering AI Agent面向所有企业团队正式开放，并推出开放Workflows平台，允许集成任意求解器与自定义方法。</p>
-    <p class="highlight"><strong>核心看点：</strong>这是Agentic CAE领域首个公开演示的生产级多Agent跨平台协作案例——两个独立供应商的Agent通过API互操作，无需人工中转。SimScale报告称使用AI的团队实现4倍生产力提升、设计空间探索扩大3倍。Agent不再只是"问答助手"，而是可以主动发现设计问题并自主执行仿真-反馈闭环。</p>
-    <p class="source">来源：<a href="https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows" target="_blank">SimScale Blog</a> · <a href="https://www.simtool.com/article/simscale-launches-engineering-ai-agents-and-open-workflows-platform-for-autonomous-simulation-orches" target="_blank">SimTool</a></p>
-  </div>
+<div class="card">
+<span class="card-num">02 · AI 芯片</span>
+<h2>AMD Helios 横空出世：72-GPU 机架级系统正面硬刚 NVIDIA Vera Rubin</h2>
+<p class="summary">AMD在7月23日Advancing AI 2026大会上发布首款机架级AI计算系统Helios，搭载72颗MI400系列加速器、下一代EPYC Venice处理器（TSMC 2nm）和Pensando NIC。纸面参数上，Helios比NVIDIA Vera Rubin多50% HBM4内存和scale-out带宽，AI训练性能领先15-25%。定价$5.25M起，比Vera Rubin贵约$1M。客户阵容豪华：Microsoft、Meta、OpenAI、Oracle均已签约。OpenAI与Meta合计锁定12GW AMD加速器容量。</p>
+<div class="insight"><span class="insight-title">核心看点</span><p>这是AMD从「追赶者」到「并行竞争者」的关键一跃。Helios不仅是硬件对标——72颗GPU全互联的机架级设计直接对标NVIDIA的核心护城河。但软件生态ROCm 7的成熟度仍是最大变数。OpenAI联合开发MI400意味着大模型客户已开始主动构建NVIDIA替代方案。</p></div>
+<p class="source">来源：<a href="https://www.theregister.com/systems/2026/07/23/amd-attacks-the-rack-with-helios-systems-that-rival-nvidias/5277246">The Register</a> · <a href="https://www.forbes.com/sites/stevemcdowell/2026/07/23/amds-rack-scale-challenge-to-nvidias-ai-dominance">Forbes</a> · <a href="https://tech-insider.org/amd-advancing-ai-2026">Tech Insider</a></p>
+</div>
 
-  <!-- 新闻5 -->
-  <div class="card">
-    <h2>Synera Agentic AI框架：80+工业软件工具链的智能中枢</h2>
-    <p class="summary">在Automotive CAE Grand Challenge 2026上，Synera展示了其Agentic AI平台架构：通过对话式界面连接80余种CAx和PLM工具——包括ANSA、HyperMesh、optiStruct、LS-DYNA、CATIA、Siemens NX等。平台底层采用基于规则的自动化工作流，AI层负责理解工程师意图并编排工具调用，从结构上消除仿真和成本计算等关键工程任务中的幻觉风险。</p>
-    <p class="highlight"><strong>核心看点：</strong>Synera的独特路线是"规则层+AI层"双层架构——AI层提供自然交互和智能决策，但所有工程关键计算由确定性规则工作流执行。这解决了Agentic AI在CAE领域最大的信任问题。还原序模型（ROM）可嵌入Agent框架，让工程师无需自行运行完整仿真即可快速获取分析结果。</p>
-    <p class="source">来源：<a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Synera.ai</a></p>
-  </div>
+<div class="card">
+<span class="card-num">03 · Agentic EDA</span>
+<h2>Cadence 发布 ViraStack & InnoStack：端到端 Agentic AI 芯片设计流程实测 3-10x 生产力提升</h2>
+<p class="summary">CadenceLIVE Silicon Valley 2026上，Cadence正式发布ViraStack和InnoStack AI Super Agents，基于ChipStack Mental Model构建端到端agentic AI芯片设计流程，覆盖从spec到signoff全链路。CEO Anirudh Devgan指出3D IC signoff是行业最顽固缺口——目前仍高度依赖手工，且多die封装让验证复杂度指数级增长。早期客户报告3-10x生产力提升，GPU加速的Millennium平台和Allegro X AI定位为先进封装自动化方案。</p>
+<div class="insight"><span class="insight-title">核心看点</span><p>Cadence的策略是「产品协同开发」——agent与客户在实际设计中迭代测试再发布，而非「发布后祈祷」。3D IC设计自动化被明确为行业最大未解决问题，Jensen Huang的著名观察「验证需要设计的100倍工程投入」在multi-die时代只会更加恶化。</p></div>
+<p class="source">来源：<a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">Futurum Group</a> · <a href="https://www.facebook.com/CadenceDesign/posts/what-does-it-take-to-truly-automate-chip-verification-at-isca-2026-cadence-and-n/1438443471652421">Cadence (ISC 2026)</a></p>
+</div>
 
-  <!-- 参考资料 -->
-  <div class="ref-section">
-    <h3>参考资料</h3>
-    <ol>
-      <li>AI Weekly: <a href="https://aiweekly.co/alerts/nvidia-vera-rubin-enters-full-production-at-350-factories" target="_blank">NVIDIA Vera Rubin Enters Full Production at 350 Factories</a> (2026-07)</li>
-      <li>EE Times: <a href="https://www.eetimes.com/cadence-unveils-chipstack-ai-agent-for-agentic-chip-design-and-verification" target="_blank">Cadence Unveils ChipStack AI Agent for Agentic Chip Design and Verification</a> (2026-04)</li>
-      <li>Forbes: <a href="https://www.forbes.com/sites/marcochiappetta/2026/03/11/synopsys-reveals-agentic-ai-to-speed-next-gen-chip-and-system-designs" target="_blank">Synopsys Reveals Agentic AI To Speed Next-Gen Chip And System Designs</a> (2026-03)</li>
-      <li>SimScale Blog: <a href="https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows" target="_blank">Multi-agent workflows: Design & Simulation Week 2026</a> (2026)</li>
-      <li>Synera: <a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Agentic AI for CAE and Manufacturing Analysis</a> (2026)</li>
-    </ol>
-  </div>
+<div class="card">
+<span class="card-num">04 · 半导体制造</span>
+<h2>Intel 18A 量产 + Terafab：$25B 垂直整合 AI 芯片巨构，首颗 Tesla AI6 芯片年底流片</h2>
+<p class="summary">Intel CEO Lip-Bu Tan与Elon Musk联合推动的Terafab项目持续推进：这座位于Austin Texas的$25B垂直整合巨构，整合芯片设计、光刻、制造、存储、先进封装和测试全环节于单一工厂。Intel 18A工艺节点已进入高容量生产，首批客户包括Microsoft、Qualcomm。Tesla AI6芯片预计2026年底tape-out，2027年大规模量产。FOPLP封装工厂Q3 2026已接收设备，目标同期量产。Terafab目标年产1TW算力硬件，约为当前美国全国芯片消耗量的两倍。</p>
+<div class="insight"><span class="insight-title">核心看点</span><p>Terafab的核心逻辑是消除「运输瓶颈」——传统模式芯片设计在美国、制造在台湾、封装在马来西亚，而Terafab将整个生命周期整合于同一设施。18A是Intel代工战略的生命线：如果Terafab的AI6芯片成功量产，Intel将从AI芯片制造旁观者变为核心玩家。</p></div>
+<p class="source">来源：<a href="https://247wallst.com/investing/2026/06/09/elon-musk-reveals-insane-plan-to-double-american-chip-production-in-a-single-plant">24/7 Wall St.</a> · <a href="https://abit.ee/en/processors/terafab-spacex-tesla-xai-elon-musk-ai-chips-semiconductor-factory-2026-intel-en">ABIT</a> · <a href="https://oplexa.com/intel-terafab-project-ai-chip-supply-chain">Oplexa</a></p>
+</div>
+
+<div class="card">
+<span class="card-num">05 · Agentic CAE</span>
+<h2>AI 代理模型与数字孪生重塑工程仿真：从「逐次全仿真」到「秒级预测」的范式迁移</h2>
+<p class="summary">AI正以「倍增器」角色重塑CAE领域：用训练好的代理模型（surrogate models）替代每次设计迭代跑高保真全仿真的传统流程，工程师可在秒级获得高精度预测。Lenovo与NVIDIA联合推出的ThinkStation搭载Blackwell GPU，支持桌面端AI模型本地微调与推理，降低云端依赖。NAFEMS 2026 AI/ML in CAE会议同期举办，聚焦代理模型、数字孪生与SPDM（仿真流程与数据管理）的交叉融合。AI驱动的CAD/CAE一体化工作流正加速从汽车、航空向半导体封装热仿真等新领域渗透。</p>
+<div class="insight"><span class="insight-title">核心看点</span><p>代理模型不是替代传统FEM/CFD，而是将昂贵仿真从「每次迭代都跑」变为「只跑验证」，将工程迭代速度提升1-2个数量级。真正的瓶颈在于训练域泛化——代理模型只在训练数据覆盖的设计空间内可信，边界外可能产生危险外推。NVIDIA Blackwell桌面工作站的本地AI推理能力使中小工程团队也能参与这场变革。</p></div>
+<p class="source">来源：<a href="https://www.tgm.solutions/en/top-technologies-in-engineering/ai-in-engineering-2026-how-simulation-digital-twins-surrogate-models-are-redefining-cae">TGM Solutions</a> · <a href="https://www.designnews.com/automation/future-ready-engineering-preparing-for-the-next-generation-of-cad-cae-with-lenovo-nvidia">Design News</a> · <a href="https://www.nafems.org/events/nafems/2026/artificial-intelligence-and-machine-learning-ai-ml-in-engineering-simulation">NAFEMS</a></p>
+</div>
+
+<div class="footer">
+<h3>参考资料</h3>
+<ul>
+<li><a href="https://www.nvidia.com/en-us/events/dac">NVIDIA at DAC 2026 — Welcome Address by Tim Costa</a></li>
+<li><a href="https://www.businesswire.com/news/home/20260504802555/en/The-2026-DAC-Chips-to-Systems-Conference-Comes-to-Long-Beach-for-the-First-Time-with-Record-Growth-as-AI-Reshapes-Chip-and-System-Design">DAC 2026 Press Release (BusinessWire)</a></li>
+<li><a href="https://www.theregister.com/systems/2026/07/23/amd-attacks-the-rack-with-helios-systems-that-rival-nvidias/5277246">AMD attacks the rack with Helios (The Register)</a></li>
+<li><a href="https://tech-insider.org/amd-advancing-ai-2026">AMD Advancing AI 2026: Helios Rack Hits $5.25M (Tech Insider)</a></li>
+<li><a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">CadenceLIVE 2026: Can Agentic AI Crack Design Automation? (Futurum Group)</a></li>
+<li><a href="https://247wallst.com/investing/2026/06/09/elon-musk-reveals-insane-plan-to-double-american-chip-production-in-a-single-plant">Musk Terafab Plan (24/7 Wall St.)</a></li>
+<li><a href="https://oplexa.com/intel-terafab-project-ai-chip-supply-chain">Intel Terafab Project: The $25B Blueprint (Oplexa)</a></li>
+<li><a href="https://www.tgm.solutions/en/top-technologies-in-engineering/ai-in-engineering-2026-how-simulation-digital-twins-surrogate-models-are-redefining-cae">AI in Engineering 2026 (TGM Solutions)</a></li>
+</ul>
+<a href="/ai-daily/" class="back-link">← 返回日报列表</a>
+</div>
+
 </div>
 </body>
 </html>
