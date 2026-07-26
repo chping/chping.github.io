@@ -5,109 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI日报 · 2026-07-26</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #333; line-height: 1.8; }
-.container { max-width: 780px; margin: 0 auto; padding: 40px 20px 60px; }
-.header { text-align: center; margin-bottom: 32px; }
-.header h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
-.header p { font-size: 14px; color: #999; }
-.cover-img { width: 100%; max-width: 780px; border-radius: 6px; margin-bottom: 24px; }
-.card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 20px; border-left: 5px solid #52525B; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
-.card h2 { font-size: 20px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; line-height: 1.5; }
-.card .overview { font-size: 17px; color: #444; margin-bottom: 14px; }
-.card .highlight { font-size: 16px; color: #52525B; background: #f8f8f8; padding: 12px 16px; border-radius: 4px; margin-bottom: 12px; border-left: 3px solid #52525B; }
-.card .highlight strong { color: #52525B; }
-.card .source { font-size: 13px; color: #999; margin-top: 12px; }
-.card .source a { color: #52525B; text-decoration: none; }
-.card .source a:hover { text-decoration: underline; }
-.ref-section { margin-top: 40px; padding-top: 24px; border-top: 1px solid #e0e0e0; }
-.ref-section h3 { font-size: 16px; color: #666; margin-bottom: 12px; }
-.ref-section ul { list-style: none; padding: 0; }
-.ref-section li { font-size: 14px; color: #999; margin-bottom: 6px; }
-.ref-section a { color: #52525B; text-decoration: none; }
-.ref-section a:hover { text-decoration: underline; }
-.footer { text-align: center; margin-top: 40px; font-size: 13px; color: #bbb; }
-.footer a { color: #999; text-decoration: none; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f7f7f8; color: #27272A; line-height: 1.8; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 28px; font-weight: 800; color: #18181B; margin-bottom: 4px; }
+  .subtitle { color: #71717A; font-size: 15px; margin-bottom: 24px; }
+  .date-badge { display: inline-block; font-size: 12px; color: #A1A1AA; background: #F4F4F5; padding: 3px 12px; border-radius: 999px; margin-bottom: 20px; }
+  .card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 5px solid #52525B; }
+  .card:nth-child(2) { border-left-color: #52525B; }
+  .card:nth-child(3) { border-left-color: #3F3F46; }
+  .card:nth-child(4) { border-left-color: #71717A; }
+  .card:nth-child(5) { border-left-color: #A1A1AA; }
+  .card:nth-child(6) { border-left-color: #D4D4D8; }
+  .card h2 { font-size: 20px; font-weight: 700; color: #18181B; margin-bottom: 8px; line-height: 1.4; }
+  .card .summary { font-size: 17px; color: #52525B; margin-bottom: 16px; line-height: 1.8; }
+  .card .highlight { font-size: 15px; color: #3F3F46; margin-bottom: 14px; }
+  .card .highlight strong { color: #18181B; background: #F4F4F5; padding: 1px 6px; border-radius: 3px; font-weight: 600; }
+  .card .source { font-size: 13px; color: #A1A1AA; border-top: 1px solid #F4F4F5; padding-top: 12px; }
+  .card .source a { color: #52525B; text-decoration: underline; text-underline-offset: 2px; }
+  .ref-section { margin-top: 32px; padding-top: 20px; border-top: 1px solid #E4E4E7; }
+  .ref-section h3 { font-size: 16px; color: #71717A; margin-bottom: 12px; }
+  .ref-section ol { font-size: 14px; color: #A1A1AA; padding-left: 20px; }
+  .ref-section ol li { margin-bottom: 6px; }
+  .ref-section a { color: #52525B; }
 </style>
 </head>
 <body>
 <div class="container">
+  <img src="/ai-daily/covers/2026-07-26.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="AI日报封面">
+  <h1>AI日报</h1>
+  <p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+  <span class="date-badge">2026年7月26日</span>
 
-<div class="header">
-    <h1>AI日报 · 2026-07-26</h1>
-    <p>AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
-</div>
+  <!-- 新闻1 -->
+  <div class="card">
+    <h2>NVIDIA Vera Rubin全面投产，7月首批交付</h2>
+    <p class="summary">NVIDIA下一代AI超级计算平台Vera Rubin已进入全面量产阶段，覆盖全球30个国家、350余家工厂，超过150家台湾生态伙伴参与。7月起陆续向AWS、Microsoft、Google、OpenAI、Meta及xAI等主要客户发货，下半年进入大规模出货。Vera Rubin NVL72单机架提供10倍于Grace Blackwell的智能体吞吐量，配备HBM4显存和800Gb/s共封装光学互联。</p>
+    <p class="highlight"><strong>核心看点：</strong>六芯片协同设计（Vera CPU 88核 + Rubin GPU 336B晶体管 + NVLink 6 + ConnectX-9 + BlueField-4 DPU + Spectrum-6），首次实现机架级机密计算。每NVL72需约1152TB NAND，可能对全球NAND供应形成短期压力。标志着Agentic AI基础设施从实验阶段进入工业级规模化部署。</p>
+    <p class="source">来源：<a href="https://aiweekly.co/alerts/nvidia-vera-rubin-enters-full-production-at-350-factories" target="_blank">AI Weekly</a> · <a href="https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/" target="_blank">Wccftech</a></p>
+  </div>
 
-<img src="/ai-daily/covers/2026-07-26.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="AI日报封面">
+  <!-- 新闻2 -->
+  <div class="card">
+    <h2>Cadence ChipStack AI Super Agent：首款L5级全自主虚拟芯片设计工程师</h2>
+    <p class="summary">Cadence在CadenceLIVE 2026上发布ChipStack AI Super Agent，定位为业界首个Level-5全自主虚拟设计工程师。该超级智能体基于Cadence EDA全栈工具构建，运行于NVIDIA Nemotron模型之上，并由NVIDIA OpenShell运行时提供安全保障。早期客户报告在设计流程中实现了3-10倍的生产力提升。</p>
+    <p class="highlight"><strong>核心看点：</strong>Cadence通过收购ChipStack仅4个月即推出成品，Chiptack的"思维模型"（Mental Model）使Agent能理解设计意图而非仅执行命令。CEO Anirudh Devgan特别指出3D IC签核是客户最大痛点，GPU加速的Millennium平台和Allegro X AI定位为先进封装自动化答案。竞争壁垒不在基础模型，而在于接地气的EDA工具链与编排能力。</p>
+    <p class="source">来源：<a href="https://www.eetimes.com/cadence-unveils-chipstack-ai-agent-for-agentic-chip-design-and-verification" target="_blank">EE Times</a> · <a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group</a></p>
+  </div>
 
-<!-- 第1条 -->
-<div class="card" style="border-left-color: #52525B;">
-    <h2>AMD 投资 50 亿美元入股 Anthropic，锁定 MI450 芯片百亿订单</h2>
-    <p class="overview">AMD 于 7 月 22 日宣布与 Anthropic 达成战略合作，将向后者投资最高 50 亿美元，同时 Anthropic 承诺从 2027 年上半年起部署高达 2 吉瓦的 AMD Instinct MI450 系列 GPU。这是 AMD 在 AI 加速器市场挑战 Nvidia 主导地位的最大单笔交易，也是 Anthropic 今年继 650 亿美元融资后的又一次基础设施扩张。Anthropic 估值已达 9650 亿美元，超越 OpenAI，并考虑今秋 IPO。</p>
-    <div class="highlight">
-        <strong>核心看点：</strong>MI450 系列 GPU（含 MI455X）搭配 EPYC "Venice" CPU、Pensando 网络和 ROCm 软件栈，首次在超大规模客户中获得千兆瓦级部署承诺。这标志着 AI 芯片格局从"Nvidia 一家独大"转向"双供应商"时代——对芯片设计、封装、互连等 EDA 环节的竞争格局产生深远影响。
-    </div>
-    <p class="source">来源：<a href="https://www.cnbc.com/amp/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank">CNBC</a> · <a href="https://www.ft.com/content/9c74bb34-0705-4be1-b622-a334ce79db1d" target="_blank">Financial Times</a> · <a href="https://finance.yahoo.com/technology/ai/articles/amd-commits-5-billion-anthropic-195336439.html" target="_blank">Yahoo Finance</a></p>
-</div>
+  <!-- 新闻3 -->
+  <div class="card">
+    <h2>Synopsys AgentEngineer：多Agent协同的芯片设计新范式</h2>
+    <p class="summary">Synopsys在Converge 2026大会上发布AgentEngineer技术，可协调多个AI Agent在芯片设计与验证的关键阶段协同工作。同时推出Multiphysics Fusion技术，将Ansys黄金多物理场引擎深度集成进Synopsys EDA流程，解决电磁、热、机械效应带来的芯片设计难题。</p>
+    <p class="highlight"><strong>核心看点：</strong>Synopsys CEO Sassine Ghazi提出"硅基系统"新范式——硅驱动、AI使能、软件定义。AgentEngineer不只是单点工具智能化，而是跨域编排spec到signoff全流程。Multiphysics Fusion是Synopsys收购Ansys后首个重大集成成果，直接瞄准3nm/2nm节点下日益严重的物理效应耦合问题。</p>
+    <p class="source">来源：<a href="https://www.forbes.com/sites/marcochiappetta/2026/03/11/synopsys-reveals-agentic-ai-to-speed-next-gen-chip-and-system-designs" target="_blank">Forbes</a> · <a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Outlines-Vision-for-Engineering-the-Future/default.aspx" target="_blank">Synopsys</a></p>
+  </div>
 
-<!-- 第2条 -->
-<div class="card" style="border-left-color: #d4855e;">
-    <h2>白宫指控月之暗面通过泰国获取 Nvidia GB300 芯片训练 Kimi K3</h2>
-    <p class="overview">白宫科技政策办公室主任 Michael Kratsios 于 7 月 22 日公开指控中国 AI 公司月之暗面（Moonshot AI）通过泰国服务器获取 Nvidia GB300 Blackwell 芯片，用于训练其 2.8 万亿参数的开源模型 Kimi K3。Kratsios 还指控月之暗面对 Anthropic 的 Fable 模型进行了"工业级蒸馏攻击"。Kimi K3 在多项基准测试中已匹敌甚至超越美国前沿模型，引发华盛顿对芯片出口管制有效性的严重质疑。</p>
-    <div class="highlight">
-        <strong>核心看点：</strong>GB300 是 Nvidia Blackwell 架构旗舰芯片，被美国明确禁止出口中国。泰国成为新的芯片中转站暴露了出口管制的执行漏洞——从"实体清单"到"第三国路由"，半导体地缘博弈已进入新阶段。这对中国 AI 芯片自主化进程和全球 EDA 工具出口管控都有直接冲击。
-    </div>
-    <p class="source">来源：<a href="https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html" target="_blank">CNBC</a> · <a href="https://www.theverge.com/ai-artificial-intelligence/969454/chinas-moonshot-trained-its-ai-model-on-a-restricted-nvidia-chip-white-house-claims" target="_blank">The Verge</a> · <a href="https://www.bloomberg.com/news/articles/2026-07-22/white-house-official-says-moonshot-accessed-banned-nvidia-chips" target="_blank">Bloomberg</a></p>
-</div>
+  <!-- 新闻4 -->
+  <div class="card">
+    <h2>SimScale + CoLab：多Agent跨平台仿真协作实战落地</h2>
+    <p class="summary">在engineering.com主办的Design & Simulation Week 2026上，SimScale与CoLab联合演示了多Agent协同工作流：CoLab设计审查Agent发现设计问题后，自动请求SimScale仿真Agent设置并运行CFD分析，结果自动回传评审界面。SimScale同步宣布Engineering AI Agent面向所有企业团队正式开放，并推出开放Workflows平台，允许集成任意求解器与自定义方法。</p>
+    <p class="highlight"><strong>核心看点：</strong>这是Agentic CAE领域首个公开演示的生产级多Agent跨平台协作案例——两个独立供应商的Agent通过API互操作，无需人工中转。SimScale报告称使用AI的团队实现4倍生产力提升、设计空间探索扩大3倍。Agent不再只是"问答助手"，而是可以主动发现设计问题并自主执行仿真-反馈闭环。</p>
+    <p class="source">来源：<a href="https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows" target="_blank">SimScale Blog</a> · <a href="https://www.simtool.com/article/simscale-launches-engineering-ai-agents-and-open-workflows-platform-for-autonomous-simulation-orches" target="_blank">SimTool</a></p>
+  </div>
 
-<!-- 第3条 -->
-<div class="card" style="border-left-color: #4a90d9;">
-    <h2>Cadence 发布 ChipStack AI Super Agent：全球首个 L5 全自主虚拟芯片设计工程师</h2>
-    <p class="overview">在 Computex / CadenceLIVE 2026 上，Cadence 将其 ChipStack AI Super Agent 升级至 Level-5 全自主水平，定位为业界首个"全自主虚拟设计工程师"。该系统运行在 Nvidia Nemotron 模型之上，由 Nvidia OpenShell 运行时提供安全沙箱，能够跨设计域编排多步骤芯片设计流程——从 RTL 到 GDSII 全流程。Synopsys 同期也展示了其 Agentic AI 方案，两家 EDA 巨头在"自主芯片设计"赛道的竞争白热化。</p>
-    <div class="highlight">
-        <strong>核心看点：</strong>L5 自主意味着从"AI 辅助设计"到"AI 自主设计"的质变。Cadence 的防御壁垒不在于模型本身（模型可替换），而在于其物理验证工具链和 signoff 精度——这定义了 Agentic EDA 的护城河。DAC 2026 上大量真实用户案例表明，AI 在芯片设计中的应用已从 PPT 走向产线。
-    </div>
-    <p class="source">来源：<a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group</a> · <a href="https://cambrian-ai.com/this-cadence-ai-super-agent-is-worlds-first-to-automate-chip-design" target="_blank">Cambrian AI</a> · <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">EE Times</a></p>
-</div>
+  <!-- 新闻5 -->
+  <div class="card">
+    <h2>Synera Agentic AI框架：80+工业软件工具链的智能中枢</h2>
+    <p class="summary">在Automotive CAE Grand Challenge 2026上，Synera展示了其Agentic AI平台架构：通过对话式界面连接80余种CAx和PLM工具——包括ANSA、HyperMesh、optiStruct、LS-DYNA、CATIA、Siemens NX等。平台底层采用基于规则的自动化工作流，AI层负责理解工程师意图并编排工具调用，从结构上消除仿真和成本计算等关键工程任务中的幻觉风险。</p>
+    <p class="highlight"><strong>核心看点：</strong>Synera的独特路线是"规则层+AI层"双层架构——AI层提供自然交互和智能决策，但所有工程关键计算由确定性规则工作流执行。这解决了Agentic AI在CAE领域最大的信任问题。还原序模型（ROM）可嵌入Agent框架，让工程师无需自行运行完整仿真即可快速获取分析结果。</p>
+    <p class="source">来源：<a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Synera.ai</a></p>
+  </div>
 
-<!-- 第4条 -->
-<div class="card" style="border-left-color: #8b5cf6;">
-    <h2>马斯克感谢美光为特斯拉锁定"显著"内存芯片分配</h2>
-    <p class="overview">在特斯拉 Q2 2026 财报电话会上，Elon Musk 公开感谢美光科技（Micron）为特斯拉提供了"非常显著的"内存芯片分配，并称在当前"相当疯狂"的内存价格下这一合作条件"合理"。Musk 还特别提到美光"为特斯拉在未来几年腾出了空间"，暗示双方建立了长期战略供应关系。美光股价次日上涨 3.1%。</p>
-    <div class="highlight">
-        <strong>核心看点：</strong>HBM/DRAM 供应紧张是 2026 年 AI 芯片产业链的核心瓶颈。特斯拉 Dojo 超算和自动驾驶芯片对高带宽内存需求激增，与 AI 数据中心争夺同一供应池。美光-特斯拉的垂直锁定模式可能成为汽车半导体供应链的新范式。
-    </div>
-    <p class="source">来源：<a href="https://www.bloomberg.com/news/articles/2026-07-22/musk-says-micron-gave-tesla-significant-supply-of-memory-chips" target="_blank">Bloomberg</a> · <a href="https://www.investing.com/news/stock-market-news/micron-gains-as-musk-thanks-it-for--significant-memory-chip-allocation-4809785" target="_blank">Investing.com</a> · <a href="https://www.trendforce.com/news/2026/07/23/news-musk-says-micron-is-making-room-for-tesla-in-the-years-to-come-hinting-at-long-term-memory-supply" target="_blank">TrendForce</a></p>
-</div>
-
-<!-- 第5条 -->
-<div class="card" style="border-left-color: #10b981;">
-    <h2>中国 H1 2026 芯片出口近翻倍至 1773 亿美元，AI 驱动全球需求</h2>
-    <p class="overview">中国海关总署数据显示，2026 年上半年中国出口集成电路 1794.4 亿颗，价值 1772.8 亿美元，同比增长 96%。同时中国上半年芯片产量达 2798 亿颗（日均超 15 亿颗），同比增长 23.1%。南华早报分析指出，AI 驱动的智能设备和工业机器人是主要增长引擎，出口芯片均价约 1 美元/颗，以成熟制程存储、电源管理 IC、MCU 及封装测试为主。</p>
-    <div class="highlight">
-        <strong>核心看点：</strong>中国成熟制程产能已占全球近 30%，汽车电子、工业控制、消费电子领域形成规模化供应优势。这一"量升价稳"格局意味着：高端芯片仍受制于出口管制，但成熟制程的全球供应链依赖中国已不可逆——对全球 EDA/IP/设备厂商的市场策略产生结构性影响。
-    </div>
-    <p class="source">来源：<a href="https://amp.scmp.com/tech/article/3360503/global-ai-boom-sees-chinas-chip-exports-nearly-double-first-half-year" target="_blank">South China Morning Post</a> · <a href="https://finance.yahoo.com/technology/articles/china-claims-chip-exports-nearly-145227205.html" target="_blank">Yahoo Finance</a> · <a href="https://www.electronicsweekly.com/news/business/china-h1-exports-driven-by-chips-2026-07" target="_blank">Electronics Weekly</a></p>
-</div>
-
-<div class="ref-section">
+  <!-- 参考资料 -->
+  <div class="ref-section">
     <h3>参考资料</h3>
-    <ul>
-        <li><a href="https://www.cnbc.com/amp/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank">CNBC — AMD to invest up to $5B in Anthropic</a></li>
-        <li><a href="https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html" target="_blank">CNBC — Moonshot AI accessed Nvidia's chips despite Chinese export ban</a></li>
-        <li><a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group — Cadence and Synopsys Accelerate the Agentic EDA Race</a></li>
-        <li><a href="https://www.bloomberg.com/news/articles/2026-07-22/musk-says-micron-gave-tesla-significant-supply-of-memory-chips" target="_blank">Bloomberg — Musk Says Micron Gave Tesla 'Significant' Supply of Memory Chips</a></li>
-        <li><a href="https://amp.scmp.com/tech/article/3360503/global-ai-boom-sees-chinas-chip-exports-nearly-double-first-half-year" target="_blank">SCMP — China's chip exports nearly double in first half of year</a></li>
-        <li><a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">EE Times — AI in EDA Is Real, It's Now, and It's on Show at DAC 2026</a></li>
-        <li><a href="https://www.theverge.com/ai-artificial-intelligence/969454/chinas-moonshot-trained-its-ai-model-on-a-restricted-nvidia-chip-white-house-claims" target="_blank">The Verge — Moonshot trained its AI model on a restricted Nvidia chip</a></li>
-    </ul>
-</div>
-
-<div class="footer">
-    <p>© 2026 AI日报 · 数据来源：CNBC / Bloomberg / SCMP / The Verge 等</p>
-    <p><a href="/ai-daily/">← 返回日报列表</a></p>
-</div>
-
+    <ol>
+      <li>AI Weekly: <a href="https://aiweekly.co/alerts/nvidia-vera-rubin-enters-full-production-at-350-factories" target="_blank">NVIDIA Vera Rubin Enters Full Production at 350 Factories</a> (2026-07)</li>
+      <li>EE Times: <a href="https://www.eetimes.com/cadence-unveils-chipstack-ai-agent-for-agentic-chip-design-and-verification" target="_blank">Cadence Unveils ChipStack AI Agent for Agentic Chip Design and Verification</a> (2026-04)</li>
+      <li>Forbes: <a href="https://www.forbes.com/sites/marcochiappetta/2026/03/11/synopsys-reveals-agentic-ai-to-speed-next-gen-chip-and-system-designs" target="_blank">Synopsys Reveals Agentic AI To Speed Next-Gen Chip And System Designs</a> (2026-03)</li>
+      <li>SimScale Blog: <a href="https://www.simscale.com/blog/agentic-engineering-design-review-simulation-workflows" target="_blank">Multi-agent workflows: Design & Simulation Week 2026</a> (2026)</li>
+      <li>Synera: <a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Agentic AI for CAE and Manufacturing Analysis</a> (2026)</li>
+    </ol>
+  </div>
 </div>
 </body>
 </html>
