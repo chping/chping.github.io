@@ -5,91 +5,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI日报 · 2026-07-26</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; color:#333; }
-.container { max-width:780px; margin:0 auto; padding:32px 20px; }
-.header { text-align:center; padding-bottom:28px; margin-bottom:32px; border-bottom:1px solid #e0e0e0; }
-.header h1 { font-size:28px; font-weight:800; color:#52525B; margin-bottom:6px; }
-.header .date { font-size:14px; color:#999; }
-.header .subtitle { font-size:13px; color:#a1a1aa; margin-top:8px; }
-.card { background:#fff; border-radius:8px; padding:28px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,0.06); border-left:5px solid #52525B; transition:box-shadow .2s; }
-.card:hover { box-shadow:0 2px 10px rgba(0,0,0,0.1); }
-.card:nth-child(2) { border-left-color:#F97316; }
-.card:nth-child(3) { border-left-color:#3B82F6; }
-.card:nth-child(4) { border-left-color:#8B5CF6; }
-.card:nth-child(5) { border-left-color:#10B981; }
-.card h2 { font-size:19px; font-weight:700; color:#27272A; margin-bottom:12px; line-height:1.5; }
-.card .overview { font-size:17px; color:#52525B; line-height:1.85; margin-bottom:14px; }
-.card .insight { font-size:15px; color:#71717A; background:#FAFAFA; padding:12px 16px; border-radius:6px; margin-bottom:12px; line-height:1.75; }
-.card .insight strong { color:#52525B; }
-.card .source { font-size:13px; color:#a1a1aa; }
-.card .source a { color:#52525B; text-decoration:underline; }
-.card .source a:hover { color:#27272A; }
-.ref-section { margin-top:32px; padding:20px; background:#fff; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
-.ref-section h3 { font-size:15px; color:#52525B; margin-bottom:12px; }
-.ref-section ol { font-size:14px; color:#71717A; line-height:1.8; padding-left:24px; }
-.ref-section a { color:#52525B; word-break:break-all; }
-.footer { text-align:center; margin-top:28px; font-size:13px; color:#bbb; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f5f5f5; font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; color: #333; line-height: 1.8; }
+.container { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 26px; font-weight: 800; color: #1a1a2e; margin-bottom: 8px; }
+.header .date { font-size: 14px; color: #8a929d; }
+.header .subtitle { font-size: 13px; color: #aab; margin-top: 4px; }
+.cover-img { width: 100%; max-width: 780px; border-radius: 6px; margin-bottom: 24px; display: block; }
+.card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-left: 5px solid #52525B; }
+.card h2 { font-size: 18px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; }
+.card .overview { font-size: 17px; color: #444; margin-bottom: 14px; line-height: 1.85; }
+.card .highlight { background: #f9f9fb; border-radius: 6px; padding: 14px 16px; margin-bottom: 12px; }
+.card .highlight p { font-size: 15px; color: #52525B; font-weight: 600; }
+.card .source { font-size: 13px; color: #8a929d; margin-top: 8px; }
+.card .source a { color: #52525B; text-decoration: none; border-bottom: 1px solid #ccc; }
+.card .source a:hover { border-color: #52525B; }
+.ref-section { margin-top: 40px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid #e8e8ec; }
+.ref-section h3 { font-size: 16px; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; }
+.ref-section ol { padding-left: 20px; }
+.ref-section li { font-size: 14px; color: #666; margin-bottom: 6px; }
+.ref-section a { color: #52525B; }
+.footer { text-align: center; margin-top: 40px; padding: 20px; font-size: 13px; color: #aab; }
 </style>
 </head>
 <body>
 <div class="container">
+
+<img src="/ai-daily/covers/2026-07-26.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="AI日报封面">
+
 <div class="header">
-<h1>🔬 AI日报</h1>
-<div class="date">2026年7月26日 · 星期日</div>
-<div class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</div>
+<h1>AI日报</h1>
+<p class="date">2026年7月26日 · 周日</p>
+<p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
 </div>
 
+<!-- Story 1: DAC 2026 -->
 <div class="card">
-<h2>01 · DAC 2026今日开幕：EDA行业全面进入Agentic AI时代</h2>
-<div class="overview">第63届设计自动化大会（DAC 2026）今日在加州长滩开幕（7月26–29日），Agentic AI成为绝对主导议题。Cadence展示从ChipStack到AuraStack的全栈Agentic AI产品线，Siemens演示Solido Agentic AI定制IC设计+Aprisa AI RTL-to-GDS自主流程，Synopsys主打Agentic AI+多物理场融合方案。130+ AI贡献者构成的DAC AI生态标志着EDA从"AI辅助工具"向"AI Agent自主设计"的范式转换。</div>
-<div class="insight"><strong>核心看点：</strong>三大EDA巨头首次同台展示完整Agentic设计流程；NVIDIA Nemotron 3 Ultra模型驱动Cadence ChipStack Agent；研讨会主题"From Tools to Agents: Realizing Fully Autonomous EDA Workflows"；Siemens提出"D&V Scientist"新角色——工程师将转型为AI Agent编排者。</div>
-<div class="source">来源：<a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">EETimes</a> · <a href="https://events.sw.siemens.com/en-US/dac" target="_blank">Siemens EDA</a> · <a href="https://community.cadence.com/cadence_blogs_8/b/corporate-news/posts/cadence-s-agentic-ai-design-vision-takes-center-stage-at-dac" target="_blank">Cadence Blog</a></div>
+<h2>🏛️ DAC 2026 今日开幕：Agentic AI 全面进驻 EDA，130+ 贡献者展示 AI 芯片设计新范式</h2>
+<div class="overview">
+第63届设计自动化大会（DAC 2026）今日在加州长滩会议中心开幕（7月26-29日），这是 DAC 63年历史上首次落地长滩。大会以「从芯片到系统」为主题，共设550+技术场次、120+参展商、15家首次参展的AI芯片设计公司。EE Times 三篇系列文章指出：AI对芯片设计的改造不再是炒作——整个行业已经跨过「观望」阶段，进入大规模部署时代。
+</div>
+<div class="highlight">
+<p>核心看点：Siemens EDA 展示 Aprisa AI 实现 RTL-to-GDS 全流程 Agentic AI 驱动——10× 工程效率提升、3× 计算加速、PPA 优化 10%；NVIDIA 在开幕致辞中提出「AI 超算 × EDA」融合路径；Cadence 总部举办的 SEMI ESD Alliance 年度 Executive Outlook 聚焦「Agentic AI 如何改变芯片设计与验证」；ChipAgents 等新兴公司展示 AI-native EDA 工具链。</p>
+</div>
+<p class="source">来源：<a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">EE Times — AI in EDA Is Real, It's Now, and It's on Show at DAC 2026</a> | <a href="https://events.sw.siemens.com/en-US/dac" target="_blank">Siemens EDA at DAC 2026</a> | <a href="https://www.nvidia.com/en-us/events/dac" target="_blank">NVIDIA at DAC 2026</a></p>
 </div>
 
+<!-- Story 2: NVIDIA Vera Rubin -->
 <div class="card">
-<h2>02 · TSMC Q2利润暴增77%，追加$1000亿美国投资</h2>
-<div class="overview">台积电7月16日公布2026年Q2财报，净利润NT$7066亿（约$220亿），同比暴增77.4%，远超分析师预期。AI芯片需求持续井喷推动业绩创新高。同时宣布追加$1000亿Arizona投资计划，总US承诺达$2650亿，将建设10座以上晶圆厂和2座先进封装设施。上调2026全年资本开支指引至$600–640亿（此前为$520–560亿），反映AI产能扩张的紧迫性。</div>
-<div class="insight"><strong>核心看点：</strong>Q2净利润$220亿创历史新高；$2650亿总投资为美国史上最大外资绿地项目；CEO魏哲家表示AI芯片需求增速"远超任何人的预期"；3nm/5nm产能利用率接近100%。</div>
-<div class="source">来源：<a href="https://apnews.com/article/semiconductors-chips-tsmc-taiwan-trump-2231f2ea66b768a8231bdbd8863d46fe" target="_blank">AP News</a> · <a href="https://www.reuters.com" target="_blank">Reuters</a> · <a href="https://www.tsmc.com/static/abouttsmcaz/index.htm" target="_blank">TSMC Arizona</a></div>
+<h2>🚀 NVIDIA Vera Rubin 确认 Q3 出货，NVL72 平台 72-GPU 驱动 Agentic AI 工厂</h2>
+<div class="overview">
+NVIDIA 确认下一代 Vera Rubin AI 平台已全面投产，首批 Q3 2026 出货、Q4 放量、2027 上半年迎来大规模部署。NVL72 机架集成 72 颗 Rubin GPU，通过 NVLink 6 实现 3.6 TB/s 的 GPU 间带宽，搭载 HBM4 内存和 Vera CPU（88 核 Olympus 架构）。Jensen Huang 将此平台定位为「Agentic AI 工厂」的核心计算引擎。AWS、Google Cloud、Microsoft Azure、CoreWeave 等已确认部署。
+</div>
+<div class="highlight">
+<p>核心看点：Rubin GPU 含 3360 亿晶体管（Blackwell 为 2080 亿）；NVL144 CPX 推理优化版配备 GDDR7 128GB，专攻百万 token 上下文推理；SK hynix 预计占据 Rubin 平台 HBM4 约 70% 市场份额；全球半导体市场 2026 年预计逼近 $1T，AI 基础设施资本开支约 $1.5T。</p>
+</div>
+<p class="source">来源：<a href="https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand" target="_blank">Wccftech — NVIDIA Confirms Vera Rubin Launch In Q3</a> | <a href="https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer" target="_blank">NVIDIA Newsroom — Rubin Platform</a></p>
 </div>
 
+<!-- Story 3: Synera -->
 <div class="card">
-<h2>03 · Cadence AuraStack发布：Agentic AI首次进军PCB与先进封装</h2>
-<div class="overview">Cadence于7月16日推出AuraStack AI Super Agent——首个面向PCB和先进封装设计的Agentic AI平台。基于Allegro AI Studio、NVIDIA Blackwell+CUDA-X加速，宣称2x加速上市时间、15x任务级效率提升。早期合作伙伴包括NVIDIA、TSMC、Socionext、FORVIA HELLA和Schneider Electric。AuraStack补齐了Cadence从芯片设计到系统级PCB/封装的Agentic AI最后一块拼图。</div>
-<div class="insight"><strong>核心看点：</strong>Agentic AI首次覆盖PCB和先进封装——此前所有Agentic EDA均聚焦芯片设计；直接回应NVIDIA Rubin等机架级AI平台的多物理场设计瓶颈；与Synopsys在Computex展示的Ansys IcePak thermal agent形成系统级Agentic设计竞争。</div>
-<div class="source">来源：<a href="https://www.forbes.com/sites/marcochiappetta/2026/07/15/cadence-expands-ai-agents-with-aurastack-for-pcb-and-advanced-chip-packaging" target="_blank">Forbes</a> · <a href="https://futurumgroup.com/insights/cadence-aurastack-extends-agentic-leadership-toward-advanced-packaging-design" target="_blank">Futurum Group</a> · <a href="https://www.hpcwire.com/off-the-wire/cadence-launches-aurastack-ai-super-agent-for-pcb-and-packaging-design" target="_blank">HPCwire</a></div>
+<h2>🏆 Synera 获 2026 德国创新奖：Agentic AI 工程平台获 BMW/Airbus/NASA 采用</h2>
+<div class="overview">
+Synera 的 Agentic AI 工程平台荣获 2026 年德国创新奖「B2B 信息技术卓越奖」，由德国设计委员会从 23 个国家 462 个参赛作品中评选。平台已被 BMW、Airbus、NASA 等 OEM 和 Tier 1 供应商部署。在 Automotive Masterminds 2026 柏林站演示中，Synera 与 McKinsey 联合展示了一个多 Agent 系统：从 CAD 上传到几何分析、制造性检查、成本核算、CO₂ 足迹报告全流程——单次 prompt 即可完成原本需数周的跨部门串行流程。
+</div>
+<div class="highlight">
+<p>核心看点：Synera 的低代码 Agent 平台直接连接 CAD/PLM/仿真工具，通过对话界面触发多步工程分析工作流；与某 OEM 联合开发的制造分析 Agent 已投产；平台采用规则化工作流而非纯 LLM 推理，保证输出可复现和精确；美国制造业面临 2030 年前 210 万技术工人缺口，Agentic 自动化成为关键应对策略。</p>
+</div>
+<p class="source">来源：<a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Synera — Agentic AI for CAE and Manufacturing Analysis</a> | <a href="https://www.linkedin.com/company/syneragmbh" target="_blank">Synera LinkedIn — German Innovation Award 2026</a></p>
 </div>
 
+<!-- Story 4: Backend Equipment -->
 <div class="card">
-<h2>04 · Synopsys Ansys 2026 R1：CAE仿真领域首现Agentic能力</h2>
-<div class="overview">Synopsys在Ansys 2026 R1中首次引入Agentic AI能力，标志着工业CAE/CAD从"AI辅助"向"自主仿真"的关键转折。SimAI Pro桌面版实现本地AI驱动仿真预测、无需云端资源，降低了AI仿真门槛。Computex 2026上展示的Ansys IcePak thermal agent可自主完成GPU散热网格划分、仿真收敛与优化——与NVIDIA NemoClaw协同，将Agentic自动化延伸到热物理收敛。</div>
-<div class="insight"><strong>核心看点：</strong>CAE领域首次出现Agentic仿真——此前Agentic浪潮集中在EDA设计端；SimAI Pro桌面版使中小型工程团队也能用AI加速仿真；IcePak agent标志着多物理场仿真从"人工调参"走向"AI自主闭环"。Futurum Intelligence调查显示39.6%企业将研发/工程列为Agentic AI第三大部署场景。</div>
-<div class="source">来源：<a href="https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products" target="_blank">Synopsys Newsroom</a> · <a href="https://futurumgroup.com/insights/ansys-and-synopsys-expand-simulation-capabilities-with-nvidia-omniverse-integration" target="_blank">Futurum Group</a></div>
+<h2>📊 半导体后端设备市场达 $9.5B：Yole Group 称先进封装 + AI 重塑供应链格局</h2>
+<div class="overview">
+Yole Group 最新报告《Status of the Back-End Equipment Industry 2026》显示，全球半导体后端设备市场 2026 年预计达到 $95 亿，2026-2031 年 CAGR 6.3%。市场正从「量产组装」转向「战略性先进封装生态系统」。AI 封装、HBM 内存测试、高端基板掌握定价权，传统封装面临金铜通胀和商品化压力。面板级封装（PLP）市场预计到 2031 年 CAGR 超 40%，TSMC 的 CoPoS 技术将推动高端 PLP 采用。
+</div>
+<div class="highlight">
+<p>核心看点：HBM 市场 2026 年预计达 $546 亿（+58% YoY），SK hynix 保持 50%+ 份额；HBM3E 仍为 2026 主力产品占出货量约 2/3；先进封装已超越传统封装成为半导体封装收入主体；2.5D/3D 封装在 AI 和 HPC 需求驱动下持续增长，Q1 2026 季节性下滑 9% 后 Q2 将反弹。</p>
+</div>
+<p class="source">来源：<a href="https://www.electronicsweekly.com/news/business/back-end-equipment-market-to-hit-9-5bn-this-year-2026-07" target="_blank">Electronics Weekly — Back-end equipment market to hit $9.5bn</a> | <a href="https://www.yolegroup.com/product/report/panel-level-packaging-2026" target="_blank">Yole Group — Panel Level Packaging 2026</a></p>
 </div>
 
+<!-- Story 5: SimScale -->
 <div class="card">
-<h2>05 · Cadence全栈Agentic EDA成型：四款AI Super Agent覆盖RTL到PCB</h2>
-<div class="overview">从CadenceLIVE 2026（4月）到AuraStack发布（7月），Cadence完成EDA行业最激进的Agentic AI布局：ChipStack（前端RTL+验证）、ViraStack（模拟设计+迁移）、InnoStack（数字后端+signoff）、AuraStack（PCB+先进封装），统一于AgentStack编排层。Mental Model架构以EDA工具约束为基础确保Agent行为可靠，客户报告3–10x效率提升。CEO Devgan指出半导体市场2026年即达$1万亿、每代AI芯片需2x工程师——Agentic AI是唯一出路。</div>
-<div class="insight"><strong>核心看点：</strong>四款Super Agent构成行业首个端到端Agentic设计流；Mental Model架构防止LLM幻觉导致设计错误——区别于"ship and hope"的Agent washing；Devgan坦承3D IC全自动多物理场signoff仍是最大空白，相关Agent仍在客户协同验证中。</div>
-<div class="source">来源：<a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation" target="_blank">Futurum Group</a> · <a href="https://community.cadence.com/cadence_blogs_8/b/corporate-news/posts/cadence-s-agentic-ai-design-vision-takes-center-stage-at-dac" target="_blank">Cadence Blog</a></div>
+<h2>⚙️ SimScale 宣告 2026 为 Agentic AI 工程仿真拐点：从被动聊天到主动工作流</h2>
+<div class="overview">
+SimScale 官方博客指出，2026 年是工程仿真领域的 Agentic AI 拐点——AI 不再是被动问答工具，而是能自主推理、行动、执行多步工作流的智能体。Agentic AI 可理解 CAD 几何和仿真设置上下文，主动发现问题、推荐并实施配置、编排从设置到后处理的完整工作流。NVIDIA 在 CDFAM Barcelona 2026 上展示了 AI-Q Blueprint（基于 LangChain Deep Agents 的企业级研究 Agent），配合 NeMo Agent Toolkit 实现智能体行为分析和延迟优化。
+</div>
+<div class="highlight">
+<p>核心看点：工程 Agent 与传统 AI 工具的核心区别在于「行动能力」——不只是回答，而是执行；SimScale 平台已集成 Agentic 接口，工程师可通过自然语言驱动整个仿真 pipeline；Rescale 的 Agentic Engineering 框架专注于建模与仿真工作流的自动化编排；PTC 强调最佳 AI 策略是「连接 Agent 到成熟 CAD 引擎」而非推翻重来。</p>
+</div>
+<p class="source">来源：<a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale — Agentic AI in Engineering</a> | <a href="https://www.youtube.com/watch?v=tHBkgDcHuS8" target="_blank">NVIDIA CDFAM Barcelona 2026</a> | <a href="https://rescale.com/blog/agentic-engineering-for-modeling-and-simulation-workflows" target="_blank">Rescale — Agentic Engineering</a></p>
 </div>
 
+<!-- References -->
 <div class="ref-section">
-<h3>📚 参考资料与延伸阅读</h3>
+<h3>📚 参考资料</h3>
 <ol>
-<li>EETimes — "AI in EDA Is Real, It's Now, and It's on Show at DAC 2026" — <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026</a></li>
-<li>Siemens EDA at DAC 2026 — <a href="https://events.sw.siemens.com/en-US/dac" target="_blank">https://events.sw.siemens.com/en-US/dac</a></li>
-<li>Cadence Blog — "Cadence's Agentic AI Design Vision Takes Center Stage at DAC" — <a href="https://community.cadence.com/cadence_blogs_8/b/corporate-news/posts/cadence-s-agentic-ai-design-vision-takes-center-stage-at-dac" target="_blank">https://community.cadence.com/...</a></li>
-<li>AP News — TSMC Record Profit & US Investment — <a href="https://apnews.com/article/semiconductors-chips-tsmc-taiwan-trump-2231f2ea66b768a8231bdbd8863d46fe" target="_blank">https://apnews.com/...</a></li>
-<li>Forbes — "Cadence Expands AI Agents With AuraStack" — <a href="https://www.forbes.com/sites/marcochiappetta/2026/07/15/cadence-expands-ai-agents-with-aurastack-for-pcb-and-advanced-chip-packaging" target="_blank">https://www.forbes.com/...</a></li>
-<li>Futurum Group — "Cadence AuraStack Extends Agentic Leadership" — <a href="https://futurumgroup.com/insights/cadence-aurastack-extends-agentic-leadership-toward-advanced-packaging-design" target="_blank">https://futurumgroup.com/...</a></li>
-<li>Futurum Group — "CadenceLIVE 2026: Can Agentic AI Crack Design Automation?" — <a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation" target="_blank">https://futurumgroup.com/...</a></li>
-<li>Synopsys Newsroom — "Ansys 2026 R1 to Re-Engineer Engineering" — <a href="https://news.synopsys.com/2026-03-11-Synopsys-Launches-Ansys-2026-R1-to-Re-Engineer-Engineering-with-Joint-Solutions-and-AI-Powered-Products" target="_blank">https://news.synopsys.com/...</a></li>
+<li>EE Times, "AI in EDA Is Real, It's Now, and It's on Show at DAC 2026" (July 2026) — <a href="https://www.eetimes.com/ai-in-eda-is-real-its-now-and-its-on-show-at-dac-2026" target="_blank">链接</a></li>
+<li>Siemens EDA, "DAC 2026 — Agentic AI for RTL-to-GDS" — <a href="https://events.sw.siemens.com/en-US/dac" target="_blank">链接</a></li>
+<li>Wccftech, "NVIDIA Confirms Vera Rubin Launch In Q3" (July 2026) — <a href="https://wccftech.com/nvidia-confirms-vera-rubin-launch-in-q3-volume-ramp-q4-blackwell-continues-to-see-massive-demand" target="_blank">链接</a></li>
+<li>Synera, "Agentic AI for CAE and Manufacturing Analysis" — <a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">链接</a></li>
+<li>Electronics Weekly, "Back-end equipment market to hit $9.5bn this year" (July 2026) — <a href="https://www.electronicsweekly.com/news/business/back-end-equipment-market-to-hit-9-5bn-this-year-2026-07" target="_blank">链接</a></li>
+<li>SimScale, "Agentic AI in Engineering" (2026) — <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">链接</a></li>
+<li>Yole Group, "Panel Level Packaging 2026" — <a href="https://www.yolegroup.com/product/report/panel-level-packaging-2026" target="_blank">链接</a></li>
+<li>SEMI ESD Alliance, "2026 Executive Outlook" — <a href="https://www.semi.org/en/semi-press-release/semi-esd-alliance-2026-executive-outlook-explores-how-agentic-ai-will-change-chip-design-and-verification" target="_blank">链接</a></li>
 </ol>
 </div>
 
-<div class="footer">AI日报 · 每日自动生成 · 2026-07-26 · Powered by Hermes Agent</div>
+<div class="footer">
+<p>AI日报 · 每日自动生成 · AI芯片 / Agentic EDA / Agentic CAE/CAD 赛道</p>
+<p>© 2026 chping.github.io</p>
+</div>
+
 </div>
 </body>
 </html>
