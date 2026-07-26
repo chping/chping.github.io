@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI日报 · 2026-07-26</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; color:#333; }
+.container { max-width:780px; margin:0 auto; padding:40px 20px 60px; }
+.header { margin-bottom:40px; }
+.header h1 { font-size:28px; font-weight:800; color:#1a1a2e; margin-bottom:8px; }
+.header .subtitle { font-size:14px; color:#8a929d; }
+.header .date { font-size:13px; color:#aab2bd; margin-top:4px; }
+.header .cover-img { width:100%; max-width:100%; height:auto; border-radius:12px; margin:20px 0; display:block; }
+.card { background:#fff; border-radius:10px; padding:28px; margin-bottom:24px; box-shadow:0 1px 4px rgba(0,0,0,0.06); position:relative; }
+.card-1 { border-left:5px solid #d4855e; }
+.card-2 { border-left:5px solid #5a7fa0; }
+.card-3 { border-left:5px solid #6b8e6b; }
+.card-4 { border-left:5px solid #8b5ea8; }
+.card-5 { border-left:5px solid #c07a4b; }
+.card .num { font-size:12px; font-weight:700; letter-spacing:2px; margin-bottom:12px; display:inline-block; padding:2px 10px; border-radius:4px; }
+.card-1 .num { background:#fdf0e8; color:#d4855e; }
+.card-2 .num { background:#e8f0f8; color:#5a7fa0; }
+.card-3 .num { background:#e8f2e8; color:#6b8e6b; }
+.card-4 .num { background:#f0e8f8; color:#8b5ea8; }
+.card-5 .num { background:#fdf2e8; color:#c07a4b; }
+.card h2 { font-size:20px; font-weight:700; color:#1a1a2e; margin-bottom:12px; line-height:1.5; }
+.card .summary { font-size:15px; color:#555; line-height:1.8; margin-bottom:16px; }
+.card .highlight-label { font-size:12px; color:#8a929d; font-weight:700; letter-spacing:1px; margin-bottom:6px; text-transform:uppercase; }
+.card .highlight { font-size:14px; color:#444; line-height:1.7; background:#f9f9fb; padding:12px 16px; border-radius:6px; margin-bottom:16px; }
+.card .source { font-size:13px; color:#8a929d; margin-top:4px; }
+.card .source a { color:#5a7fa0; text-decoration:none; }
+.card .source a:hover { text-decoration:underline; }
+.footer { margin-top:40px; padding-top:24px; border-top:1px solid #e8e8ec; }
+.footer h3 { font-size:16px; font-weight:700; color:#1a1a2e; margin-bottom:12px; }
+.footer ul { list-style:none; }
+.footer li { font-size:13px; color:#8a929d; margin-bottom:6px; }
+.footer li a { color:#5a7fa0; text-decoration:none; }
+.footer li a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>AI日报：AI芯片 · Agentic EDA · Agentic CAE/CAD</h1>
+<p class="subtitle">AI半导体/工业软件行业每日精选资讯</p>
+<p class="date">2026-07-26</p>
+<img class="cover-img" src="https://chping.github.io/assets/ai-daily-cover-2026-07-26.jpg" alt="AI日报封面图" onerror="this.style.display='none'">
+</div>
+
+<div class="card card-1">
+<span class="num">头条</span>
+<h2>Nvidia 下一代 Rubin GPU 正式发货，半导体板块暴涨 5.2%</h2>
+<p class="summary">Nvidia 确认下一代 AI 芯片设计已正式向客户发货。Rubin 平台包含全新 Vera CPU、Rubin GPU 及配套网络芯片，搭载下一代 HBM 高带宽内存（SK Hynix/Micron/Samsung 供应），预计 2026 下半年量产爬坡。消息推动半导体板块单日暴涨 5.2%，Micron 涨 12%、AMD 涨 8%、SanDisk 涨 14%。Nvidia 同时明确 Blackwell 将继续作为入门级方案与 Rubin 并行销售，形成覆盖训练和推理的完整产品栈。</p>
+<p class="highlight-label">核心看点</p>
+<p class="highlight">Rubin 平台标志着 Nvidia 一年一代的产品迭代节奏全面落地，Blackwell→Rubin 代际切换将重塑数据中心 GPU 供应链格局。JP Morgan 预测 2026 年 Rubin GPU 出货量达 570 万颗，Blackwell 降至 180 万颗——代际切换窗口正式开启。</p>
+<p class="source">来源：<a href="https://uk.finance.yahoo.com/news/nvidia-says-next-generation-ai-125330963.html" target="_blank">Reuters</a> · <a href="https://www.extremetech.com/computing/nvidia-confirms-next-gen-ai-rubin-gpus-ready-for-mass-production-ahead" target="_blank">ExtremeTech</a> · Fair Value Study (2026-07-22)</p>
+</div>
+
+<div class="card card-2">
+<span class="num">芯片产业</span>
+<h2>AMD 与微软扩大 Azure AI 合作，Helios 方案锁定推理市场</h2>
+<p class="summary">微软宣布大幅扩展与 AMD 的战略合作：Azure 将部署 AMD Helios Rackscale Solution，专用于前沿模型的大规模 AI 推理负载；同时引入新一代 AMD EPYC 处理器驱动的 Azure 虚拟机实例，并在全云基础设施中扩展 Pensando DPU 部署。微软 CEO Satya Nadella 强调此合作"比常规云合作更广泛"。AMD 股价次日上涨约 8%。</p>
+<p class="highlight-label">核心看点</p>
+<p class="highlight">这是 AMD 在 AI 推理市场最具分量的客户背书——微软将 Helios 定位为 Frontier Model 推理的主力方案，而不仅是对 Nvidia 的补充。合作覆盖 GPU+CPU+DPU 全栈，AMD 的 AI 数据中心布局从"可有可无的备胎"进化为"不可替代的选项"。</p>
+<p class="source">来源：<a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd" target="_blank">Microsoft Blog</a> · <a href="https://www.morningstar.com/news/marketwatch/2026072086/amds-stock-climbs-and-a-new-microsoft-deal-is-only-part-of-the-reason" target="_blank">Morningstar</a> · <a href="https://www.tradingview.com/news/gurufocus:2e50d0f67094b:0-amd-stock-pops-after-landing-expanded-microsoft-ai-deal" target="_blank">TradingView</a> (2026-07-20)</p>
+</div>
+
+<div class="card card-3">
+<span class="num">Agentic EDA</span>
+<h2>Cadence 发布行业首个 L5 全自主虚拟芯片设计工程师</h2>
+<p class="summary">在 Computex 2026 上，Cadence 宣布将 ChipStack™ AI Super Agent 扩展至 Level-5 自主性，推出行业首个全自主虚拟 Agentic AI 设计工程师。该系统基于 Cadence 全栈 EDA 产品组合、NVIDIA Nemotron 大模型及 NVIDIA OpenShell 安全运行时，可在受控环境中自主执行实际芯片设计和验证工作。此前 Cadence 已陆续推出 ViraStack（模拟设计）、InnoStack（数字实现与签核）和 Cadence AgentStack（多 Agent 编排框架）。</p>
+<p class="highlight-label">核心看点</p>
+<p class="highlight">L5 自主性意味着 Agent 从"辅助工程师"进阶为"替代工程师"——可独立完成设计实现与验证闭环。Cadence 与 Synopsys 在 Agentic EDA 赛道的军备竞赛正式进入实战阶段，EDA 行业正经历自 RTL 综合以来最深刻的范式重构。</p>
+<p class="source">来源：<a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html" target="_blank">Cadence Press Release</a> · <a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group</a> (Computex 2026)</p>
+</div>
+
+<div class="card card-4">
+<span class="num">Agentic EDA</span>
+<h2>Siemens 携手台积电推进 Agentic AI 驱动的 EDA 全流程自动化</h2>
+<p class="summary">Siemens 与台积电深化合作，核心成果为 Fuse™ EDA AI System——一个面向半导体设计全流程的领域级 Agentic AI 系统。该系统整合生成式 AI 与 Agentic AI 能力，可实现 AI 自动化 DRC（设计规则检查）修复流程、先进工艺节点设计使能，并嵌入 Calibre 物理验证与 Solido 定制 IC 设计验证等 Siemens EDA 工具链。在 DAC 2026 上，Siemens 全面展示了 AI 驱动的 3D IC 异构集成、软件定义系统验证等方案。</p>
+<p class="highlight-label">核心看点</p>
+<p class="highlight">Siemens 的差异化策略是"Agentic AI 落地到每个具体工具节点"而非做大一统 Agent。Fuse 系统将 Agentic 能力注入 DRC 修复、物理验证等高频痛点，路径务实——从自动化最痛苦的环节开始，逐步扩展至全流程。台积电的参与为 EDA AI 系统提供了先进工艺节点的实证土壤。</p>
+<p class="source">来源：<a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026" target="_blank">Siemens News</a> · <a href="https://blogs.sw.siemens.com/verificationhorizons/2026/07/14/siemens-at-2026-dac" target="_blank">Siemens Blog</a> (DAC 2026)</p>
+</div>
+
+<div class="card card-5">
+<span class="num">Agentic CAE</span>
+<h2>SimScale 发布 Engineering AI Agents，开启 CAE 自主仿真编排时代</h2>
+<p class="summary">SimScale 宣布两大里程碑：企业级 Engineering AI Agents 正式可用，可自主完成从几何识别→仿真设置→求解→后处理的全流程；同时推出 SimScale Workflows——开放平台架构，允许任意求解器、工具或自定义方法原生集成到仿真环境中。这意味着工程师可以通过 AI Agent 自动执行多步骤 CAE 工作流，而不仅限于单点 Physics AI 推理。SimScale 将此定位为"2026 是工程仿真 AI 从实验到集成的拐点年"。</p>
+<p class="highlight-label">核心看点</p>
+<p class="highlight">SimScale Workflows 的开放架构是关键差异化——不绑定特定求解器，将 Agentic AI 置于编排层而非计算层。这种"任意求解器 + AI 编排"的设计，使 Agentic CAE 的落地不再受限于单一厂商的 Physics AI 能力，为行业提供了可扩展的自主仿真基础设施。</p>
+<p class="source">来源：<a href="https://www.simtool.com/article/simscale-launches-engineering-ai-agents-and-open-workflows-platform-for-autonomous-simulation-orches" target="_blank">SimTool</a> · <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale Blog</a> (2026-05)</p>
+</div>
+
+<div class="footer">
+<h3>参考资料</h3>
+<ul>
+<li>Nvidia says its next-generation AI chip platform to be rolled out in 2026 — <a href="https://uk.finance.yahoo.com/news/nvidia-says-next-generation-ai-125330963.html" target="_blank">Reuters</a></li>
+<li>Nvidia Confirms Next-Gen AI Rubin GPUs Ready for Mass Production — <a href="https://www.extremetech.com/computing/nvidia-confirms-next-gen-ai-rubin-gpus-ready-for-mass-production-ahead" target="_blank">ExtremeTech</a></li>
+<li>Microsoft expands Azure AI and HPC infrastructure with AMD — <a href="https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd" target="_blank">Microsoft Blog</a></li>
+<li>AMD's stock climbs, and a new Microsoft deal is only part of the reason — <a href="https://www.morningstar.com/news/marketwatch/2026072086/amds-stock-climbs-and-a-new-microsoft-deal-is-only-part-of-the-reason" target="_blank">Morningstar</a></li>
+<li>Cadence Unveils Industry's First Fully Autonomous Virtual Engineer — <a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-unveils-industrys-first-fully-autonomous-virtual.html" target="_blank">Cadence</a></li>
+<li>Cadence and Synopsys Accelerate the Agentic EDA Race — <a href="https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex" target="_blank">Futurum Group</a></li>
+<li>Siemens collaborates with TSMC to advance AI for semiconductor design — <a href="https://news.siemens.com/en-us/siemens-eda-tsmc-technology-symposium-2026" target="_blank">Siemens</a></li>
+<li>Discover What's Next: Siemens EDA at DAC 2026 — <a href="https://blogs.sw.siemens.com/verificationhorizons/2026/07/14/siemens-at-2026-dac" target="_blank">Siemens Blog</a></li>
+<li>SimScale Engineering AI Agents & Workflows — <a href="https://www.simtool.com/article/simscale-launches-engineering-ai-agents-and-open-workflows-platform-for-autonomous-simulation-orches" target="_blank">SimTool</a></li>
+<li>Agentic AI in Engineering: 5 Workflows Transforming Simulation — <a href="https://www.simscale.com/blog/agentic-ai-in-engineering" target="_blank">SimScale Blog</a></li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>
