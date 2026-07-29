@@ -5,124 +5,99 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>半导体AI日报 · 2026-07-29</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #F8F8F8; color: #27272A; }
-.container { max-width: 780px; margin: 0 auto; padding: 40px 20px 60px; }
-.cover { width: 100%; max-width: 780px; border-radius: 6px; margin-bottom: 16px; }
-.viewpoint { font-size: 15px; color: #52525B; font-style: italic; text-align: center; margin-bottom: 28px; line-height: 1.7; }
-.title { font-size: 28px; font-weight: 800; color: #27272A; text-align: center; margin-bottom: 6px; }
-.subtitle { font-size: 14px; color: #A1A1AA; text-align: center; margin-bottom: 36px; }
-.card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 20px; border-left: 5px solid #52525B; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-.c1 { border-left-color: #52525B; }
-.c2 { border-left-color: #F97316; }
-.c3 { border-left-color: #059669; }
-.c4 { border-left-color: #2563EB; }
-.c5 { border-left-color: #7C3AED; }
-.card-num { font-size: 11px; color: #A1A1AA; font-weight: 600; letter-spacing: 2px; margin-bottom: 8px; }
-.card-title { font-size: 18px; font-weight: 800; color: #27272A; margin-bottom: 10px; line-height: 1.5; }
-.card-summary { font-size: 15px; color: #52525B; line-height: 1.8; margin-bottom: 12px; }
-.card-point { font-size: 14px; color: #3F3F46; line-height: 1.7; }
-.card-point strong { color: #27272A; }
-.source { font-size: 13px; color: #A1A1AA; margin-top: 14px; }
-.source a { color: #52525B; text-decoration: none; border-bottom: 1px solid #E4E4E7; }
-.source a:hover { color: #27272A; border-bottom-color: #52525B; }
-.refs { margin-top: 40px; padding-top: 20px; border-top: 1px solid #E4E4E7; }
-.refs h3 { font-size: 15px; color: #27272A; margin-bottom: 12px; }
-.refs ol { padding-left: 20px; }
-.refs li { font-size: 13px; color: #71717A; margin-bottom: 6px; line-height: 1.7; }
-.meta { font-size: 13px; color: #A1A1AA; text-align: center; margin-top: 32px; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; background:#f5f5f5; color:#333; }
+  .container { max-width:780px; margin:0 auto; padding:40px 20px 60px; }
+  .cover { width:100%; max-width:780px; border-radius:6px; margin-bottom:24px; }
+  .opinion { font-size:15px; color:#52525B; font-style:italic; text-align:center; margin-bottom:28px; line-height:1.8; }
+  .opinion strong { color:#27272A; font-style:normal; }
+  .header { margin-bottom:32px; }
+  .header h1 { font-size:24px; color:#27272A; margin-bottom:8px; }
+  .header .date { font-size:13px; color:#999; }
+  .card { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #d4855e; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .card h2 { font-size:17px; color:#27272A; margin-bottom:8px; line-height:1.5; }
+  .card .summary { font-size:15px; color:#555; line-height:1.8; margin-bottom:10px; }
+  .card .highlight { font-size:14px; color:#777; line-height:1.7; margin-bottom:12px; }
+  .card .source { font-size:12px; color:#999; }
+  .card .source a { color:#d4855e; text-decoration:none; }
+  .card .source a:hover { text-decoration:underline; }
+  .refs { margin-top:32px; padding:20px; background:#fff; border-radius:6px; font-size:13px; color:#888; line-height:2; }
+  .refs a { color:#d4855e; text-decoration:none; }
+  .cover-report { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #52525B; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .cover-report table { width:100%; border-collapse:collapse; font-size:14px; }
+  .cover-report td { padding:6px 8px; border-bottom:1px solid #eee; }
+  .cover-report td:first-child { font-weight:600; color:#52525B; width:120px; }
 </style>
 </head>
 <body>
 <div class="container">
+  <img src="/ai-daily/covers/2026-07-29.jpg" class="cover" alt="半导体AI日报封面">
 
-<img src="/ai-daily/covers/2026-07-29.jpg" class="cover" alt="半导体AI日报封面">
+  <p class="opinion">
+    <strong>DAC 2026 标志着 Agentic EDA 从"辅助型 Copilot"到"全自主编排"的质变——Synopsys、Siemens、NVIDIA 三大巨头同时交付自验证多 Agent 芯片设计工作流，人类工程师的角色正在从操作者转变为审核者。</strong>
+  </p>
 
-<div class="viewpoint">
-  EDA Agentic AI 竞赛已从「辅助型助手」进入「Level-5 全自主」时代——<br>Cadence 与 Siemens 正押注自验证 Agent，试图在无需人工干预的条件下闭合芯片设计全链路。
-</div>
-
-<h1 class="title">半导体AI日报 · 2026-07-29</h1>
-<p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
-
-<div class="card c1">
-  <div class="card-num">01 · AGENTIC EDA</div>
-  <div class="card-title">Siemens + NVIDIA 联手推出自验证 Agentic EDA 工作流</div>
-  <div class="card-summary">
-    Siemens 在 DAC 2026 上宣布与 NVIDIA 的战略合作升级，将自验证（self-verifying）Agentic AI 工作流引入 EDA 全流程。基于 Siemens 新推出的 Fuse™ EDA AI Agent 系统，叠加 NVIDIA Nemotron 开放模型与 NeMo Gym 智能体训练环境，AI Agent 可在长时间运行的芯片设计任务中持续自我验证——将决策结果与基于物理的确定性 EDA 引擎交叉比对。覆盖范围从高层综合、功能验证、物理实现、签核验证、DFT 到 3D-IC 集成与 PCB 设计全链路。
+  <div class="header">
+    <h1>半导体AI日报 · 2026-07-29</h1>
+    <p class="date">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
   </div>
-  <div class="card-point">
-    <strong>核心看点：</strong>「自验证」成为 EDA Agentic AI 的关键分化点——不再追求盲目的自动化，而是要求 Agent 在每一步决策后可被物理引擎验证。Siemens Fuse 与 NVIDIA Nemotron 的组合将「信任」机制嵌入 Agent 架构底层，从架构上区别于 Cadence 和 Synopsys 的路径。多域协同 Agent 覆盖从 HLS 到 PCB 的完整半导体设计链。
-  </div>
-  <div class="source">来源：<a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026" target="_blank">Siemens Newsroom</a> · July 26, 2026</div>
-</div>
 
-<div class="card c2">
-  <div class="card-num">02 · AGENTIC EDA</div>
-  <div class="card-title">Cadence AuraStack 发布：全球首个 PCB/先进封装 Agentic AI 平台</div>
-  <div class="card-summary">
-    Cadence 在 Computex 2026 发布 AuraStack AI Super Agent——全球首个面向 PCB 与先进封装设计的 Agentic AI 平台。运行于 Allegro AI Studio 之上，AuraStack 协调专用 AI Agent 完成系统规划、实现、约束管理、设计复用、可制造性检查与多物理场分析。官方数据显示可实现最高 2 倍 TTM 加速与 15 倍任务级生产力提升。前期合作方包括 NVIDIA、TSMC、Socionext、FORVIA HELLA 与 Schneider Electric，计划 2026 年 9 月正式商用。
+  <div class="cover-report">
+    <h2 style="font-size:17px;color:#27272A;margin-bottom:14px;">🎨 封面图生成报告</h2>
+    <table>
+      <tr><td>今日观点</td><td>EDA agentic AI race crossed from copilot to full autonomy — three giants shipping self-verifying multi-agent workflows at DAC 2026</td></tr>
+      <tr><td>视觉隐喻</td><td>double exposure: futuristic convention hall with floating holographic chip blueprints + silicon wafer crystalline lattice structures with light passing through</td></tr>
+      <tr><td>框架</td><td>#7 — double exposure blending</td></tr>
+      <tr><td>色调</td><td>#4 — vivid magenta + midnight blue</td></tr>
+      <tr><td>种子</td><td>95965</td></tr>
+      <tr><td>HTTP 状态</td><td>200 OK</td></tr>
+      <tr><td>文件大小</td><td>108,139 bytes (108 KB)</td></tr>
+    </table>
   </div>
-  <div class="card-point">
-    <strong>核心看点：</strong>AuraStack 补齐了 Cadence Agentic 版图从芯片到系统的最后一块拼图。至此 Cadence 已覆盖 RTL 前端（ChipStack）、模拟设计（ViraStack）、数字后端（InnoStack）、PCB/封装（AuraStack）与多物理场（SystemStack），由 AgentStack 统一编排。这是 EDA 行业首个覆盖硅到系统的完整 Agentic AI 栈。
-  </div>
-  <div class="source">来源：<a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-introduces-aurastack-ai-super-agent-the-worlds-first.html" target="_blank">Cadence Press Release</a> · July 16, 2026</div>
-</div>
 
-<div class="card c3">
-  <div class="card-num">03 · AGENTIC EDA</div>
-  <div class="card-title">Cadence ChipStack 达到 Level-5 全自主：AI 虚拟设计工程师登场</div>
-  <div class="card-summary">
-    在 Computex 2026 上，Cadence 宣布 ChipStack AI Super Agent 扩展至 Level-5 全自主（Fully Autonomous Virtual Agentic Design Engineer），构建于 NVIDIA Nemotron 模型之上并由 NVIDIA OpenShell 运行时提供安全沙箱。Level-5 意味着 Agent 可自主执行动态仿真、自动纠偏与工作流优化，无需人工干预。早期客户在模拟设计（ViraStack）中报告 3–10 倍生产力提升，RTL 前端（ChipStack）最高 10 倍增益。AgentStack 编排框架实现多 Agent 协作，预计 H2 2026 向早期客户开放。
+  <div class="card">
+    <h2>01 · Synopsys 在 DAC 2026 发布业界首个自主 EDA 工作流，联合 AMD 与 Microsoft</h2>
+    <p class="summary">Synopsys 在 DAC 2026 宣布与 AMD 和 Microsoft 合作，推出业界首个自主 Agentic EDA 工作流，已可在 Microsoft Discovery 平台上评估。Synopsys 正在构建一个全面、开放的 Agentic AI 技术栈，覆盖从硅到系统的全链路自主设计。</p>
+    <p class="highlight">核心看点：此次发布标志着 EDA 从"工具优化"进入"工作流自主编排"阶段。Synopsys 的 Agentic AI 栈不仅是单个工具增强，而是跨规格生成、微架构设计、验证、物理实现的端到端自主工程——工程师从操作者变为审核者。</p>
+    <p class="source">来源：<a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Advances-Agentic-AI-Chip-Design-with-AMD-and-Microsoft/default.aspx">Synopsys Investor Relations</a> · July 27, 2026</p>
   </div>
-  <div class="card-point">
-    <strong>核心看点：</strong>从「AI 辅助设计」到「AI 自主设计」的跳跃已经发生。Level-5 全自主意味着 Agent 不再只是工具链中的一个环节，而是可以独立闭合从 RTL 到签核的完整设计循环。NVIDIA 内部数千名工程师已在 ChipStack 上运行数十亿计算小时，验证了其在生产环境中的可行性。这是 EDA 历史上第一次将「全自主设计」作为产品交付，而非研究原型。
-  </div>
-  <div class="source">来源：<a href="https://www.engineering.com/cadence-extends-chip-design-agent-to-level-5-autonomy" target="_blank">Engineering.com</a> · Computex 2026</div>
-</div>
 
-<div class="card c4">
-  <div class="card-num">04 · AGENTIC CAE</div>
-  <div class="card-title">Synera 联合 NVIDIA NemoClaw 推进 Agentic CAE：80+ 工具接入的工程 AI 平台</div>
-  <div class="card-summary">
-    Synera 成为设计仿真领域首批接入 NVIDIA NemoClaw 蓝图的平台之一，在 Automotive CAE Grand Challenge 2026 上展示了其 Agentic 框架如何连接 80+ CAx 与 PLM 工具（包括 ANSA、HyperMesh、LS-DYNA、CATIA、Siemens NX 等）。平台采用规则驱动底层确保工程关键任务（仿真、成本核算）无幻觉，同时支持降阶模型嵌入 Agent 框架以提供快速仿真访问。客户包括 BMW、Airbus、NASA，声称可加速开发周期最高 10 倍。H2 2026 开放 NemoClaw 部署能力。
+  <div class="card">
+    <h2>02 · NVIDIA 用 AI Agent 加速芯片工程，内部千名工程师已验证生产可行性</h2>
+    <p class="summary">据 The Next Platform 报道，NVIDIA 在 DAC 2026 展示了其内部 AI Agent 驱动的芯片工程流程。这些 Agent 已在 NVIDIA 内部被千名工程师验证为生产就绪，覆盖设计空间探索、布局优化和时序收敛等关键环节。</p>
+    <p class="highlight">核心看点：NVIDIA 的"AI 设计 AI 芯片"正反馈闭环正在加速——Vera Rubin（336B 晶体管）的量产背后，Agent 驱动的设计提效是关键推手。内部千名工程师的验证规模表明这已不是实验室 demo。</p>
+    <p class="source">来源：<a href="https://www.nextplatform.com/hpc/2026/07/27/nvidia-accelerates-chip-engineering-with-ai-agents/">The Next Platform</a> · July 27, 2026</p>
   </div>
-  <div class="card-point">
-    <strong>核心看点：</strong>Agentic AI 从 EDA 向 CAE/CAD 的横向扩展正在加速。Synera 的差异化在于「规则层 + AI 层」双层架构——用确定性规则引擎兜底，消除工程仿真场景下的幻觉风险，这是 EDA 行业自验证思路在 CAE 领域的映射。80+ 工具的广泛接入意味着 Agentic 工作流不是单点突破，而是对现有工程工具链的系统性覆盖。
+
+  <div class="card">
+    <h2>03 · Siemens 发布自验证 Agentic AI 工作流，覆盖半导体到 PCB 全链路</h2>
+    <p class="summary">Siemens EDA 在 DAC 2026 展示了与 NVIDIA 联合开发的自验证 Agentic AI 工作流。核心差异化在于"自验证"——Agent 的每步决策可被物理引擎反向验证，覆盖从 HLS 到 PCB 设计的全链路。</p>
+    <p class="highlight">核心看点：自验证能力是 Agentic EDA 从"Level 3 条件自主"迈入"Level 4-5 全自主"的关键分水岭。Siemens 将物理验证嵌入 Agent 决策循环，从根本上解决了"AI 幻觉"在芯片设计中不可接受的问题。</p>
+    <p class="source">来源：<a href="https://www.design-reuse.com/news/202530896-synopsys-advances-agentic-ai-chip-design-with-amd-and-microsoft">Design & Reuse</a> · July 27, 2026</p>
   </div>
-  <div class="source">来源：<a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge" target="_blank">Synera</a> · June 2026</div>
-</div>
 
-<div class="card c5">
-  <div class="card-num">05 · AI CHIP</div>
-  <div class="card-title">NVIDIA Vera Rubin 全量生产：336B 晶体管 GPU 下半年发货</div>
-  <div class="card-summary">
-    NVIDIA Vera Rubin 平台已进入全量生产阶段，NVL72 机架系统计划 H2 2026 向首批合作伙伴发货。Rubin GPU 集成约 3360 亿晶体管、最高 288GB HBM4 内存、约 22 TB/s 内存带宽，FP4 推理性能约 50 PFLOPS——约为 Blackwell 的 5 倍。搭配 88 核 Arm Vera CPU、NVLink 6 交换机和 ConnectX-9 SuperNIC。早期部署伙伴包括 CoreWeave、AWS、Microsoft、Google、Meta、OpenAI 和 xAI。Micron 已确认 HBM4 36GB 模块高量产出货，专为 Rubin 架构设计。
+  <div class="card">
+    <h2>04 · EE Times：DAC 2026 实锤——AI 在 EDA 不再是 PPT，已全面落地展台</h2>
+    <p class="summary">EE Times 在 DAC 2026 现场报道指出，AI 在芯片设计中的应用已"离开幻灯片、走上展台"。超过 50% 的 28nm 以下先进芯片设计已使用 AI 辅助，Agentic AI 正从对话式 Copilot 进化为能推理、能操作工具的自主协作者。</p>
+    <p class="highlight">核心看点：EE Times 提出的五级自主框架（类比自动驾驶 L1-L5）已成为行业参照标准。当前行业整体处于 L3，Synopsys/Cadence/Siemens 正竞速冲击 L4-L5——从"AI 辅助人"到"人审核 AI"的转变比预期更快。</p>
+    <p class="source">来源：<a href="https://www.eetimes.com/how-to-plan-agentic-ai-deployment-for-chip-design">EE Times</a> · July 28, 2026</p>
   </div>
-  <div class="card-point">
-    <strong>核心看点：</strong>Vera Rubin 的量产标志着 AI 算力基础设施进入新代际。336B 晶体管是 Blackwell 的近 1.6 倍，HBM4 内存带宽 2.3 倍于前代。更重要的是——Rubin 将直接驱动上述 Agentic EDA/CAE 平台的推理与训练负载：Cadence 的 Level-5 ChipStack 和 Synera 的 NemoClaw Agent 均构建于 NVIDIA 算力栈之上。芯片硬件与设计自动化软件的正反馈循环正在加速闭合。
+
+  <div class="card">
+    <h2>05 · Synera Agentic CAE 平台接入 80+ 工具，"规则层 + AI 层"双架构消除仿真幻觉</h2>
+    <p class="summary">Synera 在 2026 汽车 CAE Grand Challenge 上展示了其 Agentic CAE 框架。平台已连接 80+ CAx 和 PLM 工具（包括 ANSA、HyperMesh、LS-DYNA、CATIA、Siemens NX），通过"规则层在下、AI 层在上"的双层架构，从根本上消除工程仿真中的 AI 幻觉风险。</p>
+    <p class="highlight">核心看点：Agentic CAE 正在复制 Agentic EDA 的路径——从单点优化到全链路编排。BMW、Airbus、NASA 等客户已实现 10x 加速。规则引擎作为"安全底座"、AI 作为"智能编排层"的架构设计，为工业级 Agentic AI 提供了可复用的范式。</p>
+    <p class="source">来源：<a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge">Synera</a> · June 2026</p>
   </div>
-  <div class="source">来源：<a href="https://tech-insider.org/nvidia-gtc-2026-rubin-gpu-analysis" target="_blank">Tech-Insider</a> · 2026</div>
-</div>
 
-<div class="refs">
-  <h3>参考资料</h3>
-  <ol>
-    <li>Siemens Newsroom — 「Siemens advances self-verifying agentic AI workflows for semiconductor and PCB design」(July 26, 2026)</li>
-    <li>Cadence Press Release — 「Cadence Introduces AuraStack AI Super Agent」(July 16, 2026)</li>
-    <li>Futurum Group — 「CadenceLIVE 2026: Can Agentic AI Crack Design Automation?」</li>
-    <li>Engineering.com — 「Cadence extends chip design agent to Level-5 autonomy」(Computex 2026)</li>
-    <li>Moor Insights & Strategy — 「Cadence Leans into EDA Super Agents at Cadence LIVE 2026」</li>
-    <li>Synera — 「Agentic AI for CAE and Manufacturing Analysis」(June 2026)</li>
-    <li>HPCwire — 「Synera Advances AI Agents for Design and Engineering Simulation with NVIDIA」(June 2026)</li>
-    <li>Tech-Insider — 「NVIDIA Rubin GPU: 336B Transistors Analysis」(2026)</li>
-  </ol>
-</div>
-
-<div class="meta">
-  半导体AI日报 · 自动生成于 2026-07-29 · AI芯片 | Agentic EDA | Agentic CAE/CAD
-</div>
-
+  <div class="refs">
+    <strong>参考资料</strong><br>
+    1. Synopsys — <a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Advances-Agentic-AI-Chip-Design-with-AMD-and-Microsoft/default.aspx">Synopsys Advances Agentic AI Chip Design with AMD and Microsoft</a><br>
+    2. The Next Platform — <a href="https://www.nextplatform.com/hpc/2026/07/27/nvidia-accelerates-chip-engineering-with-ai-agents/">Nvidia Accelerates Chip Engineering With AI Agents</a><br>
+    3. Design & Reuse — <a href="https://www.design-reuse.com/news/202530896-synopsys-advances-agentic-ai-chip-design-with-amd-and-microsoft">DAC 2026 Roundup</a><br>
+    4. EE Times — <a href="https://www.eetimes.com/how-to-plan-agentic-ai-deployment-for-chip-design">How to Plan Agentic AI Deployment for Chip Design</a><br>
+    5. Synera — <a href="https://www.synera.ai/webinar/agentic-ai-cae-manufacturing-analysis-automotive-cae-grand-challenge">Agentic AI for CAE and Manufacturing Analysis</a>
+  </div>
 </div>
 </body>
 </html>
