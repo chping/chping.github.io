@@ -134,7 +134,8 @@ if args.image and os.path.exists(args.image):
         body += f'\r\n--{boundary}--\r\n'.encode()
 
         upload_url = f'https://api.weixin.qq.com/cgi-bin/material/add_material?access_token={token}&type=image'
-        upload_resp = wechat_api(upload_url, data=body)
+        upload_resp = wechat_api(upload_url, data=body,
+                                 headers={'Content-Type': f'multipart/form-data; boundary={boundary}'})
 
         if 'media_id' in upload_resp:
             thumb_id = upload_resp['media_id']
