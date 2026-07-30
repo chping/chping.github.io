@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-07-30</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #FAFAFA; color: #18181B; line-height: 1.75; }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+  .cover-img { width: 100%; max-width: 780px; border-radius: 6px; margin-bottom: 24px; }
+  .opinion-quote { font-size: 15px; color: #52525B; font-style: italic; text-align: center; margin-bottom: 28px; padding: 0 20px; }
+  h1 { font-size: 24px; font-weight: 700; color: #18181B; margin-bottom: 8px; text-align: center; }
+  .subtitle { font-size: 13px; color: #A1A1AA; text-align: center; margin-bottom: 32px; }
+  .card { background: #fff; border-radius: 8px; padding: 28px; margin-bottom: 24px; border-left: 5px solid #52525B; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .card h2 { font-size: 18px; font-weight: 600; margin-bottom: 4px; color: #18181B; }
+  .card .meta { font-size: 12px; color: #A1A1AA; margin-bottom: 14px; }
+  .card h3 { font-size: 14px; font-weight: 600; color: #52525B; margin-top: 14px; margin-bottom: 4px; }
+  .card p { font-size: 17px; color: #3F3F46; }
+  .card .source { font-size: 13px; color: #A1A1AA; margin-top: 16px; }
+  .card .source a { color: #52525B; text-decoration: none; border-bottom: 1px solid #D4D4D8; }
+  .card .source a:hover { color: #18181B; border-color: #52525B; }
+  .ref-section { margin-top: 40px; padding: 20px; background: #fff; border-radius: 8px; }
+  .ref-section h2 { font-size: 16px; color: #52525B; margin-bottom: 12px; }
+  .ref-section ul { list-style: none; padding: 0; }
+  .ref-section li { font-size: 13px; color: #A1A1AA; margin-bottom: 6px; }
+  .ref-section a { color: #52525B; text-decoration: none; }
+  .dedup-note { font-size: 12px; color: #A1A1AA; margin-top: 20px; text-align: center; border-top: 1px solid #E4E4E7; padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<img src="/ai-daily/covers/2026-07-30.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="半导体AI日报封面">
+
+<p class="opinion-quote">"AI 基础设施的垄断格局正从三个方向同时裂解：替代性存储架构、自验证设计智能体、跨平台工程生态。"</p>
+
+<h1>半导体AI日报 · 2026-07-30</h1>
+<p class="subtitle">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+
+<div class="card">
+  <h2>🏭 1. Intel Crescent Island AI GPU 正式亮相：LPDDR5X 替代 HBM，开辟 AI 芯片第三条路</h2>
+  <div class="meta">AI芯片 · 2026年7月</div>
+  <p>Intel 在 Computex 2026 正式发布面向数据中心的 AI GPU "Crescent Island"，采用 Xe3P GPU 架构，最高支持 480GB LPDDR5X 内存，350W TDP，PCIe 插卡形态，专为 Agentic AI 推理场景优化。该芯片预计 2026 下半年向客户送样，是 CEO Lip-Bu Tan 重返高端 AI 芯片市场战略的核心棋子。</p>
+  <h3>核心看点</h3>
+  <p>Intel 故意避开 NVIDIA 和 AMD 全线押注的 HBM（高带宽内存）路线，选择 LPDDR5X 作为差异化策略——以较低带宽换取成本优势和供应链安全，精准卡位 Agentic Inference 这一新兴细分市场。这标志着 AI 芯片赛道从"HBM 垄断"走向存储架构多元化。Crescent Island 同时支持 FP4（高性能推理）到 FP64（科学计算），显示了广泛的负载适配野心。</p>
+  <p class="source">来源：<a href="https://www.datacenterdynamics.com/en/news/intel-teases-crescent-island-ai-data-center-gpu-supports-up-to-480gb-of-lpddr5x" target="_blank" rel="noopener">DataCenterDynamics</a></p>
+</div>
+
+<div class="card">
+  <h2>🔬 2. Siemens EDA 自验证 Agent 上线：Agentic EDA 从"大胆试验"迈入"可信交付"</h2>
+  <div class="meta">Agentic EDA · 2026年7月28日</div>
+  <p>Siemens 在 DAC 2026 上宣布与 NVIDIA 战略合作升级：Fuse EDA AI Agent 系统获得"自验证"（self-verifying）能力——Agent 不仅能自主执行芯片设计任务，还通过 NVIDIA Nemotron 3 Ultra 推理模型持续调用物理 EDA 引擎验证自身决策的正确性。新推出的 Solido Layout Analyzer 支持自然语言查询版图寄生参数，自动生成修复建议和报告。</p>
+  <h3>核心看点</h3>
+  <p>这是 Agentic EDA 从"能跑"到"可信"的关键转折。验证消耗芯片设计 70% 的时间，而自验证 Agent 让 AI 从"建议生成器"升级为"自主执行 + 自我纠错"的闭环系统。Siemens 强调物理 EDA 引擎作为 ground truth 的锚定作用，这与纯 LLM 生成代码的"幻觉风险"形成了方法论层级的差异化。</p>
+  <p class="source">来源：<a href="https://www.electronicsweekly.com/news/siemens-adds-characterisation-ai-agent-to-automate-design-iteration-2026-07" target="_blank" rel="noopener">Electronics Weekly</a></p>
+</div>
+
+<div class="card">
+  <h2>🔗 3. SimScale + CoLab 跨平台 Agent 协同演示：CAE 多智能体进入生态化阶段</h2>
+  <div class="meta">Agentic CAE · 2026年7月</div>
+  <p>Design & Simulation Week 2026 上，SimScale 与 CoLab Software 联合演示跨平台 Agentic Engineering 方案——两个独立 AI 系统跨越组织边界协同工作，从仿真设置到设计评审端到端闭环。数据显示，采用 Agentic Workflow 的工程团队探索的设计变体数量提升 3 倍以上，RFQ 响应速度提升 3 倍，近 90% 的常规决策由 Agent 自主完成。</p>
+  <h3>核心看点</h3>
+  <p>这标志着 CAE Agent 从"单工具自动化"进化到"跨平台多 Agent 协同"——不同供应商的 AI 系统可以实现互操作。SimScale 负责仿真设置和执行，CoLab Agent 负责设计评审和签批，两个系统在共享上下文中传递结果。这意味着 Agentic Engineering 不再是一家公司的 walled garden，而是走向开放生态。</p>
+  <p class="source">来源：<a href="https://www.engineering.com/dont-miss-design-and-simulation-week-2026" target="_blank" rel="noopener">Engineering.com</a></p>
+</div>
+
+<div class="card">
+  <h2>📋 4. Colab Software 发布工程设计 AI Agent 五分类框架：Agentic CAD 进入方法论建设期</h2>
+  <div class="meta">Agentic CAD · 2026年7月14日</div>
+  <p>Colab Software 发布工程设计中 5 类 AI Agent 评估框架：设计搜索 Agent、CAD 工具驱动 Agent、PLM 工作流 Agent、文档生成 Agent、设计评审 Agent。2026 上半年，工程领导者从"要不要 AI 策略"转向"AI 能推到多深"。不同 Agent 类型对应不同成熟度阶段——CAD 工具驱动 Agent 最激进（Level 3-4 自主性），设计评审 Agent 最务实（Level 2 辅助决策）。</p>
+  <h3>核心看点</h3>
+  <p>这是 Agentic CAD 从技术演示走向规模化部署的"分类学"（taxonomy）时刻。文章指出关键评估维度：Agent 是否理解工程数据（不只是文本）、是否能接入现有 CAD/PDM/PLM 系统、是否具备确定性验证能力——这与 Siemens 自验证 EDA Agent 的方法论高度共振。选择 Agents over Chatbots 已成为 2026 工程 AI 的主旋律。</p>
+  <p class="source">来源：<a href="https://www.colabsoftware.com/post/ai-agents-for-engineering-design-real-examples-capabilities-and-how-to-evaluate-them" target="_blank" rel="noopener">Colab Software</a></p>
+</div>
+
+<div class="ref-section">
+  <h2>参考资料</h2>
+  <ul>
+    <li>[1] Intel teases Crescent Island AI data center GPU — <a href="https://www.datacenterdynamics.com/en/news/intel-teases-crescent-island-ai-data-center-gpu-supports-up-to-480gb-of-lpddr5x" target="_blank" rel="noopener">DataCenterDynamics</a></li>
+    <li>[2] Siemens adds characterisation AI agent — <a href="https://www.electronicsweekly.com/news/siemens-adds-characterisation-ai-agent-to-automate-design-iteration-2026-07" target="_blank" rel="noopener">Electronics Weekly</a></li>
+    <li>[3] Siemens expands NVIDIA partnership for EDA AI workflows — <a href="https://www.engineering.com/siemens-expands-nvidia-partnership-for-eda-ai-workflows" target="_blank" rel="noopener">Engineering.com</a></li>
+    <li>[4] Don't miss Design and Simulation Week 2026 — <a href="https://www.engineering.com/dont-miss-design-and-simulation-week-2026" target="_blank" rel="noopener">Engineering.com</a></li>
+    <li>[5] AI Agents for Engineering Design: 5 Types & How to Evaluate — <a href="https://www.colabsoftware.com/post/ai-agents-for-engineering-design-real-examples-capabilities-and-how-to-evaluate-them" target="_blank" rel="noopener">Colab Software</a></li>
+  </ul>
+</div>
+
+<p class="dedup-note">📊 去重报告：本次对比了 2026-07-27、2026-07-28、2026-07-29 三天日报（共 23 条 URL、25 条标题关键词）。三轮搜索共获取 40+ 条候选，去重剔除 5 条（含 Synopsys-AMD-Microsoft 重复报道、DAC 已覆盖内容、Synera CAE webinar 等），最终保留 4 条全新资讯。</p>
+
+</div>
+</body>
+</html>
