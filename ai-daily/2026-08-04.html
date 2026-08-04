@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-04: 台积电3nm扩产超预期，AI存储ASIC战火升级</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; background:#f5f5f5; color:#333; }
+  .container { max-width:780px; margin:0 auto; padding:40px 20px 60px; }
+  .cover { width:100%; max-width:780px; border-radius:6px; margin-bottom:24px; }
+  .opinion { font-size:15px; color:#52525B; font-style:italic; text-align:center; margin-bottom:28px; line-height:1.8; }
+  .opinion strong { color:#27272A; font-style:normal; }
+  .header { margin-bottom:32px; }
+  .header h1 { font-size:24px; color:#6b5b8c; margin-bottom:8px; }
+  .header .date { font-size:13px; color:#999; }
+  .card { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #c47a6a; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .card h2 { font-size:17px; color:#27272A; margin-bottom:8px; line-height:1.5; }
+  .card .summary { font-size:15px; color:#555; line-height:1.8; margin-bottom:10px; }
+  .card .highlight { font-size:14px; color:#777; line-height:1.7; margin-bottom:12px; }
+  .card .source { font-size:12px; color:#999; }
+  .card .source a { color:#c47a6a; text-decoration:none; }
+  .card .source a:hover { text-decoration:underline; }
+  .refs { margin-top:32px; padding:20px; background:#fff; border-radius:6px; font-size:13px; color:#888; line-height:2; }
+  .refs a { color:#c47a6a; text-decoration:none; }
+  .cover-report { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #52525B; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .cover-report table { width:100%; border-collapse:collapse; font-size:14px; }
+  .cover-report td { padding:6px 8px; border-bottom:1px solid #eee; }
+  .cover-report td:first-child { font-weight:600; color:#52525B; width:120px; }
+  .dedup-note { font-size:12px; color:#A1A1AA; margin-top:20px; text-align:center; border-top:1px solid #E4E4E7; padding-top:16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="/ai-daily/covers/2026-08-04.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="半导体AI日报封面">
+
+  <p class="opinion">
+    <strong>AI芯片的瓶颈已从算力转向产能：台积电3nm月产能提前冲上18万片，NAND、SerDes与国产设备在同一节奏上全线扩张——产能，才是这场竞赛真正的胜负手。</strong>
+  </p>
+
+  <div class="header">
+    <h1>半导体AI日报 · 2026-08-04: 台积电3nm扩产超预期，AI存储ASIC战火升级</h1>
+    <p class="date">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+  </div>
+
+  <div class="cover-report">
+    <h2 style="font-size:17px;color:#27272A;margin-bottom:14px;">🎨 封面图生成报告</h2>
+    <table>
+      <tr><td>今日观点</td><td>AI's bottleneck has moved from compute to capacity: TSMC races to 180K 3nm wafers while NAND, SerDes and Chinese equipment suppliers all surge in lockstep.</td></tr>
+      <tr><td>视觉隐喻</td><td>towering stacks of crystalline silicon wafers rising like a gleaming ziggurat, rivers of luminous data streaming through hundreds of parallel golden lanes converging into one blazing core, thin copper traces fanning outward like an expanding web, distant construction cranes lifting new fabrication chambers into a bright horizon</td></tr>
+      <tr><td>框架</td><td>#3 — macro photograph with intricate geometric patterns</td></tr>
+      <tr><td>色调</td><td>#8 — rich plum and burnished bronze</td></tr>
+      <tr><td>种子</td><td>17207</td></tr>
+      <tr><td>HTTP 状态</td><td>200 OK</td></tr>
+      <tr><td>文件大小</td><td>41,231 bytes (40 KB)</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>01 · 铠侠量产332层BiCS 10 NAND，年内推PCIe 6.0 eSSD与UFS 5.0，AI存储打响接口带宽战</h2>
+    <p class="summary">8月4日消息，全球第三大NAND厂商铠侠（Kioxia）已量产第10代BiCS 10 3D NAND（332层堆叠），计划今年晚些时候量产PCIe 6.0企业级SSD（CM10）与UFS 5.0嵌入式存储，分别面向AI数据中心与端侧AI。据TrendForce数据，铠侠Q1 2026全球NAND份额为13.9%，居三星（31.6%）、SK海力士（17.6%）之后。CM10顺序读性能较上代提升92%、随机读提升约85%，UFS 5.0处理速度约为UFS 4.1的两倍。</p>
+    <p class="highlight">核心看点：AI NAND竞争正从"容量战"转向"接口带宽战"。PCIe 6.0是AI数据中心存储带宽的新门槛，UFS 5.0则瞄准端侧AI手机/PC的本地推理需求——铠侠以332层堆叠+自研主控换道超车，三星亦已启动PM1763 PCIe 6.0企业SSD量产。NAND三巨头（三星/SK海力士/铠侠）围绕新一代接口的产能卡位，将直接决定2027年AI服务器存储成本的走向；这是继HBM军备竞赛后，AI存储赛道的第二条战线。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/04/news-kioxia-steps-up-ai-nand-competition-with-south-korean-rivals-eyes-pcie-6-0-and-ufs-5-0-mass-production/">TrendForce (Kioxia AI NAND)</a> · <a href="https://zdnet.co.kr/">ZDNet Korea</a></p>
+  </div>
+
+  <div class="card">
+    <h2>02 · 台积电3nm月产能4Q26初将冲18万片，超预期2-3个月；2nm年底逼近10万片/月</h2>
+    <p class="summary">8月3日消息，据经济日报报道，在NVIDIA、AMD、Broadcom等大客户强劲订单驱动下，台积电3nm月产能预计2026年第四季度初达到18万片，较市场预期提前2-3个月；2026上半年3nm月产能已增至近15万片。2nm方面，上半年月产能约5-6万片，年底有望超8万片、向10万片逼近，2nm与3nm合计月产能4Q26初将超过26万片。台积电已宣布在台湾、亚利桑那、日本新增三座3nm晶圆厂，并改造5nm产线支援3nm。</p>
+    <p class="highlight">核心看点：先进制程进入"满载竞赛"。3nm提前2-3个月达标、2nm首年产出较3nm当年高45%、2026-2028年2nm产能CAGR达70%——这些数字直接反驳了上周市场对"AI泡沫见顶"的恐慌（8月2日日报已报$1万亿回撤）。产能扩张节奏决定NVIDIA/AMD/Google下一代AI芯片的交货周期，也是台积电2027年计划涨价最高10%的底气来源；三星2nm以$20K/片低价抢单（约低33%），产能与价格的双线竞争正在白热化。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/03/news-tsmc-3nm-monthly-wafer-starts-to-hit-180k-by-early-4q26-on-strong-demand-2-3-months-ahead-of-expectations/">TrendForce (TSMC 3nm Capacity)</a> · <a href="https://money.udn.com/money/index">经济日报</a></p>
+  </div>
+
+  <div class="card">
+    <h2>03 · 联发科2nm 400G SerDes剑指Google TPU v10与Meta AI ASIC，正面挑战Broadcom</h2>
+    <p class="summary">8月3日消息，据工商时报，联发科正在2nm工艺上开发400G/448G SerDes IP（预计2027下半年就绪），被视为竞标Google TPU v10与Meta定制AI芯片的关键筹码。联发科已凭336G SerDes拿下TPU v9主要订单（2028年初量产）；GF证券分析师Jeff Pu认为其Icefish平台是当前唯一官方确认的TPU v10项目。联发科将2027年AI ASIC市场份额目标从10-15%上调至15-20%，首代AI加速器ASIC将于Q4量产。</p>
+    <p class="highlight">核心看点：AI ASIC设计格局正在松动。联发科从手机SoC巨头切入数据中心定制芯片，直接动摇Broadcom"ASIC之王"的垄断地位——TPU v9→v10的SerDes代际升级（336G→400G）就是争夺下一轮订单的分水岭。SerDes是AI加速器互连带宽的咽喉IP，谁在2nm上率先量产400G，谁就握有TPU、Meta ASIC乃至更多定制项目的入场券。若联发科验证顺利，定制芯片市场将从Broadcom单极走向"双雄并立"，对Google/Meta的议价能力也将同步改变。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/03/news-mediatek-advances-400g-serdes-on-2nm-targeting-google-tpu-v10-and-meta-ai-asic-orders/">TrendForce (MediaTek 400G SerDes)</a> · <a href="https://ctee.com.tw/">工商时报</a></p>
+  </div>
+
+  <div class="card">
+    <h2>04 · 中微公司目标五年覆盖60%高端半导体设备市场，国产设备从单点突破转向全品类扩张</h2>
+    <p class="summary">8月3日消息，据澎湃新闻，中微公司董事长尹志尧表示，公司目标未来五年覆盖至少60%的高端半导体设备市场，成为全球设备品类最全的供应商，计划将高端设备品类扩展到100种以上（涵盖多数等离子刻蚀、薄膜沉积与工艺处理设备），2035年跻身全球一流设备企业。中微已在全球170余家客户产线部署8800余个工艺腔室，装机量14年CAGR超35%；去年研发投入37.4亿元、占营收30.2%。</p>
+    <p class="highlight">核心看点：国产设备战略从"单点突破"升维到"全品类覆盖"。中微以刻蚀为矛，向薄膜沉积、外延等品类扩张，产品矩阵直接对标应用材料（AMAT）与泛林（Lam Research）。在美国对华设备管制持续的背景下，中微的扩品类节奏就是国产先进制程自主化的进度条——60%高端覆盖率若兑现，将实质性改写全球设备市场版图。但要清醒看到：刻蚀之外的前道光刻、量检测等品类仍是短板，"品类最全"与"高端自主"之间仍有距离。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/03/news-amec-targets-60-high-end-market-coverage-within-five-years-as-chinas-chip-equipment-ambitions-grow/">TrendForce (AMEC 60% Coverage)</a> · <a href="https://www.thepaper.cn/">澎湃新闻</a></p>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料</strong><br>
+    1. TrendForce — <a href="https://www.trendforce.com/news/2026/08/04/news-kioxia-steps-up-ai-nand-competition-with-south-korean-rivals-eyes-pcie-6-0-and-ufs-5-0-mass-production/">Kioxia Steps Up AI NAND Competition With South Korean Rivals, Eyes PCIe 6.0 and UFS 5.0 Mass Production</a><br>
+    2. ZDNet Korea — <a href="https://zdnet.co.kr/">Kioxia 10th-gen NAND mass production coverage</a><br>
+    3. TrendForce — <a href="https://www.trendforce.com/news/2026/08/03/news-tsmc-3nm-monthly-wafer-starts-to-hit-180k-by-early-4q26-on-strong-demand-2-3-months-ahead-of-expectations/">TSMC 3nm Monthly Wafer Starts to Hit 180K by Early 4Q26</a><br>
+    4. 经济日报 — <a href="https://money.udn.com/money/index">台积电3nm产能进度报道</a><br>
+    5. TrendForce — <a href="https://www.trendforce.com/news/2026/08/03/news-mediatek-advances-400g-serdes-on-2nm-targeting-google-tpu-v10-and-meta-ai-asic-orders/">MediaTek Advances 400G SerDes on 2nm, Targeting Google TPU v10 and Meta AI ASIC Orders</a><br>
+    6. 工商时报 — <a href="https://ctee.com.tw/">联发科400G SerDes / AI ASIC报道</a><br>
+    7. TrendForce — <a href="https://www.trendforce.com/news/2026/08/03/news-amec-targets-60-high-end-market-coverage-within-five-years-as-chinas-chip-equipment-ambitions-grow/">AMEC Targets 60% High-End Market Coverage Within Five Years</a><br>
+    8. 澎湃新闻 — <a href="https://www.thepaper.cn/">中微公司董事长尹志尧访谈报道</a>
+  </div>
+
+  <p class="dedup-note">📊 去重报告：本次对比了 2026-08-01、2026-08-02、2026-08-03 三天日报（共 14 条资讯、32 个唯一 URL）。三轮搜索共获取 35+ 条候选，去重剔除 ~31 条（含 DAC 2026 三巨头 Agent 重复报道、Cadence Q2 财报旧闻、ChipAgents $134M 融资旧闻、Altair HyperWorks 2026 旧闻（2025年12月）、Rescale/Colab/Synera/SimScale 重复、TrendForce 三星代工满产与昨日三星题材高度重叠、各类市场分析/事件日历等），最终保留 4 条与前三天完全不重复的全新资讯（含今日 08-04 一条）。</p>
+
+</div>
+</body>
+</html>
