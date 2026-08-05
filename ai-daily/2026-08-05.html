@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-05: SK海力士发布HBF标准，三星zHBM 4倍带宽应战</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; background:#f5f5f5; color:#333; }
+  .container { max-width:780px; margin:0 auto; padding:40px 20px 60px; }
+  .cover { width:100%; max-width:780px; border-radius:6px; margin-bottom:24px; }
+  .opinion { font-size:15px; color:#52525B; font-style:italic; text-align:center; margin-bottom:28px; line-height:1.8; }
+  .opinion strong { color:#27272A; font-style:normal; }
+  .header { margin-bottom:32px; }
+  .header h1 { font-size:24px; color:#6b5b8c; margin-bottom:8px; }
+  .header .date { font-size:13px; color:#999; }
+  .card { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #c47a6a; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .card h2 { font-size:17px; color:#27272A; margin-bottom:8px; line-height:1.5; }
+  .card .summary { font-size:15px; color:#555; line-height:1.8; margin-bottom:10px; }
+  .card .highlight { font-size:14px; color:#777; line-height:1.7; margin-bottom:12px; }
+  .card .source { font-size:12px; color:#999; }
+  .card .source a { color:#c47a6a; text-decoration:none; }
+  .card .source a:hover { text-decoration:underline; }
+  .refs { margin-top:32px; padding:20px; background:#fff; border-radius:6px; font-size:13px; color:#888; line-height:2; }
+  .refs a { color:#c47a6a; text-decoration:none; }
+  .cover-report { background:#fff; padding:28px; margin-bottom:16px; border-radius:6px; border-left:5px solid #52525B; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+  .cover-report table { width:100%; border-collapse:collapse; font-size:14px; }
+  .cover-report td { padding:6px 8px; border-bottom:1px solid #eee; }
+  .cover-report td:first-child { font-weight:600; color:#52525B; width:120px; }
+  .dedup-note { font-size:12px; color:#A1A1AA; margin-top:20px; text-align:center; border-top:1px solid #E4E4E7; padding-top:16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="/ai-daily/covers/2026-08-05.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;" alt="半导体AI日报封面">
+
+  <p class="opinion">
+    <strong>AI的瓶颈正从算力转向记忆架构：HBF开放标准与三星zHBM同台竞技，长鑫以扩产改写产能版图——存储，正在成为这场竞赛的新胜负手。</strong>
+  </p>
+
+  <div class="header">
+    <h1>半导体AI日报 · 2026-08-05: SK海力士发布HBF标准，三星zHBM 4倍带宽应战</h1>
+    <p class="date">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+  </div>
+
+  <div class="cover-report">
+    <h2 style="font-size:17px;color:#27272A;margin-bottom:14px;">🎨 封面图生成报告</h2>
+    <table>
+      <tr><td>今日观点</td><td>AI's bottleneck has moved from compute to memory: HBF and zHBM collide at FMS 2026 while China's CXMT redraws the capacity map.</td></tr>
+      <tr><td>视觉隐喻</td><td>towering crystalline ziggurats of stacked memory dies rising from a glowing processor core, rivers of luminous data climbing translucent tiers, two rival towers facing across a bright chasm, a golden bridge of light spanning between them, distant cranes erecting a new foundation on the horizon, soft volumetric haze</td></tr>
+      <tr><td>框架</td><td>#4 — minimalist flat illustration floating in space（随机选中）</td></tr>
+      <tr><td>色调</td><td>#6 — deep burgundy and pale gold（随机选中）</td></tr>
+      <tr><td>种子</td><td>13721</td></tr>
+      <tr><td>HTTP 状态</td><td>Pollinations.ai HTTP 500（Insufficient balance），FAL 锁定（Exhausted balance）→ 启用 Wikimedia Commons 备选</td></tr>
+      <tr><td>文件大小</td><td>232,084 bytes (227 KB)，1280x720 JPEG</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>01 · SK海力士与闪迪发布HBF标准首版规范：512GB容量、3TB/s带宽，Google与Tenstorrent入局</h2>
+    <p class="summary">8月4日，SK海力士与闪迪（SanDisk）在FMS 2026大会开幕当天，通过OCP（开放计算项目）发布High Bandwidth Flash（HBF）首个标准规范：支持8层与16层NAND堆叠、容量最高512GB，带宽分为三个等级（约0.4-3.0TB/s），并定义xPU-HBF主机接口、可靠性/封装指引与读写软件指南。规范发布距双方2025年8月结盟、2026年2月成立HBF联盟仅半年；Google与Tenstorrent已作为联盟成员参与技术验证。SK海力士同步展示375层4D NAND，功耗效率提升2.5倍。</p>
+    <p class="highlight">核心看点：这是AI存储从"产品军备"走向"标准战争"的标志性事件。HBF定位介于HBM与SSD之间——以NAND的容量与成本提供接近HBM的带宽，直击AI推理的存储墙（KV Cache膨胀、长上下文）。SK海力士选择走OCP开放标准路线拉拢Google/Tenstorrent等生态伙伴，与三星即将发布的zHBM（见第02条）形成"开放联盟 vs 自研架构"两条路线。若HBF成为事实标准，将深刻改写AI系统内存层级（HBM-CXL-NVMe/HBF）的成本结构，也是继昨日铠侠PCIe 6.0 eSSD之后，AI存储带宽战的第二条战线。</p>
+    <p class="source">来源：<a href="https://news.skhynix.com/en/hbf-at-fms-2026">SK hynix Newsroom (HBF at FMS 2026)</a> · <a href="https://www.trendforce.com/news/2026/08/04/sk-hyn...port/">TrendForce (HBF Standard)</a> · <a href="https://en.sedaily.com/finance/2026/08/04/sk-hynix-moves-to-seize-hbf-standard-for-next-generation">Seoul Economic Daily</a></p>
+  </div>
+
+  <div class="card">
+    <h2>02 · 三星FMS 2026亮出zHBM：HBM直堆GPU、4倍带宽、1/4功耗，Z-NAND以15倍性能回归</h2>
+    <p class="summary">8月5日消息，三星电子将在FMS 2026展示下一代3D存储架构路线图：zHBM将HBM直接垂直堆叠在GPU之上，数据传输速度据称达HBM4的4倍、功耗仅1/4；Z-NAND则采用SLC单层单元与高速连接技术，处理性能较传统NAND提升15倍、功耗降至1/5，被定位为2018年首发后的第二代低延迟存储产品。三星首席技术官Jaehyuk Song此前披露，zHBM采用多晶圆对晶圆键合（multi-wafer-to-wafer bonding），可支持数万I/O端子。三星已于8月4日举行"3D Innovations in Memory &amp; Storage Architecture"主题演讲，并展出HBM4E、HBM5、LPDDR5X-PIM等产品。</p>
+    <p class="highlight">核心看点：zHBM是AI内存的架构级转向——把存储"贴"到算力上，用最短数据路径换取带宽与能效，直接回应AI推理中"数据搬运比计算更贵"的核心矛盾。它与SK海力士/闪迪的HBF形成鲜明对照：一个从HBM向上堆叠（垂直集成），一个从NAND横向扩容（开放标准），两条技术路线将在2027年前后正面碰撞。三星在HBM份额上落后SK海力士，选择在"后HBM时代"押注架构创新换道超车；Z-NAND的回归则瞄准AI推理中SLC低延迟缓存的空白。这是继HBM4E量产后，三星AI存储战略最激进的一次表态。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/05/news-samsung-expected-to-showcase-zhbm-at-fms-2026-a-next-gen-3d-memory-architecture-with-4x-bandwidth/">TrendForce (Samsung zHBM at FMS 2026)</a> · <a href="https://www.techpowerup.com/351366/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026">TechPowerUp</a> · <a href="https://semiconductor.samsung.com/events/fms-2026">Samsung Semiconductor</a></p>
+  </div>
+
+  <div class="card">
+    <h2>03 · 长鑫存储拟建北京第二座12英寸DRAM厂，月产能瞄准翻倍至60万片，HP/华硕/宏碁开始小批量采用</h2>
+    <p class="summary">8月3-4日消息，据路透社，中国最大存储芯片商长鑫存储（CXMT）正计划在北京亦庄建设第二座12英寸DRAM晶圆厂，选址紧邻现有北京工厂，正向北京经济技术开发区争取至少6000万元人民币（约890万美元）资金支持，其他国有科技企业亦有意参投。长鑫目前运营合肥两座、北京一座12英寸厂（各约月产10万片），叠加上海、合肥在建及洽谈项目，全面投产后月产能将翻倍至60万片以上。此外，HP、华硕、宏碁据称已开始小批量采用长鑫DRAM。上月长鑫刚完成创纪录的86亿美元IPO（中国内地半导体史上最大），上市以来股价已涨13%。</p>
+    <p class="highlight">核心看点：长鑫正以"IPO募资+国资加持+客户导入"三线并进，从国产替代走向全球定价权争夺。月产能翻倍至60万片+，叠加HP/华硕/宏碁的OEM导入，意味着中国DRAM不仅自给，还开始渗透全球PC供应链——这是对三星/SK海力士/美光近90%寡头份额的实质松动。但需清醒：先进DRAM厂单座投资常超100亿美元，6000万元支持只是象征性启动资金，真正弹药来自86亿美元IPO与后续融资；长鑫能否在DDR5/LPDDR5主流节点上保持良率与成本竞争力，才是改写格局的关键。这也是继中微（昨日）之后，国产半导体设备-存储双线自主化叙事的最新注脚。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026/08/04/news-cxmt-reportedly-eyes-second-beijing-12-inch-dram-fab-hp-asus-and-acer-said-to-begin-limited-use/">TrendForce (CXMT Second Beijing Fab)</a> · <a href="https://finance.technews.tw/2026/08/04/cxmt-plans-to-build-its-second-12-inch-dram-wafer-fab-in-beijing">TechNews</a> · <a href="https://www.reuters.com/world/asia-pacific/">Reuters</a></p>
+  </div>
+
+  <div class="card">
+    <h2>04 · Marvell FMS 2026宣言：记忆架构已成AI最大约束，CXL池化+PCIe 6.0+光互连组合亮相</h2>
+    <p class="summary">8月3-4日消息，Marvell在FMS 2026（8月4-6日，圣克拉拉）展示面向Agentic AI推理的AI内存与存储基础设施组合：PCIe 6.0企业级SSD控制器、CXL近内存加速、CXL内存扩展与压缩、CXL交换内存池化、Octeon DPU网络存储以及Photonic Fabric光互连。Marvell技术副总裁Mark Kuemerle将于8月5日发表主题演讲"The Accidental Architecture of AI"，核心论点直指"内存架构已成为AI基础设施中比算力更紧的约束"——模型更大、上下文更长、KV Cache膨胀正对内存容量、带宽与互联提出前所未有的需求。</p>
+    <p class="highlight">核心看点：Marvell的宣言与今日FMS 2026的记忆标准战（HBF、zHBM）形成共振——"内存比算力更紧"正在成为AI基础设施圈的共识判断。作为Google/Meta/OpenAI定制XPU的核心设计伙伴，Marvell的观察代表超大规模客户的一线感受：Agentic AI推理（多轮对话、长上下文、工具调用）让KV Cache内存需求指数级增长，CXL池化与光互连成为"解耦算力-内存"的核心手段。这也解释了为何存储三巨头与Marvell同时在FMS 2026重兵集结：AI的下一个十年，胜负手在存储与互联，而非晶体管。</p>
+    <p class="source">来源：<a href="https://investor.marvell.com/news-events/press-releases/detail/1028/marvell-to-showcase-advanced-ai-memory-and-storage-infrastructure-portfolio-for-agentic-ai-inference-at-fms-2026">Marvell Press Release</a> · <a href="https://www.storagenewsletter.com/2026/08/04/fms-2026-marvell-to-showcase-advanced-ai-memory-and-storage-infrastructure-portfolio-for-agentic-ai-inference">StorageNewsletter</a></p>
+  </div>
+
+  <div class="refs">
+    <strong>参考资料</strong><br>
+    1. SK hynix Newsroom — <a href="https://news.skhynix.com/en/hbf-at-fms-2026">SK hynix Unveils First HBF Standard Specifications with Sandisk, Presenting AI Memory Solutions at 'FMS 2026'</a><br>
+    2. TrendForce — <a href="https://www.trendforce.com/news/2026/08/04/sk-hyn...port/">SK hynix, SanDisk Debut HBF Standard to Challenge AI Memory Bottlenecks with Google, Tenstorrent Support</a><br>
+    3. Seoul Economic Daily — <a href="https://en.sedaily.com/finance/2026/08/04/sk-hynix-moves-to-seize-hbf-standard-for-next-generation">SK hynix Moves to Seize HBF Standard for Next-Generation NAND</a><br>
+    4. TrendForce — <a href="https://www.trendforce.com/news/2026/08/05/news-samsung-expected-to-showcase-zhbm-at-fms-2026-a-next-gen-3d-memory-architecture-with-4x-bandwidth/">Samsung Expected to Showcase zHBM at FMS 2026, a Next-Gen 3D Memory Architecture with 4X Bandwidth</a><br>
+    5. TechPowerUp — <a href="https://www.techpowerup.com/351366/samsung-unveils-next-gen-3d-memory-vision-at-fms-2026">Samsung Unveils Next-Gen 3D-Memory Vision at FMS 2026</a><br>
+    6. Samsung Semiconductor — <a href="https://semiconductor.samsung.com/events/fms-2026">FMS 2026 | Samsung Semiconductor Global</a><br>
+    7. TrendForce — <a href="https://www.trendforce.com/news/2026/08/04/news-cxmt-reportedly-eyes-second-beijing-12-inch-dram-fab-hp-asus-and-acer-said-to-begin-limited-use/">CXMT Reportedly Eyes Second Beijing 12-inch DRAM Fab; HP, Asus, and Acer Said to Begin Limited Use</a><br>
+    8. TechNews 科技新报 — <a href="https://finance.technews.tw/2026/08/04/cxmt-plans-to-build-its-second-12-inch-dram-wafer-fab-in-beijing">IPO成功獲得資金，長鑫存儲計畫於北京興建第二座12吋DRAM晶圓廠</a><br>
+    9. Marvell — <a href="https://investor.marvell.com/news-events/press-releases/detail/1028/marvell-to-showcase-advanced-ai-memory-and-storage-infrastructure-portfolio-for-agentic-ai-inference-at-fms-2026">Marvell to Showcase Advanced AI Memory and Storage Infrastructure Portfolio for Agentic AI Inference at FMS 2026</a><br>
+    10. StorageNewsletter — <a href="https://www.storagenewsletter.com/2026/08/04/fms-2026-marvell-to-showcase-advanced-ai-memory-and-storage-infrastructure-portfolio-for-agentic-ai-inference">FMS 2026: Marvell to Showcase Advanced AI Memory and Storage Infrastructure Portfolio for Agentic AI Inference</a>
+  </div>
+
+  <p class="dedup-note">📊 去重报告：本次对比了 2026-08-02、2026-08-03、2026-08-04 三天日报（共 13 条资讯、28 个唯一 URL）。四轮搜索 + TrendForce 新闻索引抓取共获取 50+ 条候选，去重剔除 ~46 条（含 Synopsys/Cadence/Siemens DAC Agent 重复报道、ChipAgents $134M 融资旧闻、Rescale/SimScale/Synera/Colab 旧闻、Kioxia PCIe 6.0 NAND 与昨日重复、TSMC 3nm/联发科 SerDes/中微设备与昨日重复、三星代工满产题材（与 08-03 三星 Taylor Fab 2 高度相邻）、Intel EMIB 供应链（与 08-03 EMIB-like 题材相邻）、Innolight 港股 IPO 旧闻（7月底）等），最终保留 4 条与前三天完全不重复的全新资讯（含今日 08-05 三星 zHBM 一条）。</p>
+
+</div>
+</body>
+</html>
