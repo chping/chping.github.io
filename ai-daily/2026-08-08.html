@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-08: 模型固化硅片成风口：AMD并购Taalas、Anthropic自研芯片</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f6f7f9;color:#333;margin:0;padding:0;line-height:1.7;}
+  .wrap{max-width:780px;margin:0 auto;padding:32px 20px;}
+  .title{font-size:24px;font-weight:700;color:#1a1a1a;margin:8px 0 6px;line-height:1.4;}
+  .sub{font-size:14px;color:#8a929d;margin-bottom:24px;}
+  .cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:24px;display:block;}
+  .opinion{font-size:15px;color:#52525B;font-style:italic;text-align:center;margin-bottom:28px;line-height:1.8;}
+  .card{background:#fff;border-radius:8px;padding:28px;margin-bottom:18px;border-left:5px solid #d4855e;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+  .card h2{font-size:19px;font-weight:700;color:#1a1a1a;margin:0 0 12px;}
+  .card p{font-size:17px;color:#444;margin:0 0 12px;text-align:justify;}
+  .card .tag{display:inline-block;font-size:12px;color:#d4855e;background:#fdf1ea;border-radius:3px;padding:2px 8px;margin-bottom:10px;}
+  .card strong{color:#1a1a1a;}
+  .source{font-size:14px;color:#8a929d;}
+  .source a{color:#d4855e;text-decoration:none;word-break:break-all;}
+  h2.section{font-size:20px;color:#1a1a1a;border-bottom:2px solid #e5e7eb;padding-bottom:10px;margin:36px 0 16px;}
+  .ref{background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+  .ref ul{margin:0;padding-left:20px;}
+  .ref li{font-size:14px;color:#666;margin-bottom:8px;word-break:break-all;}
+  .ref a{color:#d4855e;text-decoration:none;}
+  .report{background:#fff;border-radius:8px;padding:24px;box-shadow:0 1px 4px rgba(0,0,0,0.06);font-size:14px;color:#666;}
+  .footer{text-align:center;font-size:13px;color:#b0b5bd;margin:32px 0 10px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="sub">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</div>
+  <h1 class="title">半导体AI日报 · 2026-08-08: 模型固化硅片成风口：AMD并购Taalas、Anthropic自研芯片</h1>
+  <div class="sub">2026年8月8日 星期六</div>
+
+  <img class="cover" src="/ai-daily/covers/2026-08-08.jpg" alt="半导体AI日报封面">
+
+  <p class="opinion">「GPU 一家独大的时代正在松动：AMD 收购把模型写进硅片的 Taalas,Anthropic 组建自己的芯片团队——推理芯片正围绕具体模型"凝固成形"。」</p>
+
+  <div class="card">
+    <span class="tag">AI芯片 · 并购</span>
+    <h2>01 · AMD 收购 Taalas:把 AI 模型直接"写"进硅片</h2>
+    <p><strong>概述：</strong> 8月6日，AMD 宣布收购多伦多 AI 推理芯片初创公司 Taalas——由前 Tenstorrent CEO Ljubisa Bajic 创立，主打"模型硬编码硅片":将神经网络权重与运算逻辑直接固化进芯片，消除内存搬运瓶颈。其演示芯片在 Llama3.1-8B 上实现单用户 16,000+ tokens/s,但首颗芯片只支持单一模型。交易金额未披露，团队并入 AMD 的 AI 组织。</p>
+    <p><strong>核心看点：</strong> ① 通用 GPU 之外的"模型特化"推理芯片正式进入 AMD 路线图，与 7 个月前 NVIDIA 以 200 亿美元收购 Groq 资产形成对垒；② 叠加 7 月与 Cerebras 的合作，AMD 推理侧多线布局；③ 专用化代价明显：模型大版本升级即需重新流片。</p>
+    <p class="source">来源：<a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html">CNBC</a> · <a href="https://www.eetimes.com/ai-chip-startup-taalas-acquired-by-amd">EE Times</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">AI芯片 · 自研</span>
+    <h2>02 · Anthropic 组建芯片设计团队：Claude 迎来专属硅片</h2>
+    <p><strong>概述：</strong> 8月5日，Anthropic 首次公开确认组建内部芯片设计团队，专注模型-硬件协同设计(co-design),目标是让 Claude 跑得更快、更省、延迟更低。The Information 上月报道其正评估三星 2nm 代工合作。Anthropic 强调这是"多芯片战略":自研芯片是补充而非替代，并保留与 Google/Broadcom 约 3.5GW TPU 产能(2027 年起)的既有承诺。</p>
+    <p><strong>核心看点：</strong> ① 继 OpenAI 发布首款自研推理芯片 Jalapeño 后，又一大模型实验室下场自研硅片，模型-硬件协同设计成为标配；② 若三星 2nm 拿下 Anthropic,将成为其代工业务翻身的关键变量；③ 自研≠去 NVIDIA 化，头部实验室普遍走"多芯片组合"路线。</p>
+    <p class="source">来源：<a href="https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team">TechCrunch</a> · <a href="https://www.forbes.com/sites/jonmarkman/2026/08/06/anthropic-enters-the-ai-chip-race-with-in-house-chip-team">Forbes</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">存储 · AI基础设施</span>
+    <h2>03 · SanDisk×Kioxia 发布 BiCS10:第10代 QLC NAND 位密度破 37Gb/mm²</h2>
+    <p><strong>概述：</strong> 8月4日 FMS 2026 上，SanDisk 与 Kioxia 联合发布第 10 代 BiCS QLC 3D NAND:332 层堆叠，位密度超 37Gb/mm²,较第 8 代提升 60%,接口速度 4.8Gb/s(Toggle DDR6.0 + SCA 协议)。面向 AI 训练/推理与超大规模数据中心的高容量 SSD,并已在北上市 K2 设施启动量产。</p>
+    <p><strong>核心看点：</strong> ① AI 数据生成量成为 NAND 需求新引擎，"密度+能效"竞赛白热化；② QLC 位密度每两年一代的曲线继续下探，单比特成本优势扩大；③ 与 HBM 战场并列，存储双线(DRAM/NAND)同时被 AI 重塑。</p>
+    <p class="source">来源：<a href="https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-04-new-3d-flash-memory-technology-from-kioxia-and-sandisk-qlc-nand">SanDisk 新闻稿</a> · <a href="https://www.tomshardware.com/pc-components/ssds/kioxia-and-sandisk-demonstrate-the-worlds-highest-density-3d-nand-flash-332-active-layers-and-up-to-4-800-mt-s-interface">Tom's Hardware</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">AI互联 · 财报</span>
+    <h2>04 · Astera Labs Q2 创纪录：Scorpio 交换芯片提前一季度成为最大产品线</h2>
+    <p><strong>概述：</strong> 8月4日，Astera Labs 公布 FY26 Q2 财报：营收 3.924 亿美元，同比 +104%、环比 +27%,创历史新高并超预期。PCIe 6 产品贡献超一半营收；Scorpio AI Fabric 交换芯片进入量产，提前一季度成为最大产品线。Q3 指引 5.4–5.6 亿美元，隐含环比 +40%。</p>
+    <p><strong>核心看点：</strong> ① 算力瓶颈从芯片本身外溢至互联层，PCIe 6/交换芯片成为 AI 集群最大增量环节之一；② 毛利率随硬件占比上升而结构性下行(73.7%→约72%),是规模化必然；③ 风险：对单一头部超大规模客户依赖较高，中国收入占比仍为个位数。</p>
+    <p class="source">来源：<a href="https://www.asteralabs.com/news/astera-labs-reports-second-quarter-2026-financial-results">Astera Labs 财报</a> · <a href="https://www.zacks.com/stock/news/2969062/astera-labs-q2-earnings-beat-on-pcie-6-and-scorpio-strength">Zacks</a></p>
+  </div>
+
+  <div class="card">
+    <span class="tag">AI芯片 · 韩国生态</span>
+    <h2>05 · SK Telecom × Rebellions:韩国国产推理算力再扩圈</h2>
+    <p><strong>概述：</strong> 8月7日，SK Telecom 宣布与韩国 AI 芯片独角兽 Rebellions 扩大合作，扩展基于国产 ATOM 系列 NPU 的推理基础设施。此前 ATOM 已支撑 SKT 的 AI 助手 A-DoT(日处理 5000 万次 API 调用),并部署于沙特主权 AI 基建。Rebellions 已融资 8.5 亿美元，下一代 REBEL 采用 144GB HBM3e 的 chiplet 架构。</p>
+    <p><strong>核心看点：</strong> ① "主权 AI 算力"叙事从美国-中国扩展到韩国、中东，全球推理芯片供给多极化；② 运营商下场自建 NPU 算力农场，商业模式从卖芯片延伸至卖算力服务；③ 与 AMD-Taalas、Anthropic 自研并列：模型特化与本土化两条路径同时挤压通用 GPU 生态。</p>
+    <p class="source">来源：<a href="https://www.upi.com/amp/Top_News/World-News/2026/08/07/skorea/9321786142003">UPI</a> · <a href="https://www.jonpeddie.com/news/rebellions-bets-on-memory-centric-ai-inference">Jon Peddie Research</a></p>
+  </div>
+
+  <h2 class="section">📚 参考资料</h2>
+  <div class="ref">
+    <ul>
+      <li><a href="https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html">CNBC: AMD buys chip startup that hardwires AI models into its silicon</a></li>
+      <li><a href="https://www.eetimes.com/ai-chip-startup-taalas-acquired-by-amd">EE Times: AI Chip Startup Taalas Acquired by AMD</a></li>
+      <li><a href="https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team">TechCrunch: Anthropic is hiring an AI chip design team</a></li>
+      <li><a href="https://www.forbes.com/sites/jonmarkman/2026/08/06/anthropic-enters-the-ai-chip-race-with-in-house-chip-team">Forbes: Anthropic Enters The AI Chip Race With In-House Chip Team</a></li>
+      <li><a href="https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-04-new-3d-flash-memory-technology-from-kioxia-and-sandisk-qlc-nand">SanDisk: New 3D Flash Memory Technology Achieves Industry's Highest Bit Density for QLC NAND</a></li>
+      <li><a href="https://www.tomshardware.com/pc-components/ssds/kioxia-and-sandisk-demonstrate-the-worlds-highest-density-3d-nand-flash-332-active-layers-and-up-to-4-800-mt-s-interface">Tom's Hardware: Kioxia and Sandisk demonstrate the world's highest-density 3D NAND flash</a></li>
+      <li><a href="https://www.asteralabs.com/news/astera-labs-reports-second-quarter-2026-financial-results">Astera Labs: Reports Second Quarter 2026 Financial Results</a></li>
+      <li><a href="https://www.zacks.com/stock/news/2969062/astera-labs-q2-earnings-beat-on-pcie-6-and-scorpio-strength">Zacks: Astera Labs Q2 Earnings Beat on PCIe 6 and Scorpio Strength</a></li>
+      <li><a href="https://www.upi.com/amp/Top_News/World-News/2026/08/07/skorea/9321786142003">UPI: SK Telecom, Rebellions expand Korean AI chip infrastructure</a></li>
+      <li><a href="https://www.jonpeddie.com/news/rebellions-bets-on-memory-centric-ai-inference">Jon Peddie Research: Rebellions bets on memory-centric AI inference</a></li>
+    </ul>
+  </div>
+
+  <h2 class="section">🎨 封面图生成报告</h2>
+  <div class="report">
+    <p><strong>今日观点：</strong> The GPU monoculture is eroding: AMD buys model-hardwired silicon startup Taalas; Anthropic builds its own chip team — inference silicon is freezing around specific models.</p>
+    <p><strong>视觉隐喻：</strong> molten silicon liquid pouring into a crystalline lattice that solidifies into the exact pattern of a neural network, the transition zone between glowing fluid metal and frozen precision-etched circuitry, light refracting through newly formed crystal facets</p>
+    <p><strong>随机选择：</strong> 框架 #3(macro photograph) + 色调 #2(cool teal and brushed copper),种子值 26102</p>
+    <p><strong>最终 Prompt:</strong> macro photograph of molten silicon liquid pouring into a crystalline lattice that solidifies into the exact pattern of a neural network, the transition zone between glowing fluid metal and frozen precision-etched circuitry, light refracting through newly formed crystal facets with intricate geometric patterns, cool teal and brushed copper color grading, professional editorial quality, no text no watermark no letters</p>
+    <p><strong>结果：</strong> HTTP 200 · 34,092 字节 · 900x500 JPEG</p>
+  </div>
+
+  <div class="footer">半导体AI日报 · 由 AI 自动生成 · 数据截至 2026-08-08</div>
+</div>
+</body>
+</html>
