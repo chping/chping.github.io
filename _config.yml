@@ -32,6 +32,9 @@ github_username:    chping
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
+# 凌晨构建时 post 日期在 UTC 视角是"未来"，会被 Jekyll 默认跳过（future: false）
+# 改为 true 允许构建当天/未来日期的 post，避免 06:00 定时任务部署后日报不进首页
+future: true
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
