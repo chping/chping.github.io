@@ -2,50 +2,76 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>半导体AI日报 · 2026-08-20: 长江存储IPO辅导验收，Etched估值升至210亿美元</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-20: AI定制芯片需求挤压代工产能，三星与Marvell订单齐升</title>
+<style>
+  body{margin:0;background:#f6f7f9;color:#1a1d24;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;}
+  .wrap{max-width:780px;margin:0 auto;padding:24px 16px 48px;}
+  .cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+  .viewpoint{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+  h1{font-size:22px;line-height:1.4;margin:0 0 6px;color:#111;}
+  .meta{font-size:13px;color:#8a929d;margin-bottom:20px;}
+  .card{background:#fff;border-radius:6px;padding:18px;margin-bottom:14px;border-left:4px solid #d4855e;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .card h2{font-size:18px;line-height:1.4;margin:14px 0 8px;color:#111;}
+  .card h2:first-child{margin-top:0;}
+  .card p{margin:0 0 8px;}
+  .card p:last-child{margin-bottom:0;}
+  .source{font-size:13px;color:#8a929d;}
+  .source a{color:#52525B;text-decoration:none;}
+  .refs{background:#fff;border-radius:6px;padding:18px;margin-top:20px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .refs h2{font-size:16px;margin:0 0 8px;color:#111;}
+  .refs ol{margin:0;padding-left:20px;}
+  .refs li{margin-bottom:6px;font-size:14px;}
+  .refs a{color:#52525B;text-decoration:none;}
+  footer{font-size:12px;color:#a1a1aa;text-align:center;margin-top:28px;}
+</style>
 </head>
-<body style="margin:0;padding:0;background:#fafafa;">
-<div style="max-width:780px;margin:0 auto;padding:24px 16px;background:#ffffff;min-height:100vh;">
-<img src="/ai-daily/covers/2026-08-20.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
-<p style="font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;">国产存储与推理芯片两条资本主线在8月交汇：一级市场以翻倍估值定价推理专用芯片，二级市场为3D NAND龙头打开融资通道，先进封装设备订单同步兑现。</p>
-<h1 style="font-size:22px;color:#2c5f7c;margin:0 0 18px;line-height:1.4;letter-spacing:0.3px;">半导体AI日报 · 2026-08-20: 长江存储IPO辅导验收，Etched估值升至210亿美元</h1>
+<body>
+<div class="wrap">
+  <img class="cover" src="/ai-daily/covers/2026-08-20.jpg" alt="半导体AI日报封面">
+  <div class="viewpoint">超大规模云厂商的定制ASIC需求正逼近台积电产能上限，代工订单与股权绑定同步流向三星与Marvell，先进封装与HBM集成成为产能瓶颈下的新组织方式。</div>
+  <h1>半导体AI日报 · 2026-08-20: AI定制芯片需求挤压代工产能，三星与Marvell订单齐升</h1>
+  <div class="meta">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</div>
 
-<div style="background:#ffffff;padding:18px;margin-bottom:14px;border-left:4px solid #3B82F6;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-<h2 style="font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.4;">01 · Etched完成7亿美元融资，估值一个月内升至210亿美元</h2>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;">8月18日，旧金山AI推理芯片公司Etched宣布完成由Jane Street领投的7亿美元融资，估值较7月底3亿美元Series C时的103亿美元翻倍至210亿美元，Kleiner Perkins、Sequoia、a16z、Tiger Global跟投。Jane Street同时是其首个客户，上月已接收首个整机机架并在内部工作负载中部署。公司披露累计客户合同额超10亿美元，累计融资19亿美元。</p>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;"><strong>核心看点：</strong>Transformer专用ASIC路线获顶级交易型买方以翻倍估值背书。其<span class="highlight" style="color:#2c5f7c;font-weight:600;">Sohu架构</span>以低于传统处理器一半的电压运行计算块，主打推理场景的能效比；推理芯片供给成为资本定价的核心变量，与英伟达通用GPU形成差异化竞争。</p>
-<p class="source" style="font-size:13px;color:#8A929D;margin:6px 0 0;"><span>来源：</span><a href="https://finance.yahoo.com/technology/ai/articles/ai-chip-startup-etched-valued-151318404.html" style="color:#52525B;">Reuters/Yahoo Finance</a></p>
-</div>
+  <div class="card">
+    <h2>01 · Marvell授予Google约122亿美元认股权证，定制AI芯片合作深化</h2>
+    <p>博通长期担任Google定制AI芯片主合作伙伴，Marvell通过一份扩大协议切入其TPU生态。Marvell向Google授予可购买至多5897万股股票的认股权证，行权价每股206.58美元，总额约122亿美元，行权与Google在2033财年前的采购额挂钩。协议覆盖AI推理加速器、存储与网络接口控制器、内存接口控制器及近内存计算等配套芯片，Marvell当日股价一度大涨14%，博通收跌逾2%。</p>
+    <p><strong>核心看点：</strong>认股权证与采购额挂钩，将Marvell的股东利益与Google的ASIC支出直接绑定，是超大规模云厂商以资本结构锁定定制芯片供应链的又一案例，同时稀释博通在Google定制芯片中的独占地位。</p>
+    <p class="source">来源：<a href="https://www.cnbc.com/amp/2026-08-19/marvell-google-ai-chips.html">CNBC</a></p>
+  </div>
 
-<div style="background:#ffffff;padding:18px;margin-bottom:14px;border-left:4px solid #8B5CF6;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-<h2 style="font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.4;">02 · 长江存储IPO辅导验收，A股上市进入申报通道</h2>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;">8月19日，证监会官网披露长江存储控股IPO辅导状态变更为「辅导验收」，辅导券商为中信证券与中信建投。辅导自5月19日备案启动，历时约三个月，为IPO辅导流程最快完成节奏。辅导机构确认公司治理、会计基础与内部控制已达上市公司规范要求。公司募资方向为3D NAND产能扩建与先进工艺研发，已实现232层工艺稳定量产。</p>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;"><strong>核心看点：</strong>国产存储龙头资本化路径打通，<span class="highlight" style="color:#2c5f7c;font-weight:600;">扩产融资通道明确</span>。Counterpoint数据显示2026年Q2其NAND出货容量份额达14%，首次升至全球第三，仅次于三星（25%）与SK海力士（22%）。存储供不应求周期下，上市募资将直接支撑产能扩张，上游<span class="highlight" style="color:#2c5f7c;font-weight:600;">设备与材料环节</span>的订单能见度同步改善。</p>
-<p class="source" style="font-size:13px;color:#8A929D;margin:6px 0 0;"><span>来源：</span><a href="https://finance.sina.com.cn/roll/2026-08-19/doc-ininvmyt7108593.shtml" style="color:#52525B;">新浪财经/21世纪经济报道</a></p>
-</div>
+  <div class="card">
+    <h2>02 · 台积电产能趋近饱和，三星拟承接Google下一代TPU的I/O组件代工</h2>
+    <p>随着台积电先进制程产能趋近饱和，三星电子有望承接Google下一代AI芯片的关键组件代工。据The Information，Google正就第10代TPU（代号Icefish，与联发科共同设计，2028年量产）洽谈：主计算芯片由台积电以1.4纳米制程生产，连接TPU与HBM的I/O组件由三星以2纳米制程制造。业界预计可能出现涵盖存储、代工与封装的一体化方案，由三星存储部门供应HBM、代工部门制造组件并完成封装。</p>
+    <p><strong>核心看点：</strong>单一芯片的制造在代工厂之间拆分（compute die给台积电、IO die给三星），先进封装与HBM集成成为产能瓶颈下的新组织方式；三星2纳米良率与泰勒工厂产能是决定其能否承接的关键变量。</p>
+    <p class="source">来源：<a href="https://www.koreajoongangdaily.com/business/samsung-poised-to-make-part-of-googles-next-ai-chip-as-tsmc-nears-capacity/12713503">Korea JoongAng Daily</a></p>
+  </div>
 
-<div style="background:#ffffff;padding:18px;margin-bottom:14px;border-left:4px solid #F97316;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-<h2 style="font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.4;">03 · Socionext宣布采用Intel 18A-P制程开发定制SoC</h2>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;">8月18日，日本定制SoC设计服务企业Socionext宣布将采用英特尔代工Intel 18A-P制程节点开发面向数据中心、边缘计算与HPC客户的定制SoC系列，首个项目为高性能计算芯粒（HPC chiplet）。公司将自身ASIC设计能力与英特尔代工的先进制程、先进封装路线图结合，提供针对特定工作负载优化的差异化方案。</p>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;"><strong>核心看点：</strong>英特尔代工在<span class="highlight" style="color:#2c5f7c;font-weight:600;">18A-P节点</span>上获得首个大型ASIC设计公司客户，制程与封装组合开始承接定制化算力芯片订单。此举与瑞银此前对AMD转单英特尔的预测相互印证，CSP自研ASIC的代工选择正从台积电单一依赖走向多节点布局。</p>
-<p class="source" style="font-size:13px;color:#8A929D;margin:6px 0 0;"><span>来源：</span><a href="http://www.socionext.com/en/pr/Intel_18A-P_Process" style="color:#52525B;">Socionext官网新闻稿</a></p>
-</div>
+  <div class="card">
+    <h2>03 · SEMI预计2027年全球300mm晶圆厂设备支出超1500亿美元</h2>
+    <p>国际半导体设备与材料协会（SEMI）预测，在AI芯片需求、先进产能扩张与供应链韧性需求驱动下，2027年全球300毫米晶圆厂设备支出将超过1500亿美元。在SEMICON Taiwan 2026（主题"Transform Tomorrow"）上，SEMI将AI驱动的智能制造与先进封装列为核心增长领域：智能工厂展区同比增长20%成为最大且增长最快的板块，封装技术展区增长6%成为第二大板块。</p>
+    <p><strong>核心看点：</strong>竞争正沿制程微缩与系统级集成两条线展开，设备支出重心从前道制程扩展至AI检测、工业物联网与先进封装；CapEx向设备端的持续传导印证AI基建仍在加速而非见顶。</p>
+    <p class="source">来源：<a href="https://www.prnewswire.com/apac/news-releases/semicon-taiwan-2026-highlights-ai-driven-manufacturing-transformation-302853886.html">SEMI</a></p>
+  </div>
 
-<div style="background:#ffffff;padding:18px;margin-bottom:14px;border-left:4px solid #06B6D4;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-<h2 style="font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.4;">04 · ASMPT二季度营收同比增长52%，TCB与CPO三线布局先进封装</h2>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;">据华创证券研报与TechNews 8月19日报道，封装设备商ASMPT 2026年Q2持续经营调整后营收6.30亿美元，同比增长52.1%，超预期约10.6%；调整后净利润6.38亿港元，同比增长253.9%。Q2订单额9.04亿美元同比近翻倍，订单出货比1.43为2021年上半年以来最高。7月获OSAT客户超50台C2S TCB批量订单，TCB可服务市场预计2028年前超16亿美元。</p>
-<p style="font-size:17px;margin:0 0 8px;line-height:1.6;"><strong>核心看点：</strong>先进封装设备需求从HBM向<span class="highlight" style="color:#2c5f7c;font-weight:600;">TCB、混合键合、CPO三线</span>扩散。光子学业务受益800G及以上速率模块放量，可插拔光模块上半年收入同比增长近三倍；公司判断CPO设备拐点预计在2027至2028年到来，设备交期延长至6至9个月，供应链紧张本身成为订单能见度指标。</p>
-<p class="source" style="font-size:13px;color:#8A929D;margin:6px 0 0;"><span>来源：</span><a href="https://www.icsmart.cn/140799" style="color:#52525B;">芯智讯/TechNews</a></p>
-</div>
+  <div class="card">
+    <h2>04 · 台积电拟下半年3纳米涨价最高15%，AI与ASIC需求支撑定价权</h2>
+    <p>受AI加速器与定制ASIC需求拉动，台积电3纳米制程产能持续满载。供应链消息称，台积电拟于2026年下半年再度上调3纳米报价，涨幅最高达15%，2027年可能再加价5%至10%。3纳米已成为AI芯片最稳定的量产节点，较仍处于良率爬坡阶段的2纳米更具生产准备度与成本优势；其主力厂Fab 18月产能已由年初约13万片扩至第二季度约16万至17.5万片，仍难追上AI需求增速。</p>
+    <p><strong>核心看点：</strong>在先进制程折旧压力与海外建厂成本上升背景下，3纳米涨价同时服务于产能稀缺与毛利率双目标，是台积电定价权从单纯产能竞争转向产能、良率、价格综合博弈的信号。</p>
+    <p class="source">来源：<a href="https://www.trendforce.com/news/2026-05-27/news-tsmc-reportedly-eyes-up-to-15-3nm-price-hike-in-2h26-further-5-10-seen-in-2027-amid-ai-asic-demand">TrendForce</a></p>
+  </div>
 
-<h2 style="font-size:19px;color:#111827;margin:20px 0 10px;">参考资料</h2>
-<ol style="font-size:15px;color:#4B5563;line-height:1.7;padding-left:20px;margin:0;">
-<li><a href="https://finance.yahoo.com/technology/ai/articles/ai-chip-startup-etched-valued-151318404.html" style="color:#52525B;">Reuters：AI chip startup Etched doubles valuation to $21 billion in under a month（2026-08-18）</a></li>
-<li><a href="https://finance.sina.com.cn/roll/2026-08-19/doc-ininvmyt7108593.shtml" style="color:#52525B;">新浪财经：存储巨头长存控股，IPO辅导完成（2026-08-19）</a></li>
-<li><a href="http://www.socionext.com/en/pr/Intel_18A-P_Process" style="color:#52525B;">Socionext：Socionext Broadens SoC Roadmap with Intel 18A-P Process Technology（2026-08-18）</a></li>
-<li><a href="https://www.icsmart.cn/140799" style="color:#52525B;">芯智讯：AI时代先进封装成关键战场，ASMPT以TCB、混合键合、CPO三线布局（2026-08-19）</a></li>
-</ol>
+  <div class="refs">
+    <h2>参考资料</h2>
+    <ol>
+      <li><a href="https://www.cnbc.com/amp/2026-08-19/marvell-google-ai-chips.html">CNBC：Marvell pops on AI chip deal letting Google buy up to $12.2B in shares</a></li>
+      <li><a href="https://www.koreajoongangdaily.com/business/samsung-poised-to-make-part-of-googles-next-ai-chip-as-tsmc-nears-capacity/12713503">Korea JoongAng Daily：Samsung poised to make part of Google's next AI chip as TSMC nears capacity</a></li>
+      <li><a href="https://www.prnewswire.com/apac/news-releases/semicon-taiwan-2026-highlights-ai-driven-manufacturing-transformation-302853886.html">SEMI：SEMICON Taiwan 2026 Highlights AI-Driven Manufacturing Transformation</a></li>
+      <li><a href="https://www.trendforce.com/news/2026-05-27/news-tsmc-reportedly-eyes-up-to-15-3nm-price-hike-in-2h26-further-5-10-seen-in-2027-amid-ai-asic-demand">TrendForce：TSMC Reportedly Eyes Up to 15% 3nm Price Hike in 2H26</a></li>
+    </ol>
+  </div>
+
+  <footer>半导体AI日报 · 自动生成 · 2026-08-20</footer>
 </div>
 </body>
 </html>
