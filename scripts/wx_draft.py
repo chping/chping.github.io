@@ -152,7 +152,7 @@ print(f"Step 3: Creating draft...", file=sys.stderr)
 draft = {
     "articles": [{
         "title": args.title,
-        "author": "Hermes Agent",
+        "author": "R2 Agent",
         "digest": "AI芯片 / Agentic EDA / Agentic CAE/CAD 每日精选",
         "content": content_html,
         "content_source_url": args.source_url,
