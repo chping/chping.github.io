@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-26: 英伟达Groq 3 LPX量产，三星代工提价15%</title>
+<style>
+:root{--title-color:#2c5f7c;--accent-color:#c47f5a;--bg:#fafafa;--card-bg:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;color:#1f2937}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px}
+img.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block}
+.pull-quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;padding:0 12px}
+h1{font-size:24px;color:var(--title-color);margin:0 0 16px;line-height:1.4}
+.card{background:var(--card-bg);border-radius:8px;padding:18px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.06);border-left:4px solid var(--accent-color)}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;font-weight:700}
+.card:first-child h2{margin-top:0}
+.card p{margin:0 0 8px}
+.highlight{color:var(--accent-color);font-weight:600}
+.source{font-size:13px;color:#8A929D;margin-top:8px}
+.source a{color:#52525B;text-decoration:none}
+.refsec h2{font-size:20px;color:var(--title-color);margin:20px 0 8px}
+.refsec ol{padding-left:22px;margin:0}
+.refsec li{margin-bottom:6px;font-size:15px;color:#4b5563}
+.refsec a{color:#52525B;text-decoration:none}
+footer{text-align:center;font-size:13px;color:#8A929D;margin-top:24px;padding-bottom:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="cover" src="/ai-daily/covers/2026-08-26.jpg" alt="半导体AI日报封面">
+<p class="pull-quote">芯片路线图与数据中心规划的节拍正在错位：低时延推理与供电架构的迭代周期缩短，迫使性能竞争由单芯片转向系统层。</p>
+<h1>半导体AI日报 · 2026-08-26: 英伟达Groq 3 LPX量产，三星代工提价15%</h1>
+
+<div class="card" style="border-left-color:#3B82F6">
+<h2>01 · 英伟达Groq 3 LPX进入全面量产，Gemma 4 31B长上下文输出达3400 token/s</h2>
+<p>英伟达8月24日在Hot Chips 2026上宣布Groq 3 LPX全面量产。该加速器是Vera Rubin平台的交互推理扩展，每机架集成256颗LPU，单颗LPU配置500MB片上SRAM与150TB/s SRAM带宽，Scale-up互连带宽2.5TB/s。Artificial Analysis基准测试中，Gemma 4 31B模型在10万token上下文场景下输出速率达3400 token/s，为同模型历史最高纪录，Nebius成为首家采用该平台的AI云厂商。</p>
+<p><strong>核心看点：</strong>LPX面向多轮推理中上下文逐轮累积的<span class="highlight">低时延解码</span>场景，与Vera Rubin NVL72协同覆盖最高交互性服务档位，英伟达官方口径称每瓦营收可提升10倍。英伟达与Groq的授权合作由此转入<span class="highlight">商业部署阶段</span>，推理加速器的竞争焦点从峰值算力转向token生成速率与上下文规模。</p>
+<p class="source">来源：<a href="https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion" target="_blank">NVIDIA Blog</a> · <a href="https://www.hpcwire.com/off-the-wire/nvidia-groq-3-lpx-enters-full-production-for-agentic-ai-inference" target="_blank">HPCwire</a></p>
+</div>
+
+<div class="card" style="border-left-color:#8B5CF6">
+<h2>02 · 英飞凌收购班加罗尔C2i Semiconductors，补强AI数据中心电源架构</h2>
+<p>英飞凌8月24日宣布收购班加罗尔的C2i Semiconductors，后者专攻软件定义多相控制器与智能功率级，应用于AI数据中心供电。交易预计2026年第三季度完成交割，财务条款未披露。C2i的软件定义电源管理与系统级供电架构技术（含垂直供电与SIVR基板集成电压调节器）将与英飞凌的SiC、GaN及功率半导体组合整合，覆盖从电网到芯片核心的供电链路。</p>
+<p><strong>核心看点：</strong>英飞凌指出电源级效率提升0.5-1个百分点即可为单板服务器节省100-150W功耗与对应散热负载，收购同时在其印度研发体系设立<span class="highlight">数字电源技术中心</span>。AI服务器功率密度持续上升，<span class="highlight">供电架构</span>正从配套器件演变为决定数据中心效率的独立竞争环节。</p>
+<p class="source">来源：<a href="https://www.infineon.com/press-release/2026/infpr202608-129" target="_blank">Infineon Press Release</a> · <a href="https://www.digitimes.com" target="_blank">DIGITIMES</a></p>
+</div>
+
+<div class="card" style="border-left-color:#F97316">
+<h2>03 · Cadence：AI芯片路线图迫使数据中心设计前置芯片级参数</h2>
+<p>Cadence集团总监Sherman Ikemoto8月24日接受DIGITIMES访谈指出，AI加速器功耗与热管理参数的快速迭代正在改变数据中心设计方法学：芯片级功耗、散热信息需要在规划阶段提前注入，而不是在硬件选型之后才纳入评估。数据中心设计团队由此更早介入芯片定义环节，架构选型、供电拓扑与液冷配置开始按芯片路线图滚动调整。</p>
+<p><strong>核心看点：</strong>该判断与8月24日英伟达Groq 3 LPX量产、Cerebras CS-4机架化发布指向同一方向——<span class="highlight">芯片性能与机房架构的协同周期正在压缩</span>，EDA/系统仿真工具商在芯片厂与基础设施商之间的<span class="highlight">跨层协同角色</span>持续强化，数据中心设计流程的起点由机房侧前移至芯片侧。</p>
+<p class="source">来源：<a href="https://www.digitimes.com/news/a20260824VL205/cadence-design-cooling-accelerator-infrastructure.html" target="_blank">DIGITIMES</a></p>
+</div>
+
+<div class="card" style="border-left-color:#06B6D4">
+<h2>04 · SimScale向90万工程师社区开放工程AI Agent，自主运行完整仿真流程</h2>
+<p>SimScale8月18日在慕尼黑宣布，将此前仅面向企业客户验证的仿真AI Agent向全部90万工程师、设计师与学生社区开放。该Agent可自主运行完整仿真工作流：从CAD几何清理、仿真设置到验证后的输出报告。其《State of Engineering AI 2026》调研显示，工程领域AI采用率在不到一年内翻倍，非线性结构仿真12个月增长99%、电磁仿真增长42%、共轭传热仿真增长35%。</p>
+<p><strong>核心看点：</strong>Agentic CAE从企业试点走向<span class="highlight">全社区开放</span>，仿真专家级工作被拆解为通用工程师可触达的自动化流程，硬件工程人才供给紧张背景下，该策略同时承担<span class="highlight">能力普及与人才回流</span>双重目标。调研同时显示约九成企业正在建立自主AI决策的治理框架，工程仿真场景的<span class="highlight">Agent治理</span>进入落地阶段。</p>
+<p class="source">来源：<a href="https://www.simscale.com/press/engineering-ai-agent-open-to-community" target="_blank">SimScale Press</a></p>
+</div>
+
+<div class="card" style="border-left-color:#10B981">
+<h2>05 · TrendForce：三星代工4nm上调15%，代工定价转向供需与资本密集逻辑</h2>
+<p>TrendForce8月21日分析指出，据路透社8月19日报道，三星代工4nm主导的先进节点价格上调至多15%，中国客户涨幅最大：SF4中国、美国客户7月已上调10%-15%，台积电所在地台湾客户涨幅5%-10%。三星代工当前产能利用率约70%-80%，预计下半年满载；Google洽谈在SF4流片，高通已是客户。行业解读认为该动作标志着代工定价从制程微缩带来的成本与良率逻辑，转向<span style="color:#10B981;font-weight:600">供需结构与资本强度</span>主导。</p>
+<p><strong>核心看点：</strong>先进节点产能收紧叠加AI需求集中，三星从跟随性定价转为<span class="highlight">主动定价</span>，代工竞争重心从制程代差转向<span class="highlight">产能保障能力</span>。客户结构（Google、高通及中国客户）反映二线先进代工的份额修复窗口正在打开。</p>
+<p class="source">来源：<a href="https://www.trendforce.com/news/2026-08-21/news-from-pricing-war-to-pricing-power-behind-samsung-foundrys-reported-up-to-15-price-hikes/" target="_blank">TrendForce</a>（原文引述Reuters，8月19日）</p>
+</div>
+
+<div class="refsec">
+<h2>参考资料</h2>
+<ol>
+<li>NVIDIA Blog — <a href="https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion" target="_blank">With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents</a>（2026-08-24）</li>
+<li>HPCwire — <a href="https://www.hpcwire.com/off-the-wire/nvidia-groq-3-lpx-enters-full-production-for-agentic-ai-inference" target="_blank">NVIDIA Groq 3 LPX Enters Full Production for Agentic AI Inference</a></li>
+<li>Infineon — <a href="https://www.infineon.com/press-release/2026/infpr202608-129" target="_blank">Infineon acquires C2i Semiconductors to expand AI data center power portfolio</a>（2026-08-24）</li>
+<li>DIGITIMES — <a href="https://www.digitimes.com/news/a20260824VL205/cadence-design-cooling-accelerator-infrastructure.html" target="_blank">AI chip roadmaps force faster changes in data-center design, Cadence says</a>（2026-08-24）</li>
+<li>SimScale — <a href="https://www.simscale.com/press/engineering-ai-agent-open-to-community" target="_blank">SimScale opens Engineering AI agent to its global community</a>（2026-08-18）</li>
+<li>TrendForce — <a href="https://www.trendforce.com/news/2026-08-21/news-from-pricing-war-to-pricing-power-behind-samsung-foundrys-reported-up-to-15-price-hikes/" target="_blank">From Pricing War to Pricing Power: Behind Samsung Foundry's Reported up to 15% Price Hikes</a>（2026-08-21）</li>
+</ol>
+</div>
+
+<footer>半导体AI日报 · 每日精选AI芯片 / Agentic EDA / Agentic CAE/CAD 产业动态</footer>
+</div>
+</body>
+</html>
