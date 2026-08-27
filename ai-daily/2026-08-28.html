@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>半导体AI日报 · 2026-08-28: 英伟达Feynman锁定A16，AI瓶颈转向系统级</title>
+<style>
+body{margin:0;background:#f5f5f7;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;font-size:17px;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 48px;}
+h1{font-size:22px;font-weight:800;margin:0 0 14px;letter-spacing:0.5px;}
+.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+.card{background:#fff;border-radius:8px;padding:18px;margin-bottom:14px;}
+.card h2{font-size:18px;font-weight:700;margin:14px 0 8px;color:#1d1d1f;}
+.card:first-of-type h2{margin-top:0;}
+.card p{margin:0 0 8px;}
+.card .hl{font-weight:600;}
+.card .source{font-size:13px;color:#8a929d;margin:8px 0 0;}
+.card .source a{color:#52525B;text-decoration:none;}
+.c1{border-left:4px solid #4F7CAC;}
+.c2{border-left:4px solid #C2703D;}
+.c3{border-left:4px solid #5B8C5A;}
+.c4{border-left:4px solid #8E6C88;}
+h2.ref{font-size:17px;font-weight:700;margin:28px 0 8px;}
+ol.refs{margin:0;padding-left:20px;}
+ol.refs li{margin-bottom:6px;font-size:14px;color:#3a3a3c;}
+ol.refs li a{color:#52525B;word-break:break-all;}
+footer{margin-top:32px;font-size:12px;color:#a1a1a6;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>半导体AI日报 · 2026-08-28: 英伟达Feynman锁定A16，AI瓶颈转向系统级</h1>
+<img src="/ai-daily/covers/2026-08-28.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="quote">算力的竞争焦点正从晶体管微缩转向系统级约束：先进封装、光互连与设计生产力，正在决定算力的实际交付速度。</p>
+
+<div class="card c1">
+<h2>01 · 英伟达Feynman锁定台积电A16，2028下半年量产</h2>
+<p>英伟达据报已为下一代Feynman GPU锁定台积电A16（1.6nm）产能，计划2028年下半年量产。A16是台积电首个量产结合GAA纳米片晶体管与背面供电的节点，相较N2P在密度与性能上提升8-10%，功耗降低15-20%。</p>
+<p>Feynman将放弃平面chiplet架构，转向基于SoIC的三维堆叠设计，并引入COUPE光子引擎，系统级互连带宽超过1000TB/s，约为Rubin（520TB/s）的两倍。</p>
+<p><span class="hl">核心看点</span>：Feynman跳过2nm直接进入A16；三维堆叠加光子集成将成为下一代AI芯片的形态定义。A16计划2026年下半年进入风险试产，产能预订制意味着最先进制程的分配格局已提前锁定。</p>
+<p class="source">来源：<a href="https://www.electronicsweekly.com/news/business/nvidia-books-tsmc-1-6nm-process-for-feynman-in-h2-2028-2026-08">Electronics Weekly</a></p>
+</div>
+
+<div class="card c2">
+<h2>02 · 西门子与英伟达推进自验证Agentic EDA工作流</h2>
+<p>西门子宣布扩大与英伟达的战略合作，将Fuse EDA AI Agent升级为自验证（self-verifying）Agentic工作流，覆盖半导体与PCB设计全流程。Agent在设计、综合、验证、实施各环节持续对照确定性物理引擎验证自身决策，而非仅生成候选方案。</p>
+<p>技术栈采用英伟达NeMo Gym开放库构建Agent环境、OpenShell安全运行时提供企业级权限与审计、Nemotron 3 Ultra模型负责推理，宣称signoff级结果从数天缩短至数小时。标准单元库表征流程周转时间缩短10倍以上，token成本降低5-10倍。</p>
+<p><span class="hl">核心看点</span>：Agentic EDA的竞争焦点从"Agent能否执行"转向"Agent输出是否可信"。物理引擎作为确定性验证底座，是Agentic工作流进入量产流程的前提条件。</p>
+<p class="source">来源：<a href="https://www.allaboutcircuits.com/news/siemens-upgrades-its-ai-agent-to-enable-self-verifying-agentic-ai-eda-workflows">All About Circuits</a></p>
+</div>
+
+<div class="card c3">
+<h2>03 · 诺基亚收购NXP钱德勒工厂，扩建InP光通信产能</h2>
+<p>诺基亚签署协议收购NXP位于亚利桑那州钱德勒的晶圆厂园区：2027年初先租赁部分产能，随后改造为磷化铟（InP）光通信半导体产线，完整收购预计2029年第一季度完成。结合圣何塞光器件厂（2026年四季度投产）与宾州封测产能10倍扩展（2026年三季度启动），三座基地共同支撑2027-2028年的交付需求。</p>
+<p><span class="hl">核心看点</span>：AI数据中心互连架构由铜缆转向光互连，InP供需失衡已传导至晶圆级产能布局。电信设备商直接收购fab锁定光器件供给，标志着光互连产能竞争进入实体资产层面。</p>
+<p class="source">来源：<a href="https://www.semiconductor-today.com/news_items/2026/aug/nokia-nxp-070826.shtml">Semiconductor Today</a></p>
+</div>
+
+<div class="card c4">
+<h2>04 · 中芯国际Q2营收首破30亿美元，毛利率升至25.3%</h2>
+<p>中芯国际二季度营收30.06亿美元，同比增长36.1%、环比增长20%，单季营收首次突破30亿美元；归母净利润4.792亿美元，同比增长261.7%；毛利率25.3%，环比提升5.2个百分点。公司将增长归因于晶圆出货量与平均售价提升，管理层称AI需求带动客户提前拉货，并计划调整现有产能配置、加快新产线投用以缓解供应链紧张。</p>
+<p>公司预计三季度营收环比增长2-4%，毛利率26%-28%。华虹同日发布创纪录季报，营收7.175亿美元，同比增长26.8%。</p>
+<p><span class="hl">核心看点</span>：AI需求外溢至成熟制程，代工定价权持续强化。国内代工产能利用率高位运行，供给紧张预计贯穿2026年下半年。</p>
+<p class="source">来源：<a href="https://qz.com/smic-chip-prices-ai-demand-revenue-earnings-081426">Quartz</a></p>
+</div>
+
+<h2 class="ref">参考资料</h2>
+<ol class="refs">
+<li><a href="https://www.electronicsweekly.com/news/business/nvidia-books-tsmc-1-6nm-process-for-feynman-in-h2-2028-2026-08">Nvidia books TSMC 1.6nm process for Feynman in H2 2028 — Electronics Weekly</a></li>
+<li><a href="https://www.allaboutcircuits.com/news/siemens-upgrades-its-ai-agent-to-enable-self-verifying-agentic-ai-eda-workflows">Siemens Upgrades Its AI Agent to Enable Self-Verifying Agentic AI EDA Workflows — All About Circuits</a></li>
+<li><a href="https://www.semiconductor-today.com/news_items/2026/aug/nokia-nxp-070826.shtml">Nokia acquires NXP's fab in Chandler, Arizona, for conversion to InP optical comms — Semiconductor Today</a></li>
+<li><a href="https://qz.com/smic-chip-prices-ai-demand-revenue-earnings-081426">SMIC Q2 2026 earnings beat as AI demand drives price — Quartz</a></li>
+</ol>
+
+<footer>半导体AI日报 · AI芯片 / Agentic EDA / Agentic CAE-CAD · 每日精选</footer>
+</div>
+</body>
+</html>
