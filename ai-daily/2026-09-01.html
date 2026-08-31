@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-09-01: 定制硅与定制显存并进，AI芯片供应链走向碎片化</title>
+<style>
+body{margin:0;background:#f5f6f7;color:#18181B;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 40px;}
+h1{font-size:24px;line-height:1.4;margin:0 0 14px;}
+.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+.card{background:#fff;border-radius:6px;padding:18px;border-left:4px solid #d4855e;margin-bottom:14px;}
+.card h2{font-size:19px;margin:14px 0 8px;line-height:1.45;}
+.card p{margin:0 0 8px;}
+.card ul{margin:0 0 8px;padding-left:22px;}
+.card li{margin-bottom:4px;}
+.source{font-size:13px;color:#8a929d;margin-top:10px;}
+.source a{color:#d4855e;text-decoration:none;}
+h2.refs{font-size:20px;margin:24px 0 8px;color:#18181B;}
+.refs ol{margin:0;padding-left:22px;font-size:14px;color:#52525B;}
+.refs li{margin-bottom:4px;word-break:break-all;}
+.refs a{color:#52525B;}
+@media(max-width:600px){.wrap{padding:16px 12px 32px;}.card{padding:14px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>半导体AI日报 · 2026-09-01: 定制硅与定制显存并进，AI芯片供应链走向碎片化</h1>
+<img class="cover" src="/ai-daily/covers/2026-09-01.jpg" alt="半导体AI日报封面">
+<p class="quote">AI基础设施正从标准化堆叠走向定制硅、定制显存与自主工程流的并行演进，供应链竞争单元由整代制程转向每一层组件。</p>
+<div class="card">
+<h2>01 · 英伟达发布NVHBM定制高带宽显存：带宽较HBM4E提升30%，功耗降低15%</h2>
+<p>英伟达公布与主流存储厂商共同验证的定制HBM方案NVHBM，将内存控制器由XPU计算裸片移入HBM base die。官方口径：单栈带宽较商用HBM4E最高提升30%，HBM子系统功耗降低15%，XPU裸片可用于计算逻辑的面积增加约25%。NVHBM通过NVLink Fusion向定制硅客户开放，定位是HBM标准栈之外的增量组件，预计服务2028年前后的下一代平台。这是继定制ASIC设计服务之后，英伟达向存储接口层纵深延伸的一步，HBM的标准化边界出现裂缝。</p>
+<p class="source">来源：<a href="https://www.tomshardware.com/pc-components/dram/nvidia-custom-nvhbm-promises-30-percent-higher-bandwidth-15-percent-lower-power-than-commodity-hbm4e-custom-base-die-and-phy-will-be-available-to-nvlink-fusion-partners">Tom's Hardware</a></p>
+</div>
+<div class="card">
+<h2>02 · 台湾检方突击搜查欣兴电子：涉将中国产PCB回流贴牌为台湾制造，股价跌逾10%</h2>
+<p>台湾桃园地检署于上周五联合调查人员突击搜查欣兴电子龟山总部与中壢厂区，带走14名高管与员工讯问，其中总经理王姓人员以1500万元新台币保释。检方称欣兴涉嫌将中国制造的PCB产品运回台湾，伪称原产地为台湾，涉嫌触犯伪造文书与虚伪标示产地条款。欣兴为英伟达、英特尔、谷歌与亚马逊的主要载板与PCB供应商，公司回应将配合调查、运营暂无重大影响。该案发生在美方收紧转口管制之际，AI算力硬件的原产地合规风险显性化，供应链稽核将成为载板与PCB厂商的新增成本项。</p>
+<p class="source">来源：<a href="https://focustaiwan.tw/business/202608290008">Focus Taiwan / 联合报</a></p>
+</div>
+<div class="card">
+<h2>03 · 英伟达Groq 3 LPX推理机架进入全面量产，年内上线</h2>
+<p>英伟达宣布Groq 3 LPX机架进入全面量产，为12月以200亿美元收购Groq资产后的首次商业化落地。系统将与Vera CPU、Rubin GPU搭配部署，首站为云服务商Nebius，年内完成上线并向客户提供低延迟推理服务。黄仁修此前表示，面向代码类应用的数据中心容量中约四分之一将采用Groq芯片。Agentic工作负载对推理延迟敏感，低延迟推理机架成为继训练加速器之后的第二竞争维度，200亿美元收购自此获得可验证的时间表。</p>
+<p class="source">来源：<a href="https://www.cnbc.com/2026-08-24/nvidia-says-groq-racks-will-be-online-this-year-after-20-billion-deal.html">CNBC</a></p>
+</div>
+<div class="card">
+<h2>04 · Soitec与中芯集成达成合作：300mm BCD-on-SOI基板切入中国AI数据中心电源链</h2>
+<p>法国半导体材料厂商Soitec宣布与中国特色代工企业中芯集成（ZenSemi）建立战略合作，将向其供应300mm Power-SOI基板，支持其高、低压器件单片集成（BCD）工艺的高量产爬坡。双方应用覆盖AI数据中心、人形机器人、电动车与工业设备的功率管理芯片。Soitec股价闻讯上涨。这是Soitec从移动与射频SOI向功率电子材料多元化布局的最新落子，也印证中国BCD-on-SOI生态已具备承接高端功率IC量产的基板与工艺配套能力。</p>
+<p class="source">来源：<a href="https://www.wsj.com/tech/soitec-shares-climb-on-partnership-with-chinas-zensemi-74a4ba0f">WSJ</a></p>
+</div>
+<div class="card">
+<h2>05 · Meta定制AI芯片Iris九月投产，2027年算力翻倍至14GW</h2>
+<p>据路透社披露的内部备忘录，Meta与博通联合设计、台积电代工的第二代定制AI芯片Iris本月（九月）进入量产。Meta计划2027年前每六个月推出一代定制芯片，节奏约为行业惯例的两倍；其中至少一颗芯片约六周即完成测试。配合三星内存、闪迪存储与住友电工光设备的长约锁料，Meta 2026年算力部署目标为7GW，2027年翻倍至14GW。超大规模云商自研ASIC进入缩短迭代周期、对冲GPU采购成本的阶段，通用加速器与定制硅的份额边界进一步松动。</p>
+<p class="source">来源：<a href="https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09">Reuters</a></p>
+</div>
+<h2 class="refs">参考资料</h2>
+<ol class="refs">
+<li><a href="https://www.tomshardware.com/pc-components/dram/nvidia-custom-nvhbm-promises-30-percent-higher-bandwidth-15-percent-lower-power-than-commodity-hbm4e-custom-base-die-and-phy-will-be-available-to-nvlink-fusion-partners">Tom's Hardware: Nvidia custom NVHBM promises 30% higher bandwidth, 15% lower power than commodity HBM4E</a></li>
+<li><a href="https://focustaiwan.tw/business/202608290008">Focus Taiwan: Taiwan prosecutors probe Unimicron over relabeling of China-made PCBs</a></li>
+<li><a href="https://www.cnbc.com/2026-08-24/nvidia-says-groq-racks-will-be-online-this-year-after-20-billion-deal.html">CNBC: Nvidia says Groq racks will be online this year following $20 billion purchase</a></li>
+<li><a href="https://www.wsj.com/tech/soitec-shares-climb-on-partnership-with-chinas-zensemi-74a4ba0f">WSJ: Soitec Shares Climb on Partnership With China's ZenSemi</a></li>
+<li><a href="https://www.reuters.com/world/asia-pacific/meta-put-ai-chip-into-production-september-it-looks-double-computing-capacity-2026-07-09">Reuters: Meta to put AI chip into production in September as it looks to double computing capacity</a></li>
+</ol>
+</div>
+</body>
+</html>
