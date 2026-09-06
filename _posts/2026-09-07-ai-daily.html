@@ -1,0 +1,49 @@
+---
+layout: post
+title: "半导体AI日报 · 2026-09-07: 华为韬定律实测落地，三维集成成AI芯片主线"
+subtitle: "华为韬定律实测落地，三维集成成AI芯片主线"
+date: 2026-09-07
+author: "AI日报"
+header-img: ai-daily/covers/2026-09-07.jpg
+categories: ai-daily
+tags: [AI芯片, Agentic EDA, AI日报]
+---
+<style>
+li{margin-bottom:6px;}
+h2{margin:16px 0 8px;}
+p{margin:0 0 8px;}
+</style>
+<p>今日主线：当制程微缩逼近物理极限，AI芯片的性能竞赛正在向三维集成后移。华为以量产实测数据验证逻辑折叠路线，TRUMPF推进玻璃载板产业化，HBM底座转入逻辑工艺，代工与EDA环节同步重估AI需求的定价与工具价值。</p>
+<h2>01 · 华为韬定律实测落地：麒麟2026晶体管密度提升55%，NPU功耗同性能下降66%</h2>
+<p>9月6日，华为半导体负责人何庭波在中科院科技论文预发布平台ChinaXiv更新论文，将今年5月公开的“韬定律”从理论推演推进到量产验证。论文披露麒麟2026晶体管密度提升55%，相同性能下NPU功耗下降66%、GPU下降58%、CPU性能核心下降41%。何庭波指出芯片内部的主要能耗来自数据传输而非计算本身，逻辑折叠采用热感知布局缩短芯粒间距离。按路线图，混合键合间距将从1.5微米缩小至麒麟2027的1微米，三年内推进到720纳米，CPU核心频率目标5GHz。</p>
+<p><strong>核心看点：</strong>量产实测数据直接反驳“堆叠必发热”的行业质疑，逻辑折叠把先进封装从“替代方案”推向“独立技术路线”。</p>
+<p>来源：<a href="https://m.cls.cn/detail/2475140">财联社</a> / <a href="https://timeline.sohu.com/news/jyuBzIU0Zy">搜狐·通信世界</a></p>
+<h2>02 · TRUMPF：HiPIMS玻璃载板镀膜工艺走向工业化，TGV良率是玻璃载板量产关键</h2>
+<p>9月1日，TRUMPF在迪琴根与台北宣布开发出同类首个工业化玻璃载板镀膜工艺，以其HiPIMS高功率脉冲磁控溅射产品线支撑下一代高性能AI处理器的玻璃通孔（TGV）量产。公司指出，玻璃载板需在玻璃板上钻出并金属化数百万个微观通孔，少量镀膜缺陷即可使整块玻璃面板报废；该工艺通过高电离等离子体与电磁场控制，把带电粒子精确导向深而窄的通孔结构，提升镀膜均匀性、工艺稳定性与量产良率。</p>
+<p><strong>核心看点：</strong>AI芯片性能竞争从前端制程微缩转向后端载板环节，玻璃载板从样品验证进入量产工艺窗口。</p>
+<p>来源：<a href="https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/trumpf-makes-glass-substrates-ready-for-the-next-generation-of-ai-chips-10267">TRUMPF</a></p>
+<h2>03 · HotChips 2026：三星发布HBM三阶段路线图，Base Die全面转入4nm逻辑工艺</h2>
+<p>HotChips 2026上，三星披露HBM三阶段演进路线图：第一阶段cHBM4将内存控制器等功能下沉至Base Die，为XPU释放5%—10%硅片面积并以D2D PHY缩短数据路径；第二阶段在Base Die富余空间整合内存扩展控制器与RAS遥测；终局形态zHBM将DRAM直接堆叠于XPU之上、取消中介层，相对HBM4E可实现70%功耗下降与230%带宽提升。三星HBM4的Base Die已采用4nm逻辑工艺，SK海力士则搭配台积电12nm方案，两家HBM4产品定义随工艺分叉，HBM从单一存储器件转向“存储+逻辑+封装+IP+EDA”一体化系统。</p>
+<p><strong>核心看点：</strong>HBM从数据容器变为可编程系统组件，其设计边界从DRAM厂延伸至逻辑代工、先进封装与EDA工具链。</p>
+<p>来源：<a href="https://www.tmtpost.com/8117979.html">钛媒体·半导体产业纵横</a> / <a href="https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor">Tom's Hardware</a></p>
+<h2>04 · Synopsys Q3 FY2026财报超预期，上调全年指引，EDA双位数增长由AI设计需求驱动</h2>
+<p>Synopsys于8月26日公布Q3 FY2026业绩：营收24.77亿美元，同比增长42%，高于指引上限；Design Automation收入20亿美元，同比增长53%；Ansys贡献收入6.22亿美元。公司将全年FY2026营收指引上调至96.9亿—97.4亿美元（含Ansys约29.8亿美元），非GAAP EPS指引15.04—15.10美元，Q4 EDA增速预期加速至双位数。管理层表示AI相关设计需求为核心驱动，Multiphysics Fusion多物理场融合方案已获英伟达、联发科等客户验证，预计自FY2027起贡献EDA增长。</p>
+<p><strong>核心看点：</strong>Agentic EDA需求已转化为可量化收入，EDA行业的增长曲线正被AI设计复杂度与多物理场整合重塑。</p>
+<p>来源：<a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026/default.aspx">Synopsys IR</a> / <a href="https://futurumgroup.com/insights/synopsys-q3-fy-2026-ai-design-demand-drives-eda-growth">Futurum</a></p>
+<h2>05 · 三星代工先进制程提价最高15%，台积电拟2027年全制程提价最高10%</h2>
+<p>据路透社8月19日报道，三星已将SF4/SF5先进制程新订单提价最高15%，8nm提价近10%，中国客户承担的比例最高。台积电亦被报道拟于2027年1月起对全制程提价最高10%。Counterpoint数据显示，台积电占2026年一季度全球代工收入的70%以上，其3nm产能已被预订至2027年，2026年2nm产能已被苹果、英伟达、AMD等客户锁定；fabless设计商正将三星视为领先制程唯一可行的产能溢出出口，两大家同时提价意味着代工产能的定价权重估。</p>
+<p><strong>核心看点：</strong>AI需求使代工竞争从扩产叙事转向定价权叙事，AI基建供应链成本中枢整体上移。</p>
+<p>来源：<a href="https://www.reuters.com/business/autos-transportation/samsung-hikes-chipmaking-prices-by-up-15-demand-spike-sources-say-2026-08-19">Reuters</a> / <a href="https://finance.yahoo.com/technology/articles/tsmc-samsung-reportedly-planning-hike-110234557.html">Yahoo Finance</a></p>
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://m.cls.cn/detail/2475140">财联社：华为“韬定律”细节再公开：麒麟2026密度暴涨55% 功耗反而大降</a></li>
+<li><a href="https://timeline.sohu.com/news/jyuBzIU0Zy">通信世界：韬定律实测落地：麒麟2026如何改写先进封装的产业逻辑</a></li>
+<li><a href="https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/trumpf-makes-glass-substrates-ready-for-the-next-generation-of-ai-chips-10267">TRUMPF: makes glass substrates ready for the next generation of AI chips</a></li>
+<li><a href="https://www.tmtpost.com/8117979.html">钛媒体：HBM正在被重新定义</a></li>
+<li><a href="https://www.tomshardware.com/tech-industry/semiconductors/hot-chips-2026-samsung-reveals-a-three-phase-hbm-roadmap-that-puts-logic-and-compute-inside-memory-zhbm-ultimately-stacks-dram-directly-on-top-of-the-processor">Tom's Hardware: Samsung reveals a three-phase HBM roadmap</a></li>
+<li><a href="https://investor.synopsys.com/news/news-details/2026/Synopsys-Posts-Financial-Results-for-Third-Quarter-Fiscal-Year-2026/default.aspx">Synopsys: Posts Financial Results for Third Quarter Fiscal Year 2026</a></li>
+<li><a href="https://futurumgroup.com/insights/synopsys-q3-fy-2026-ai-design-demand-drives-eda-growth">Futurum: Synopsys Q3 FY 2026 AI Design Demand Drives EDA Growth</a></li>
+<li><a href="https://www.reuters.com/business/autos-transportation/samsung-hikes-chipmaking-prices-by-up-15-demand-spike-sources-say-2026-08-19">Reuters: Samsung hikes chipmaking prices by up to 15% on demand spike</a></li>
+<li><a href="https://finance.yahoo.com/technology/articles/tsmc-samsung-reportedly-planning-hike-110234557.html">Yahoo Finance: After TSMC, Samsung Is Also Reportedly Planning To Hike Chip Prices</a></li>
+</ol>
+<p style="text-align:center;margin-top:30px;"><a href="/ai-daily/2026-09-07.html" style="display:inline-block;padding:10px 24px;background:#52525B;color:#fff;text-decoration:none;border-radius:4px;font-size:15px;">📋 查看完整日报 →</a></p>
