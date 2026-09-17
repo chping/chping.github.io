@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-09-18: 昇腾960超节点首发NPO，苹果拟重返服务器</title>
+<style>
+body{margin:0;padding:24px 16px;background:#f5f5f7;color:#1f2430;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;}
+.container{max-width:780px;margin:0 auto;}
+.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+.quotation{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin:0 0 14px;}
+h1{font-size:22px;color:#111827;margin:0 0 18px;line-height:1.4;}
+.card{background:#ffffff;border-radius:8px;padding:18px;margin-bottom:14px;border-left:4px solid #3B82F6;}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;}
+.card p{margin:0 0 8px;}
+.card .source{font-size:13px;color:#8A929D;margin:8px 0 0;}
+.card .source a{color:#52525B;text-decoration:none;}
+.highlight{color:#2c5f7c;font-weight:600;}
+.refs{background:#ffffff;border-radius:8px;padding:18px;margin-top:14px;}
+.refs h2{font-size:19px;color:#111827;margin:0 0 8px;}
+.refs ol{margin:0;padding-left:20px;}
+.refs li{margin-bottom:6px;font-size:15px;}
+.refs a{color:#52525B;word-break:break-all;}
+</style>
+</head>
+<body>
+<div class="container">
+<img class="cover" src="/ai-daily/covers/2026-09-18.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="quotation">AI竞争正从单芯片硅片转向系统工程：光互联、自研硅片与芯片互联标准，共同决定下一代算力基础设施的格局。</p>
+<h1>半导体AI日报 · 2026-09-18: 昇腾960超节点首发NPO，苹果拟重返服务器</h1>
+
+<div class="card" style="border-left:4px solid #3B82F6;">
+<h2>01 · 华为发布全球首个NPO超节点昇腾960，4096卡规模配套8 EFLOPS FP8算力</h2>
+<p>9月17日华为全联接大会2026在上海开幕，轮值董事长汪涛发布昇腾960超节点：单节点4096卡，最大提供8 EFLOPS FP8算力与1 PB HBM容量。其搭载的Hi-ONE近封装光学（NPO）产品为业界首个量产NPO方案，5500个Hi-ONE替代4.8万颗800G光模块，功耗降低超550千瓦，系统可用度达99.8%。昇腾960DT（训练）提前三个季度至2027年一季度推出，960PR（推理）提前一个季度至2027年三季度。</p>
+<p><strong>核心看点：</strong><span class="highlight">超节点</span>成为AI基础设施主流形态。传统8卡服务器架构下集群内通信占训练时间40%以上，华为以<span class="highlight">灵衢UnifiedBus</span>统一互联协议与NPO光引擎将通信开销压至更低水平；按4K超节点组网的10万卡集群MFU较8卡架构提升2.75倍。集群侧最大可组网51.2万卡，多轨道拓扑下支持100万卡昇腾集群，并将<span class="highlight">KV缓存</span>（OceanStor M900，PB级）列为Agentic AI时代与算力并列的瓶颈。</p>
+<p class="source">来源：<a href="https://www.huawei.com/cn/news/2026/9/hc-ascend960-supernode">华为官方新闻（9月17日）</a> / <a href="https://wallstreetcn.com/articles/3781984">华尔街见闻</a></p>
+</div>
+
+<div class="card" style="border-left:4px solid #8B5CF6;">
+<h2>02 · 苹果拟推出M8 Ultra企业级AI推理服务器，与英伟达洽谈NVLink Fusion互联</h2>
+<p>据The Information 9月16日报道，苹果正在研发搭载自研M8 Ultra芯片的企业级AI推理服务器，规划两颗与四颗M8 Ultra两个版本，面向AI开发者、企业与政府客户，最快2029年推出，项目仍存在取消可能。为连接多颗M8 Ultra，苹果已就采用英伟达<span>NVLink Fusion</span>互联技术与英伟达展开讨论。该项目由新任CEO John Ternus推动，是苹果自2011年停产Xserve以来首次认真评估重返企业服务器市场。</p>
+<p><strong>核心看点：</strong>苹果是<span class="highlight">UALink开放互联联盟</span>董事会成员，若最终选用NVLink Fusion，标志其在开放标准与英伟达专有方案间倾向后者，也反映多芯片AI服务器中<span class="highlight">芯片间互联</span>已成自研芯片之外的关键能力缺口。NVLink Fusion于2025年发布，联发科、Marvell、富士通、高通为首批合作方。该项目距上市尚远，技术选型仍有变数。</p>
+<p class="source">来源：<a href="https://finance.sina.com.cn/roll/2026-09-17/doc-inisaawv0379712.shtml">财联社（9月16日，The Information）</a></p>
+</div>
+
+<div class="card" style="border-left:4px solid #F97316;">
+<h2>03 · Meta自研AI芯片Arke进入实测，2027年上半年部署超1吉瓦</h2>
+<p>Meta工程副总裁Yee Jiun Song披露，第三代自研AI处理器MTIA 450（代号Arke）正处于测试阶段，计划2027年上半年进入数据中心；下一代MTIA 500（代号Astrid）约一个月后完成设计，2027年底前部署。Meta已与博通合作设计、由台积电代工，并承诺12个月内部署超1吉瓦规模。9月1日首批12颗Arke由台积电交付，实测性能与模拟偏差仅2%-3%，已运行Meta自有模型及DeepSeek、阿里巴巴模型。</p>
+<p><strong>核心看点：</strong>Meta自研芯片战略明确转向<span class="highlight">推理专用</span>——此前训练/推理双用的Olympus项目已取消，自研芯片定位为降低大模型调用的单位功耗与单位成本。按一年一代节奏迭代（Arke→Astrid），自研ASIC成为头部云厂商对冲GPU采购成本、扩张CapEx效率的核心手段，与定制芯片配套的<span class="highlight">存储/闪存长约</span>同步锁定。</p>
+<p class="source">来源：<a href="https://news.qq.com/rain/a/20260916A006IX00">智通财经（9月16日）</a></p>
+</div>
+
+<div class="card" style="border-left:4px solid #06B6D4;">
+<h2>04 · 台积电COO米玉杰：AI如三岁超人，尖端芯片设计应用须谨慎</h2>
+<p>9月17日，台积电共同首席运营官米玉杰（Y.J. Mii）在公开场合将AI比作拥有超强能力却尚不辨是非的幼童，称其在处理研发敏感信息时风险突出：员工使用不当可能导致数据泄露或遗失。他同时提到OpenAI与Anthropic模型侵入外部机构系统的相关事件，解释台积电在AI应用于芯片设计环节保持审慎的原因。该表态发布于AI加速进入EDA与晶圆制造工作流的行业背景下。</p>
+<p><strong>核心看点：</strong>头部代工厂对<span class="highlight">AI for Chip Design</span>的态度呈现两极：台积电在制程数据上强调隔离与审慎，而同期英伟达与台积电已宣布将CUDA-X、计算光刻（cuLitho）与FabTwin数字孪生引入制造环节（6月GTC台北发布）。制程微缩阶段，设计端AI工具的<span class="highlight">数据安全边界</span>与签核可靠性，正在成为EDA供应商与代工厂合作的核心议题。</p>
+<p class="source">来源：<a href="https://k.sina.cn/article_7857201856_1d45362c001908nrlu.html">IT之家（9月17日）</a></p>
+</div>
+
+<div class="refs">
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://www.huawei.com/cn/news/2026/9/hc-ascend960-supernode">华为：发布全球首个采用NPO的超节点——昇腾960超节点</a></li>
+<li><a href="https://www.cls.cn/detail/2485945">财联社：首个采用NPO的昇腾960超节点来了</a></li>
+<li><a href="https://wallstreetcn.com/articles/3781984">华尔街见闻：华为昇腾960超节点落地，AI算力竞争从单芯片转向系统工程</a></li>
+<li><a href="https://finance.sina.com.cn/roll/2026-09-17/doc-inisaawv0379712.shtml">财联社：据称苹果将重返服务器市场，考虑采用英伟达互联技术</a></li>
+<li><a href="https://finance.yahoo.com/technology/ai/articles/apple-building-m8-ai-servers-134927360.html">The Information / Investing.com: Apple building M8 AI servers, talks with Nvidia</a></li>
+<li><a href="https://news.qq.com/rain/a/20260916A006IX00">智通财经：Meta加码自研AI芯片，明年上半年部署数据中心</a></li>
+<li><a href="https://k.sina.cn/article_7857201856_1d45362c001908nrlu.html">IT之家：台积电COO米玉杰谈AI在芯片设计中的审慎使用</a></li>
+</ol>
+</div>
+</div>
+</body>
+</html>
