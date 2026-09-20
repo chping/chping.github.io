@@ -3,86 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>半导体AI日报 · 2026-09-21: AI半导体瓶颈上移，零部件交期最长40个月</title>
+<title>半导体AI日报 · 2026-09-21: 代工市场份额向台积电集中，Agentic EDA迈向量产</title>
 <style>
-:root{--title-color:#2c5f7c;--accent-color:#c47f5a;--bg:#f5f5f7;--card-bg:#ffffff;}
-*{box-sizing:border-box;}
-body{margin:0;padding:24px 16px;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;color:#1f2329;}
-.wrap{max-width:780px;margin:0 auto;}
-.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;}
-.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
-h1{font-size:22px;color:var(--title-color);margin:0 0 18px;line-height:1.4;}
-.card{background:var(--card-bg);padding:18px;margin-bottom:14px;border-radius:6px;border-left:4px solid #3B82F6;box-shadow:0 1px 3px rgba(0,0,0,0.05);}
-.card.c2{border-left-color:#8B5CF6;}
-.card.c3{border-left-color:#F97316;}
-.card.c4{border-left-color:#06B6D4;}
-.card.c5{border-left-color:#10B981;}
-.card h2{font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.4;}
-.card p{margin:0 0 8px;}
-.card h2:first-child{margin-top:0;}
-.hl{color:var(--accent-color);font-weight:600;}
-.source{font-size:13px;color:#8A929D;margin-top:6px;}
-.source a{color:#52525B;}
-.refs{background:var(--card-bg);padding:18px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,0.05);}
-.refs h2{font-size:19px;color:#111827;margin:14px 0 8px;}
-.refs h2:first-child{margin-top:0;}
-.refs ol{margin:0;padding-left:20px;}
-.refs li{margin-bottom:6px;}
-.refs a{color:#52525B;}
+  body{margin:0;background:#fff;color:#333;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;}
+  .wrap{max-width:780px;margin:0 auto;padding:20px 16px 40px;}
+  h1{font-size:24px;line-height:1.4;color:#1a1a1a;margin:14px 0 8px;}
+  .quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+  .date{font-size:13px;color:#888;margin:0 0 14px;}
+  .card{background:#fff;border:1px solid #e8e8e8;border-left:4px solid #d4855e;padding:18px;margin-bottom:14px;border-radius:4px;}
+  .card.c2{border-left-color:#4a7fb5;}
+  .card.c3{border-left-color:#5f9e6e;}
+  .card.c4{border-left-color:#8a6fb5;}
+  .card h2{font-size:18px;line-height:1.5;color:#1a1a1a;margin:14px 0 8px;padding:0;}
+  .card p{font-size:17px;line-height:1.6;margin:0 0 8px;}
+  .card ul{margin:0 0 8px;padding-left:20px;}
+  .card li{font-size:17px;line-height:1.6;margin-bottom:4px;}
+  .source{font-size:14px;color:#888;margin:8px 0 0;}
+  .source a{color:#d4855e;text-decoration:none;}
+  .refs{margin-top:24px;}
+  .refs h2{font-size:18px;color:#1a1a1a;margin:14px 0 8px;}
+  .refs ol{padding-left:20px;}
+  .refs li{font-size:15px;line-height:1.7;margin-bottom:4px;}
+  .refs a{color:#4a7fb5;text-decoration:none;word-break:break-all;}
 </style>
 </head>
 <body>
 <div class="wrap">
-<img class="cover" src="/ai-daily/covers/2026-09-21.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
-<p class="quote">AI算力扩张的约束正从晶圆产能上移至设备零部件与热管理材料环节：供应链瓶颈与生态投资同向推进，AI半导体竞争进入全链条重构阶段。</p>
-<h1>半导体AI日报 · 2026-09-21: AI半导体瓶颈上移，零部件交期最长40个月</h1>
+  <img src="/ai-daily/covers/2026-09-21.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+  <p class="quote">代工份额向单一龙头集中，Agentic EDA进入量产，AI芯片产业链的供给侧与设计侧正在同步重构。</p>
+  <p class="date">2026-09-21 · AI芯片 · Agentic EDA · Agentic CAE/CAD</p>
+  <h1>半导体AI日报 · 2026-09-21: 代工市场份额向台积电集中，Agentic EDA迈向量产</h1>
 
-<div class="card c1">
-<h2>01 · 韩国半导体设备零部件交货周期翻倍，最长或达40个月</h2>
-<p>据韩国ETNews报道，韩国半导体制造设备关键零部件交货周期已延长一倍以上。沉积设备厂商零部件交期由4个月延至10个月，激光加工设备厂自日本采购的核心零部件交期或达40个月，部分厂商即便支付溢价仍无法提前交货。业内人士指出，AI超级周期持续时间不明，零部件厂商扩产意愿保守，短缺短期难以缓解。</p>
-<p><strong>核心看点：</strong>AI算力扩张的瓶颈正由晶圆产能向<span class="hl">设备与核心零部件</span>环节传导。SEMI预测2026年全球半导体设备销售额约1659亿美元，同比增长23.2%；零部件交付延迟或拖累全球半导体产能投资节奏，<span class="hl">设备零部件国产化替代</span>逻辑进一步强化。</p>
-<p class="source">来源：<a href="https://news.qq.com/rain/a/20260918A0385K00">腾讯新闻（21世纪经济报道/中证报，9月18日）</a></p>
-</div>
+  <section class="card">
+    <h2>01 · Counterpoint：2Q26全球纯代工市场收入同比增29%，台积电份额73%</h2>
+    <p>Counterpoint数据显示，2026年二季度全球纯代工（pure-play foundry）市场收入同比增长29%，增长主要由AI芯片订单激增与产能再分配驱动。台积电份额连续两个季度维持在73%，同比提升2个百分点；三星以7%居次，两者差距扩大至66个百分点。报告指出，供应紧张不仅限于先进制程，成熟制程亦出现供需失衡，具备多制程组合的厂商获得相对竞争优势。</p>
+    <p><strong>核心看点：</strong></p>
+    <ul>
+      <li>AI订单是市场集中化的核心变量，先进节点产能利用率维持高位；</li>
+      <li>2nm已量产、3nm持续扩产，8英寸与12英寸成熟节点同步紧缺；</li>
+      <li>份额差距从71%升至73%，竞争格局进一步固化。</li>
+    </ul>
+    <p class="source">来源：<a href="https://counterpointresearch.com/en/insights/global-pure-foundry-market-share-q2-2026">Counterpoint Research</a></p>
+  </section>
 
-<div class="card c2">
-<h2>02 · 美光任命EDA资深高管领导百亿美元美光研究院</h2>
-<p>美光9月15日宣布任命Deirdre Hanford为美光研究院（Micron Research Labs）企业副总裁兼总裁。她此前在Synopsys任职37年，曾任Natcast（NSTC）创始CEO。该研究院于2026年8月宣布，总部设于美国博伊西，计划十年内投入100亿美元，研究方向覆盖存储工艺、存储与计算架构、先进封装及下一代制造。</p>
-<p><strong>核心看点：</strong>美光以<span class="hl">EDA体系化设计能力</span>统领存储研究，指向设计工具、base die与协同设计成为下一代存储扩展的关键抓手。此举与美光250亿美元美国制造及研发投入并行，存储竞争重心正由单纯扩产转向<span class="hl">架构与生态协同</span>。</p>
-<p class="source">来源：<a href="https://futurumgroup.com/insights/micron-hires-a-37-year-eda-veteran-to-run-its-10-billion-memory-lab-what-does-that-say-about-where-memory-scaling-goes-next">Futurum（9月16日）</a></p>
-</div>
+  <section class="card c2">
+    <h2>02 · Cadence发布ViraStack与InnoStack AI Super Agent，补齐端到端自主芯片设计流程</h2>
+    <p>Cadence在CadenceLIVE Silicon Valley 2026上发布两款AI Super Agent：ViraStack面向模拟与定制设计、验证，InnoStack面向数字实现与签核（signoff）。与已发布的ChipStack（RTL设计与验证）及统一编排层AgentStack配合，Cadence形成从规格到签核的全流程自主AI覆盖。早期客户在模拟设计工作流中报告ViraStack带来3至10倍生产力提升；ChipStack已开放部署，ViraStack与InnoStack处于开发伙伴早期接入阶段。</p>
+    <p><strong>核心看点：</strong></p>
+    <ul>
+      <li>三大域Super Agent加AgentStack编排，形成EDA行业首个端到端agentic设计流程产品化；</li>
+      <li>自主性边界明确：3D-IC多die自主编排（跨die验证、热感知布局）仍是未解决项，需多物理场仿真与agent闭环耦合；</li>
+      <li>模拟设计域成为agent探索设计空间的首选场景（信号完整性、功耗组合爆炸）。</li>
+    </ul>
+    <p class="source">来源：<a href="https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/reimagining-chip-design-from-spec-to-signoff-with-cadence-ai-super-agents">Cadence官方博客</a> · <a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">Futurum Group</a></p>
+  </section>
 
-<div class="card c3">
-<h2>03 · 中信证券：AI芯片功耗陡增，金刚石散热进入产业化元年</h2>
-<p>中信证券9月19日研报指出，在AI芯片功耗陡峭攀升、传统金属散热逼近物理极限、金刚石制备工艺持续优化三重驱动下，金刚石散热行业有望迎来产业化元年。以英伟达为例，芯片功耗由Hopper系列700W升至Rubin系列约1800W，Feynman代预计达4400W量级；芯片局部热流密度已突破500W/cm²并向1000W/cm²演进。</p>
-<p><strong>核心看点：</strong>铜等金属热导率约400W/(m·K)已接近散热上限，热导率约5倍于铜的<span class="hl">金刚石</span>成为升级方向。研报测算2030年全球金刚石散热市场空间约1150亿元，2027—2030年CAGR约143%；CVD金刚石片单价仍处克级区间，<span class="hl">MPCVD设备与键合工艺</span>为产业化主要卡点。该判断为分析师预测，相关数据尚未获产业方官方确认。</p>
-<p class="source">来源：<a href="https://stcn.com/article/detail/4191667.html">证券时报（9月19日）</a></p>
-</div>
+  <section class="card c3">
+    <h2>03 · Google扩大Marvell定制芯片合作，122亿美元股票权证绑定至2033年采购</h2>
+    <p>据Financial Times报道，Google扩大与Marvell的定制硅合作，覆盖TPU生态的推理加速器、存储控制器、网卡（NIC）与内存接口控制器。Marvell向Google发行权证，可认购至多5897万股，行权价每股206.58美元，全额行权价值约122亿美元；其中97.7%股份按240批次、每批次对应5000万美元定制产品收入的节奏行权，行权期至2033年8月。若全部行权，隐含累计采购规模约1200亿美元，Google将成为Marvell第五大股东。</p>
+    <p><strong>核心看点：</strong></p>
+    <ul>
+      <li>权证与实际采购挂钩，股权绑定结构正在定制芯片供给侧扩散；</li>
+      <li>Google主力TPU伙伴Broadcom（协议至2031年）股价当日下跌5%，定制ASIC供给层竞争加剧；</li>
+      <li>定制芯片设计方从单一Broadcom扩展至Marvell，推理侧供给多元化。</li>
+    </ul>
+    <p class="source">来源：<a href="https://www.ft.com/content/0fdb094c-fc03-4d3c-8da6-bd11af88ff63">Financial Times</a> · <a href="https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans">Capacity Global</a></p>
+  </section>
 
-<div class="card c4">
-<h2>04 · SK海力士硅谷设立SK hynix Ventures，切入AI生态投资</h2>
-<p>SK海力士9月18日宣布在硅谷启动企业风险投资品牌SK hynix Ventures，并于17日在硅谷举办首届Ventures Day，CEO郭鲁正（Kwak Noh-Jung）出席。公司计划将投资范围由传统半导体技术侦察扩展至AI计算、数据中心、系统软件与光互连等AI产业全链条。</p>
-<p><strong>核心看点：</strong>存储龙头以<span class="hl">CVC布局AI生态</span>，覆盖计算、数据中心与光互连方向，与其8月获批的约54万亿韩元存储产能投资（龙仁Y2、清州M17）形成呼应，存储厂商角色正由器件供应方向<span class="hl">AI基础设施生态位</span>延伸。</p>
-<p class="source">来源：<a href="https://news.skhynix.com/en/sk-hynix-ventures">SK海力士新闻稿（9月18日）</a></p>
-</div>
+  <section class="card c4">
+    <h2>04 · Samsung联合领投Euclyd 2亿欧元A轮，押注GPU替代架构的AI推理芯片</h2>
+    <p>CNBC报道，荷兰AI芯片初创Euclyd完成2亿欧元（约2.31亿美元）A轮融资，由Samsung、Somerset Capital Partners、Innovation Industries与EQT管理的Scaleup Europe Fund联合领投，为荷兰半导体公司历史上最大规模A轮。Euclyd成立于2024年，开发非GPU架构的AI推理芯片系统，覆盖处理器与内存架构设计，目标降低AI数据中心能耗与成本；商业模式分为两条线：面向企业的自托管推理硬件与机架系统销售，以及面向自研芯片厂商的IP授权。</p>
+    <p><strong>核心看点：</strong></p>
+    <ul>
+      <li>非GPU推理架构赛道获得代工巨头资本背书，GPU替代方案从学术走向产业；</li>
+      <li>硬件与IP双业务模式，降低单一路径风险；</li>
+      <li>推理侧能效与成本曲线成为AI基建下一阶段竞争焦点。</li>
+    </ul>
+    <p class="source">来源：<a href="https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html">CNBC</a></p>
+  </section>
 
-<div class="card c5">
-<h2>05 · 印度SEMICON 2.0投资承诺扩大至135亿美元</h2>
-<p>印度SEMICON India 2026展会9月19日在新德里闭幕，来自52个国家的600多家企业参展。印度总理莫迪在17日开幕式表示，Semicon 2.0计划资本支出规模已扩大至135亿美元，印度半导体使命（ISM）一期划拨资金约80亿美元；应用材料计划十年内在班加罗尔投资360亿卢比，泛林集团计划投资1000亿卢比建设其在印首个硅锭生产据点。</p>
-<p><strong>核心看点：</strong>印度半导体规划2.0支持范围由建厂补贴扩展至<span class="hl">芯片设计、设备材料、晶圆制造、先进封装</span>六大领域，国际设备与材料厂商密集落子。观察指出，印度尚不具备大规模晶圆制造能力，从投资承诺到实际产能仍需较长周期。</p>
-<p class="source">来源：<a href="https://www.guancha.cn/CaiJing/2026_09_20_901408.shtml">观察者网（9月20日）</a></p>
-</div>
-
-<div class="refs">
-<h2>参考资料</h2>
-<ol>
-<li>腾讯新闻（21世纪经济报道/中证报）：韩国半导体零部件交货周期翻倍，最长可达40个月 — <a href="https://news.qq.com/rain/a/20260918A0385K00">news.qq.com</a>（9月18日）</li>
-<li>Futurum：Micron Hires a 37-Year EDA Veteran to Run Its $10 Billion Memory Lab — <a href="https://futurumgroup.com/insights/micron-hires-a-37-year-eda-veteran-to-run-its-10-billion-memory-lab-what-does-that-say-about-where-memory-scaling-goes-next">futurumgroup.com</a>（9月16日）</li>
-<li>证券时报：中信证券：极致散热登场，金刚石迎来产业化元年 — <a href="https://stcn.com/article/detail/4191667.html">stcn.com</a>（9月19日）</li>
-<li>SK海力士新闻稿：SK hynix Launches SK hynix Ventures in Silicon Valley — <a href="https://news.skhynix.com/en/sk-hynix-ventures">news.skhynix.com</a>（9月18日）</li>
-<li>观察者网：美日巨头都承诺投资，印度何时造出第一颗国产芯？ — <a href="https://www.guancha.cn/CaiJing/2026_09_20_901408.shtml">guancha.cn</a>（9月20日）</li>
-</ol>
-</div>
-
+  <div class="refs">
+    <h2>参考资料</h2>
+    <ol>
+      <li><a href="https://counterpointresearch.com/en/insights/global-pure-foundry-market-share-q2-2026">Counterpoint Research：Foundry Market Grows 29%… TSMC Leads with 73% Share</a></li>
+      <li><a href="https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/reimagining-chip-design-from-spec-to-signoff-with-cadence-ai-super-agents">Cadence：Reimagining Chip Design – From Spec to Signoff with Cadence AI Super Agents</a></li>
+      <li><a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">Futurum Group：CadenceLIVE 2026 – Can Agentic AI Crack 3D IC Design Automation</a></li>
+      <li><a href="https://www.ft.com/content/0fdb094c-fc03-4d3c-8da6-bd11af88ff63">Financial Times：Google strikes $12bn AI chip deal with Marvell</a></li>
+      <li><a href="https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans">Capacity Global：Google's $12bn Marvell bet – what the chip supply shake-up means</a></li>
+      <li><a href="https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html">CNBC：Samsung backs Nvidia AI chip rival in $230 million funding round</a></li>
+    </ol>
+  </div>
 </div>
 </body>
 </html>

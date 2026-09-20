@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "半导体AI日报 · 2026-09-21: AI半导体瓶颈上移，零部件交期最长40个月"
-subtitle: "AI半导体瓶颈上移，零部件交期最长40个月"
+title: "半导体AI日报 · 2026-09-21: 代工市场份额向台积电集中，Agentic EDA迈向量产"
+subtitle: "代工市场份额向台积电集中，Agentic EDA迈向量产"
 date: 2026-09-21
 author: "AI日报"
 header-img: ai-daily/covers/2026-09-21.jpg
@@ -9,20 +9,52 @@ categories: ai-daily
 tags: [AI芯片, Agentic EDA, AI日报]
 ---
 
-<p>今日要点：AI算力扩张的约束正从晶圆产能上移至设备零部件与热管理材料环节；存储厂商加速向AI生态位延伸，生态投资与供应链瓶颈同向推进。</p>
+<p>今日聚焦代工市场格局、Agentic EDA产品化与定制芯片供给结构的三条主线。Counterpoint数据显示纯代工市场向台积电进一步集中；Cadence补齐端到端自主设计流程；Google-Marvell股权绑定式合作改写定制ASIC供给格局；Samsung领投非GPU推理架构芯片公司。以下为四条精选资讯。</p>
 
-<h2 style="margin:16px 0 8px;">今日精选</h2>
-<ol style="line-height:1.6;">
-<li style="margin-bottom:6px;"><strong>韩国半导体设备零部件交货周期翻倍，最长或达40个月</strong><br>
-据韩国ETNews报道，韩国半导体制造设备关键零部件交货周期已延长一倍以上：沉积设备厂商交期由4个月延至10个月，激光加工设备厂自日本采购的核心零部件交期或达40个月。SEMI预测2026年全球半导体设备销售额约1659亿美元、同比增长23.2%；零部件交付延迟或拖累全球产能投资节奏，设备零部件国产化逻辑进一步强化。来源：<a href="https://news.qq.com/rain/a/20260918A0385K00">腾讯新闻</a>（9月18日）</li>
-<li style="margin-bottom:6px;"><strong>美光任命EDA资深高管领导百亿美元美光研究院</strong><br>
-美光9月15日宣布任命Deirdre Hanford（曾任职于Synopsys 37年）为美光研究院总裁。该研究院总部设于博伊西，计划十年投入100亿美元，方向覆盖存储工艺、存储与计算架构、先进封装及下一代制造。以EDA体系化设计能力统领存储研究，指向设计工具、base die与协同设计成为下一代存储扩展的关键抓手。来源：<a href="https://futurumgroup.com/insights/micron-hires-a-37-year-eda-veteran-to-run-its-10-billion-memory-lab-what-does-that-say-about-where-memory-scaling-goes-next">Futurum</a>（9月16日）</li>
-<li style="margin-bottom:6px;"><strong>中信证券：AI芯片功耗陡增，金刚石散热进入产业化元年</strong><br>
-中信证券9月19日研报：AI芯片功耗由Hopper 700W升至Rubin约1800W，Feynman代预计4400W量级；芯片局部热流密度突破500W/cm²并向1000W/cm²演进。铜金属热导率约400W/(m·K)接近散热上限，热导率约5倍于铜的金刚石成为升级方向。测算2030年全球金刚石散热市场空间约1150亿元、2027—2030年CAGR约143%（分析师预测，尚未获产业方官方确认）。来源：<a href="https://stcn.com/article/detail/4191667.html">证券时报</a>（9月19日）</li>
-<li style="margin-bottom:6px;"><strong>SK海力士硅谷设立SK hynix Ventures，切入AI生态投资</strong><br>
-SK海力士9月18日启动CVC品牌SK hynix Ventures，17日于硅谷举办首届Ventures Day，CEO郭鲁正出席。投资范围由半导体技术侦察扩展至AI计算、数据中心、系统软件与光互连全链条，与其8月获批的约54万亿韩元存储产能投资形成呼应，存储厂商角色向AI基础设施生态位延伸。来源：<a href="https://news.skhynix.com/en/sk-hynix-ventures">SK海力士新闻稿</a>（9月18日）</li>
-<li style="margin-bottom:6px;"><strong>印度SEMICON 2.0投资承诺扩大至135亿美元</strong><br>
-印度SEMICON India 2026展会9月19日在新德里闭幕，52个国家600多家企业参展。莫迪表示Semicon 2.0资本支出已扩大至135亿美元、ISM一期划拨约80亿美元；应用材料计划十年内在班加罗尔投资360亿卢比，泛林集团计划投资1000亿卢比建设其在印首个硅锭据点。印度规划2.0支持范围扩展至设计、设备材料、晶圆制造、先进封装六大领域，但从投资承诺到实际产能仍需较长周期。来源：<a href="https://www.guancha.cn/CaiJing/2026_09_20_901408.shtml">观察者网</a>（9月20日）</li>
+<h2>01 · Counterpoint：2Q26全球纯代工市场收入同比增29%，台积电份额73%</h2>
+<p>Counterpoint数据显示，2026年二季度全球纯代工市场收入同比增长29%，增长主要由AI芯片订单激增与产能再分配驱动。台积电份额连续两个季度维持在<strong>73%</strong>，同比提升2个百分点；三星以7%居次，两者差距扩大至66个百分点。供应紧张不仅限于先进制程，成熟制程亦出现供需失衡。</p>
+<ol>
+<li>AI订单是市场集中化的核心变量，先进节点产能利用率维持高位；</li>
+<li>2nm已量产、3nm持续扩产，8英寸与12英寸成熟节点同步紧缺；</li>
+<li>份额差距从71%升至73%，竞争格局进一步固化。</li>
+</ol>
+<p><a href="https://counterpointresearch.com/en/insights/global-pure-foundry-market-share-q2-2026">来源：Counterpoint Research</a></p>
+
+<h2>02 · Cadence发布ViraStack与InnoStack AI Super Agent，补齐端到端自主芯片设计流程</h2>
+<p>Cadence在CadenceLIVE Silicon Valley 2026上发布两款AI Super Agent：ViraStack面向模拟与定制设计、验证，InnoStack面向数字实现与签核。与ChipStack（RTL设计与验证）及统一编排层AgentStack配合，形成从规格到签核的全流程自主AI覆盖。早期客户在模拟设计工作流中报告ViraStack带来<strong>3至10倍生产力提升</strong>；ChipStack已开放部署，ViraStack与InnoStack处于开发伙伴早期接入阶段。</p>
+<ol>
+<li>三大域Super Agent加AgentStack编排，形成EDA行业首个端到端agentic设计流程产品化；</li>
+<li>自主性边界明确：3D-IC多die自主编排仍是未解决项，需多物理场仿真与agent闭环耦合；</li>
+<li>模拟设计域成为agent探索设计空间的首选场景（信号完整性、功耗组合爆炸）。</li>
+</ol>
+<p><a href="https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/reimagining-chip-design-from-spec-to-signoff-with-cadence-ai-super-agents">来源：Cadence官方博客</a> · <a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">Futurum Group</a></p>
+
+<h2>03 · Google扩大Marvell定制芯片合作，122亿美元股票权证绑定至2033年采购</h2>
+<p>据Financial Times报道，Google扩大与Marvell的定制硅合作，覆盖TPU生态的推理加速器、存储控制器、网卡与内存接口控制器。Marvell向Google发行权证，可认购至多5897万股，行权价每股206.58美元，全额行权价值约<strong>122亿美元</strong>；其中97.7%股份按240批次、每批次对应5000万美元定制产品收入的节奏行权，行权期至2033年8月。若全部行权，隐含累计采购规模约1200亿美元，Google将成为Marvell第五大股东。</p>
+<ol>
+<li>权证与实际采购挂钩，股权绑定结构正在定制芯片供给侧扩散；</li>
+<li>Google主力TPU伙伴Broadcom（协议至2031年）股价当日下跌5%，定制ASIC供给层竞争加剧；</li>
+<li>定制芯片设计方从单一Broadcom扩展至Marvell，推理侧供给多元化。</li>
+</ol>
+<p><a href="https://www.ft.com/content/0fdb094c-fc03-4d3c-8da6-bd11af88ff63">来源：Financial Times</a> · <a href="https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans">Capacity Global</a></p>
+
+<h2>04 · Samsung联合领投Euclyd 2亿欧元A轮，押注GPU替代架构的AI推理芯片</h2>
+<p>CNBC报道，荷兰AI芯片初创Euclyd完成2亿欧元（约2.31亿美元）A轮融资，由Samsung、Somerset Capital Partners、Innovation Industries与EQT管理的Scaleup Europe Fund联合领投，为荷兰半导体公司历史上最大规模A轮。Euclyd开发非GPU架构的AI推理芯片系统，覆盖处理器与内存架构设计，商业模式分为自托管推理硬件销售与IP授权两条线。</p>
+<ol>
+<li>非GPU推理架构赛道获得代工巨头资本背书，GPU替代方案从学术走向产业；</li>
+<li>硬件与IP双业务模式，降低单一路径风险；</li>
+<li>推理侧能效与成本曲线成为AI基建下一阶段竞争焦点。</li>
+</ol>
+<p><a href="https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html">来源：CNBC</a></p>
+
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://counterpointresearch.com/en/insights/global-pure-foundry-market-share-q2-2026">Counterpoint Research：Foundry Market Grows 29%… TSMC Leads with 73% Share</a></li>
+<li><a href="https://community.cadence.com/cadence_blogs_8/b/artificial-intelligence/posts/reimagining-chip-design-from-spec-to-signoff-with-cadence-ai-super-agents">Cadence：Reimagining Chip Design – From Spec to Signoff with Cadence AI Super Agents</a></li>
+<li><a href="https://futurumgroup.com/insights/cadencelive-2026-can-agentic-ai-finally-crack-3d-ic-design-automation">Futurum Group：CadenceLIVE 2026 – Can Agentic AI Crack 3D IC Design Automation</a></li>
+<li><a href="https://www.ft.com/content/0fdb094c-fc03-4d3c-8da6-bd11af88ff63">Financial Times：Google strikes $12bn AI chip deal with Marvell</a></li>
+<li><a href="https://capacityglobal.com/news/googles-12bn-marvell-bet-what-the-chip-supply-shake-up-means-for-data-centre-capital-plans">Capacity Global：Google's $12bn Marvell bet</a></li>
+<li><a href="https://www.cnbc.com/2026/09/14/samsung-euclyd-ai-chip-funding.html">CNBC：Samsung backs Nvidia AI chip rival in $230 million funding round</a></li>
 </ol>
 
 <p style="text-align:center;margin-top:30px;"><a href="/ai-daily/2026-09-21.html" style="display:inline-block;padding:10px 24px;background:#52525B;color:#fff;text-decoration:none;border-radius:4px;font-size:15px;">📋 查看完整日报 →</a></p>
