@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-09-25: 新思科技联手台积电深化Agentic AI芯片设计</title>
+<style>
+:root{--bg:#fafafa;--card-bg:#ffffff;--title-color:#3d5a80;--accent-color:#c46b6a;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#1f2937;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 40px;}
+.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+.epigraph{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+h1{font-size:22px;color:var(--title-color);margin:18px 0 20px;line-height:1.45;text-align:center;}
+.card{background:var(--card-bg);border-radius:8px;padding:18px;margin-bottom:14px;border-left:4px solid #3B82F6;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.card.c2{border-left-color:#8B5CF6;}
+.card.c3{border-left-color:#F97316;}
+.card.c4{border-left-color:#06B6D4;}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.5;}
+.card h2:first-child{margin-top:0;}
+.card p{margin:0 0 8px;font-size:15px;}
+.card p:last-child{margin-bottom:0;}
+.highlight{color:var(--title-color);font-weight:600;}
+.source{font-size:13px;color:#8A929D;margin-top:10px;}
+.source a{color:#52525B;text-decoration:none;}
+.refs{background:var(--card-bg);border-radius:8px;padding:18px;margin-top:20px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.refs h2{font-size:17px;color:#111827;margin:0 0 10px;}
+.refs ol{padding-left:20px;}
+.refs li{font-size:13px;color:#4b5563;margin-bottom:6px;}
+.refs a{color:#52525B;text-decoration:none;word-break:break-all;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="cover" src="/ai-daily/covers/2026-09-25.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="epigraph">EDA巨头与晶圆代工厂的协作重心，正由工具认证转向与制程、先进封装路线图深度耦合的Agentic AI工程流程；存储接口IP与贸易救济两条线，同时框定AI算力供给的边界。</p>
+<h1>半导体AI日报 · 2026-09-25: 新思科技联手台积电深化Agentic AI芯片设计</h1>
+
+<div class="card">
+<h2>01 · 新思科技与台积电深化合作，Agentic AI设计流程绑定A14、CoWoS与CPO</h2>
+<p>9月23日，Synopsys（新思科技）宣布与台积电达成新一轮合作：双方数字与模拟设计流程在A14制程完成认证，并围绕模拟电路迁移、实现分析与chiplet floorplan协同优化推进Agentic AI辅助设计工作流；封装侧扩展CoWoS多die电源完整性与热协同设计，并延续TSMC-COUPE共封装光学（CPO）的联合验证。</p>
+<p><strong>核心看点：</strong>Agentic AI的EDA工作流首次与特定制程节点（<span class="highlight">A14</span>）和先进封装（<span class="highlight">CoWoS、CPO</span>）路线图绑定，3DIC Compiler支持多die IVR协同设计与仿真；EDA、CAE与<span class="highlight">多物理场签核</span>在代工厂平台层面完成一体化，AI系统芯片的工程复杂度向设计自动化环节转移。</p>
+<p class="source">来源：<a href="https://news.synopsys.com/2026-09-23-Synopsys-and-TSMC-Partner-to-Accelerate-AI-Systems-Innovation-with-Agentic-AI-and-Advanced-Design">Synopsys Newsroom</a></p>
+</div>
+
+<div class="card c2">
+<h2>02 · Cadence ChipStack新增RTL Generation Agent，规格直出生产级RTL</h2>
+<p>9月22日，Cadence为ChipStack AI Super Agent新增RTL Generation Agent，以自然语言提示完成spec-to-RTL生成、RTL分析与迭代优化，并将PPA（功耗-性能-面积）优化前移至前端设计早期。本田研发中心（Honda R&amp;D）已在新一代车用SoC上评估该智能体，目标是压缩SoC开发周期。</p>
+<p><strong>核心看点：</strong>Agentic EDA覆盖范围从验证与调试扩展到<span class="highlight">RTL生成</span>，前端设计链路基本贯通；Cadence官方口径显示其PPA表现优于基座模型生成的RTL（面积降低约24%、功耗降低约18%，厂商声明数据，Honda验证中）；超级智能体调度任务级智能体的分层架构在车规场景落地。</p>
+<p class="source">来源：<a href="https://www.hpcwire.com/aiwire/2026/09/22/cadence-expands-chipstack-ai-to-generate-and-optimize-rtl">HPCwire AIwire</a> / <a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases/pr/2026/cadence-expands-chipstack-ai-super-agent-with-a-new-agent-for.html">Cadence Newsroom</a></p>
+</div>
+
+<div class="card c3">
+<h2>03 · GUC发布2nm 16Gbps HBM4E IP，已在客户AI ASIC采用</h2>
+<p>9月22日，GUC宣布其HBM4E PHY与控制器IP达到design-ready状态并已被客户AI ASIC采用。该IP基于台积电N2P工艺实现，已在CoWoS-L先进封装完成流片，全部签核工况下数据率达16 Gbps，为前代12 Gbps HBM4 IP（N3P）的升级。</p>
+<p><strong>核心看点：</strong>HBM接口IP速率从12G跃升至<span class="highlight">16Gbps</span>，与下一代AI加速器的内存带宽路线图对齐；IP已在2nm制程加CoWoS-L完成流片，其专有interposer布局技术同时优化信号完整性（SI）与电源完整性（PI）；第三方HBM接口IP首次进入2nm量产生态，AI ASIC自研内存接口的依赖度上升。</p>
+<p class="source">来源：<a href="https://www.guc-asic.com/en/news/PressReleases/PR_20260922">GUC官方新闻稿</a> / <a href="https://www.eetimes.com/guc-announces-2nm-16-gbps-hbm4e-ip">EE Times</a></p>
+</div>
+
+<div class="card c4">
+<h2>04 · 美国ITC对DRAM设备启动337调查（III），美光、联想等五方在列</h2>
+<p>当地时间9月23日，美国国际贸易委员会（ITC）投票决定对特定DRAM设备及其下游产品和组件（III）启动337调查（编码337-TA-1523）。该案源于Netlist 8月11日的立案申请，主张涉案产品侵犯其四项美国注册专利；列名被告包括Micron、HPE、联想及Super Micro。</p>
+<p><strong>核心看点：</strong>这是Netlist 2026年发起的第二起DRAM 337案件（7月15日首案列名三星、谷歌、英伟达、博通等）；DRAM是AI服务器<span class="highlight">内存供给</span>的关键环节，337救济令（有限排除令/禁止令）若落地，将推高美国下游服务器与消费电子供应链的合规成本与采购不确定性。</p>
+<p class="source">来源：<a href="https://www.chinaflashmarket.com/a/184300">CFM闪存市场</a>（编译自中国贸易救济信息网）</p>
+</div>
+
+<div class="refs">
+<h2>参考资料</h2>
+<ol>
+<li>Synopsys — <a href="https://news.synopsys.com/2026-09-23-Synopsys-and-TSMC-Partner-to-Accelerate-AI-Systems-Innovation-with-Agentic-AI-and-Advanced-Design">Synopsys and TSMC Partner to Accelerate AI Systems Innovation with Agentic AI and Advanced Design</a>（2026-09-23）</li>
+<li>HPCwire AIwire / Cadence — <a href="https://www.hpcwire.com/aiwire/2026/09/22/cadence-expands-chipstack-ai-to-generate-and-optimize-rtl">Cadence Expands ChipStack AI to Generate and Optimize RTL</a>（2026-09-22）</li>
+<li>GUC / EE Times — <a href="https://www.guc-asic.com/en/news/PressReleases/PR_20260922">GUC Announces 2nm 16 Gbps HBM4E IP</a>（2026-09-22）</li>
+<li>CFM闪存市场 — <a href="https://www.chinaflashmarket.com/a/184300">美国ITC对DRAM设备启动337调查(III)，美光、惠普、联想等在列</a>（2026-09-24）</li>
+</ol>
+</div>
+</div>
+</body>
+</html>
