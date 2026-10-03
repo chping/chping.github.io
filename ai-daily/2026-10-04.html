@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>半导体AI日报 · 2026-10-04: 谷歌TPU卫星入轨，EDA进入智能体闭环</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5f6f7;color:#27272a;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 48px;background:#fff;}
+h1{font-size:24px;line-height:1.4;margin:18px 0 10px;color:#27272a;letter-spacing:0.3px;}
+.date{font-size:13px;color:#71717a;letter-spacing:1px;}
+.quote{font-size:14px;color:#52525b;font-style:italic;text-align:center;margin-bottom:14px;line-height:1.7;}
+.card{padding:18px;margin-bottom:14px;border-left:4px solid #3b82f6;background:#fff;}
+.card.c2{border-left-color:#8b5cf6;}
+.card.c3{border-left-color:#f97316;}
+.card h2{font-size:19px;margin:0 0 8px;line-height:1.45;color:#27272a;}
+.card p{margin:0 0 8px;font-size:17px;line-height:1.6;color:#3f3f46;}
+.card .source{font-size:14px;color:#71717a;margin:8px 0 0;}
+.card .source a{color:#52525b;text-decoration:none;}
+.refs{font-size:14px;color:#71717a;margin-top:20px;line-height:1.7;}
+.refs a{color:#52525b;text-decoration:none;word-break:break-all;}
+.refs p{margin:0 0 6px;}
+.hl{color:#1d4ed8;font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img src="/ai-daily/covers/2026-10-04.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="quote">算力边界从地面数据中心延伸至低轨轨道：谷歌TPU完成首次太空在轨验证，OpenAI将智能体能力注入EDA工具闭环，HBM混合均价因供应紧张再度上修，AI芯片基建正沿多条路径同时逼近物理与产能极限。</p>
+<h1>半导体AI日报 · 2026-10-04: 谷歌TPU卫星入轨，EDA进入智能体闭环</h1>
+<p class="date">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+<div class="card">
+<h2>01 · 谷歌TPU卫星入轨，太空AI计算基础设施完成首次在轨验证</h2>
+<p>美国当地时间10月1日，SpaceX通过Transporter-18任务将谷歌一颗搭载4枚TPU芯片的太阳能原型卫星送入低地球轨道，谷歌Project Suncatcher进入首次在轨验证阶段。该卫星由Planet Labs制造，整体算力约当一台地面服务器，谷歌已与卫星建立通信并确认运行正常。</p>
+<p>核心看点：谷歌重点验证TPU在太空辐射、极端温差和发射振动下的运行稳定性。低轨卫星太阳能发电量最高可达地面<span class="hl">8倍</span>，长期目标是部署80余颗卫星组成轨道AI数据中心，前提是发射成本降至约<span class="hl">200美元/公斤</span>以下，与地面数据中心电费成本相当。</p>
+<p class="source">来源：<a href="http://www.xinhuanet.com/20261003/9100e69f410a47ca91ab68da3e9830eb/c.html">新华网</a> · <a href="https://tech.ifeng.com/c/8wtclGTaJVX">凤凰网科技</a></p>
+</div>
+<div class="card c2">
+<h2>02 · OpenAI与Synopsys签署多年协议，联合开发GPT-Synopsys芯片设计模型</h2>
+<p>OpenAI与Synopsys于9月30日在Synopsys投资者日签署多年战略合作协议，联合开发<span class="hl">GPT-Synopsys</span>——一个专门优化以操作Synopsys EDA工具执行半导体设计流程的前沿模型。双方采用收益分成与联合研发机制，OpenAI将授权Synopsys EDA工具用于模型开发。</p>
+<p>核心看点：工程师可将PPA优化、时序收敛和验证收敛等设计目标委托给Agent，由智能体直接运行EDA工具、解读结果并迭代修改设计，是Agentic EDA从工具辅助向<span class="hl">闭环自主设计</span>的关键一步。模型运行于OpenAI托管基础设施，并将集成Synopsys.ai和Autopilot平台。</p>
+<p class="source">来源：<a href="https://www.prnewswire.com/news-releases/openai-and-synopsys-announce-gpt-synopsys-frontier-intelligence-to-revolutionize-chip-design-302894874.html">PRNewswire</a> · <a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design">Synopsys官方</a></p>
+</div>
+<div class="card c3">
+<h2>03 · TrendForce上调2027年HBM混合均价至同比+121%，8-Hi成为成本谈判焦点</h2>
+<p>TrendForce最新研究将2027年HBM混合平均售价（ASP）预测上调至<span class="hl">同比+121%</span>，主要受HBM4占比提升及HBM4e在下半年逐步爬坡推动，供应预计将持续紧张。GPU与ASIC厂商因供应受限和系统成本快速上升，正考虑降低单颗芯片搭载的HBM容量。</p>
+<p>核心看点：8-Hi因每Gb成本高于12-Hi，预计2027年将享有约<span class="hl">10%–20%溢价</span>，成为规格谈判与供应链管理的关键考量。TrendForce指出，HBM产能扩张虽可缓解部分GPU成本压力，但2027年供应仍将维持紧张格局。</p>
+<p class="source">来源：<a href="https://www.trendforce.com/presscenter/news/20260929-13255.html">TrendForce Press Center</a></p>
+</div>
+<div class="refs">
+<p><strong>参考资料</strong></p>
+<p>1. 新华网: <a href="http://www.xinhuanet.com/20261003/9100e69f410a47ca91ab68da3e9830eb/c.html">谷歌搭载AI芯片测试卫星发射升空</a></p>
+<p>2. 凤凰网科技: <a href="https://tech.ifeng.com/c/8wtclGTaJVX">谷歌把AI芯片送上太空，算力争夺进入新阶段</a></p>
+<p>3. PRNewswire: <a href="https://www.prnewswire.com/news-releases/openai-and-synopsys-announce-gpt-synopsys-frontier-intelligence-to-revolutionize-chip-design-302894874.html">OpenAI and Synopsys Announce GPT-Synopsys</a></p>
+<p>4. Synopsys: <a href="https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design">GPT-Synopsys Frontier Intelligence</a></p>
+<p>5. TrendForce: <a href="https://www.trendforce.com/presscenter/news/20260929-13255.html">HBM Supply Constraints Persist, 2027 Price Outlook Revised Upward</a></p>
+</div>
+</div>
+</body>
+</html>
