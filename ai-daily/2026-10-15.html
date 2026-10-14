@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-10-15: 微软发布Maia 300，自研AI芯片2027年部署超百万颗</title>
+<style>
+body{margin:0;background:#F5F6F8;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#27272A;}
+.wrap{max-width:780px;margin:0 auto;padding:24px 16px 40px;}
+h1{font-size:24px;line-height:1.4;margin:0 0 14px;color:#27272A;}
+.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+.card{background:#fff;border-radius:6px;padding:18px;margin-bottom:14px;border-left:4px solid #52525B;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.card h2{font-size:18px;margin:14px 0 8px;color:#27272A;line-height:1.4;}
+.card p{font-size:15px;line-height:1.6;margin:0 0 8px;color:#3F3F46;}
+.card p:last-child,.card .source{margin-bottom:0;}
+.card .src-label{font-size:13px;font-weight:700;color:#52525B;margin:0 0 6px;}
+.card .hl{font-size:14px;color:#71717A;}
+.source{font-size:13px;color:#A1A1AA;margin-top:8px;}
+.source a{color:#52525B;text-decoration:none;}
+.refs{font-size:13px;color:#71717A;margin-top:20px;line-height:1.7;}
+.refs a{color:#52525B;}
+h2#refs{font-size:16px;margin:22px 0 8px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img src="/ai-daily/covers/2026-10-15.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<h1>半导体AI日报 · 2026-10-15: 微软发布Maia 300，自研AI芯片2027年部署超百万颗</h1>
+<p class="quote">超大规模云厂商正把自研硅片从推理侧的补充选项，推向主算力栈的结构性替代，AI芯片的供需天平开始向定制ASIC倾斜。</p>
+
+<div class="card">
+<h2>01 · 微软发布第三代自研AI芯片Maia 300，2027年部署量最高超百万颗</h2>
+<p class="src-label">概述</p>
+<p>微软于10月12日发布第三代自研AI芯片Maia 300，计划2027年开始大规模部署，部署规模最高可达100万颗以上，用于承接Microsoft 365 Copilot及自有AI服务的大部分推理负载。该芯片采用台积电2nm与3nm chiplet工艺，微软称其单位功耗的有效算力较主流GPU方案高出约40%。Evercore ISI估算，到2027年第一季度Maia将占微软AI芯片支出的约10%。微软Azure负责人Scott Guthrie表示Maia将成为微软产品与服务的主力AI推理系统，而训练侧仍与英伟达、AMD合作。</p>
+<p class="src-label">核心看点</p>
+<p class="hl">继谷歌TPU与亚马逊Trainium之后，微软把自研芯片明确定位为主力推理系统，ASIC在推理侧的份额扩张直接压缩GPU在推理市场的溢价空间，代工端则受益于台积电2nm/3nm chiplet产能的持续锁定。</p>
+<p class="source">来源：<a href="https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12">路透社</a> · <a href="https://www.geekwire.com/2026/microsoft-makes-biggest-bet-yet-on-its-own-silicon-unveils-new-ai-chip-to-reduce-reliance-on-nvidia">GeekWire</a></p>
+</div>
+
+<div class="card">
+<h2>02 · 英伟达推出cuPotential库，AI-Defined Fab进入设备商产线</h2>
+<p class="src-label">概述</p>
+<p>英伟达于10月14日在SEMICON West 2026发布CUDA-X新库cuPotential，供开发者构建模拟原子与分子相互作用的AI agent，在早期测试中可将已GPU优化的仿真工作流再提速2-3倍。同日披露，开源库NanoVDB帮助泛林半导体将芯片制造仿真提速30倍，图像库NPP加速KLA的缺陷检测。应用材料、Cadence、KLA、泛林、西门子、Synopsys等设备与EDA厂商正将英伟达加速计算栈用于芯片设计、制造与测试全流程。</p>
+<p class="src-label">核心看点</p>
+<p class="hl">AI-Defined Fab从概念落到设备商实测数据（30x仿真加速），AI agent开始直接介入制造仿真与良率优化环节，半导体制造数字孪生的工具栈正加速标准化。</p>
+<p class="source">来源：<a href="https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs">NVIDIA Newsroom</a></p>
+</div>
+
+<div class="card">
+<h2>03 · 台积电CoPoS面板级封装：2026年试点线落地，量产瞄准2029</h2>
+<p class="src-label">概述</p>
+<p>据DigiTimes及多方供应链消息，台积电下一代面板级封装CoPoS（Chip-on-Panel-on-Substrate）正推进量产准备：已在VisEra龙潭厂设立试点线，第二条试点线将迁至嘉义AP7基地做工艺验证，量产预计在2028年底至2029年启动。CoPoS采用310mm×310mm方形面板替代圆形晶圆，配合玻璃基板与大尺寸重布线层，面向持续增大的AI芯片封装体。英伟达被普遍视为首发合作伙伴。</p>
+<p class="src-label">核心看点</p>
+<p class="hl">面板级封装直接回应AI芯片封装尺寸逼近光罩极限的行业瓶颈，方形面板在可用面积、良率与成本上对圆形晶圆形成结构性优势，先进封装竞争从2.5D走向面板级。</p>
+<p class="source">来源：<a href="https://finance.yahoo.com/technology/ai/articles/tsmc-targets-2029-panel-level-195738716.html">DigiTimes（Yahoo Finance）</a> · <a href="https://www.techpowerup.com/337960/tsmc-prepares-copos-next-gen-310-x-310-mm-packages">TechPowerUp</a></p>
+</div>
+
+<div class="card">
+<h2>04 · 湾芯展实探：新凯来设备走向量产，国产EDA工具链向AI Agent延伸</h2>
+<p class="src-label">概述</p>
+<p>10月14日在深圳开幕的2026湾区半导体产业生态博览会上，新凯来表示其半导体设备均已量产、国内多家晶圆厂已在用，应用覆盖先进逻辑与存储，并突出先进逻辑、先进存储、先进封装三大场景。旗下启云方科技今年从原理图设计、PCB设计两款单点软件，转向集成功能仿真、结构设计与设计审查的完整电子设计工具链平台，并探索AI Agent在电子设计流程中的应用。其子公司万里眼去年发布的90GHz超高速实时示波器需求旺盛，产能趋紧。</p>
+<p class="src-label">核心看点</p>
+<p class="hl">国产半导体设备从发布走向晶圆厂量产的验证节点，国产EDA从单点工具向完整工具链+AI Agent演进，Bernstein估算2025年中国本土晶圆设备份额已从16%升至21%。</p>
+<p class="source">来源：<a href="https://www.mrjjxw.com/articles/2026-10-14/4604072.html">每日经济新闻</a></p>
+</div>
+
+<div class="card">
+<h2>05 · 台积电10月15日发布Q3财报，2nm与利润率成焦点</h2>
+<p class="src-label">概述</p>
+<p>台积电定于10月15日14:00（台北时间）召开2026年Q3法人说明会。Q3指引营收446-458亿美元（同比约37%），毛利率65%-67%（上季67.7%）。9月单月营收5118.6亿新台币，同比增长54.6%。公司2026年营收增速指引已上调至40%以上，全年资本开支计划超600亿美元，其中先进封装占比提升至10%-20%。市场关注点在Q3毛利率能否守住指引下沿，以及2nm（N2）与A16制程的客户需求兑现。</p>
+<p class="src-label">核心看点</p>
+<p class="hl">财报是检验AI需求对代工利润率持续性的关键节点，毛利率指引较上季回落2.2个百分点，HPC/先进制程占比提升与折旧上升的博弈将决定市场对CapEx回报的定价。</p>
+<p class="source">来源：<a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">台积电IR</a> · <a href="https://www.insiderfinance.io/news/tsmc-earnings-eye-oct-15-report">InsiderFinance</a></p>
+</div>
+
+<h2 id="refs">参考资料</h2>
+<div class="refs">
+<p>1. <a href="https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12">Microsoft plans huge deployment of its own AI chips（Reuters）</a></p>
+<p>2. <a href="https://nvidianews.nvidia.com/news/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-labs">NVIDIA and Semiconductor Leaders Advance AI for AI-Defined Fabs（NVIDIA Newsroom）</a></p>
+<p>3. <a href="https://finance.yahoo.com/technology/ai/articles/tsmc-targets-2029-panel-level-195738716.html">TSMC targets 2029 for panel-level CoPoS packaging（DigiTimes）</a></p>
+<p>4. <a href="https://www.mrjjxw.com/articles/2026-10-14/4604072.html">实探湾芯展：新凯来设备走向量产（每日经济新闻）</a></p>
+<p>5. <a href="https://investor.tsmc.com/english/quarterly-results/2026/q3">TSMC 2026 Q3 Quarterly Results（TSMC IR）</a></p>
+</div>
+
+</div>
+</body>
+</html>
