@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-10-23: 智能体EDA落地3D协同设计，英伟达六方扩产</title>
+<style>
+body{margin:0;background:#f5f5f7;font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#1f2328;font-size:17px;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:28px 20px 48px;background:#ffffff;min-height:100vh;}
+img.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+h1{font-size:22px;line-height:1.5;margin:0 0 10px;font-weight:700;}
+.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin:0 0 14px;}
+.card{border:1px solid #ececef;border-left:4px solid #d4855e;border-radius:4px;padding:18px;margin-bottom:14px;background:#fff;}
+.card h2{font-size:18px;line-height:1.5;margin:14px 0 8px;font-weight:700;color:#1f2328;}
+.card:first-of-type h2{margin-top:0;}
+.card p{margin:0 0 8px;}
+.card ul{margin:0 0 8px;padding-left:20px;}
+.card li{margin:0 0 4px;}
+.source{font-size:14px;color:#52525B;}
+.source a{color:#d4855e;text-decoration:none;}
+.refs h2{font-size:18px;margin:24px 0 8px;}
+.refs ol{margin:0 0 8px;padding-left:22px;font-size:14px;}
+.refs li{margin:0 0 6px;}
+.refs a{color:#52525B;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="cover" src="/ai-daily/covers/2026-10-23.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<h1>半导体AI日报 · 2026-10-23: 智能体EDA落地3D协同设计，英伟达六方扩产</h1>
+<p class="quote" style="font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;">瓶颈正从制程微缩转向两端：制造端的载板与先进封装产能竞赛，与设计端智能体工作流对电热协同设计的接管。</p>
+
+<section class="card">
+<h2>01 · 西门子将智能体EDA合作扩展至3D IC电热协同设计</h2>
+<p>西门子10月21日宣布，将与英伟达合作的Agentic AI EDA能力扩展至3D集成电路（3D IC）电、热协同设计。新工作流将西门子七款EDA工具编排为单一自主流程，覆盖九个自动化阶段，基于签名级（signoff-grade）物理求解器评估设计替代方案。基准测试显示：工程投入降低最多95%（数周流程压缩至数小时），工作流搭建时间缩短99%，设计探索覆盖度提升至传统人工流程的50倍。</p>
+<p><strong>核心看点：</strong></p>
+<ul>
+<li>3D IC的供电与散热正成为先进封装的关键约束，电热协同设计从专家手工迭代转向自主工作流。</li>
+<li>能力建立在西门子于DAC 2026发布的自验证智能体（self-verifying agentic AI）基础上，本次与英伟达加速计算及Agent Toolkit、Nemotron-3.5-Lightning结合。</li>
+<li>智能体可诊断供电、die摆放与封装材料对未达标项的贡献，电热分析首次进入芯片开发的常驻环节。</li>
+</ul>
+<p class="source">来源：<a href="https://news.siemens.com/en-us/siemens-nvidia-gtc-3d-ic-thermal-ai">Siemens Newsroom</a></p>
+</section>
+
+<section class="card">
+<h2>02 · 英伟达与六家供应商签署产能协议，载板产能三年扩至2.5倍</h2>
+<p>英伟达在GTC柏林宣布与Amkor、Ibiden、三星电机、欣兴电子、SPIL、金圆电子（KYEC）六家供应链伙伴签署多年期产能扩张协议，覆盖载板、先进封装、测试与光引擎四大环节。载板产能未来三年整体扩大至2.5倍；Amkor先进封装产能到2028年底增加超过300%；KYEC将在美国新建工厂，英伟达提供11亿美元产能预订预付款；SPIL共封装光学（CPO）光引擎产能到2027年中提升15倍，2028年底再翻倍。</p>
+<p><strong>核心看点：</strong></p>
+<ul>
+<li>Ibiden大野工厂目标产能扩至当前3倍，新增产能2028年第一季度开始爬坡；总测试产能从2026到2027年翻倍。</li>
+<li>黄仁勋在发布中表示“需求异常强劲，产能是约束”，扩产清单直接指向AI基建的瓶颈环节。</li>
+<li>载板、先进封装、CPO光引擎与测试同步扩张，反映瓶颈已从单一晶圆代工扩散到封装-基板-光互连全链条。</li>
+</ul>
+<p class="source">来源：<a href="https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout">NVIDIA Newsroom</a></p>
+</section>
+
+<section class="card">
+<h2>03 · 英伟达与诺基亚AI-RAN方案进入近20家电信运营商</h2>
+<p>英伟达与诺基亚10月21日在GTC柏林宣布，全球电信运营商正将英伟达加速计算引入集中数据中心、区域城市节点与基站三层基础设施，把电信网络改造为分布式智能平台。诺基亚anyRAN软件运行于英伟达Aerial RAN Computer（ARC），BT、德国电信、Elisa与Orange等运营商已启动试点，覆盖运营商数量接近20家。</p>
+<p><strong>核心看点：</strong></p>
+<ul>
+<li>电信基础设施既有的土地、电力与光纤资源被重新定价为分布式算力资产，RAN层加速处理器是关键升级路径。</li>
+<li>三层部署覆盖集中到边缘的完整路径，推理服务向用户侧物理靠近，降低时延。</li>
+<li>该方案与英伟达AI工厂参考设计形成互补，将算力供给从数据中心扩展到通信网络边缘。</li>
+</ul>
+<p class="source">来源：<a href="https://shattered.io/nvidia-nokia-ai-ran-nearly-20-telcos-2026">Shattered.io</a></p>
+</section>
+
+<section class="card">
+<h2>04 · 西门子与英伟达推进AI驱动的PCB检测：数字孪生先行，产线落地</h2>
+<p>西门子10月21日宣布与英伟达开展新合作，开发AI驱动的PCB自动光学检测（AOI）准备工作流。方案基于Teamcenter与Process Preparation X，结合英伟达Cosmos构建虚拟金样板（virtual golden board）与合成数据，在首块物理PCB上产线前完成检测参数准备与优化。目标指标：人工工程投入减少85%，误报率降低40%以上，直通率提升5%以上。</p>
+<p><strong>核心看点：</strong></p>
+<ul>
+<li>示范站点为西门子埃尔兰根电子工厂，定位为自适应AI生产的Customer Zero，支撑每周3至5次近日常规产线变更。</li>
+<li>确定性数字孪生作为物理AI（physics AI）做检测准备的基础，AI检测从“产线上试错”前移到“虚拟环境中完成”。</li>
+<li>与同日的3D IC电热协同设计发布共同构成西门子×英伟达在设计与制造两侧的Agentic AI布局。</li>
+</ul>
+<p class="source">来源：<a href="https://news.siemens.com/en-us/siemens-nvidia-pcba-digital-twin-factory/">Siemens Newsroom</a></p>
+</section>
+
+<section class="card">
+<h2>05 · 微软发布第三代自研AI芯片Maia 300，2027年计划部署超百万颗</h2>
+<p>微软发布第三代自研AI芯片Azure Maia 300，计划2027年开始大规模部署，明年部署规模预计超过百万颗，用于支撑内部AI服务。Azure负责人Scott Guthrie表示，Maia将成为微软产品与服务的主要AI推理系统；CEO纳德拉称这是微软“迄今对自研硅最大的押注”。</p>
+<p><strong>核心看点：</strong></p>
+<ul>
+<li>现役Maia 200已支撑Microsoft 365 Copilot与OpenAI模型推理，覆盖美、欧、澳，GitHub Copilot与Microsoft Foundry计划年内迁移。</li>
+<li>Evercore ISI估计到2027年初，Maia约占微软AI芯片采购支出的10%。</li>
+<li>自研芯片占比提升将进一步改变代工厂与HBM供应商的客户结构，推理侧成本优化是核心驱动。</li>
+</ul>
+<p class="source">来源：<a href="https://www.spokesman.com/stories/2026/oct/12/microsoft-plans-huge-deployment-of-its-own-ai-chip">Reuters</a></p>
+</section>
+
+<section class="refs">
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://news.siemens.com/en-us/siemens-nvidia-gtc-3d-ic-thermal-ai">Siemens expands agentic AI to tackle 3D IC thermal（Siemens Newsroom，2026-10-21）</a></li>
+<li><a href="https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout">NVIDIA and Supply Chain Partners Expand Capacity（NVIDIA Newsroom，2026-10-21）</a></li>
+<li><a href="https://shattered.io/nvidia-nokia-ai-ran-nearly-20-telcos-2026">NVIDIA, Nokia AI-RAN Reaches Nearly 20 Telcos（Shattered.io，2026-10-21）</a></li>
+<li><a href="https://news.siemens.com/en-us/siemens-nvidia-pcba-digital-twin-factory/">Siemens and NVIDIA advance AI-powered PCB inspection（Siemens Newsroom，2026-10-21）</a></li>
+<li><a href="https://www.spokesman.com/stories/2026/oct/12/microsoft-plans-huge-deployment-of-its-own-ai-chip">Microsoft plans huge deployment of its own AI chip（Reuters，2026-10-12）</a></li>
+</ol>
+</section>
+</div>
+</body>
+</html>
