@@ -1,0 +1,54 @@
+---
+layout: post
+title: "半导体AI日报 · 2026-10-25: Vera Rubin 进入全量产，NVHBM 基片统一台积电3nm"
+subtitle: "Vera Rubin 进入全量产，NVHBM 基片统一台积电3nm"
+date: 2026-10-25
+author: "AI日报"
+header-img: ai-daily/covers/2026-10-25.jpg
+categories: ai-daily
+tags: [AI芯片, Agentic EDA, AI日报]
+---
+<style>
+.post-body li{margin-bottom:6px;line-height:1.75;}
+.post-body h2{margin:16px 0 8px;line-height:1.5;}
+.post-body p{margin:0 0 8px;line-height:1.75;}
+.src{font-size:13px;color:#888;margin-bottom:14px;}
+.src a{color:#888;}
+</style>
+
+<h2>今日导读</h2>
+<p style="margin:0 0 8px;">算力瓶颈正从晶圆供给转向系统集成：先进封装、HBM 基片与 AI 工厂设计进入统一调度。本期精选4条，覆盖 AI 平台量产、HBM 供应链重构、智能体 CAE 与先进封装协同。</p>
+
+<h2>01 · 英伟达 Vera Rubin 平台进入全量产，HBM4 份额向三星倾斜</h2>
+<p>黄仁勋在 GTC Berlin（10月21日）宣布下一代 AI 平台 <strong>Vera Rubin</strong> 进入全量产。单节点装配时间由 Grace Blackwell 的2小时压缩至5分钟以内，取消外露线缆，液冷占比提升至100%。HBM4 供应端，SK 海力士预计占60%—70%份额、三星占25%—30%、美光供应其余部分。</p>
+<p>份额结构正在变化：Counterpoint 数据显示 SK 海力士 HBM 营收份额由一季度58%降至二季度50%，三星由21%升至33%，差距从37个百分点收窄至17个百分点。J.P. Morgan 预计 SK 海力士份额将由2025年的60%降至今年46%、明年41%。</p>
+<p><strong>核心看点</strong>：装配工艺简化直接抬升 AI 服务器产能爬坡速度；HBM4 代际切换期两家韩厂份额收敛，内存竞争从单点规格转向量产节奏与良率。</p>
+<p class="src">来源：<a href="https://finance.biggo.com/news/5e8a0534-531a-44d0-9cc3-666f4d1e4ac8" target="_blank" rel="noopener">BigGo Finance</a></p>
+
+<h2>02 · 英伟达要求 NVHBM 基片统一采用台积电3nm，三星打破全自研惯例</h2>
+<p>据首尔经济日报10月18日报道，英伟达要求三星、SK 海力士、美光三家 NVHBM 供应商统一采用<strong>台积电3nm 工艺</strong>制造 HBM 基片（base die），内存 die 则统一采用1c 代 DRAM。NVHBM 为英伟达基于 HBM4E 的定制高带宽内存。</p>
+<p>三星设备解决方案部门经内部评审后同意该要求，为三星首次在 HBM 环节将基片制造交由外部代工，量产预计在2027年。SK 海力士自 HBM4 起已使用台积电逻辑工艺制造基片，美光亦将定制 HBM4E 基片外包。</p>
+<p><strong>核心看点</strong>：三家内存厂共用同一基片工艺后，竞争焦点收敛至 DRAM 良率与堆叠效率；HBM 基片与 AI 加速器共同排队争夺台积电3nm 产能，该节点已占其晶圆营收33%。</p>
+<p class="src">来源：<a href="https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up" target="_blank" rel="noopener">TrendForce</a></p>
+
+<h2>03 · 达索与维谛合作推进 AI 工厂虚拟孪生设计，配置验证提速10倍</h2>
+<p>达索系统（Dassault Systèmes）与维谛技术（Vertiv）10月21日宣布合作，在 AI 工厂动工前完成基础设施的配置、仿真与验证。方案组合达索 <strong>3DEXPERIENCE 智能体平台</strong>与维谛 SmartRun 可配置虚拟孪生，基于英伟达 Vera Rubin DSX AI Factory 参考设计与 Omniverse DSX Blueprint 验证供电、制冷等 SimReady 参考设计。</p>
+<p>官方口径：需求定义到配置验证完成的时间可缩短最多10倍，既定基础设施部署周期缩短最多50%；相对传统基线，产能可提前约10周上线，12个月内累计 token 产出提升最多30%。</p>
+<p><strong>核心看点</strong>：智能体 CAE 从芯片设计延伸到 AI 工厂级系统工程，虚拟孪生成为供电、制冷与算力交付的前置验证环节，直接压缩 AI 基建从签约到投产的周期。</p>
+<p class="src">来源：<a href="https://www.businesswire.com/news/home/20261021876442/en/Dassault-Systmes-and-Vertiv-Team-to-Accelerate-AI-Factory-Design-and-Deployment" target="_blank" rel="noopener">Business Wire</a></p>
+
+<h2>04 · 欣兴、力成、纬创：封装到板卡接口成 AI 系统集成新瓶颈</h2>
+<p>全球电子协会（GEA）在 IMPACT 2026 研讨会「Component to System Integration Advances」环节，组织欣兴电子（Unimicron）、力成科技（STATS ChipPAC）、纬创（Wistron）及研究机构 TechSearch 就先进封装与系统集成的交叉议题进行阐述。</p>
+<p>议题聚焦<strong>封装到板卡（package-to-PCB）接口</strong>、新兴技术缺口与跨环节协同：AI 加速器封装尺寸持续扩大、HBM 堆叠层数提升，使载板、封装与板级供电、散热的耦合问题从封测厂内部延伸至整条系统供应链，协同设计缺口成为交付节奏的隐性约束。</p>
+<p><strong>核心看点</strong>：先进封装产能与载板供给之外，封装-板卡接口的标准化与协同设计正成为 AI 系统集成的下一个显性瓶颈，产业链协作模式需要从单点供货转向全链路联合开发。</p>
+<p class="src">来源：<a href="https://smttoday.com/2026/10/21/global-electronics-association-hosts-impact-2026-session-on-advanced-electronic-packaging-system-integration-with-technical-perspectives-from-unimicron-stats-chippac-and-wistron" target="_blank" rel="noopener">SMT Today</a></p>
+
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://finance.biggo.com/news/5e8a0534-531a-44d0-9cc3-666f4d1e4ac8" target="_blank" rel="noopener">Nvidia's Vera Rubin Enters Full Production — BigGo Finance</a></li>
+<li><a href="https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up" target="_blank" rel="noopener">NVIDIA Reportedly Pushes TSMC 3nm NVHBM Base Dies — TrendForce</a></li>
+<li><a href="https://www.businesswire.com/news/home/20261021876442/en/Dassault-Systmes-and-Vertiv-Team-to-Accelerate-AI-Factory-Design-and-Deployment" target="_blank" rel="noopener">Dassault Systèmes and Vertiv Team to Accelerate AI Factory Design — Business Wire</a></li>
+<li><a href="https://smttoday.com/2026/10/21/global-electronics-association-hosts-impact-2026-session-on-advanced-electronic-packaging-system-integration-with-technical-perspectives-from-unimicron-stats-chippac-and-wistron" target="_blank" rel="noopener">GEA Hosts IMPACT 2026 Advanced Packaging Session — SMT Today</a></li>
+</ol>
+
+<p style="text-align:center;margin-top:30px;"><a href="/ai-daily/2026-10-25.html" style="display:inline-block;padding:10px 24px;background:#52525B;color:#fff;text-decoration:none;border-radius:4px;font-size:15px;">📋 查看完整日报 →</a></p>
