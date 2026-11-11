@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-11-12: DeepX流片DX-M2 PIM芯片，EDA三巨头DAC推进智能体自主</title>
+<style>
+body{background:#fafafa;color:#111827;font-family:-apple-system,BlinkMacSystemFont,“Segoe UI”,“PingFang SC”,“Hiragino Sans GB”,“Microsoft YaHei”,sans-serif;font-size:17px;line-height:1.6;margin:0;padding:16px 0;}
+.container{max-width:780px;margin:0 auto;padding:0 16px;}
+h1{font-size:23px;color:#3a7d8c;margin:0 0 14px;text-align:center;}
+.card{background:#ffffff;border-radius:8px;padding:18px;margin-bottom:14px;border-left:4px solid #3B82F6;}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;font-weight:600;}
+.card h2:first-child{margin-top:0;}
+.card p{margin:0 0 8px;}
+.card .source{font-size:13px;color:#8A929D;}
+.card .source a{color:#52525B;text-decoration:none;}
+.highlight{color:#B45309;font-weight:600;}
+.cover-quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+.refs{background:#ffffff;border-radius:8px;padding:18px;margin-bottom:14px;}
+.refs h2{font-size:19px;margin:0 0 8px;}
+.refs ol{margin:0;padding-left:20px;}
+.refs li{margin-bottom:6px;font-size:15px;}
+.refs a{color:#52525B;}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="/ai-daily/covers/2026-11-12.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="cover-quote">存内计算与智能体EDA同步从实验室走向流片与产线：算力瓶颈正从制程微缩转向内存带宽与设计自动化，先进封装和设计工具成为AI基建的第二条曲线。</p>
+<h1>半导体AI日报 · 2026-11-12: DeepX流片DX-M2 PIM芯片，EDA三巨头DAC推进智能体自主</h1>
+<div class="card" style="border-left-color:#3B82F6;">
+<h2>01 · DeepX流片第二代边缘AI加速器DX-M2，携手三星LPDDR5x-PIM</h2>
+<p>11月9日，韩国边缘AI芯片初创公司DeepX宣布第二代加速器DX-M2完成流片，采用三星2nm工艺与LPDDR5x存内处理（PIM）技术。相较初代DX-M1，内存带宽由50GB/s提升至150GB/s，NPU能效经架构优化与制程微缩各翻倍，达80TOPS。仿真显示将GEMV运算卸载至LPDDR5x-PIM后，Llama3.1-8B模型每秒token生成量提升至单独DX-M2的6.7倍，但总功耗同步升至2.7倍。工程样品预计2027年3月交付。</p>
+<p><strong>核心看点：</strong>DeepX将<span class="highlight">存内处理</span>路线推进至流片阶段，直接针对端侧大模型推理的<span class="highlight">内存带宽瓶颈</span>。PIM即将成为LPDDR6的JEDEC标准，下一代DX-M3将支持官方LPDDR6-PIM，理论性能提升空间5-8倍。三星LPDDR5x-PIM在Hot Chips 2026展示后获得首个公开设计导入案例，2nm制程+PIM的组合在5W功耗等级下运行百亿参数级模型，为<span class="highlight">物理AI与机器人端侧部署</span>提供新的硬件路径。</p>
+<p class="source">来源：EE Times — <a href="https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim">eetimes.com</a></p>
+</div>
+<div class="card" style="border-left-color:#8B5CF6;">
+<h2>02 · 美国拟为高端AI芯片建立位置核验体系，出口管制进入物理追踪阶段</h2>
+<p>11月9日IEEE Spectrum报道，针对AI芯片经第三国转运至中国的问题，美国正推进高端AI芯片位置核验（location verification）立法。今年3月众议院外交事务委员会已通过要求对先进AI芯片实施位置核验的法案，立法者已推动相关法案进入全院表决。乔治城大学CSET报告建议采用基于ping的地理位置核验（PLV）辅以实物审计的组合方案：芯片向全球多个地标服务器定时发ping，通过往返时间估算位置，新芯片可集成硬件PLV，存量芯片可经固件升级启用。</p>
+<p><strong>核心看点：</strong>出口管制从<span class="highlight">单据审查走向物理追踪</span>。PLV可实现国家级位置精度，但研究者指出其仍受硬件篡改制约，离线芯片无法持续追踪，需配合实物审计。CSET建议将追踪责任集中于BIS或可信第三方，避免多手转让后责任落空。合规路径包括<span class="highlight">防篡改信任根、密码学主权证书与芯片指纹</span>，对数据中心GPU厂商的供应链与运维流程构成新增约束。</p>
+<p class="source">来源：IEEE Spectrum — <a href="https://spectrum.ieee.org/find-my-ai-chip">spectrum.ieee.org</a></p>
+</div>
+<div class="card" style="border-left-color:#F97316;">
+<h2>03 · DAC 2026：Synopsys、Cadence、Siemens三巨头同场推进智能体自主设计</h2>
+<p>11月11日Futurum Group发布DAC 2026分析。Synopsys发布完全自主的设计验证智能体，宣称RTL验证周期最多缩短50倍，并展示业界首个完全自主CAE工作流；其后与微软合作的自主EDA工作流在Microsoft Discovery平台上线，AMD参与早期评估，调试周期缩短25-40%。Cadence推出面向PCB与先进封装的AuraStack AI Super Agent，宣称多物理性能提升最高20倍，与既有Agent组合形成首个覆盖芯片到系统的完整智能体栈。Siemens为Fuse EDA AI Agent系统增加自验证智能体。三套方案均基于NVIDIA智能体AI栈（Nemotron模型+OpenShell沙箱）构建。</p>
+<p><strong>核心看点：</strong>Agentic EDA从任务辅助跨越到<span class="highlight">长时程自主运行</span>，三家头部厂商在同一届大会上完成代际升级，NVIDIA底层栈成为事实标准。Synopsys首个自主CAE工作流标志着<span class="highlight">Agentic CAE</span>进入工程落地阶段；调试周期25-40%的缩减来自AMD实际评估而非厂商自述，是少见的第三方数据。智能体在OpenShell内核级沙箱内运行以保护客户IP，人类工程师在Level 5自治下仍保留检查与引导权限，<span class="highlight">人机协作边界</span>成为EDA工具竞争的新维度。</p>
+<p class="source">来源：Futurum Group — <a href="https://futurumgroup.com/insights/synopsys-cadence-and-siemens-take-agentic-chip-design-autonomous-at-dac">futurumgroup.com</a></p>
+</div>
+<div class="card" style="border-left-color:#06B6D4;">
+<h2>04 · 特斯拉公布AI加速器路线图，SI6算力达HW4的80倍</h2>
+<p>11月6日Tom's Hardware报道，特斯拉披露调整后的AI加速器路线图并启用SI（Super Intelligence）品牌。推理加速器SI5采用台积电3nm与三星2nm双代工、多芯片模块（MCM）封装，性能较HW4提升40倍；SI6维持MCM架构、采用三星2nm级工艺，算力达HW4的80倍（估算17280-46080TOPS），内存144GB。训练加速器Dojo D3放弃SRAM中心架构，转向多chiplet+堆叠HBM设计，并计划部署至在轨数据中心。马斯克同时表示目标9个月一代的芯片迭代节奏。</p>
+<p><strong>核心看点：</strong>特斯拉成为继英伟达、谷歌之后第三家在路线图层面明确<span class="highlight">多chiplet+HBM</span>路径的自研芯片厂商，且首次公开双代工（台积电/三星）策略以对冲<span class="highlight">代工产能</span>约束。9个月迭代节奏若成立，将显著快于行业普遍的18-24个月代际周期，但前提是后续芯片为平台式增量迭代而非重新设计。Dojo D3进入太空数据中心的规划，使<span class="highlight">在轨算力</span>从概念进入工程路线图。</p>
+<p class="source">来源：Tom's Hardware — <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space">tomshardware.com</a></p>
+</div>
+<div class="refs">
+<h2>参考资料</h2>
+<ol>
+<li><a href="https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim">EE Times：DeepX Tapes Out Second-Gen Chip, Projects 6.7× Performance Gain With LPDDR5x-PIM</a></li>
+<li><a href="https://spectrum.ieee.org/find-my-ai-chip">IEEE Spectrum：The Race to Build a “Find My” for AI Chips</a></li>
+<li><a href="https://futurumgroup.com/insights/synopsys-cadence-and-siemens-take-agentic-chip-design-autonomous-at-dac">Futurum Group：Synopsys, Cadence, and Siemens Take Agentic Chip Design Autonomous at DAC</a></li>
+<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/tesla-unveils-ai-accelerator-roadmap-adopts-new-si-branding-in-super-intelligence-push-si6-to-bring-80x-more-compute-performance-dojo-3-headed-to-space">Tom's Hardware：Tesla unveils AI accelerator roadmap, adopts new “SI” branding</a></li>
+</ol>
+</div>
+</div>
+</body>
+</html>
