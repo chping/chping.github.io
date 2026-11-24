@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-11-25: AI全流程设计通用CPU，能效达常规核4.59倍</title>
+<style>
+body{margin:0;background:#f5f5f7;color:#111827;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;}
+.wrap{max-width:780px;margin:0 auto;padding:20px 16px 40px;}
+.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;}
+.quote{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin:0 0 14px;}
+h1{font-size:22px;line-height:1.4;margin:0 0 14px;color:#111827;}
+.card{background:#fff;border-radius:6px;padding:18px;margin-bottom:14px;border-left:4px solid #3B82F6;}
+.card.purple{border-left-color:#8B5CF6;}
+.card.orange{border-left-color:#F97316;}
+.card.cyan{border-left-color:#06B6D4;}
+.card.green{border-left-color:#10B981;}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;}
+.card h2:first-child{margin-top:0;}
+.card p{margin:0 0 8px;}
+.card p:last-child{margin-bottom:0;}
+.highlight{color:#2563EB;font-weight:600;}
+.source{font-size:13px;color:#8A929D;margin:0;}
+.source a{color:#52525B;text-decoration:none;}
+.refs{background:#fff;border-radius:6px;padding:18px;margin-top:4px;}
+.refs h2{font-size:17px;margin:0 0 8px;}
+.refs p{margin:0 0 6px;font-size:14px;color:#52525B;}
+.refs a{color:#2563EB;text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="cover" src="/ai-daily/covers/2026-11-25.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="quote">算力竞争的重心正在从晶体管微缩转向架构创新：AI系统首次独立完成从指令集到版图的全流程CPU设计，验证了智能体驱动芯片设计从单点辅助走向端到端闭环的可行路径。</p>
+<h1>半导体AI日报 · 2026-11-25: AI全流程设计通用CPU，能效达常规核4.59倍</h1>
+<div class="card">
+<h2>01 · Architect Labs发布Frostbite：AI全流程设计的通用CPU，每瓦性能达常规核4.59倍</h2>
+<p>美国帕洛阿尔托初创公司Architect Labs于11月20日发布通用CPU架构Frostbite。该芯片从指令集、微架构、RTL到最终版图全程由其AI系统端到端完成，指令集从零自建，基于1990年提出的交互网（interaction nets）计算模型，采用无集中调度器的瓦片网格与“工作窃取”机制，在7nm仿真设计下完成验证。项目历时约5个月，由AI智能体完成编译器、微架构与RTL的全部迭代，目前处于流片前阶段。</p>
+<p><strong>核心看点：</strong>这是<span class="highlight">AI智能体独立完成通用CPU全流程设计</span>的标志性案例。25项负载几何平均下，四瓦片Frostbite集群每瓦性能为同面积、已硅验证双发射顺序执行CPU核心的4.59倍，单位面积性能为8.77倍；15项未参与调优的保留负载上优势为3.83倍。取指、解码与发射环节功耗占比从传统设计的27%降至6%。其底层交互网模型以节点图表示程序，每个值仅被使用一次，无需缓存一致性协议，将并行性直接暴露给硬件。公司计划公开RTL与ISA，并在后续以SPEC与PARSEC做多核对比。需注意数据来自<span class="highlight">流片前仿真</span>，对比核心因法律原因未具名，该架构仍属实验性质。</p>
+<p class="source">来源：<a href="https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests">Tom's Hardware</a> · <a href="https://news.qq.com/rain/a/20261121A06VIU00">腾讯新闻</a>（11月21日报道）</p>
+</div>
+<div class="card orange">
+<h2>02 · 美国BIS将Megaspeed等7家东南亚实体列入出口管制实体清单，阿里旗下新加坡子公司在列</h2>
+<p>当地时间11月24日，美国商务部工业与安全局（BIS）公告将分布在马来西亚、新加坡和泰国的7家实体列入“实体清单”（Entity List），规则已于11月23日提交、定于11月25日刊登《联邦公报》，并设30天在途货物缓冲期。7家实体中6家属于Megaspeed母子公司体系，另一家为阿里巴巴旗下新加坡子公司Apex Enterprise Solutions，因向Megaspeed马来西亚子公司提供融资及存在资产抵押关系被一并列入。被列入实体清单意味着美国公司未获特别许可不得向其出口先进半导体等受控物项，许可申请适用“推定拒绝”原则。</p>
+<p><strong>核心看点：</strong>本次清单集中指向<span class="highlight">东南亚转口通道</span>，监管重心从直接管制中国实体延伸至海外供应链中间环节，与近期BIS远程算力新规（1200万TPP门槛、逐案许可）形成组合，切断先进AI芯片经第三方国家流入的渠道。事件与英伟达治理风波直接关联：11月12日黄仁勋辞职、11月23日董事会恢复其CEO职务，与BIS规则提交同日落地。阿里巴巴否认相关实体存在违规，表示将通过法律途径应对。此轮管制标志着出口管制工具从硬件禁运向<span class="highlight">服务与算力穿透</span>升级。</p>
+<p class="source">来源：<a href="https://companies.caixin.com/m/2026-11-24/102508293.html">财新网</a>（11月24日）· <a href="https://www.eet-china.com/news/202611242231.html">电子工程专辑</a>（11月24日）</p>
+</div>
+<div class="card purple">
+<h2>03 · 三星拟将西安二厂V9 NAND月产能从约1万片扩至5万片，专供AI数据中心eSSD</h2>
+<p>据《首尔经济日报》11月24日报道，三星电子计划将位于中国陕西西安的半导体工厂打造为面向AI数据中心企业级固态硬盘（eSSD）的核心生产基地。三星拟将西安二厂（X2）第九代垂直NAND（V9，286层）月产能从约1万片提升至5万片（300mm晶圆），新增一条月产能约2万片的生产线，并将现有V6产线的20%至30%转用于V9。设备预计2027年2月进场，改造于同年11月完成。改造完成后西安园区NAND月产能合计约10万片，约占三星全球NAND总产能的三分之一。</p>
+<p><strong>核心看点：</strong>三星将V9工艺绑定AI存储需求：eSSD所用NAND需求今年预计增长84%、明年增长55%（TrendForce按容量口径），eSSD在NAND总需求中占比将从45%升至57%。三星V9良率已达90%出头，较上代提升约10个百分点；其eSSD营收份额35.1%，领先第二名SK海力士14个百分点。这是<span class="highlight">结构性产能决策</span>——将成熟代产线整体转向先进代工艺并定向供给AI存储，区别于普通扩产动作；同时显示AI存储需求正在重塑海外大厂在华工厂的产品结构。</p>
+<p class="source">来源：<a href="https://finance.sina.com.cn/tech/digi/2026-11-24/doc-inizutph5164342.shtml">新浪科技（引IT之家）</a>（11月24日）</p>
+</div>
+<div class="card cyan">
+<h2>04 · WSTS：三季度全球半导体市场4810亿美元，同比增长129%创统计史上最高纪录</h2>
+<p>世界半导体贸易统计组织（WSTS）数据显示，2026年三季度全球半导体市场规模达4810亿美元，环比增长27%，同比增长129%，创WSTS统计史上最高同比增速纪录，超过二季度110%的水平。AI继续主导增长：三星、SK海力士、美光、铠侠、闪迪等存储厂商合计营收环比增长36%，前二十大供应商营收全部实现环比正增长，其中SK海力士环比增长49%、铠侠增长40%、英伟达增长20%。前三季度全球市场同比增长104%，全年规模预计至少较2025年翻倍，增速区间集中在110%至112%。</p>
+<p><strong>核心看点：</strong>129%的同比增速刷新行业60余年统计史纪录，验证AI算力基建对<span class="highlight">半导体全行业的量价拉动</span>。四季度指引分化明显：14家给出指引的公司中10家预计环比增长，AMD（+27%，数据中心需求）与联发科（+29%，AI加速器需求）预期最强，英伟达增速从20%放缓至12%，英特尔受PC市场拖累预计下滑6.1%。机构对2027年预测分歧显著：RCD Advisors预计23%，Semiconductor Intelligence基准情形60%、乐观情形80%，反映市场对AI资本开支持续性的判断尚未收敛。</p>
+<p class="source">来源：<a href="https://ijiwei.com/n/1143281">集微网</a>（11月22日转载）</p>
+</div>
+<div class="card green">
+<h2>05 · OpenAI技术报告披露：AI模型深度参与Jalapeño芯片与AMD GPU设计，GPT-Synopsys推进EDA工具调用</h2>
+<p>OpenAI近期技术报告披露了AI模型在半导体设计中的三类进展：其一，自研推理芯片Jalapeño（与博通合作，台积电3nm，6月24日发布）开发全程由GPT系列模型参与微架构优化，从设计到流片仅9个月；其二，AI模型帮助AMD改进商业GPU设计；其三，与Synopsys合作开发的GPT-Synopsys专业模型可理解并操作EDA工具链，根据工具反馈迭代调整设计方案，覆盖逻辑综合、形式验证、静态时序分析、布局布线与物理验证等环节。</p>
+<p><strong>核心看点：</strong>该报告将AI芯片设计应用从单点RTL生成推进到<span class="highlight">EDA工具调用与设计闭环迭代</span>，与今日Frostbite（条目01）形成互证：前者由商业模型在既有工艺与工具链内优化，后者由智能体从零构建架构与指令集，两条路径共同指向智能体驱动设计的工程化落地。Jalapeño 9个月的开发周期被OpenAI称为高性能半导体史上最快ASIC周期之一，其加速因素明确包括AI模型参与设计优化。相关表述来自OpenAI技术报告，AMD与Synopsys侧的细节尚待各方独立披露。</p>
+<p class="source">来源：<a href="https://m.sohu.com/a/1104096310_128469">搜狐科技（引芯智讯）</a>（11月23日）</p>
+</div>
+<div class="refs">
+<h2>参考资料</h2>
+<p>1. Tom's Hardware — <a href="https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests">AI agents design an entirely new CPU architecture from scratch, startup claims</a></p>
+<p>2. 腾讯新闻 — <a href="https://news.qq.com/rain/a/20261121A06VIU00">AI从零设计CPU能效达常规核4.59倍</a></p>
+<p>3. 财新网 — <a href="https://companies.caixin.com/m/2026-11-24/102508293.html">美国将Megaspeed等东南亚公司加入出口管制黑名单</a></p>
+<p>4. 电子工程专辑 — <a href="https://www.eet-china.com/news/202611242231.html">黄仁勋复职同一天，美国商务部将Megaspeed等7家东南亚企业列入实体清单</a></p>
+<p>5. 新浪科技 — <a href="https://finance.sina.com.cn/tech/digi/2026-11-24/doc-inizutph5164342.shtml">三星拟扩大西安工厂先进NAND产能、升级V9闪存产线</a></p>
+<p>6. 集微网 — <a href="https://ijiwei.com/n/1143281">机构：三季度全球半导体市场达4810亿美元 同比增长129%创历史纪录</a></p>
+<p>7. 搜狐科技 — <a href="https://m.sohu.com/a/1104096310_128469">用AI重新设计芯片，OpenAI披露三大突破</a></p>
+</div>
+</div>
+</body>
+</html>
