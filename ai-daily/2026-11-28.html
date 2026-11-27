@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>半导体AI日报 · 2026-11-28: 铠侠英伟达扩容GPU显存至1.1PB，SSD成AI存储扩展层</title>
+<style>
+:root{--bg:#fafafa;--card-bg:#ffffff;--title-color:#2c5f7c;--accent-color:#c47f5a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:#1f2937;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.6;}
+.container{max-width:780px;margin:0 auto;padding:20px 16px 40px;}
+.cover{width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;display:block;}
+.epigraph{font-size:14px;color:#52525B;font-style:italic;text-align:center;margin-bottom:14px;}
+h1{font-size:24px;color:var(--title-color);margin-bottom:6px;line-height:1.4;}
+.meta{font-size:13px;color:#8a929d;margin-bottom:20px;}
+.card{background:var(--card-bg);border-radius:8px;padding:18px;border-left:4px solid #3B82F6;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.05);}
+.card.c2{border-left-color:#8B5CF6;}
+.card.c3{border-left-color:#F97316;}
+.card.c4{border-left-color:#06B6D4;}
+.card.c5{border-left-color:#10B981;}
+.card h2{font-size:19px;color:#111827;margin:14px 0 8px;line-height:1.45;}
+.card h2:first-child{margin-top:0;}
+.card p{margin:0 0 8px;}
+.card p:last-of-type{margin-bottom:0;}
+.highlight{color:var(--accent-color);font-weight:600;}
+.source{font-size:13px;color:#8A929D;margin-top:10px;}
+.source a{color:#52525B;text-decoration:none;}
+.source a:hover{text-decoration:underline;}
+.refs h2{font-size:18px;color:var(--title-color);margin:22px 0 10px;}
+.refs ol{padding-left:22px;}
+.refs li{font-size:14px;margin-bottom:6px;color:#374151;}
+.refs a{color:#52525B;text-decoration:none;word-break:break-all;}
+</style>
+</head>
+<body>
+<div class="container">
+<img class="cover" src="/ai-daily/covers/2026-11-28.jpg" style="width:100%;max-width:780px;border-radius:6px;margin-bottom:18px;" alt="半导体AI日报封面">
+<p class="epigraph">AI存储墙正从容量竞赛转向分层访问：SSD作为低成本容量层进入GPU直接寻址路径，存算协同设计边界被重新划定。</p>
+<h1>半导体AI日报 · 2026-11-28: 铠侠英伟达扩容GPU显存至1.1PB，SSD成AI存储扩展层</h1>
+<p class="meta">AI芯片 · Agentic EDA · Agentic CAE/CAD 每日精选</p>
+
+<div class="card c1">
+<h2>01 · 铠侠与英伟达完成PB级GPU显存扩容验证，144块SSD支撑1.1PB容量</h2>
+<p>11月26日，铠侠（KIOXIA）与英伟达联合宣布概念验证：基于英伟达SCADA软件与Storage-Next架构，在GB200 NVL72机柜级系统（18个服务器节点、144块XD8系列7.68TB E1.S NVMe SSD）上将GPU有效内存扩展至约1.1PB原始容量，单节点可扩展约60TB闪存内存，支持512字节细粒度访问与2万亿级向量库处理。</p>
+<p><strong>核心看点：</strong>该方案面向超出<span class="highlight">HBM容量</span>的大规模向量数据库与图神经网络数据集，将传统上需分片搬运的冷数据移入GPU<span class="highlight">直接寻址范围</span>，以NVMe SSD构建低成本扩展内存层。铠侠同步推出面向PCIe 6.0的GP1系列SSD优化GPU直访路径，存储厂商正从介质供应商向<span class="highlight">AI内存层级架构</span>参与者转型。</p>
+<p class="source">来源：<a href="https://www.morningstar.com/news/business-wire/20261125978025/kioxia-and-nvidia-collaborate-to-expand-effective-high-bandwidth-memory-capacity-with-ssds">Business Wire（KIOXIA官方新闻稿）</a> · <a href="https://www.trendforce.com/news/2026/11/27/news-kioxia-nvidia-begin-1-1-pb-ssd-based-gpu-memory-expansion-tests-to-address-hbm-capacity-limits/">TrendForce</a></p>
+</div>
+
+<div class="card c2">
+<h2>02 · 台积电关联方GUC获特斯拉AI5项目，3nm产能紧张或制约爬坡</h2>
+<p>据工商时报11月27日报道，台积电旗下创意电子（GUC）已拿下特斯拉AI5芯片设计项目，同期持有微软、谷歌订单。GUC 2027年获得的台积电N3晶圆配额虽较2026年大幅扩大，仍将优先保障Google Axion 2/3与微软自研芯片等北美CSP项目，特斯拉AI5配额相对有限，量产爬坡预计受限。</p>
+<p><strong>核心看点：</strong>AI ASIC需求集中期，<span class="highlight">3nm产能分配</span>成为定制芯片商的核心约束变量，云厂商订单优先级高于终端算力芯片。台积电台南3nm新厂2027年上半年量产、亚利桑那第二厂2027年下半年投产前，供给缺口持续；GUC已完成HBM4E PHY与控制器IP并获N2P+CoWoS-L客户采用，卡位下一代节点。</p>
+<p class="source">来源：<a href="https://www.trendforce.com/news/2026/11/27/news-tsmc-affiliate-guc-reportedly-lands-tesla-ai5-asic-project-but-tight-3nm-supply-could-limit-near-term-ramp-up/">TrendForce（引工商时报）</a> · <a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/">Electrek</a></p>
+</div>
+
+<div class="card c3">
+<h2>03 · 荷兰政府公开反对美国MATCH法案，称将阻止其落地执行</h2>
+<p>11月26日，荷兰外贸与发展合作大臣Sjoerd Sjoerdsma在议会表示，美国MATCH法案将出口管制扩展至ASML浸没式深紫外（DUV）光刻机对华销售与售后服务，"走得太远"，将使欧洲处于不可接受的劣势。荷兰已在11月25日与欧盟成员国磋商中要求协调应对，并正与欧委会、德国、法国共同阻止该法案被附入国防授权法案。</p>
+<p><strong>核心看点：</strong>法案要求盟友150天内对齐对华芯片设备管制，否则美国商务部将单方面扩大管制范围——<span class="highlight">长臂管辖条款</span>是核心争议点。中国预计占ASML今年营收约五分之一，DUV及其售后体系一旦受限，对全球成熟制程产能扩张与欧盟自身半导体战略均构成冲击，美欧荷三方博弈进入实质阶段。</p>
+<p class="source">来源：<a href="https://www.bloomberg.com/news/articles/2026-11-26/netherlands-plans-to-fight-rollout-of-proposed-us-curbs-on-asml">Bloomberg</a> · <a href="https://www.trendforce.com/news/2026/11/27/news-netherlands-opposes-match-acts-tighter-curbs-on-asmls-china-sales-eyes-eu-countermeasures/">TrendForce</a></p>
+</div>
+
+<div class="card c4">
+<h2>04 · 索尼系Altair完成1亿美元A轮，ALT1550低功耗调制解调器2027年量产</h2>
+<p>11月26日，以色列芯片公司Altair Semiconductor宣布完成1亿美元A轮融资，由Maverick Silicon（Maverick Capital半导体投资部门）领投、Pitango跟投，累计融资1.5亿美元。资金将用于ALT1550量产、新一代连接芯片研发及北美、欧洲、亚洲客户拓展，该公司2026年4月从索尼剥离独立。</p>
+<p><strong>核心看点：</strong>ALT1550单芯片集成5G eRedCap、4G Cat 1bis、LTE-M与非地面网络（NTN）四项标准，面向智能眼镜、可穿戴与工业设备的<span class="highlight">常连低功耗蜂窝</span>场景，11月19日已联合爱立信完成首次eRedCap连接验证。融资指向AI眼镜等个人AI终端的<span class="highlight">蜂窝直连</span>赛道，摆脱对手机连接的依赖。</p>
+<p class="source">来源：<a href="https://www.calcalistech.com/ctechnews/article/m3h4xzamw">CTech by Calcalist</a> · <a href="https://www.crayon.net/story/50656/wireless-networking-chip-startup-altair-nabs-100m-investment">SiliconANGLE via CRAYON</a></p>
+</div>
+
+<div class="card c5">
+<h2>05 · 小米智造基金联合产业基金2亿元入股苏州科阳，布局晶圆级先进封装</h2>
+<p>11月13日大港股份公告确认，北京小米智造股权投资基金与上海半导体材料基金二期组成联合体，合计出资2亿元受让苏州科阳半导体16%股权（各持股8%），转让款已全额到账。苏州科阳主营晶圆级先进封装测试，具备4至12英寸全尺寸产线，提供TSV、WLCSP、Bumping等工艺服务，下游覆盖汽车电子与5G通信。</p>
+<p><strong>核心看点：</strong>小米系产业资本以股权受让方式切入<span class="highlight">晶圆级先进封测</span>环节，是其围绕自研芯片供应链的又一步布局。交易自7月挂牌至11月落地历时近四个月，反映国资审批流程下的产业并购节奏；小米长江基金与小米智造基金双线布局封测，指向AI终端对<span class="highlight">小型化封装</span>需求的持续上升。</p>
+<p class="source">来源：<a href="https://www.trendforce.com/news/2026/11/27/news-xiaomi-backed-fund-invests-in-advanced-semiconductor-packaging-company/">TrendForce</a> · <a href="https://zhuanlan.zhihu.com/p/2108563584993194528">全球半导体观察</a></p>
+</div>
+
+<div class="refs">
+<h2>参考资料</h2>
+<ol>
+<li>Kioxia and NVIDIA Collaborate to Expand Effective High-Bandwidth Memory Capacity with SSDs — <a href="https://www.morningstar.com/news/business-wire/20261125978025/kioxia-and-nvidia-collaborate-to-expand-effective-high-bandwidth-memory-capacity-with-ssds">Business Wire</a></li>
+<li>Kioxia, NVIDIA Begin 1.1 PB SSD-Based GPU Memory Expansion Tests — <a href="https://www.trendforce.com/news/2026/11/27/news-kioxia-nvidia-begin-1-1-pb-ssd-based-gpu-memory-expansion-tests-to-address-hbm-capacity-limits/">TrendForce</a></li>
+<li>TSMC Affiliate GUC Reportedly Lands Tesla AI5 ASIC Project; 3nm Constraints May Limit Near-Term Ramp-Up — <a href="https://www.trendforce.com/news/2026/11/27/news-tsmc-affiliate-guc-reportedly-lands-tesla-ai5-asic-project-but-tight-3nm-supply-could-limit-near-term-ramp-up/">TrendForce</a></li>
+<li>Why Tesla's AI5 Chip Is Going to Optimus — <a href="https://electrek.co/2026/11/27/tesla-ai5-optimus-real-reason-tsmc-3nm/">Electrek</a></li>
+<li>Netherlands Plans to Fight Rollout of Proposed US Curbs on ASML — <a href="https://www.bloomberg.com/news/articles/2026-11-26/netherlands-plans-to-fight-rollout-of-proposed-us-curbs-on-asml">Bloomberg</a></li>
+<li>Netherlands Opposes MATCH Act's Tighter Curbs on ASML's China Sales — <a href="https://www.trendforce.com/news/2026/11/27/news-netherlands-opposes-match-acts-tighter-curbs-on-asmls-china-sales-eyes-eu-countermeasures/">TrendForce</a></li>
+<li>Israeli Chipmaker Altair Raises $100 Million to Connect the Next Generation of AI Devices — <a href="https://www.calcalistech.com/ctechnews/article/m3h4xzamw">CTech by Calcalist</a></li>
+<li>Wireless Networking Chip Startup Altair Nabs $100M Investment — <a href="https://www.crayon.net/story/50656/wireless-networking-chip-startup-altair-nabs-100m-investment">CRAYON（SiliconANGLE）</a></li>
+<li>Xiaomi-Backed Fund Invests in Advanced Semiconductor Packaging Company — <a href="https://www.trendforce.com/news/2026/11/27/news-xiaomi-backed-fund-invests-in-advanced-semiconductor-packaging-company/">TrendForce</a></li>
+<li>小米系基金入股先进封测厂 — <a href="https://zhuanlan.zhihu.com/p/2108563584993194528">全球半导体观察</a></li>
+</ol>
+</div>
+</div>
+</body>
+</html>
